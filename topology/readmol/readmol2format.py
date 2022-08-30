@@ -44,7 +44,7 @@ class ReadMol2Format(ReadBaseFormat):
             self._atom3d_isbackbone[idx] = 0
             self._atom3d_occupancy[idx] = 0
 
-        # Loop over bonds
+        # Loop over bonds.
         bond_list = []
         for ibond in self._universe.bonds:
             bond_list.append([ibond[0].index, ibond[1].index])
