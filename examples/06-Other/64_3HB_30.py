@@ -2,7 +2,7 @@ import datetime
 from topology.readmol.readxsdformat import ReadXsdFormat
 import utils
 
-filename = "./XSD/64_3HB_alfa_30.xsd"
+filename = "./64_3HB_alfa_30.xsd"
 pattern = "64_3HB_alfa_30"
 
 # Logger

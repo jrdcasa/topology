@@ -1,11 +1,7 @@
 
 	***************** PE C102 40Chains LOPLS *****************
-		Starting: 	 25-08-2022 11:12:05
+		Starting: 	 30-08-2022 17:07:34
 
-		 Reading ./restart.data.500000.data...(25-08-2022 11:12:05)
-		 Writing PSF ./restart.data.500000.data...(25-08-2022 11:12:05)
-		 Writing PDB ./restart.data.500000.data...(25-08-2022 11:12:05)
-
-		Finishing: 	 25-08-2022 11:12:16
-
-	============== END   ===============================
+		 Reading ./restart.data.500000.data...(30-08-2022 17:07:34)
+		 Writing PSF ./restart.data.500000.data...(30-08-2022 17:07:34)
+		 Writing PDB ./restart.data.500000.data...(30-08-2022 17:07:34)

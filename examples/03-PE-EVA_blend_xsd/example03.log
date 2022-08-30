@@ -1,7 +1,11 @@
 
 	***************** EXAMPLE 03 PE+EVA *****************
-		Starting: 	 17-06-2022 12:10:10
+		Starting: 	 30-08-2022 16:53:31
 
-		 Reading ./blend.xsd...(17-06-2022 12:10:10)
-		 Writing xyz file...(17-06-2022 12:10:10)
-		 Writing gro file...(17-06-2022 12:10:10)
+		 Reading ./blend.xsd...(30-08-2022 16:53:31)
+		 Writing xyz file...(30-08-2022 16:53:31)
+		 Writing gro file...(30-08-2022 16:53:31)
+		 Writing pdb file...(30-08-2022 16:53:31)
+		Finishing: 	 30-08-2022 16:53:31
+
+	============== END   EXAMPLE03 ================================

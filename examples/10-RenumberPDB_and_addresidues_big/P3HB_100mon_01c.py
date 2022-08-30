@@ -32,7 +32,7 @@ m = "\t\t Read PDB and renumber pdb file...({})".format(now)
 print(m) if log is None else log.info(m)
 filenamepdb = "./P3HB_100mon_01c_xsd.pdb"
 pdb = ReadPdbFormat(filenamepdb)
-test = pdb.write_renumber_pdb(head_idx_atom=4)
+test = pdb.write_renumber_pdb(head_idx_atom=[3], tail_idx_atom=[1199])
 
 # Logger
 now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")

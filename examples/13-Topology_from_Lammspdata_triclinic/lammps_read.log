@@ -1,11 +1,7 @@
 
 	***************** PE C102 40Chains LOPLS *****************
-		Starting: 	 25-08-2022 11:13:54
+		Starting: 	 30-08-2022 17:11:56
 
-		 Reading ./103191_noctane_order_cryst_replicate_clean.data...(25-08-2022 11:13:54)
-		 Writing PSF ./103191_noctane_order_cryst_replicate_clean.data...(25-08-2022 11:13:54)
-		 Writing PDB ./103191_noctane_order_cryst_replicate_clean.data...(25-08-2022 11:13:54)
-
-		Finishing: 	 25-08-2022 11:13:55
-
-	============== END   ===============================
+		 Reading ./103191_noctane_order_cryst_replicate_clean.data...(30-08-2022 17:11:56)
+		 Writing PSF ./103191_noctane_order_cryst_replicate_clean.data...(30-08-2022 17:11:56)
+		 Writing PDB ./103191_noctane_order_cryst_replicate_clean.data...(30-08-2022 17:11:56)

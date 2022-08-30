@@ -1,7 +1,8 @@
 
 	***************** P3HB i64 chain 30 monomers *****************
-		Starting: 	 17-06-2022 12:10:24
+		Starting: 	 30-08-2022 16:59:01
 
-		 Reading ./64_3HB_alfa_30.mol2...(17-06-2022 12:10:24)
-		 Writing xyz file...(17-06-2022 12:10:41)
-		 Writing gro file...(17-06-2022 12:10:41)
+		 Reading ./64_3HB_alfa_30.mol2...(30-08-2022 16:59:01)
+		 Writing xyz file...(30-08-2022 16:59:09)
+		 Writing gro file...(30-08-2022 16:59:09)
+		 Writing pdb file...(30-08-2022 16:59:09)
