@@ -1,0 +1,32 @@
+strict graph "" {
+	0	[color=blue];
+	1	[color=blue];
+	0 -- 1	[color=blue];
+	10	[color=blue];
+	0 -- 10	[color=blue];
+	0 -- 3	[color=blue];
+	0 -- 4	[color=blue];
+	2	[color=blue];
+	1 -- 2	[color=blue];
+	1 -- 5	[color=blue];
+	1 -- 6	[color=blue];
+	2 -- 7	[color=blue];
+	8	[color=blue];
+	8 -- 2	[color=blue];
+	9	[color=blue];
+	9 -- 2	[color=blue];
+	11	[color=blue];
+	10 -- 11	[color=blue];
+	10 -- 13	[color=blue];
+	10 -- 14	[color=blue];
+	11 -- 12	[color=blue];
+	11 -- 15	[color=blue];
+	16	[color=blue];
+	16 -- 11	[color=blue];
+	17	[color=blue];
+	17 -- 12	[color=blue];
+	18	[color=blue];
+	18 -- 12	[color=blue];
+	19	[color=blue];
+	19 -- 12	[color=blue];
+}

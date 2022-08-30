@@ -1,0 +1,59 @@
+REMARK     Written by MStoLAGRO (J.Ramos)
+CRYST1   36.408   36.408   36.408  90.00  90.00  90.00 P -1          1
+HETATM    1 C    CH3 A   1       6.914  10.906   6.146  1.00  1.00           C
+HETATM    2 H    CH3 A   1       7.226  11.657   6.902  1.00  0.00           H
+HETATM    3 H    CH3 A   1       5.873  11.129   5.830  1.00  0.00           H
+HETATM    4 H    CH3 A   1       6.948   9.899   6.613  1.00  0.00           H
+HETATM    5 C    CH2 A   2       7.857  10.969   4.948  1.00  1.00           C
+HETATM    6 H    CH2 A   2       8.894  10.767   5.295  1.00  0.00           H
+HETATM    7 H    CH2 A   2       7.823  11.993   4.516  1.00  0.00           H
+HETATM    8 C    CH2 A   3       7.461   9.944   3.879  1.00  1.00           C
+HETATM    9 H    CH2 A   3       6.424  10.144   3.531  1.00  0.00           H
+HETATM   10 H    CH2 A   3       7.496   8.920   4.312  1.00  0.00           H
+HETATM   11 C    CH3 A   4       8.403  10.007   2.680  1.00  1.00           C
+HETATM   12 H    CH3 A   4       9.445   9.785   2.996  1.00  0.00           H
+HETATM   13 H    CH3 A   4       8.368  11.014   2.214  1.00  0.00           H
+HETATM   14 H    CH3 A   4       8.093   9.255   1.924  1.00  0.00           H
+HETATM   15 C    CH3 A   1       7.074  26.660  22.311  1.00  1.00           C
+HETATM   16 H    CH3 A   1       6.176  26.184  21.863  1.00  0.00           H
+HETATM   17 H    CH3 A   1       7.915  26.582  21.589  1.00  0.00           H
+HETATM   18 H    CH3 A   1       7.338  26.115  23.242  1.00  0.00           H
+HETATM   19 C    CH2 A   2       6.776  28.124  22.621  1.00  1.00           C
+HETATM   20 H    CH2 A   2       5.916  28.175  23.324  1.00  0.00           H
+HETATM   21 H    CH2 A   2       6.490  28.640  21.678  1.00  0.00           H
+HETATM   22 C    CH2 A   3       7.993  28.818  23.242  1.00  1.00           C
+HETATM   23 H    CH2 A   3       8.853  28.767  22.539  1.00  0.00           H
+HETATM   24 H    CH2 A   3       8.279  28.301  24.184  1.00  0.00           H
+HETATM   25 C    CH3 A   4       7.694  30.281  23.552  1.00  1.00           C
+HETATM   26 H    CH3 A   4       6.853  30.359  24.274  1.00  0.00           H
+HETATM   27 H    CH3 A   4       7.429  30.827  22.621  1.00  0.00           H
+HETATM   28 H    CH3 A   4       8.592  30.758  23.999  1.00  0.00           H
+END
+CONECT    1    2    3    4    5
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1    6    7    8
+CONECT    6    5
+CONECT    7    5
+CONECT    8    5    9   10   11
+CONECT    9    8
+CONECT   10    8
+CONECT   11    8   12   13   14
+CONECT   12   11
+CONECT   13   11
+CONECT   14   11
+CONECT   15   16   17   18   19
+CONECT   16   15
+CONECT   17   15
+CONECT   18   15
+CONECT   19   15   20   21   22
+CONECT   20   19
+CONECT   21   19
+CONECT   22   19   23   24   25
+CONECT   23   22
+CONECT   24   22
+CONECT   25   22   26   27   28
+CONECT   26   25
+CONECT   27   25
+CONECT   28   25

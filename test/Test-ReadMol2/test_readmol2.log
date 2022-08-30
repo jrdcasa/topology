@@ -1,0 +1,122 @@
+
+	***************** START MStoLAGROAM TEST *****************
+		Test length is about 97 seconds.
+		Starting: 	 30-07-2022 11:04:35
+
+
+	============== START TEST_01 ================================
+	   Reading a polymer from XSD file created with Materials Studio
+	   Check basic topology without bond orders 
+
+		Finishing: 	 30-07-2022 11:04:35
+
+	============== END   TEST_01 ================================
+
+	============== START TEST_02 ================================
+	   Reading a polymer from MOL2 file created with Materials Studio 
+	   Check the topology with bond orders 
+
+		Finishing: 	 30-07-2022 11:04:38
+
+	============== END   TEST_02 ================================
+
+	============== START TEST_03 ================================
+	   Reading a molecular system from MOL2 file created with Materials Studio 
+	   Check the topology with bond orders 
+
+		Finishing: 	 30-07-2022 11:04:38
+
+	============== END   TEST_03 ================================
+
+	============== START TEST_04 ================================
+	   Reading a molecular system from MOL2 file created with Materials Studio 
+	   Non-periodic and Check the topology with bond orders 
+
+		Finishing: 	 30-07-2022 11:04:38
+
+	============== END   TEST_04 ================================
+
+	============== START TEST_05 ================================
+	   Reading a molecular system from MOL2 file created with Materials Studio 
+	   Periodic and Check the topology with bond orders 
+
+		Finishing: 	 30-07-2022 11:04:38
+
+	============== END   TEST_05 ================================
+
+	============== START TEST_06 ================================
+	   Reading a molecular system from MOL2 file created with Materials Studio 
+	   Mol and polymer. Periodic and Check the topology with bond orders 
+
+		Finishing: 	 30-07-2022 11:04:38
+
+	============== END   TEST_06 ================================
+
+	============== START TEST_07 ================================
+	   Reading a molecular system from MOL2 file created with Materials Studio 
+	   5 PE chains and 150 monomers (C300). Periodic and Check the topology with bond orders 
+
+	Reading MOL2 format (4500 atoms) ...
+		(2.734 seconds)
+	Drawing forest for the XSD graph...
+		(49.734 seconds)
+	Writing XYZ and GRO formats...
+		(0.043 seconds)
+	Checking number of atoms and bonds...
+		(0.345 seconds)
+	Checking cycles and charges...
+		(0.003 seconds)
+	Checking bondorders...
+		(0.002 seconds)
+		Finishing: 	 30-07-2022 11:05:31
+
+	============== END   TEST_07 ================================
+
+	============== START TEST_08 ================================
+	   Reading a molecular system from MOL2 file created with Materials Studio 
+	   Separate each chain in a unique pdb file. This can be used to make easier the 
+	   typing of the molecule. 
+	   10 chains PE-SCB C300 4 butyl branches, all atomsitic model. 
+
+	Reading XSD format (9500 atoms) ...
+		(5.323 seconds)
+	Writing PDB and separate chains...
+		(0.145 seconds)
+		Finishing: 	 30-07-2022 11:05:36
+
+	============== END   TEST_08 ================================
+
+	============== START TEST_09 ================================
+	   Reading a molecular system from MOL2 file created with Materials Studio 
+	   Polymer chains with repeat units and not periodic 
+	   1 chains P4HB 100 monomers, all atomsitic model. 
+
+	Reading MOL2 format (1205 atoms) ...
+		(0.070 seconds)
+	Writing PDB and separate chains...
+		(0.019 seconds)
+		Finishing: 	 30-07-2022 11:05:37
+
+	============== END   TEST_08 ================================
+
+	============== START TEST_10 ================================
+	   Reading a molecular system from MOL2 file created with Materials Studio 
+	   8 Polymer chains without repeat units and periodic 
+	   This system has been created from a cell of unit of the P4HB crystal.
+
+	Reading MOL2 format (400 atoms) ...
+		(0.056 seconds)
+	Drawing forest for the XSD graph...
+		(0.887 seconds)
+	Writing XYZ and GRO formats...
+		(0.007 seconds)
+	Checking number of atoms and bonds...
+		(0.003 seconds)
+	Checking cycles and charges...
+		(0.000 seconds)
+	Checking bond orders...
+		(0.000 seconds)
+
+	***************** END MStoLAGROAM TEST *****************
+		Finishing: 	 30-07-2022 11:05:37
+

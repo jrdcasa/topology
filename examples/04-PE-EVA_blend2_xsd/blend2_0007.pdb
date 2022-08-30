@@ -1,0 +1,43 @@
+REMARK     Written by MStoLAGRO (J.Ramos). Molecule    7
+CRYST1   14.945   14.945   14.945  90.00  90.00  90.00 P -1          1
+HETATM    1 H    Pol     1      10.502   9.184   0.097  1.00  0.00           H
+HETATM    2 C    Pol     1       9.888   8.862   0.954  1.00  1.00           C
+HETATM    3 C    Pol     1       8.984   9.994   1.448  1.00  1.00           C
+HETATM    4 H    Pol     1      10.572   8.526   1.752  1.00  0.00           H
+HETATM    5 H    Pol     1       9.289   7.995   0.633  1.00  0.00           H
+HETATM    6 H    Pol     1       8.359  10.340   0.610  1.00  0.00           H
+HETATM    7 H    Pol     1       9.607  10.853   1.751  1.00  0.00           H
+HETATM    8 C    Pol     1       8.105   9.556   2.628  1.00  1.00           C
+HETATM    9 C    Pol     1       7.265  10.657   3.300  1.00  1.00           C
+HETATM   10 H    Pol     1       8.774   9.129   3.398  1.00  0.00           H
+HETATM   11 H    Pol     1       7.447   8.730   2.307  1.00  0.00           H
+HETATM   12 H    Pol     1       7.894  11.550   3.466  1.00  0.00           H
+HETATM   13 H    Pol     1       6.995  10.291   4.309  1.00  0.00           H
+HETATM   14 C    Pol     1       5.952  11.070   2.612  1.00  1.00           C
+HETATM   15 C    Pol     1       6.081  11.844   1.298  1.00  1.00           C
+HETATM   16 H    Pol     1       5.389  11.701   3.323  1.00  0.00           H
+HETATM   17 H    Pol     1       5.330  10.173   2.442  1.00  0.00           H
+HETATM   18 H    Pol     1       6.489  11.218   0.491  1.00  0.00           H
+HETATM   19 H    Pol     1       6.731  12.725   1.413  1.00  0.00           H
+HETATM   20 H    Pol     1       5.091  12.196   0.965  1.00  0.00           H
+END
+CONECT    1    2
+CONECT    2    1    3    4    5
+CONECT    3    2    6    7    8
+CONECT    4    2
+CONECT    5    2
+CONECT    6    3
+CONECT    7    3
+CONECT    8    9   10   11    3
+CONECT    9    8   12   13   14
+CONECT   10    8
+CONECT   11    8
+CONECT   12    9
+CONECT   13    9
+CONECT   14   15   16   17    9
+CONECT   15   20   14   18   19
+CONECT   16   14
+CONECT   17   14
+CONECT   18   15
+CONECT   19   15
+CONECT   20   15

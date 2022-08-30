@@ -1,0 +1,62 @@
+
+		 Starting installation!!!! at 30/08/2022 15:54:50
+
+		Python version 3.8
+
+		 ============== SYS PATH ==============
+/home/jramos/Programacion/GITHUB_REPO_DIR/topology
+/usr/lib/python38.zip
+/usr/lib/python3.8
+/usr/lib/python3.8/lib-dynload
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/topology-3.0-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/polyanagro-1.1-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/replicate_polymer-0.0.0-py3.8-linux-x86_64.egg
+
+		 ============== INSTALLING PIP PACKAGES ==============
+
+30/08/2022 15:54:51: ** TOPOLOGY: Installing GitPython==3.1.1
+30/08/2022 15:54:52: ** TOPOLOGY: Installing cython==0.29.24
+30/08/2022 15:54:53: ** TOPOLOGY: Installing numpy==1.21.3
+30/08/2022 15:54:54: ** TOPOLOGY: Installing periodictable==1.6.0
+30/08/2022 15:54:55: ** TOPOLOGY: Installing pygraphviz==1.7
+30/08/2022 15:54:56: ** TOPOLOGY: Installing networkx==2.6.3
+30/08/2022 15:54:57: ** TOPOLOGY: Installing matplotlib==3.4.3
+30/08/2022 15:54:58: ** TOPOLOGY: Installing MDAnalysis==2.2.0
+30/08/2022 15:54:59: ** TOPOLOGY: Installing psutil==5.8.0
+30/08/2022 15:55:00: ** TOPOLOGY: Installing rdkit-pypi==2021.3.2.3
+30/08/2022 15:55:01: ** TOPOLOGY: Installing Sphinx==4.3.0
+30/08/2022 15:55:02: ** TOPOLOGY: Installing scipy==1.7.2
+30/08/2022 15:55:03: ** TOPOLOGY: Installing mock
+
+		 ============== COMPILING & INSTALLING INDIGO-BONDORDER PACKAGE ==============
+
+30/08/2022 15:55:03: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
+
+30/08/2022 15:55:03: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
+
+		 ============== COMPILING & INSTALLING EIGEN PACKAGE ==============
+
+
+30/08/2022 15:55:03: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
+
+		 ============== COMPILING & INSTALLING OPENBABEL PACKAGE ==============
+
+
+30/08/2022 15:55:03: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
+
+		 ============== RUNNING SETUP FROM SETUPTOOLS 30/08/2022 15:55:04 ==============
+
+
+
+		 ******************* SUMMARY *******************
+		 Pip packages in requirements.txt file have been succesfully imported.
+		 Indigox has been succesfully imported.
+		 Openbabel has been succesfully imported.
+		 Openbabel has been installed in /home/jramos/.local/openbabel.
+		 Topology has been succesfully imported.
+		 ******************* SUMMARY *******************
+
+		 Installation Done!!!! at 30/08/2022 15:55:04
+
+

@@ -1,0 +1,90 @@
+
+	***************** START READPDB TEST *****************
+		Test length is about XX seconds.
+		Starting: 	 30-07-2022 11:05:38
+
+
+	============== START TEST_01 ================================
+	   Reading a polymer from XSD file created with Materials Studio
+	   Check basic topology without bond orders 
+
+		Finishing: 	 30-07-2022 11:05:38
+
+	============== END   TEST_01 ================================
+
+	============== START TEST_02 ================================
+	   Reading a polymer from PDB file created with Materials Studio 
+	   Check the topology with bond orders 
+
+		Finishing: 	 30-07-2022 11:05:41
+
+	============== END   TEST_02 ================================
+
+	============== START TEST_03 ================================
+	   Reading a molecular system from PDB file created with Materials Studio 
+	   Check the topology with bond orders 
+
+		Charges are not calculated from PDB files.
+		Finishing: 	 30-07-2022 11:05:41
+
+	============== END   TEST_03 ================================
+
+	============== START TEST_04 ================================
+	   Reading a molecular system from PDB file created with Materials Studio 
+	   Separate each chain in a unique pdb file. This can be used to make easier the 
+	   typing of the molecule. 
+	   10 chains PE-SCB C300 4 butyl branches, all atomsitic model. 
+
+	Reading PDB format (9500 atoms) ...
+		(5.794 seconds)
+	Writing PDB and separate chains...
+		(0.143 seconds)
+		Finishing: 	 30-07-2022 11:05:47
+
+	============== END   TEST_08 ================================
+
+	============== START TEST_05 ================================
+	   Reading a molecular system from PDB file created with Materials Studio 
+	   8 Polymer chains without repeat units and periodic 
+	   This system has been created from a cell of unit of the P4HB crystal.
+
+	Reading PDB format (400 atoms) ...
+		(0.056 seconds)
+	Drawing forest for the XSD graph...
+		(0.891 seconds)
+	Writing XYZ and GRO formats...
+		(0.007 seconds)
+	Checking number of atoms and bonds...
+		(0.003 seconds)
+	Checking cycles and charges...
+		(0.000 seconds)
+	Checking bond orders...
+		(0.000 seconds)
+
+	============== START TEST_06 ================================
+	   Reading a molecular system from PDB file created with Materials Studio 
+	   8 Polymer chains without repeat units and periodic 
+	   CONECT is not present in the pdb 
+	   This system has been created from a cell of unit of the P4HB crystal.
+
+	Reading PDB format (400 atoms) ...
+		(0.373 seconds)
+	Drawing forest for the XSD graph...
+		(0.890 seconds)
+	Writing XYZ, PDB and GRO formats...
+		(0.006 seconds)
+	Checking number of atoms and bonds...
+		(0.003 seconds)
+	Checking cycles and charges...
+		(0.000 seconds)
+	Checking bond orders...
+		(0.000 seconds)
+
+	============== START TEST_07 ================================
+	   Reading a polymer from PDB file created with Materials Studio
+	   Check deepcopy 
+
+
+	***************** END MStoLAGROAM TEST *****************
+		Finishing: 	 30-07-2022 11:05:49
+

@@ -1,0 +1,197 @@
+
+	***************** START Gecos rdkit TEST *****************
+		Starting: 	 25-08-2022 14:00:14
+
+	============== START TEST_01 ================================
+	   Testing connectivity in allylbenzene molecule (CID:9309)  
+	   without hydrogens  
+	============== END   TEST_01 ================================
+
+	============== START TEST_02 ================================
+	   Testing connectivity in allylbenzene molecule (CID:9309)  
+	   Assign bond orders without Hs
+	Bond orders of Allylbenzene without H (CID: 9309) ARE NOT correctly predicted!!. Test02
+	============== END   TEST_02 ================================
+
+	============== START TEST_03 ================================
+	   Testing connectivity in 1,3-benzothiazole molecule (CID:7222)  
+	   Assign bond orders with Hs
+	============== END   TEST_03 ================================
+
+	============== START TEST_04 ================================
+	         Testing maximum valence molecule (CID:9309)
+
+	  An atom in the system exceeds the maximum valence (CID: 9309)Check the topology.detect_connectivity method.!!. Test04
+	  An atom in the system exceeds the maximum valence (CID: 9309)Check the topology.detect_connectivity method.!!. with CONNECT Test04
+	============== END   TEST_04 ================================
+
+	============== START TEST_05 ================================
+	       Testing rings in cyclic molecules (CID:9309)     
+	       All molecules without rings     
+	============== END   TEST_05 ================================
+
+	============== START TEST_06 ================================
+	              Test Copy topology object                     
+	============== END   TEST_06 ================================
+
+	============== START TEST_07 ================================
+	       Test Generate_topology fromPSF object. United Atom    
+	       Assign bond order FALSE
+
+	Building bonds from PSF topology... 
+	Setting bond orders: FALSE
+	*** Backbone atoms have been assigned to the topology.
+	Topology file: ../data/0003Ch-C020-002br04/namd.psf
+	TIME(Building_bonds_from_PSF_topology): 0.003129 seconds
+	============== END   TEST_07 ================================
+
+	============== START TEST_08 ================================
+	       Test Generate_topology fromPSF object. United Atom    
+	       Assign bond order TRUE
+
+	Building bonds from PSF topology... 
+	Setting bond orders: TRUE
+	*** Backbone atoms have been assigned to the topology.
+	Topology file: ../data/0003Ch-C020-002br04/namd.psf
+	TIME(Building_bonds_from_PSF_topology): 0.004282 seconds
+	============== END   TEST_08 ================================
+
+	============== START TEST_09 ================================
+	       Test Generate_topology fromPSF object. Atomistic model 
+	       Assign bond order TRUE
+
+	Building bonds from PSF topology... 
+	Setting bond orders: TRUE
+	*** Backbone atoms have been assigned to the topology.
+	Topology file: ../data/20-iPP-OPLS-AA/namd_withimproper.psf
+	TIME(Building_bonds_from_PSF_topology): 0.010071 seconds
+	============== END   TEST_09 ================================
+
+	============== START TEST_10 ================================
+	             Building a Topology object                      
+
+	============== END   TEST_10 ================================
+
+	============== START TEST_11 ================================
+	              Checking get_array_mols_neigh                   
+
+	============== END   TEST_11 ================================
+
+	============== START TEST_12 ================================
+	              Topology from  PDB CONECT. All atomistic        
+	              with bond orders                                
+
+	============== END   TEST_12 ================================
+
+	============== START TEST_13 ================================
+	              Topology from  PDB CONECT. United atom          
+	              with bond orders                                
+	          Bond order cannot be assigned to UA model          
+
+	============== END   TEST_13 ================================
+============== START TEST_14 ================================
+          Topology from MDAnalysis. UA model                 
+          without bond order                                 
+
+	============== END   TEST_14 ================================
+	============== START TEST_15 ================================
+	          Topology from MDAnalysis. UA model                 
+	          with bond order                                    
+	          Bond order cannot be assigned to UA model          
+
+	============== END   TEST_15 ================================
+	============== START TEST_16 ================================
+	          Assign backbone from PSF. UA model                 
+
+
+	Building bonds from PSF topology... 
+	Setting bond orders: TRUE
+	*** Backbone atoms have been assigned to the topology.
+	Topology file: ../data/0003Ch-C020-002br04/namd_out.psf
+	TIME(Building_bonds_from_PSF_topology): 0.004443 seconds
+	*** Backbone atoms have been assigned to the topology.
+	Topology file: ../data/0003Ch-C020-002br04/namd_out.psf
+	============== END   TEST_16 ================================
+
+	============== START TEST_17 ================================
+	              Topology from  PDB CONECT. All atomistic        
+	              with bond orders                                
+
+	============== END   TEST_17 ================================
+
+	============== START TEST_18 ================================
+	          PSF Topology from  PDB. All atomistic        
+	              with bond orders                                
+
+	============== END   TEST_18 ================================
+
+	============== START TEST_19 ================================
+	          PSF Topology from  GROMACS files. CG       
+	              without bond orders                                
+
+	============== END   TEST_19 ================================
+
+	============== START TEST_20 ================================
+	          PSF Topology from  GROMACS files. CG       
+	              without bond orders                                
+
+	*** Creating a trajectory from...
+	../data/0003Ch-C020-002br04/RUN-001/traj_comp.xtc
+	../data/0003Ch-C020-002br04/RUN-002/traj_comp.part0002.xtc
+	../data/0003Ch-C020-002br04/RUN-003/traj_comp.part0003.xtc
+
+	*** Building bonds from topology... 
+	Setting bond orders: FALSE
+	*** Backbone atoms have been assigned to the topology.
+	Topology file: ../data/0003Ch-C020-002br04/namd_out.psf
+	TIME(Building_bonds_from_topology): 0.009037 seconds
+	*** End Building bonds from topology... 
+
+	*** Adding topology 
+	../data/0003Ch-C020-002br04/namd_out.psf
+	Number of frames: 301
+	TIME(Adding topology): 0.006576 seconds
+	*** End Adding topology
+
+	Number of frames: 301
+	TIME(Read_Trajectories): 0.015784 seconds
+	*** End Creating a trajectory 
+
+	============== END   TEST_20 ================================
+
+	============== START TEST_21 ================================
+	          Given an atom number as head renumbering the atoms  
+	          folowing the graph                                  
+
+		01 MOLECULE P3HB_3mon_01c.pdb
+		02 MOLECULE iPP_8mon_1Ch.xsd
+		03 MOLECULE PS_3mon_1Ch.xsd
+	============== END   TEST_21 ================================
+
+	============== START TEST_22 ================================
+	          Given a list of heads renumbering the atoms         
+	          following the graph                                 
+
+	============== END   TEST_22 ================================
+
+	============== START TEST_23 ================================
+	       Using an external file assign residues.   
+	       Only one chain and one type of chain.   
+
+	============== END   TEST_23 ================================
+
+	============== START TEST_24 ================================
+	       Using an external file assign residues.   
+	       Several chains and one type of chain.   
+
+	============== END   TEST_24 ================================
+
+	============== START TEST_25 ================================
+	       Test Generate_topology fromDATA object (Lammps). All Atom    
+	       Assign bond order FALSE
+	*** Building bonds from topology... 
+	Setting bond orders: FALSE
+	TIME(Building_bonds_from_topology): 0.005075 seconds
+	*** End Building bonds from topology... 
+
+	============== END   TEST_25 ================================

@@ -1,0 +1,43 @@
+REMARK   1 File created by GaussView 6.0.16
+HETATM    1  C   MOL     1       0.205  -2.466   2.163                       C
+HETATM    2  C   MOL     1      -0.342  -1.042   2.265                       C
+HETATM    3  C   MOL     1      -0.276  -0.276   0.941                       C
+HETATM    4  C   MOL     1      -0.818   1.151   1.030                       C
+HETATM    5  C   MOL     1      -0.753   1.917  -0.294                       C
+HETATM    6  C   MOL     1      -1.299   3.341  -0.192                       C
+HETATM    7  H   MOL     1      -0.836  -0.833   0.171                       H
+HETATM    8  H   MOL     1       0.770  -0.249   0.591                       H
+HETATM    9  H   MOL     1      -1.386  -1.070   2.615                       H
+HETATM   10  H   MOL     1       0.219  -0.485   3.033                       H
+HETATM   11  H   MOL     1       1.255  -2.464   1.838                       H
+HETATM   12  H   MOL     1      -0.365  -3.058   1.433                       H
+HETATM   13  H   MOL     1       0.155  -2.989   3.128                       H
+HETATM   14  H   MOL     1      -1.864   1.124   1.381                       H
+HETATM   15  H   MOL     1      -0.258   1.707   1.801                       H
+HETATM   16  H   MOL     1      -1.313   1.360  -1.061                       H
+HETATM   17  H   MOL     1       0.292   1.945  -0.644                       H
+HETATM   18  H   MOL     1      -0.730   3.933   0.539                       H
+HETATM   19  H   MOL     1      -2.349   3.339   0.133                       H
+HETATM   20  H   MOL     1      -1.249   3.863  -1.156                       H
+END
+CONECT    1    2   11   12   13
+CONECT    2    3    1    9   10
+CONECT    3    2    7    8    4
+CONECT    4    5   14   15    3
+CONECT    5    4    6   16   17
+CONECT    6    5   18   19   20
+CONECT    7    3
+CONECT    8    3
+CONECT    9    2
+CONECT   10    2
+CONECT   11    1
+CONECT   12    1
+CONECT   13    1
+CONECT   14    4
+CONECT   15    4
+CONECT   16    5
+CONECT   17    5
+CONECT   18    6
+CONECT   19    6
+CONECT   20    6
+END

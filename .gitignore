@@ -1,0 +1,11 @@
+build/**
+dist/**
+topology.egg-info/**
+thirdparty/**
+__pychache__/
+*.pyc
+nohup.out
+docs/_build/**
+docs/_static/**
+docs/_templates/**
+*.lock
