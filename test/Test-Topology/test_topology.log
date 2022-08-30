@@ -1,6 +1,6 @@
 
 	***************** START Gecos rdkit TEST *****************
-		Starting: 	 25-08-2022 14:00:14
+		Starting: 	 30-08-2022 16:37:38
 
 	============== START TEST_01 ================================
 	   Testing connectivity in allylbenzene molecule (CID:9309)  
@@ -42,7 +42,7 @@
 	Setting bond orders: FALSE
 	*** Backbone atoms have been assigned to the topology.
 	Topology file: ../data/0003Ch-C020-002br04/namd.psf
-	TIME(Building_bonds_from_PSF_topology): 0.003129 seconds
+	TIME(Building_bonds_from_PSF_topology): 0.002992 seconds
 	============== END   TEST_07 ================================
 
 	============== START TEST_08 ================================
@@ -53,7 +53,7 @@
 	Setting bond orders: TRUE
 	*** Backbone atoms have been assigned to the topology.
 	Topology file: ../data/0003Ch-C020-002br04/namd.psf
-	TIME(Building_bonds_from_PSF_topology): 0.004282 seconds
+	TIME(Building_bonds_from_PSF_topology): 0.004305 seconds
 	============== END   TEST_08 ================================
 
 	============== START TEST_09 ================================
@@ -64,7 +64,7 @@
 	Setting bond orders: TRUE
 	*** Backbone atoms have been assigned to the topology.
 	Topology file: ../data/20-iPP-OPLS-AA/namd_withimproper.psf
-	TIME(Building_bonds_from_PSF_topology): 0.010071 seconds
+	TIME(Building_bonds_from_PSF_topology): 0.009855 seconds
 	============== END   TEST_09 ================================
 
 	============== START TEST_10 ================================
@@ -108,7 +108,7 @@
 	Setting bond orders: TRUE
 	*** Backbone atoms have been assigned to the topology.
 	Topology file: ../data/0003Ch-C020-002br04/namd_out.psf
-	TIME(Building_bonds_from_PSF_topology): 0.004443 seconds
+	TIME(Building_bonds_from_PSF_topology): 0.004047 seconds
 	*** Backbone atoms have been assigned to the topology.
 	Topology file: ../data/0003Ch-C020-002br04/namd_out.psf
 	============== END   TEST_16 ================================
@@ -144,17 +144,17 @@
 	Setting bond orders: FALSE
 	*** Backbone atoms have been assigned to the topology.
 	Topology file: ../data/0003Ch-C020-002br04/namd_out.psf
-	TIME(Building_bonds_from_topology): 0.009037 seconds
+	TIME(Building_bonds_from_topology): 0.007961 seconds
 	*** End Building bonds from topology... 
 
 	*** Adding topology 
 	../data/0003Ch-C020-002br04/namd_out.psf
 	Number of frames: 301
-	TIME(Adding topology): 0.006576 seconds
+	TIME(Adding topology): 0.007351 seconds
 	*** End Adding topology
 
 	Number of frames: 301
-	TIME(Read_Trajectories): 0.015784 seconds
+	TIME(Read_Trajectories): 0.015479 seconds
 	*** End Creating a trajectory 
 
 	============== END   TEST_20 ================================
@@ -191,7 +191,7 @@
 	       Assign bond order FALSE
 	*** Building bonds from topology... 
 	Setting bond orders: FALSE
-	TIME(Building_bonds_from_topology): 0.005075 seconds
+	TIME(Building_bonds_from_topology): 0.006023 seconds
 	*** End Building bonds from topology... 
 
 	============== END   TEST_25 ================================

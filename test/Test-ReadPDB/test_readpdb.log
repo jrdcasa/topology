@@ -1,14 +1,14 @@
 
 	***************** START READPDB TEST *****************
 		Test length is about XX seconds.
-		Starting: 	 30-07-2022 11:05:38
+		Starting: 	 30-08-2022 16:37:19
 
 
 	============== START TEST_01 ================================
 	   Reading a polymer from XSD file created with Materials Studio
 	   Check basic topology without bond orders 
 
-		Finishing: 	 30-07-2022 11:05:38
+		Finishing: 	 30-08-2022 16:37:19
 
 	============== END   TEST_01 ================================
 
@@ -16,7 +16,7 @@
 	   Reading a polymer from PDB file created with Materials Studio 
 	   Check the topology with bond orders 
 
-		Finishing: 	 30-07-2022 11:05:41
+		Finishing: 	 30-08-2022 16:37:22
 
 	============== END   TEST_02 ================================
 
@@ -25,7 +25,7 @@
 	   Check the topology with bond orders 
 
 		Charges are not calculated from PDB files.
-		Finishing: 	 30-07-2022 11:05:41
+		Finishing: 	 30-08-2022 16:37:22
 
 	============== END   TEST_03 ================================
 
@@ -36,10 +36,10 @@
 	   10 chains PE-SCB C300 4 butyl branches, all atomsitic model. 
 
 	Reading PDB format (9500 atoms) ...
-		(5.794 seconds)
+		(5.524 seconds)
 	Writing PDB and separate chains...
-		(0.143 seconds)
-		Finishing: 	 30-07-2022 11:05:47
+		(0.145 seconds)
+		Finishing: 	 30-08-2022 16:37:28
 
 	============== END   TEST_08 ================================
 
@@ -49,7 +49,7 @@
 	   This system has been created from a cell of unit of the P4HB crystal.
 
 	Reading PDB format (400 atoms) ...
-		(0.056 seconds)
+		(0.057 seconds)
 	Drawing forest for the XSD graph...
 		(0.891 seconds)
 	Writing XYZ and GRO formats...
@@ -68,11 +68,11 @@
 	   This system has been created from a cell of unit of the P4HB crystal.
 
 	Reading PDB format (400 atoms) ...
-		(0.373 seconds)
+		(0.347 seconds)
 	Drawing forest for the XSD graph...
-		(0.890 seconds)
+		(0.894 seconds)
 	Writing XYZ, PDB and GRO formats...
-		(0.006 seconds)
+		(0.007 seconds)
 	Checking number of atoms and bonds...
 		(0.003 seconds)
 	Checking cycles and charges...
@@ -86,5 +86,5 @@
 
 
 	***************** END MStoLAGROAM TEST *****************
-		Finishing: 	 30-07-2022 11:05:49
+		Finishing: 	 30-08-2022 16:37:30
 

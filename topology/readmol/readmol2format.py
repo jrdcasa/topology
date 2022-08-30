@@ -42,6 +42,7 @@ class ReadMol2Format(ReadBaseFormat):
             self._atom3d_xyz[idx] = list(iatom.position)
             self._atom3d_molname[idx] = "MOL"
             self._atom3d_isbackbone[idx] = 0
+            self._atom3d_occupancy[idx] = 0
 
         # Loop over bonds
         bond_list = []

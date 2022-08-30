@@ -1,44 +1,49 @@
-REMARK     Written by MStoLAGRO (J.Ramos)
+REMARK     Renumbered with topology (J.Ramos)
+REMARK     Backbone atoms --> Beta field == 0.00
+REMARK     Branch   atoms --> Beta field >= 1.00
+REMARK     Head     atoms --> Occupanccy field == 1.00
+REMARK     Tail     atoms --> Occupanccy field == 2.00
+REMARK     Middle   atoms --> Occupanccy field == 0.00
 CRYST1    5.670   13.020    5.910  90.00  90.00  90.00 P -1          1
-HETATM    1 O    P3S A   1       1.656  12.814   0.530  1.00  1.00           O
-HETATM    2 H    P3S A   1       2.268  13.379  -0.204  1.00  0.00           H
-HETATM    3 C    P3S A   1       2.521  12.152   1.466  1.00  1.00           C
-HETATM    4 H    P3S A   1       3.078  12.844   2.097  1.00  0.00           H
-HETATM    5 C    P3S A   1       3.455  11.219   0.707  1.00  0.00           C
-HETATM    6 H    P3S A   1       4.163  11.756   0.074  1.00  0.00           H
-HETATM    7 H    P3S A   1       4.025  10.588   1.392  1.00  0.00           H
-HETATM    8 H    P3S A   1       2.862  10.574   0.055  1.00  0.00           H
-HETATM    9 C    P3S A   1       1.675  11.249   2.369  1.00  1.00           C
-HETATM   10 H    P3S A   1       1.127  10.549   1.740  1.00  0.00           H
-HETATM   11 H    P3S A   1       2.282  10.683   3.081  1.00  0.00           H
-HETATM   12 C    P3S A   1       0.704  12.034   3.097  1.00  1.00           C
-HETATM   13 O    P3S A   1      -0.420  11.666   3.425  1.00  0.00           O
-HETATM   14 O    P3S A   1       1.179  13.226   3.485  1.00  1.00           O
-HETATM   15 C    P3H A   2       0.314  13.888   4.421  1.00  1.00           C
-HETATM   16 H    P3H A   2      -0.243  13.196   5.052  1.00  0.00           H
-HETATM   17 C    P3H A   2      -0.620  14.821   3.662  1.00  0.00           C
-HETATM   18 H    P3H A   2      -1.328  14.284   3.029  1.00  0.00           H
-HETATM   19 H    P3H A   2      -1.190  15.452   4.347  1.00  0.00           H
-HETATM   20 H    P3H A   2      -0.027  15.466   3.010  1.00  0.00           H
-HETATM   21 C    P3H A   2       1.160  14.791   5.324  1.00  1.00           C
-HETATM   22 H    P3H A   2       1.708  15.491   4.695  1.00  0.00           H
-HETATM   23 H    P3H A   2       0.553  15.357   6.036  1.00  0.00           H
-HETATM   24 C    P3H A   2       2.131  14.006   6.052  1.00  1.00           C
-HETATM   25 O    P3H A   2       3.255  14.374   6.380  1.00  0.00           O
-HETATM   26 O    P3H A   2       1.656  12.814   6.440  1.00  1.00           O
-HETATM   27 C    P3E A   3       2.521  12.152   7.376  1.00  1.00           C
-HETATM   28 H    P3E A   3       3.078  12.844   8.007  1.00  0.00           H
-HETATM   29 C    P3E A   3       3.455  11.219   6.617  1.00  0.00           C
-HETATM   30 H    P3E A   3       4.163  11.756   5.984  1.00  0.00           H
-HETATM   31 H    P3E A   3       4.025  10.588   7.302  1.00  0.00           H
-HETATM   32 H    P3E A   3       2.862  10.574   5.965  1.00  0.00           H
-HETATM   33 C    P3E A   3       1.675  11.249   8.279  1.00  1.00           C
-HETATM   34 H    P3E A   3       1.127  10.549   7.650  1.00  0.00           H
-HETATM   35 H    P3E A   3       2.282  10.683   8.991  1.00  0.00           H
-HETATM   36 C    P3E A   3       0.704  12.034   9.007  1.00  1.00           C
-HETATM   37 O    P3E A   3      -0.420  11.666   9.335  1.00  0.00           O
-HETATM   38 O    P3E A   3       1.179  13.226   9.395  1.00  1.00           O
-HETATM   39 H    P3E A   3       0.348  13.845   9.792  1.00  0.00           H
+HETATM    1 O    P3S A   1       1.656  12.814   0.530  1.00  0.00           O
+HETATM    2 H    P3S A   1       2.268  13.379  -0.204  0.00  1.00           H
+HETATM    3 C    P3S A   1       2.521  12.152   1.466  0.00  0.00           C
+HETATM    4 H    P3S A   1       3.078  12.844   2.097  0.00  1.00           H
+HETATM    5 C    P3S A   1       3.455  11.219   0.707  0.00  1.00           C
+HETATM    6 H    P3S A   1       4.163  11.756   0.074  0.00  1.00           H
+HETATM    7 H    P3S A   1       4.025  10.588   1.392  0.00  1.00           H
+HETATM    8 H    P3S A   1       2.862  10.574   0.055  0.00  1.00           H
+HETATM    9 C    P3S A   1       1.675  11.249   2.369  0.00  0.00           C
+HETATM   10 H    P3S A   1       1.127  10.549   1.740  0.00  1.00           H
+HETATM   11 H    P3S A   1       2.282  10.683   3.081  0.00  1.00           H
+HETATM   12 C    P3S A   1       0.704  12.034   3.097  0.00  0.00           C
+HETATM   13 O    P3S A   1      -0.420  11.666   3.425  0.00  1.00           O
+HETATM   14 O    P3S A   1       1.179  13.226   3.485  0.00  0.00           O
+HETATM   15 C    P3H A   2       0.314  13.888   4.421  0.00  0.00           C
+HETATM   16 H    P3H A   2      -0.243  13.196   5.052  0.00  1.00           H
+HETATM   17 C    P3H A   2      -0.620  14.821   3.662  0.00  1.00           C
+HETATM   18 H    P3H A   2      -1.328  14.284   3.029  0.00  1.00           H
+HETATM   19 H    P3H A   2      -1.190  15.452   4.347  0.00  1.00           H
+HETATM   20 H    P3H A   2      -0.027  15.466   3.010  0.00  1.00           H
+HETATM   21 C    P3H A   2       1.160  14.791   5.324  0.00  0.00           C
+HETATM   22 H    P3H A   2       1.708  15.491   4.695  0.00  1.00           H
+HETATM   23 H    P3H A   2       0.553  15.357   6.036  0.00  1.00           H
+HETATM   24 C    P3H A   2       2.131  14.006   6.052  0.00  0.00           C
+HETATM   25 O    P3H A   2       3.255  14.374   6.380  0.00  1.00           O
+HETATM   26 O    P3H A   2       1.656  12.814   6.440  0.00  0.00           O
+HETATM   27 C    P3E A   3       2.521  12.152   7.376  0.00  0.00           C
+HETATM   28 H    P3E A   3       3.078  12.844   8.007  0.00  1.00           H
+HETATM   29 C    P3E A   3       3.455  11.219   6.617  0.00  1.00           C
+HETATM   30 H    P3E A   3       4.163  11.756   5.984  0.00  1.00           H
+HETATM   31 H    P3E A   3       4.025  10.588   7.302  0.00  1.00           H
+HETATM   32 H    P3E A   3       2.862  10.574   5.965  0.00  1.00           H
+HETATM   33 C    P3E A   3       1.675  11.249   8.279  0.00  0.00           C
+HETATM   34 H    P3E A   3       1.127  10.549   7.650  0.00  1.00           H
+HETATM   35 H    P3E A   3       2.282  10.683   8.991  0.00  1.00           H
+HETATM   36 C    P3E A   3       0.704  12.034   9.007  0.00  0.00           C
+HETATM   37 O    P3E A   3      -0.420  11.666   9.335  0.00  1.00           O
+HETATM   38 O    P3E A   3       1.179  13.226   9.395  2.00  0.00           O
+HETATM   39 H    P3E A   3       0.348  13.845   9.792  0.00  1.00           H
 END
 CONECT    1    2    3
 CONECT    2    1

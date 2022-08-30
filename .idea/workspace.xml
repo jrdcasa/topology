@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e2bf383-3776-4d6c-a9f3-bee8797e69b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/install.log" beforeDir="false" afterPath="$PROJECT_DIR$/install.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-MolecularGraphs/graphs/g2dvsg2u.png" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-MolecularGraphs/graphs/g2dvsg2u.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-MolecularGraphs/graphs/g3_03_nx.png" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-MolecularGraphs/graphs/g3_03_nx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-MolecularGraphs/graphs/graph07_nx.png" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-MolecularGraphs/graphs/graph07_nx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-MolecularGraphs/graphs/graph11_nx.png" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-MolecularGraphs/graphs/graph11_nx.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadMol2/01-Min_Frame_001.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadMol2/01-Min_Frame_001.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadMol2/P4HB_crystal_2x2x2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadMol2/P4HB_crystal_2x2x2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadMol2/Poly4HB_100monomers.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadMol2/Poly4HB_100monomers.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadMol2/test_readmol2.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadMol2/test_readmol2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadPDB/01-Min_Frame_001.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadPDB/01-Min_Frame_001.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadPDB/P4HB_crystal_2x2x2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadPDB/P4HB_crystal_2x2x2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadPDB/P4HB_crystal_2x2x2_noconect.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadPDB/P4HB_crystal_2x2x2_noconect.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadPDB/PET_3mon.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadPDB/PET_3mon.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadPDB/test_readpdb.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadPDB/test_readpdb.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-ReadXSD/test_readxsd.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-ReadXSD/test_readxsd.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/P3HB_3mon_01c_renumber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/P3HB_3mon_01c_renumber.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/P3HB_3mon_01c_residues.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/P3HB_3mon_01c_residues.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/P4HB_crystal_2x2x2_renumber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/P4HB_crystal_2x2x2_renumber.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/P4HB_crystal_2x2x2_residues.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/P4HB_crystal_2x2x2_residues.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/P4HB_crystal_3Ch_renumber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/P4HB_crystal_3Ch_renumber.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/PS_3mon_1Ch.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/PS_3mon_1Ch.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/PS_3mon_1Ch_renumber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/PS_3mon_1Ch_renumber.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/graphs/test12_topo01.png" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/graphs/test12_topo01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/graphs/test13_topo01.png" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/graphs/test13_topo01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/iPP_8mon_1Ch.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/iPP_8mon_1Ch.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/iPP_8mon_1Ch_renumber.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/iPP_8mon_1Ch_renumber.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/psf/test_18.psf" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/psf/test_18.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/psf/test_19.psf" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/psf/test_19.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-Topology/test_topology.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-Topology/test_topology.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-internalcoordinates/test_internalcoordinates.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-internalcoordinates/test_internalcoordinates.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/0003Ch-C020-002br04/RUN-001/.traj_comp.xtc_offsets.npz" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/0003Ch-C020-002br04/RUN-001/.traj_comp.xtc_offsets.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/0003Ch-C020-002br04/RUN-002/.traj_comp.part0002.xtc_offsets.npz" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/0003Ch-C020-002br04/RUN-002/.traj_comp.part0002.xtc_offsets.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/0003Ch-C020-002br04/RUN-003/.traj_comp.part0003.xtc_offsets.npz" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/0003Ch-C020-002br04/RUN-003/.traj_comp.part0003.xtc_offsets.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/01-RESTART-0000-1000ns/.traj_comp.xtc_offsets.npz" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/01-RESTART-0000-1000ns/.traj_comp.xtc_offsets.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/02-RESTART-1000-2000ns/.traj_comp.part0002.xtc_offsets.npz" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/02-RESTART-1000-2000ns/.traj_comp.part0002.xtc_offsets.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/readmol/readmol2format.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/readmol/readmol2format.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="9e7deb4b-d547-4198-a22c-ef6addc4ee35" />
+  <component name="ProjectId" id="2CcCdZeSB9SaeY4l9Km4ysPrROO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE/01-topology_script.py" />
+  </component>
+  <component name="RunManager" selected="Python tests.Test_moleculargraph">
+    <configuration name="01-topology_script" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/08-blend_toxwaerd1mol_OPLS/01-PREPARE" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/08-blend_toxwaerd1mol_OPLS/01-PREPARE/01-topology_script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="07-topology_script" type="PythonConfigurationType" factoryName="Python">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/07-blend_xsd" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/07-blend_xsd/01-topology_script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="12-example" type="PythonConfigurationType" factoryName="Python">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata/01-prepare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="13-example" type="PythonConfigurationType" factoryName="Python">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/01-prepare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="23-topology_script" type="PythonConfigurationType" factoryName="Python">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/23-iPP_singleChain/00-PREPARE" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/23-iPP_singleChain/00-PREPARE/01-topology_script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="25-topology_script " type="PythonConfigurationType" factoryName="Python">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE/01-topology_script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_indigo.py" type="tests" factoryName="Unittests">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test-indigo/test_indigo.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_internalcoordinates" type="tests" factoryName="Unittests">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test-internalcoordinates/test_internalcoordinates.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_mol2" type="tests" factoryName="Unittests">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test-ReadMol2/Test_readmol2.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_moleculargraph" type="tests" factoryName="Unittests">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test-MolecularGraphs/test_molecular_graph.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_pdb" type="tests" factoryName="Unittests">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test-ReadPDB/Test_readpdb.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_segment" type="tests" factoryName="Unittests">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test-Segment/test_Segment.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_topology" type="tests" factoryName="Unittests">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test-Topology/test_topology.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_xsd" type="tests" factoryName="Unittests">
+      <module name="Topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/Test-ReadXSD/Test_readxsd.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Test_readmol2.TestReadMol2.test_08_separatechains_polymer_periodic_real" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/Test-ReadMol2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test_readmol2.TestReadMol2.test_08_separatechains_polymer_periodic_real&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.01-topology_script" />
+      <item itemvalue="Python.07-topology_script" />
+      <item itemvalue="Python.23-topology_script" />
+      <item itemvalue="Python.25-topology_script " />
+      <item itemvalue="Python.12-example" />
+      <item itemvalue="Python.13-example" />
+      <item itemvalue="Python tests.Test_indigo.py" />
+      <item itemvalue="Python tests.Test_topology" />
+      <item itemvalue="Python tests.Test_xsd" />
+      <item itemvalue="Python tests.Test_mol2" />
+      <item itemvalue="Python tests.Test_internalcoordinates" />
+      <item itemvalue="Python tests.Test_moleculargraph" />
+      <item itemvalue="Python tests.Test_segment" />
+      <item itemvalue="Python tests.Test_pdb" />
+      <item itemvalue="Python tests.Unittests for Test_readmol2.TestReadMol2.test_08_separatechains_polymer_periodic_real" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for Test_readmol2.TestReadMol2.test_08_separatechains_polymer_periodic_real" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e2bf383-3776-4d6c-a9f3-bee8797e69b2" name="Default Changelist" comment="" />
+      <created>1659092573809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659092573809</updated>
+      <workItem from="1659092575145" duration="8180000" />
+      <workItem from="1659344872132" duration="2103000" />
+      <workItem from="1659366868826" duration="2203000" />
+      <workItem from="1659376580486" duration="1960000" />
+      <workItem from="1660058725047" duration="7909000" />
+      <workItem from="1660205249720" duration="1745000" />
+      <workItem from="1660293541648" duration="6106000" />
+      <workItem from="1661351831603" duration="14797000" />
+      <workItem from="1661429901581" duration="4455000" />
+      <workItem from="1661606050134" duration="16000" />
+      <workItem from="1661606146169" duration="794000" />
+      <workItem from="1661856306075" duration="9143000" />
+      <workItem from="1661865929903" duration="1028000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="689" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661866556558">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state x="418" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167577493" />
+    <state x="418" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015@0.27.1920.1015" timestamp="1661412658996" />
+    <state x="418" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1659092644916" />
+    <state x="689" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3280.703@0.27.3280.703" timestamp="1661866556558" />
+    <state x="718" y="279" key="#xdebugger.evaluate" timestamp="1660204899304">
+      <screen x="0" y="27" width="1920" height="1015" />
+    </state>
+    <state x="718" y="279" key="#xdebugger.evaluate/0.27.1920.1015@0.27.1920.1015" timestamp="1660204899304" />
+    <state x="1195" y="116" width="581" height="614" key="FileChooserDialogImpl" timestamp="1661862177245">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state x="743" y="199" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167574234" />
+    <state x="743" y="199" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015@0.27.1920.1015" timestamp="1661412460161" />
+    <state x="743" y="146" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1659092634936" />
+    <state x="1195" y="116" width="581" height="614" key="FileChooserDialogImpl/0.27.3280.703@0.27.3280.703" timestamp="1661862177245" />
+    <state width="1874" height="249" key="GridCell.Tab.0.bottom" timestamp="1661866957941">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="1874" height="377" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="246" key="GridCell.Tab.0.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1661413024107" />
+    <state width="1874" height="249" key="GridCell.Tab.0.bottom/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
+    <state width="1874" height="249" key="GridCell.Tab.0.center" timestamp="1661866957941">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="1874" height="377" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="246" key="GridCell.Tab.0.center/0.27.1920.1015@0.27.1920.1015" timestamp="1661413024107" />
+    <state width="1874" height="249" key="GridCell.Tab.0.center/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
+    <state width="1874" height="249" key="GridCell.Tab.0.left" timestamp="1661866957941">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="1874" height="377" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="246" key="GridCell.Tab.0.left/0.27.1920.1015@0.27.1920.1015" timestamp="1661413024107" />
+    <state width="1874" height="249" key="GridCell.Tab.0.left/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
+    <state width="1874" height="249" key="GridCell.Tab.0.right" timestamp="1661866957941">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="1874" height="377" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="246" key="GridCell.Tab.0.right/0.27.1920.1015@0.27.1920.1015" timestamp="1661413024107" />
+    <state width="1874" height="249" key="GridCell.Tab.0.right/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
+    <state width="1874" height="249" key="GridCell.Tab.1.bottom" timestamp="1661866957941">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="1874" height="377" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="246" key="GridCell.Tab.1.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1661413026760" />
+    <state width="1874" height="249" key="GridCell.Tab.1.bottom/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
+    <state width="1874" height="249" key="GridCell.Tab.1.center" timestamp="1661866957941">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="1874" height="377" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="246" key="GridCell.Tab.1.center/0.27.1920.1015@0.27.1920.1015" timestamp="1661413026760" />
+    <state width="1874" height="249" key="GridCell.Tab.1.center/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
+    <state width="1874" height="249" key="GridCell.Tab.1.left" timestamp="1661866957941">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="1874" height="377" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="246" key="GridCell.Tab.1.left/0.27.1920.1015@0.27.1920.1015" timestamp="1661413026760" />
+    <state width="1874" height="249" key="GridCell.Tab.1.left/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
+    <state width="1874" height="249" key="GridCell.Tab.1.right" timestamp="1661866957941">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="1874" height="377" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="246" key="GridCell.Tab.1.right/0.27.1920.1015@0.27.1920.1015" timestamp="1661413026760" />
+    <state width="1874" height="249" key="GridCell.Tab.1.right/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
+    <state width="1640" height="352" key="XDebugger.FullValuePopup" timestamp="1661864600110">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state width="960" height="507" key="XDebugger.FullValuePopup/0.27.1920.1015@0.27.1920.1015" timestamp="1660204889898" />
+    <state width="1640" height="352" key="XDebugger.FullValuePopup/0.27.3280.703@0.27.3280.703" timestamp="1661864600110" />
+    <state x="487" y="147" width="935" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1661862191122">
+      <screen x="0" y="27" width="3280" height="703" />
+    </state>
+    <state x="487" y="147" width="935" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.3280.703@0.27.3280.703" timestamp="1661862191122" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE/01-topology_script.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE/01-topology_script.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE/01-topology_script.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
+          <line>497</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
+          <line>426</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/Test-ReadXSD/Test_readxsd.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/Test-ReadXSD/Test_readxsd.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
+          <line>79</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readmol2format.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.8/site-packages/topology-1.0.0-py3.8-linux-x86_64.egg/topology/readmol/readbaseformat.py</url>
+          <line>281</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="xsd._topology._isbackbone" />
+        <watch expression="self._atom3d_isbackbone" />
+        <watch expression="child.find(&quot;Properties&quot;).get(&quot;IsBackboneAtom&quot;)" />
+        <watch expression="self._atom3d_isbackbone" />
+        <watch expression="idx" />
+      </configuration>
+      <configuration name="PythonConfigurationType">
+        <watch expression="g_new" />
+        <watch expression="self._atom3d_bfactor" />
+        <watch expression="gnew" />
+        <watch expression="backbone_list" />
+        <watch expression="item" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/topology$25_topology_script_.coverage" NAME="25-topology_script  Coverage Results" MODIFIED="1661863747210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE" />
+    <SUITE FILE_PATH="coverage/topology$Test_internalcoordinates.coverage" NAME="Test_internalcoordinates Coverage Results" MODIFIED="1661866736325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$Unittests_for_test_topology_TopologyTests_test_23_assignresidues_fromlist.coverage" NAME="Unittests for test_topology.TopologyTests.test_23_assignresidues_fromlist Coverage Results" MODIFIED="1659165141789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-Topology" />
+    <SUITE FILE_PATH="coverage/topology$Test_segment.coverage" NAME="Test_segment Coverage Results" MODIFIED="1659167512867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$Test_indigo_py.coverage" NAME="Test_indigo.py Coverage Results" MODIFIED="1659092646440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$Test_pdb.coverage" NAME="Test_pdb Coverage Results" MODIFIED="1661866639277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$07_topology_script__1_.coverage" NAME="23-topology_script Coverage Results" MODIFIED="1660204968829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/23-iPP_singleChain/00-PREPARE" />
+    <SUITE FILE_PATH="coverage/topology$Test_mol2.coverage" NAME="Test_mol2 Coverage Results" MODIFIED="1661866566860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$12_example.coverage" NAME="12-example Coverage Results" MODIFIED="1661415125080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata" />
+    <SUITE FILE_PATH="coverage/topology$Unittests_for_test_topology_TopologyTests_test_25_generate_topology_fromDATALammps_AA.coverage" NAME="Unittests for test_topology.TopologyTests.test_25_generate_topology_fromDATALammps_AA Coverage Results" MODIFIED="1661425137979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-Topology" />
+    <SUITE FILE_PATH="coverage/topology$Test_xsd.coverage" NAME="Test_xsd Coverage Results" MODIFIED="1661866664488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$07_topology_script.coverage" NAME="07-topology_script Coverage Results" MODIFIED="1661412731895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/07-blend_xsd" />
+    <SUITE FILE_PATH="coverage/topology$23_topology_script.coverage" NAME="23-topology_script Coverage Results" MODIFIED="1660210559994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/23-iPP_singleChain/00-PREPARE" />
+    <SUITE FILE_PATH="coverage/topology$25_topology_script.coverage" NAME="25-topology_script Coverage Results" MODIFIED="1660294559171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE" />
+    <SUITE FILE_PATH="coverage/topology$Test_moleculargraph.coverage" NAME="Test_moleculargraph Coverage Results" MODIFIED="1661866927066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$01_topology_script.coverage" NAME="01-topology_script Coverage Results" MODIFIED="1661413369816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/08-blend_toxwaerd1mol_OPLS/01-PREPARE" />
+    <SUITE FILE_PATH="coverage/topology$Unittests_for_Test_readmol2_TestReadMol2_test_01_readfile_polymer_periodic.coverage" NAME="Unittests for Test_readmol2.TestReadMol2.test_01_readfile_polymer_periodic Coverage Results" MODIFIED="1659167112646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-ReadMol2" />
+    <SUITE FILE_PATH="coverage/topology$13_example.coverage" NAME="13-example Coverage Results" MODIFIED="1661415233795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic" />
+    <SUITE FILE_PATH="coverage/topology$Unittests_for_Test_readxsd_TestReadXsd_test_01_readfile_polymer_periodic.coverage" NAME="Unittests for Test_readxsd.TestReadXsd.test_01_readfile_polymer_periodic Coverage Results" MODIFIED="1659165529823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-ReadXSD" />
+    <SUITE FILE_PATH="coverage/topology$Unittests_for_Test_readmol2_TestReadMol2_test_08_separatechains_polymer_periodic_real.coverage" NAME="Unittests for Test_readmol2.TestReadMol2.test_08_separatechains_polymer_periodic_real Coverage Results" MODIFIED="1661866261070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-ReadMol2" />
+    <SUITE FILE_PATH="coverage/topology$Test_topology.coverage" NAME="Test_topology Coverage Results" MODIFIED="1661866658070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
