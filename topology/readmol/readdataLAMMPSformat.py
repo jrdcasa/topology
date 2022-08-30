@@ -24,6 +24,7 @@ class ReadDataLammpsFormat(ReadBaseFormat):
         self._filemap = filemap
         self._map_type_name = defaultdict()
         self._map_type_element = defaultdict()
+        self._atom3d_occupancy = defaultdict()
         with open(self._filemap) as f:
             lines = f.readlines()
             ntypes = int(lines[0])
@@ -139,6 +140,8 @@ class ReadDataLammpsFormat(ReadBaseFormat):
             self._atom3d_xyz[idx] = list(iatom.position)
             self._atom3d_molname[idx] = iatom.resname
             self._atom3d_isbackbone[idx] = 0.0
+            self._atom3d_occupancy[idx] = 0.0
+
 
         # Loop over bonds
         bond_list = []
