@@ -55,7 +55,15 @@ class ReadXsdFormat(ReadBaseFormat):
     def setup_atoms(self, tree):
 
         # <Atom3d> label ======================================================
-        atom3d_mapping_xml = tree.findall(".//Atom3d")
+        tmp_atom3d_mapping_xml = tree.findall(".//Atom3d")
+        # Transverse the list and remove those Atom elements which contain
+        # "ImageOf" attributes. This is something which saves Materials Studio
+        # for Supercells
+        atom3d_mapping_xml = []
+        for item in tmp_atom3d_mapping_xml:
+            if item.get("ImageOf"):
+                continue
+            atom3d_mapping_xml.append(item)
 
         idx = 0  # Index in the topology
         self._natoms = 0
@@ -93,7 +101,13 @@ class ReadXsdFormat(ReadBaseFormat):
 
             # from fractional to cartesian coordinates
             if self._isthere_boxdimension and self._nx == 1 and self._ny == 1 and self._nz == 1:
-                UVW = [float(i) for i in child.get("XYZ").split(",")]  # Fractional coordinates
+                try:
+                    UVW = [float(i) for i in child.get("XYZ").split(",")]  # Fractional coordinates
+                except AttributeError:
+                    # Supercell sometimes has the following entries:
+                    # 	<Atom3d ID="377" Mapping="458" ImageOf="94" Visible="0"/>
+                    # These entries must be skipped
+                    continue
                 omega = np.dot(self._unitcell[0, :], np.cross(self._unitcell[1, :], self._unitcell[2, :]))
                 X = self._boxlength[0]*UVW[0] + \
                     self._boxlength[1]*np.cos(self._boxangle[2])*UVW[1] + \
@@ -115,16 +129,33 @@ class ReadXsdFormat(ReadBaseFormat):
             idx += 1
             self._natoms += 1
 
+        return None
     # *************************************************************************
     def setup_bonds(self, tree):
 
         # BOND INFORMATION <Bond> label =======================================
         # Get bond properties
-        bond_mapping_xml = tree.findall(".//Bond")
+        tmp_bond_atom3d_mapping_xml = tree.findall(".//Bond")
+        # Transverse the list and remove those Bond elements which contain
+        # "ImageOf" attributes. This is something which saves Materials Studio
+        # for Supercells
+        bond_mapping_xml = []
+        for item in tmp_bond_atom3d_mapping_xml:
+            if item.get("ImageOf"):
+                continue
+            bond_mapping_xml.append(item)
+
         bond_list = []
         self._nbonds = 0
         for child in bond_mapping_xml:
-            iat_id_xml, jat_id_xml = [int(i) for i in child.get("Connects").split(",")]
+            try:
+                iat_id_xml, jat_id_xml = [int(i) for i in child.get("Connects").split(",")]
+            except AttributeError:
+            # Supercell sometimes has the following entries:
+            # 	<Atom3d ID="377" Mapping="458" ImageOf="94" Visible="0"/>
+            # These entries must be skipped
+                continue
+
             iat_idx = self._atom3d_map[iat_id_xml]
             jat_idx = self._atom3d_map[jat_id_xml]
             if iat_idx > jat_idx:
@@ -138,7 +169,15 @@ class ReadXsdFormat(ReadBaseFormat):
     # *************************************************************************
     def setup_nmols(self, tree):
 
-        molecule_mapping_xml = tree.findall(".//Molecule")
+        tmp_molecule_mapping_xml = tree.findall(".//Molecule")
+        # Transverse the list and remove those Atom elements which contain
+        # "ImageOf" attributes. This is something which saves Materials Studio
+        # for Supercells
+        molecule_mapping_xml = []
+        for item in tmp_molecule_mapping_xml:
+            if item.get("ImageOf"):
+                continue
+            molecule_mapping_xml.append(item)
 
         molecule_map = defaultdict()
         imol = 0
@@ -167,7 +206,15 @@ class ReadXsdFormat(ReadBaseFormat):
     # *************************************************************************
     def setup_residues(self, tree, moleculemap):
 
-        repeatunit_mapping_xml = tree.findall(".//RepeatUnit")
+        tmp_repeatunit_mapping_xml = tree.findall(".//RepeatUnit")
+        # Transverse the list and remove those RepeatUnit elements which contain
+        # "ImageOf" attributes. This is something which saves Materials Studio
+        # for Supercells
+        repeatunit_mapping_xml = []
+        for item in tmp_repeatunit_mapping_xml:
+            if item.get("ImageOf"):
+                continue
+            repeatunit_mapping_xml.append(item)
 
         # <Residue> label ====================================================
         residue_map = defaultdict()
@@ -189,7 +236,16 @@ class ReadXsdFormat(ReadBaseFormat):
 
         self._nres = ires
 
-        atom3d_mapping_xml = tree.findall(".//Atom3d")
+        # <Atom3d> label ======================================================
+        tmp_atom3d_mapping_xml = tree.findall(".//Atom3d")
+        # Transverse the list and remove those Atom elements which contain
+        # "ImageOf" attributes. This is something which saves Materials Studio
+        # for Supercells
+        atom3d_mapping_xml = []
+        for item in tmp_atom3d_mapping_xml:
+            if item.get("ImageOf"):
+                continue
+            atom3d_mapping_xml.append(item)
 
         idx = 0  # Index in the topology
         ires = 0

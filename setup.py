@@ -255,6 +255,7 @@ def setup_external_extensions(debug_cflags=False, use_openmp=True):
 
     return extensions_install
 
+
 # Install eigen library software ======================================================================================
 def install_eigen(log=None, namepkg=None):
 
@@ -541,40 +542,40 @@ def last_import_check(log=None, namepkg="TOPOLOGY"):
             m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
             print(m1) if log is None else log.info(m1)
             exit()
-    m1 +="\t\t Pip packages in requirements.txt file have been succesfully imported.\n"
+    m1 += "\t\t Pip packages in requirements.txt file have been succesfully imported.\n"
 
     # Indigox package ==========================================================
     try:
         import indigox as ix
-        m1 +="\t\t Indigox has been succesfully imported.\n"
+        m1 += "\t\t Indigox has been succesfully imported.\n"
     except ImportError:
-         m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("indigox")
-         m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
-         print(m1) if log is None else log.info(m1)
-         exit()
+        m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("indigox")
+        m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+        print(m1) if log is None else log.info(m1)
+        exit()
 
     # openbabel package ==========================================================
     try:
         import openbabel as ob
-        m1 +="\t\t Openbabel has been succesfully imported.\n"
+        m1 += "\t\t Openbabel has been succesfully imported.\n"
         home_directory = os.path.expanduser('~')
-        m1 +="\t\t Openbabel has been installed in {}.\n".format(os.path.join(home_directory,".local/openbabel"))
+        m1 += "\t\t Openbabel has been installed in {}.\n".format(os.path.join(home_directory,".local/openbabel"))
     except ImportError:
-         m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("openbabel")
-         m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
-         print(m1) if log is None else log.info(m1)
-         exit()
+        m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("openbabel")
+        m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+        print(m1) if log is None else log.info(m1)
+        exit()
 
     # topology package ==========================================================
     try:
         import topology
         import topology.readmol
-        m1 +="\t\t Topology has been succesfully imported.\n"
+        m1 += "\t\t Topology has been succesfully imported.\n"
     except ImportError:
-         m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("Topology")
-         m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
-         print(m1) if log is None else log.info(m1)
-         exit()
+        m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("Topology")
+        m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+        print(m1) if log is None else log.info(m1)
+        exit()
 
     m1 += "\t\t ******************* SUMMARY *******************"
     print(m1) if log is None else log.info(m1)

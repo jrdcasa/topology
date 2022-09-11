@@ -53,7 +53,7 @@ def calc_distance_diagonal(np.ndarray[np.float64_t, ndim=2, mode="c"] ref,
         return dist
 
     if rows != cols:
-        print ("ERROR. The number of atoms to calculate daigonal distances must be equal!!!!")
+        print ("ERROR. The number of atoms to calculate diagonal distances must be equal!!!!")
         return dist
 
     c_distance_diagonal_array(&ref[0,0], &conf[0,0], &dist[0], &rijx[0],

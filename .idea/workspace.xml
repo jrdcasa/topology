@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e2bf383-3776-4d6c-a9f3-bee8797e69b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/topology/readmol/readdataLAMMPSformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/readmol/readdataLAMMPSformat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-internalcoordinates/test_internalcoordinates.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-internalcoordinates/test_internalcoordinates.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_distances.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_distances.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/readmol/readxsdformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/readmol/readxsdformat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +34,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE/01-topology_script.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/14-XSD_XYZlabel/01-script_setup_molecule.py" />
   </component>
-  <component name="RunManager" selected="Python tests.Test_moleculargraph">
+  <component name="RunManager" selected="Python.25-topology_script  (1)">
     <configuration name="01-topology_script" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Topology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,6 +139,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../replicate_polymer_topology/examples/23-iPP_singleChain/00-PREPARE/01-topology_script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="25-topology_script  (1)" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/14-XSD_XYZlabel" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/14-XSD_XYZlabel/01-script_setup_molecule.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,6 +339,7 @@
       <item itemvalue="Python.07-topology_script" />
       <item itemvalue="Python.23-topology_script" />
       <item itemvalue="Python.25-topology_script " />
+      <item itemvalue="Python.25-topology_script  (1)" />
       <item itemvalue="Python.12-example" />
       <item itemvalue="Python.13-example" />
       <item itemvalue="Python tests.Test_indigo.py" />
@@ -354,7 +381,12 @@
       <workItem from="1661606146169" duration="794000" />
       <workItem from="1661856306075" duration="9143000" />
       <workItem from="1661865929903" duration="1028000" />
-      <workItem from="1661867195634" duration="947000" />
+      <workItem from="1661867195634" duration="1451000" />
+      <workItem from="1661869478559" duration="27000" />
+      <workItem from="1662224257351" duration="3943000" />
+      <workItem from="1662378758441" duration="2975000" />
+      <workItem from="1662721007705" duration="1116000" />
+      <workItem from="1662729767439" duration="7334000" />
     </task>
     <servers />
   </component>
@@ -362,10 +394,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="689" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661866556558">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state x="418" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1662890496586">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state x="418" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167577493" />
+    <state x="418" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662890496586" />
     <state x="418" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015@0.27.1920.1015" timestamp="1661412658996" />
     <state x="418" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1659092644916" />
     <state x="689" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3280.703@0.27.3280.703" timestamp="1661866556558" />
@@ -373,64 +405,74 @@
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state x="718" y="279" key="#xdebugger.evaluate/0.27.1920.1015@0.27.1920.1015" timestamp="1660204899304" />
-    <state x="1195" y="116" width="581" height="614" key="FileChooserDialogImpl" timestamp="1661862177245">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state x="743" y="199" width="379" height="671" key="FileChooserDialogImpl" timestamp="1662890490486">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state x="743" y="199" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167574234" />
+    <state x="743" y="199" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662890490486" />
     <state x="743" y="199" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015@0.27.1920.1015" timestamp="1661412460161" />
     <state x="743" y="146" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1659092634936" />
+    <state x="2415" y="59" width="379" height="671" key="FileChooserDialogImpl/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1662729973653" />
     <state x="1195" y="116" width="581" height="614" key="FileChooserDialogImpl/0.27.3280.703@0.27.3280.703" timestamp="1661862177245" />
-    <state width="1874" height="249" key="GridCell.Tab.0.bottom" timestamp="1661866957941">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="1874" height="340" key="GridCell.Tab.0.bottom" timestamp="1662904026954">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="377" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="340" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662904026954" />
     <state width="1874" height="246" key="GridCell.Tab.0.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1661413024107" />
+    <state width="1874" height="249" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662370079160" />
     <state width="1874" height="249" key="GridCell.Tab.0.bottom/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
-    <state width="1874" height="249" key="GridCell.Tab.0.center" timestamp="1661866957941">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="1874" height="340" key="GridCell.Tab.0.center" timestamp="1662904026954">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="377" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="340" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662904026954" />
     <state width="1874" height="246" key="GridCell.Tab.0.center/0.27.1920.1015@0.27.1920.1015" timestamp="1661413024107" />
+    <state width="1874" height="249" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662370079160" />
     <state width="1874" height="249" key="GridCell.Tab.0.center/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
-    <state width="1874" height="249" key="GridCell.Tab.0.left" timestamp="1661866957941">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="1874" height="340" key="GridCell.Tab.0.left" timestamp="1662904026954">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="377" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="340" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662904026954" />
     <state width="1874" height="246" key="GridCell.Tab.0.left/0.27.1920.1015@0.27.1920.1015" timestamp="1661413024107" />
+    <state width="1874" height="249" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662370079160" />
     <state width="1874" height="249" key="GridCell.Tab.0.left/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
-    <state width="1874" height="249" key="GridCell.Tab.0.right" timestamp="1661866957941">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="1874" height="340" key="GridCell.Tab.0.right" timestamp="1662904026954">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="377" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="340" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662904026954" />
     <state width="1874" height="246" key="GridCell.Tab.0.right/0.27.1920.1015@0.27.1920.1015" timestamp="1661413024107" />
+    <state width="1874" height="249" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662370079160" />
     <state width="1874" height="249" key="GridCell.Tab.0.right/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
-    <state width="1874" height="249" key="GridCell.Tab.1.bottom" timestamp="1661866957941">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="1874" height="84" key="GridCell.Tab.1.bottom" timestamp="1662903728376">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="377" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="84" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662903728376" />
     <state width="1874" height="246" key="GridCell.Tab.1.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1661413026760" />
+    <state width="1874" height="249" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662370079160" />
     <state width="1874" height="249" key="GridCell.Tab.1.bottom/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
-    <state width="1874" height="249" key="GridCell.Tab.1.center" timestamp="1661866957941">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="1874" height="84" key="GridCell.Tab.1.center" timestamp="1662903728376">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="377" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="84" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662903728376" />
     <state width="1874" height="246" key="GridCell.Tab.1.center/0.27.1920.1015@0.27.1920.1015" timestamp="1661413026760" />
+    <state width="1874" height="249" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662370079160" />
     <state width="1874" height="249" key="GridCell.Tab.1.center/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
-    <state width="1874" height="249" key="GridCell.Tab.1.left" timestamp="1661866957941">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="1874" height="84" key="GridCell.Tab.1.left" timestamp="1662903728376">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="377" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="84" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662903728376" />
     <state width="1874" height="246" key="GridCell.Tab.1.left/0.27.1920.1015@0.27.1920.1015" timestamp="1661413026760" />
+    <state width="1874" height="249" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662370079160" />
     <state width="1874" height="249" key="GridCell.Tab.1.left/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
-    <state width="1874" height="249" key="GridCell.Tab.1.right" timestamp="1661866957941">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="1874" height="84" key="GridCell.Tab.1.right" timestamp="1662903728376">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="377" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1659167598180" />
+    <state width="1874" height="84" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662903728376" />
     <state width="1874" height="246" key="GridCell.Tab.1.right/0.27.1920.1015@0.27.1920.1015" timestamp="1661413026760" />
+    <state width="1874" height="249" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662370079160" />
     <state width="1874" height="249" key="GridCell.Tab.1.right/0.27.3280.703@0.27.3280.703" timestamp="1661866957941" />
-    <state width="1640" height="352" key="XDebugger.FullValuePopup" timestamp="1661864600110">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state width="960" height="509" key="XDebugger.FullValuePopup" timestamp="1662891211260">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
+    <state width="960" height="509" key="XDebugger.FullValuePopup/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662891211260" />
     <state width="960" height="507" key="XDebugger.FullValuePopup/0.27.1920.1015@0.27.1920.1015" timestamp="1660204889898" />
     <state width="1640" height="352" key="XDebugger.FullValuePopup/0.27.3280.703@0.27.3280.703" timestamp="1661864600110" />
     <state x="487" y="147" width="935" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1661862191122">
@@ -477,26 +519,6 @@
           <option name="timeStamp" value="141" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/readmol/readmol2format.py</url>
           <line>37</line>
           <option name="timeStamp" value="151" />
@@ -505,6 +527,21 @@
           <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.8/site-packages/topology-1.0.0-py3.8-linux-x86_64.egg/topology/readmol/readbaseformat.py</url>
           <line>281</line>
           <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/Test-internalcoordinates/test_internalcoordinates.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
+          <line>181</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
+          <line>203</line>
+          <option name="timeStamp" value="168" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -515,19 +552,14 @@
         <watch expression="child.find(&quot;Properties&quot;).get(&quot;IsBackboneAtom&quot;)" />
         <watch expression="self._atom3d_isbackbone" />
         <watch expression="idx" />
-      </configuration>
-      <configuration name="PythonConfigurationType">
-        <watch expression="g_new" />
-        <watch expression="self._atom3d_bfactor" />
-        <watch expression="gnew" />
-        <watch expression="backbone_list" />
-        <watch expression="item" />
+        <watch expression="ref" />
+        <watch expression="conf" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/topology$25_topology_script_.coverage" NAME="25-topology_script  Coverage Results" MODIFIED="1661863747210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE" />
-    <SUITE FILE_PATH="coverage/topology$Test_internalcoordinates.coverage" NAME="Test_internalcoordinates Coverage Results" MODIFIED="1661866736325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$Test_internalcoordinates.coverage" NAME="Test_internalcoordinates Coverage Results" MODIFIED="1662367746318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_test_topology_TopologyTests_test_23_assignresidues_fromlist.coverage" NAME="Unittests for test_topology.TopologyTests.test_23_assignresidues_fromlist Coverage Results" MODIFIED="1659165141789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-Topology" />
     <SUITE FILE_PATH="coverage/topology$Test_segment.coverage" NAME="Test_segment Coverage Results" MODIFIED="1659167512867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$Test_indigo_py.coverage" NAME="Test_indigo.py Coverage Results" MODIFIED="1659092646440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -539,6 +571,7 @@
     <SUITE FILE_PATH="coverage/topology$Test_xsd.coverage" NAME="Test_xsd Coverage Results" MODIFIED="1661866664488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$07_topology_script.coverage" NAME="07-topology_script Coverage Results" MODIFIED="1661412731895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/07-blend_xsd" />
     <SUITE FILE_PATH="coverage/topology$23_topology_script.coverage" NAME="23-topology_script Coverage Results" MODIFIED="1660210559994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/23-iPP_singleChain/00-PREPARE" />
+    <SUITE FILE_PATH="coverage/topology$25_topology_script___1_.coverage" NAME="25-topology_script  (1) Coverage Results" MODIFIED="1662904026936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/14-XSD_XYZlabel" />
     <SUITE FILE_PATH="coverage/topology$25_topology_script.coverage" NAME="25-topology_script Coverage Results" MODIFIED="1660294559171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$Test_moleculargraph.coverage" NAME="Test_moleculargraph Coverage Results" MODIFIED="1661866927066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$01_topology_script.coverage" NAME="01-topology_script Coverage Results" MODIFIED="1661413369816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/08-blend_toxwaerd1mol_OPLS/01-PREPARE" />

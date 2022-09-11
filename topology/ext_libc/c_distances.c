@@ -1666,7 +1666,7 @@ static const char __pyx_k_ext_libc_c_distances[] = "ext_libc.c_distances";
 static const char __pyx_k_calc_distance_diagonal[] = "calc_distance_diagonal";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_ERROR_The_dimension_of_points_to[] = "ERROR. The dimension of points to calculate distances must be equal!!!!";
-static const char __pyx_k_ERROR_The_number_of_atoms_to_cal[] = "ERROR. The number of atoms to calculate daigonal distances must be equal!!!!";
+static const char __pyx_k_ERROR_The_number_of_atoms_to_cal[] = "ERROR. The number of atoms to calculate diagonal distances must be equal!!!!";
 static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath failed to import";
 static const char __pyx_k_topology_ext_libc_c_distances_py[] = "topology/ext_libc/c_distances.pyx";
 static PyObject *__pyx_kp_u_ERROR_The_dimension_of_points_to;
@@ -2468,7 +2468,7 @@ static PyObject *__pyx_pf_8ext_libc_11c_distances_2calc_distance_diagonal(CYTHON
  *         return dist
  * 
  *     if rows != cols:             # <<<<<<<<<<<<<<
- *         print ("ERROR. The number of atoms to calculate daigonal distances must be equal!!!!")
+ *         print ("ERROR. The number of atoms to calculate diagonal distances must be equal!!!!")
  *         return dist
  */
   __pyx_t_1 = ((__pyx_v_rows != __pyx_v_cols) != 0);
@@ -2477,7 +2477,7 @@ static PyObject *__pyx_pf_8ext_libc_11c_distances_2calc_distance_diagonal(CYTHON
     /* "ext_libc/c_distances.pyx":56
  * 
  *     if rows != cols:
- *         print ("ERROR. The number of atoms to calculate daigonal distances must be equal!!!!")             # <<<<<<<<<<<<<<
+ *         print ("ERROR. The number of atoms to calculate diagonal distances must be equal!!!!")             # <<<<<<<<<<<<<<
  *         return dist
  * 
  */
@@ -2487,7 +2487,7 @@ static PyObject *__pyx_pf_8ext_libc_11c_distances_2calc_distance_diagonal(CYTHON
 
     /* "ext_libc/c_distances.pyx":57
  *     if rows != cols:
- *         print ("ERROR. The number of atoms to calculate daigonal distances must be equal!!!!")
+ *         print ("ERROR. The number of atoms to calculate diagonal distances must be equal!!!!")
  *         return dist             # <<<<<<<<<<<<<<
  * 
  *     c_distance_diagonal_array(&ref[0,0], &conf[0,0], &dist[0], &rijx[0],
@@ -2501,7 +2501,7 @@ static PyObject *__pyx_pf_8ext_libc_11c_distances_2calc_distance_diagonal(CYTHON
  *         return dist
  * 
  *     if rows != cols:             # <<<<<<<<<<<<<<
- *         print ("ERROR. The number of atoms to calculate daigonal distances must be equal!!!!")
+ *         print ("ERROR. The number of atoms to calculate diagonal distances must be equal!!!!")
  *         return dist
  */
   }
@@ -3766,7 +3766,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   /* "ext_libc/c_distances.pyx":56
  * 
  *     if rows != cols:
- *         print ("ERROR. The number of atoms to calculate daigonal distances must be equal!!!!")             # <<<<<<<<<<<<<<
+ *         print ("ERROR. The number of atoms to calculate diagonal distances must be equal!!!!")             # <<<<<<<<<<<<<<
  *         return dist
  * 
  */

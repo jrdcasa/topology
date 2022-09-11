@@ -3,24 +3,24 @@
 	---------------
 
 		***************** START Internal Coordinates TEST *****************
-		Starting: 	 30-08-2022 16:38:56
+		Starting: 	 05-09-2022 11:49:07
 
 	*** Creating a trajectory from...
 	../data/0003Ch-C020-002br04/RUN-001/traj_comp.xtc
 
 	*** Building bonds from topology... 
 	Setting bond orders: FALSE
-	TIME(Building_bonds_from_topology): 0.009128 seconds
+	TIME(Building_bonds_from_topology): 0.260831 seconds
 	*** End Building bonds from topology... 
 
 	*** Adding topology 
 	../data/0003Ch-C020-002br04/RUN-001/topol.tpr
 	Number of frames: 101
-	TIME(Adding topology): 0.004728 seconds
+	TIME(Adding topology): 0.018179 seconds
 	*** End Adding topology
 
 	Number of frames: 101
-	TIME(Read_Trajectories): 0.01409 seconds
+	TIME(Read_Trajectories): 0.279642 seconds
 	*** End Creating a trajectory 
 
 
@@ -32,9 +32,9 @@
 
 	In this test, the coordinates from Frame 0 are used.
 
-	Unwrapping coordinates pure python (5000 times) --> time: 2.520704 seconds
-	Unwrapping coordinates cython (5000 times) --> time: 0.017068 seconds
-	Unwrapping coordinates cython (5000 times) --> time: 0.023007 seconds
+	Unwrapping coordinates pure python (5000 times) --> time: 6.595263 seconds
+	Unwrapping coordinates cython (5000 times) --> time: 0.054295 seconds
+	Unwrapping coordinates cython (5000 times) --> time: 0.072958 seconds
 
 	 ******* BEND ANGLE *******
 	Coordinates Atom 3: 25.657 18.840 22.600
@@ -78,136 +78,6 @@
 	Reference array (72 elements) and conf array (72 elements)
 
 	 ******* DISTANCE_ARRAY NUMPY *******
-	 Distance_array numpypython (100 times) --> time: 0.042602 seconds
+	 Distance_array numpypython (100 times) --> time: 0.049987 seconds
 	 ******* DISTANCE_ARRAY PUREPYTHON *******
-	 Distance_array purepython (100 times) --> time: 0.857796 seconds
-	 ******* DISTANCE_ARRAY CYTHON *******
-	 Distance_array cython (100 times) --> time: 0.004438 seconds
-	============== END   TEST_02 ================================
-
-	============== START TEST_03 ================================
-         Distance array. Ref and conf different sizes 
-
-	Reference array (10 elements) and conf array (31 elements)
-
-	 ******* DISTANCE_ARRAY NUMPY *******
-	 Distance_array numpypython (100 times) --> time: 0.006227 seconds
-	 ******* DISTANCE_ARRAY PUREPYTHON *******
-	 Distance_array purepython (100 times) --> time: 0.051741 seconds
-	 ******* DISTANCE_ARRAY CYTHON *******
-	 Distance_array cython (100 times) --> time: 0.003031 seconds
-	============== END   TEST_03 ================================
-
-	============== START TEST_04 ================================
-              Diagonal Distance array 
-
-	Distances between atoms 0-3 and 1-4 
-	 ******* DISTANCE_ARRAY CYTHON *******
-	 Distance_diagonal_array cython (250000 times) --> time: 0.421934 seconds
-	============== END   TEST_04 ================================
-
-	============== START TEST_05 ================================
-                  Center of geometry 
-
-	 Number of chains: 3
-	 Center of geometry of chain 0 (Pure Python) : 23.808, 24.667, 25.430
-	 Center of geometry of chain 0 (Cython)      : 23.808, 24.667, 25.430
-	 Center of geometry of chain 0 (VMD)         : 23.809, 24.668, 25.432
-
-	 Center of geometry of chain 1 (Pure Python) : 15.965, 15.226, 0.825
-	 Center of geometry of chain 1 (Cython)      : 15.965, 15.226, 0.825
-	 Center of geometry of chain 1 (VMD)         : 15.965, 15.226, 0.824
-
-	 Center of geometry of chain 2 (Pure Python) : 16.933, 15.715, 7.612
-	 Center of geometry of chain 2 (Cython)      : 16.933, 15.715, 7.612
-	 Center of geometry of chain 2 (VMD)         : 16.933, 15.715, 7.612
-
-
-	 ******* TIMES *******
-	 Center of geometry purepython (1000 times) --> time: 0.253036 seconds
-	 Center of geometry     cython (1000 times) --> time: 0.208219 seconds
-
-	============== END   TEST_05 ================================
-
-	============== START TEST_06 ================================
-                  Center of mass 
-
-	 Number of chains: 3
-
-	 Center of mass of chain 0 (Pure Python) : 23.798, 24.654, 25.426
-	 Center of mass of chain 0 (Cython)      : 23.798, 24.654, 25.426
-	 Center of mass of chain 0 (VMD)         : 23.799, 24.655, 25.427
-
-	 Center of mass of chain 1 (Pure Python) : 15.988, 15.237, 0.818
-	 Center of mass of chain 1 (Cython)      : 15.988, 15.237, 0.818
-	 Center of mass of chain 1 (VMD)         : 15.988, 15.237, 0.817
-
-	 Center of mass of chain 2 (Pure Python) : 16.941, 15.715, 7.626
-	 Center of mass of chain 2 (Cython)      : 16.941, 15.715, 7.626
-	 Center of mass of chain 2 (VMD)         : 16.941, 15.715, 7.626
-
-
-	 ******* TIMES *******
-	 Center of mass purepython (1000 times) --> time: 0.346805 seconds
-	 Center of mass     cython (1000 times) --> time: 0.227547 seconds
-
-	============== END   TEST_06 ================================
-
-	============== START TEST_07 ================================
-         Distance array. Serial, openmp, numba 
-
-	*** Creating a trajectory from...
-	../data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/01-RESTART-0000-1000ns/traj_comp.xtc
-	../data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/02-RESTART-1000-2000ns/traj_comp.part0002.xtc
-
-	*** Building bonds from topology... 
-	Setting bond orders: FALSE
-	TIME(Building_bonds_from_topology): 22.643309 seconds
-	*** End Building bonds from topology... 
-
-	*** Adding topology 
-	../data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/01-RESTART-0000-1000ns/topol.tpr
-	Number of frames: 101
-	TIME(Adding topology): 0.999213 seconds
-	*** End Adding topology
-
-	Number of frames: 101
-	TIME(Read_Trajectories): 23.642816 seconds
-	*** End Creating a trajectory 
-
-	**** TIMES FOR 1 ITERATIONS, ARRAY 5000x5000 ****
-	Time for serial   run PUREPYTHON (distance_array_purepython)   : 39.023 seconds
-	Time for serial   run NUMPY      (distance_array_numpy)        : 0.830 seconds
-	Time for serial   run CYTHON-EXT (distance_array, openmp=False): 0.232 seconds
-	Time for parallel run CYTHON-EXT (distance_array, openmp=True ): 0.071 seconds (4 cpus)
-	Time for parallel run NUMBA      (calc_distance_array_numba )  : 0.000 seconds 
-	All implementations give the same results
-	============== END   TEST_07 ================================
-
-	============== START TEST_08 ================================
-         Distance diagonal array. Serial, openmp, numba 
-
-	*** Creating a trajectory from...
-	../data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/01-RESTART-0000-1000ns/traj_comp.xtc
-
-	*** Building bonds from topology... 
-	Setting bond orders: FALSE
-	TIME(Building_bonds_from_topology): 23.264092 seconds
-	*** End Building bonds from topology... 
-
-	*** Adding topology 
-	../data/0100Ch-C500-000br02/T-450K/06-NPT-100ns-Parrinello/01-RESTART-0000-1000ns/topol.tpr
-	Number of frames: 51
-	TIME(Adding topology): 1.051625 seconds
-	*** End Adding topology
-
-	Number of frames: 51
-	TIME(Read_Trajectories): 24.31602 seconds
-	*** End Creating a trajectory 
-
-	**** TIMES FOR 10 ITERATIONS, ARRAY 15000x15000 ****
-	Time for serial   run CYTHON-EXT (distance_array, openmp=False): 0.481 seconds
-	Time for serial   run NUMPY      (distance_array, openmp=False): 0.481 seconds
-	Time for parallel run CYTHON-EXT  (distance_array, openmp=True ): 0.486 seconds (4 cpus)
-	Both openmp=False and openmp=True give the same results
-	============== END   TEST_08 ================================
+	 Distance_array purepython (100 times) --> time: 1.060034 seconds

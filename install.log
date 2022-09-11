@@ -1,5 +1,5 @@
 
-		 Starting installation!!!! at 30/08/2022 17:15:19
+		 Starting installation!!!! at 11/09/2022 16:48:26
 
 		Python version 3.8
 
@@ -10,40 +10,43 @@
 /usr/lib/python3.8/lib-dynload
 /home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages
 /home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/topology-1.0.0-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/replicate_polymer-0.0.0-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/polyanagro-1.1-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/pyCGMapPol-0.0.0-py3.8.egg
 
 		 ============== INSTALLING PIP PACKAGES ==============
 
-30/08/2022 17:15:20: ** TOPOLOGY: Installing GitPython==3.1.1
-30/08/2022 17:15:21: ** TOPOLOGY: Installing cython==0.29.24
-30/08/2022 17:15:22: ** TOPOLOGY: Installing numpy==1.21.3
-30/08/2022 17:15:22: ** TOPOLOGY: Installing periodictable==1.6.0
-30/08/2022 17:15:23: ** TOPOLOGY: Installing pygraphviz==1.7
-30/08/2022 17:15:24: ** TOPOLOGY: Installing networkx==2.6.3
-30/08/2022 17:15:25: ** TOPOLOGY: Installing matplotlib==3.4.3
-30/08/2022 17:15:26: ** TOPOLOGY: Installing MDAnalysis==2.2.0
-30/08/2022 17:15:27: ** TOPOLOGY: Installing psutil==5.8.0
-30/08/2022 17:15:28: ** TOPOLOGY: Installing rdkit-pypi==2021.3.2.3
-30/08/2022 17:15:29: ** TOPOLOGY: Installing Sphinx==4.3.0
-30/08/2022 17:15:30: ** TOPOLOGY: Installing scipy==1.7.2
-30/08/2022 17:15:31: ** TOPOLOGY: Installing mock
+11/09/2022 16:48:27: ** TOPOLOGY: Installing GitPython==3.1.1
+11/09/2022 16:48:28: ** TOPOLOGY: Installing cython==0.29.24
+11/09/2022 16:48:30: ** TOPOLOGY: Installing numpy==1.21.3
+11/09/2022 16:48:31: ** TOPOLOGY: Installing periodictable==1.6.0
+11/09/2022 16:48:32: ** TOPOLOGY: Installing pygraphviz==1.7
+11/09/2022 16:48:33: ** TOPOLOGY: Installing networkx==2.6.3
+11/09/2022 16:48:34: ** TOPOLOGY: Installing matplotlib==3.4.3
+11/09/2022 16:48:35: ** TOPOLOGY: Installing MDAnalysis==2.2.0
+11/09/2022 16:48:37: ** TOPOLOGY: Installing psutil==5.8.0
+11/09/2022 16:48:38: ** TOPOLOGY: Installing rdkit-pypi==2021.3.2.3
+11/09/2022 16:48:39: ** TOPOLOGY: Installing Sphinx==4.3.0
+11/09/2022 16:48:40: ** TOPOLOGY: Installing scipy==1.7.2
+11/09/2022 16:48:42: ** TOPOLOGY: Installing mock
 
 		 ============== COMPILING & INSTALLING INDIGO-BONDORDER PACKAGE ==============
 
-30/08/2022 17:15:31: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
+11/09/2022 16:48:42: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
 
-30/08/2022 17:15:31: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
+11/09/2022 16:48:42: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
 
 		 ============== COMPILING & INSTALLING EIGEN PACKAGE ==============
 
 
-30/08/2022 17:15:31: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
+11/09/2022 16:48:42: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
 
 		 ============== COMPILING & INSTALLING OPENBABEL PACKAGE ==============
 
 
-30/08/2022 17:15:31: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
+11/09/2022 16:48:42: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
 
-		 ============== RUNNING SETUP FROM SETUPTOOLS 30/08/2022 17:15:32 ==============
+		 ============== RUNNING SETUP FROM SETUPTOOLS 11/09/2022 16:48:42 ==============
 
 
 
@@ -55,6 +58,6 @@
 		 Topology has been succesfully imported.
 		 ******************* SUMMARY *******************
 
-		 Installation Done!!!! at 30/08/2022 17:15:32
+		 Installation Done!!!! at 11/09/2022 16:48:44
 
 
