@@ -269,15 +269,18 @@ class ReadXsdFormat(ReadBaseFormat):
         charge_list = []
         mass_list = []
         isbackbone_list = []
+        name_list = []
         for idx in self._atom3d_idxsd:
             elements_list.append(self._atom3d_element[idx])
             charge_list.append(self._atom3d_charge[idx])
             mass_list.append(self._atom3d_mass[idx])
             isbackbone_list.append(self._atom3d_isbackbone[idx])
+            name_list.append(self._atom3d_element[idx])
         self._topology.set_elements(elements_list)
         self._topology.set_charge_mol(charge_list)
         self._topology.set_mass(mass_list)
         self._topology.set_isbackbone(isbackbone_list)
+        self._topology.set_name(name_list)
 
     # *************************************************************************
     def _setup_box_dimensions(self, tree):

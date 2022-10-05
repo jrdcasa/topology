@@ -172,7 +172,12 @@ class ReadBaseFormat(object):
             fgro.write('Written by MStoLAGRO (J.Ramos) \n')
             fgro.write(fmt['n_atoms'].format(int(self.get_natoms())))
 
+            idx_local = 0
             for idx in range(self._natoms):
+
+                # Number of atoms greater than 99999. Limit in pdb and gro
+                if (idx+1) % 100000 == 0:
+                    idx_local = 0
 
                 try:
                     resname = "{}".format(self._atom3d_resname[idx][0:3])
@@ -182,10 +187,12 @@ class ReadBaseFormat(object):
                 fgro.write(fmt['xyz'].format(
                     resid=self._atom3d_residue[idx],
                     resname="{}".format(resname),
-                    index=idx+1,
+                    index=idx_local+1,
                     name=self._atom3d_element[idx],
                     pos=[0.1*i for i in self._atom3d_xyz[idx]]
                 ))
+
+                idx_local += 1
 
             # self._unitcell =                  GROMACS box vectors
             #       ([[ a_xx a_xy a_xz ]  Transpose   ([[ v1(x) 0.0   0.0   ]
@@ -262,21 +269,27 @@ class ReadBaseFormat(object):
                                             self._boxangle[2]*radtodeg,
                                             spacegroup, zvalue))
 
-            for idx in range(self._natoms):
+            idx = 0
+            idx_local = 0
+            while idx < self._natoms:
 
                 try:
                     resname = "{}".format(self._atom3d_resname[idx][0:3])
                 except KeyError:
                     resname = "{}".format(self._atom3d_molname[idx][0:3])
 
+                # Number of atoms greater than 99999. Limit in pdb.
+                if (idx+1) % 100000 == 0:
+                    idx_local = 0
+
                 if atom_kind_molecule_label is None:
                     fpdb.write(fmt['HETATM'].format(
-                        serial=idx+1,
-                        name=self._atom3d_element[idx],
+                        serial=idx_local+1,
+                        name=self._topology._names[idx],             # name = self._atom3d_element[idx]
                         altLoc=" ",
                         resName=resname,
                         chainID=" ",
-                        resSeq=self._atom3d_residue[idx],
+                        resSeq=self._atom3d_residue[idx] % 10000,
                         iCode=" ",
                         pos=[i for i in self._atom3d_xyz[idx]],
                         occupancy=self._atom3d_occupancy[idx],
@@ -286,12 +299,12 @@ class ReadBaseFormat(object):
                     ))
                 else:
                     fpdb.write(fmt['HETATM'].format(
-                        serial=idx+1,
-                        name=self._atom3d_element[idx],
+                        serial=idx_local+1,
+                        name=self._topology._names[idx],             # name = self._atom3d_element[idx]
                         altLoc=" ",
                         resName=resname,
                         chainID=atom_kind_molecule_label[idx],
-                        resSeq=self._atom3d_residue[idx],
+                        resSeq=self._atom3d_residue[idx] % 10000,
                         iCode=" ",
                         pos=[i for i in self._atom3d_xyz[idx]],
                         occupancy=self._atom3d_occupancy[idx],
@@ -300,23 +313,28 @@ class ReadBaseFormat(object):
                         element=self._atom3d_element[idx]
                     ))
 
+                idx_local += 1
+                idx += 1
+
             fpdb.write('END\n')
 
-            for idx in range(self._natoms):
+            #if the number of atoms is greater than 99999 do not write CONECT section in the PDB file.
+            if self._natoms < 99999:
+                for idx in range(self._natoms):
 
-                fpdb.write('CONECT{0:>5d}'.format(idx+1))
-                for ineigh in self._topology._graphdict[idx]:
-                    fpdb.writelines('{0:>5d}'.format(ineigh+1))
-                fpdb.writelines("\n")
-                if self._topology.elements[idx] == 'H' and len(self._topology._graphdict[idx]) >= 2:
-                    print("WARNING: Hydrogen atom with more than 1 atom connected. idx: {} ({})"
-                          .format(idx, len(self._topology._graphdict[idx])))
-                elif self._topology.elements[idx] == 'C' and len(self._topology._graphdict[idx]) >= 5:
-                    print("WARNING: Carbon atom with more than 4 atoms connected. idx: {} ({})"
-                          .format(idx, len(self._topology._graphdict[idx])))
-                elif len(self._topology._graphdict[idx]) > 5:
-                    print("WARNING: {} atom with more than 1 atom connected. idx: {} ({})".
-                          format(self._topology.elements[idx], idx, len(self._topology._graphdict[idx])-1))
+                    fpdb.write('CONECT{0:>5d}'.format(idx+1))
+                    for ineigh in self._topology._graphdict[idx]:
+                        fpdb.writelines('{0:>5d}'.format(ineigh+1))
+                    fpdb.writelines("\n")
+                    if self._topology.elements[idx] == 'H' and len(self._topology._graphdict[idx]) >= 2:
+                        print("WARNING: Hydrogen atom with more than 1 atom connected. idx: {} ({})"
+                              .format(idx, len(self._topology._graphdict[idx])))
+                    elif self._topology.elements[idx] == 'C' and len(self._topology._graphdict[idx]) >= 5:
+                        print("WARNING: Carbon atom with more than 4 atoms connected. idx: {} ({})"
+                              .format(idx, len(self._topology._graphdict[idx])))
+                    elif len(self._topology._graphdict[idx]) > 5:
+                        print("WARNING: {} atom with more than 1 atom connected. idx: {} ({})".
+                              format(self._topology.elements[idx], idx, len(self._topology._graphdict[idx])-1))
 
         if separate_chains:
             self._write_separate_chains(filename_pdb)

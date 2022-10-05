@@ -98,7 +98,8 @@ class ReadPdbFormat(ReadBaseFormat):
             except exceptions.NoDataError:
                 e = str(guess_atom_element(iatom.name))
                 listelements.append(e)
-            idx = iatom.id - 1
+            #cJ idx = iatom.id - 1
+            idx = iatom.index
             self._atom3d_element[idx] = e
             self._atom3d_xyz[idx] = list(iatom.position)
             self._atom3d_molname[idx] = iatom.resname
@@ -366,11 +367,15 @@ class ReadPdbFormat(ReadBaseFormat):
                                                   self._spacegroup, self._zvalue))
 
                 for aidx_new, aidx_old in gnew.items():
+
+                    # cJ: Bug for systems with more than 100000 atoms
+                    aidx_new_normal = (aidx_new+1) % 100000
+
                     f.write("HETATM{0:5d} {1:<4s}{2:<1s}{3:<4s}"
                             "{4:1s}{5:4d}{6:1s}   "
                             "{7:8.3f}{8:8.3f}{9:8.3f}{10:6.2f}"
-                            "{11:6.2f}      {12:<4s}{13:>2s}\n".format(aidx_new+1,
-                                                                       self._atom3d_element[aidx_old],
+                            "{11:6.2f}      {12:<4s}{13:>2s}\n".format(aidx_new_normal,
+                                                                       self._topology._names[aidx_old],  # self._atom3d_element[aidx_old],
                                                                        '',
                                                                        self._atom3d_resname[aidx_old],
                                                                        '',
@@ -396,13 +401,15 @@ class ReadPdbFormat(ReadBaseFormat):
                     dd[iat].append(jat)
                     dd[jat].append(iat)
 
-                for k in sorted(dd.keys()):
-                    c = [k+1]
-                    for ival in dd[k]:
-                        c.append(ival+1)
-                    conect = ["{0:5d}".format(entry) for entry in c]
-                    conect = "".join(conect)
-                    f.write("CONECT{0}\n".format(conect))
+                # cJ: Bug for systems with more than 100000 atoms
+                if self._natoms < 100000:
+                    for k in sorted(dd.keys()):
+                        c = [k+1]
+                        for ival in dd[k]:
+                            c.append(ival+1)
+                        conect = ["{0:5d}".format(entry) for entry in c]
+                        conect = "".join(conect)
+                        f.write("CONECT{0}\n".format(conect))
 
         # =====================================
         # Dictionary g_new = {new_idx: old_idx, ...}
@@ -618,7 +625,7 @@ class ReadPdbFormat(ReadBaseFormat):
             itype = 0
             for itype in range(0, n_type_mols):
                 start_mol_idx, end_mol_idx, nres_mol, kind_molecule_label = lines[idx_line].split()
-                #print(start_mol_idx, end_mol_idx, nres_mol, kind_molecule_label)
+                # print(start_mol_idx, end_mol_idx, nres_mol, kind_molecule_label)
                 for imol in range(int(start_mol_idx), int(end_mol_idx)+1):
                     for ires in range(1, int(nres_mol) + 1):
                         name_res = str(lines[idx_line+ires].split()[0])
