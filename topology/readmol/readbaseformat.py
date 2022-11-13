@@ -336,6 +336,7 @@ class ReadBaseFormat(object):
                         print("WARNING: {} atom with more than 1 atom connected. idx: {} ({})".
                               format(self._topology.elements[idx], idx, len(self._topology._graphdict[idx])-1))
 
+
         if separate_chains:
             self._write_separate_chains(filename_pdb)
 

@@ -1,5 +1,5 @@
 
-		 Starting installation!!!! at 05/10/2022 16:32:23
+		 Starting installation!!!! at 22/10/2022 19:49:34
 
 		Python version 3.8
 
@@ -16,37 +16,37 @@
 
 		 ============== INSTALLING PIP PACKAGES ==============
 
-05/10/2022 16:32:24: ** TOPOLOGY: Installing GitPython==3.1.1
-05/10/2022 16:32:25: ** TOPOLOGY: Installing cython==0.29.24
-05/10/2022 16:32:26: ** TOPOLOGY: Installing numpy==1.21.3
-05/10/2022 16:32:27: ** TOPOLOGY: Installing periodictable==1.6.0
-05/10/2022 16:32:28: ** TOPOLOGY: Installing pygraphviz==1.7
-05/10/2022 16:32:29: ** TOPOLOGY: Installing networkx==2.6.3
-05/10/2022 16:32:30: ** TOPOLOGY: Installing matplotlib==3.4.3
-05/10/2022 16:32:31: ** TOPOLOGY: Installing MDAnalysis==2.2.0
-05/10/2022 16:32:32: ** TOPOLOGY: Installing psutil==5.8.0
-05/10/2022 16:32:34: ** TOPOLOGY: Installing rdkit-pypi==2021.3.2.3
-05/10/2022 16:32:35: ** TOPOLOGY: Installing Sphinx==4.3.0
-05/10/2022 16:32:36: ** TOPOLOGY: Installing scipy==1.7.2
-05/10/2022 16:32:37: ** TOPOLOGY: Installing mock
+22/10/2022 19:49:43: ** TOPOLOGY: Installing GitPython==3.1.1
+22/10/2022 19:49:45: ** TOPOLOGY: Installing cython==0.29.24
+22/10/2022 19:49:47: ** TOPOLOGY: Installing numpy==1.21.3
+22/10/2022 19:49:49: ** TOPOLOGY: Installing periodictable==1.6.0
+22/10/2022 19:49:51: ** TOPOLOGY: Installing pygraphviz==1.7
+22/10/2022 19:49:52: ** TOPOLOGY: Installing networkx==2.6.3
+22/10/2022 19:49:54: ** TOPOLOGY: Installing matplotlib==3.4.3
+22/10/2022 19:49:55: ** TOPOLOGY: Installing MDAnalysis==2.2.0
+22/10/2022 19:49:57: ** TOPOLOGY: Installing psutil==5.8.0
+22/10/2022 19:49:59: ** TOPOLOGY: Installing rdkit-pypi==2021.3.2.3
+22/10/2022 19:50:00: ** TOPOLOGY: Installing Sphinx==4.3.0
+22/10/2022 19:50:02: ** TOPOLOGY: Installing scipy==1.7.2
+22/10/2022 19:50:04: ** TOPOLOGY: Installing mock
 
 		 ============== COMPILING & INSTALLING INDIGO-BONDORDER PACKAGE ==============
 
-05/10/2022 16:32:37: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
+22/10/2022 19:50:04: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
 
-05/10/2022 16:32:37: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
+22/10/2022 19:50:04: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
 
 		 ============== COMPILING & INSTALLING EIGEN PACKAGE ==============
 
 
-05/10/2022 16:32:37: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
+22/10/2022 19:50:04: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
 
 		 ============== COMPILING & INSTALLING OPENBABEL PACKAGE ==============
 
 
-05/10/2022 16:32:37: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
+22/10/2022 19:50:04: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
 
-		 ============== RUNNING SETUP FROM SETUPTOOLS 05/10/2022 16:32:37 ==============
+		 ============== RUNNING SETUP FROM SETUPTOOLS 22/10/2022 19:50:04 ==============
 
 
 
@@ -58,6 +58,6 @@
 		 Topology has been succesfully imported.
 		 ******************* SUMMARY *******************
 
-		 Installation Done!!!! at 05/10/2022 16:32:38
+		 Installation Done!!!! at 22/10/2022 19:50:05
 
 

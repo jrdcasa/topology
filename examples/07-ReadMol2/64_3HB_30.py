@@ -33,7 +33,7 @@ mol2.write_gro(filename_gro="{}.gro".format(pattern))
 now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 m = "\t\t Writing pdb file...({})".format(now)
 print(m) if log is None else log.info(m)
-xsd.write_pdb(filename_pdb="{}.pdb".format(pattern), separate_chains=True)
+mol2.write_pdb(filename_pdb="{}.pdb".format(pattern), separate_chains=True)
 
 # Logger
 now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")

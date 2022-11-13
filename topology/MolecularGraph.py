@@ -400,6 +400,10 @@ class MolecularGraph(object):
         .. warning:: This is a recursive function
 
         """
+        import sys
+        # Increase recursion
+        sys.setrecursionlimit(50000)
+
         graph = self._graphdict
         path = path + [start_vertex]
         if start_vertex == end_vertex:
