@@ -1,0 +1,35 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+		****** COMPARING PDB and PSF files (16-11-2022 21:45:51) ****** 
+		 PDB file:  PE_04br_xsd_residues.pdb
+		 PSF file:  PE_04br_xsd_residues.psf
+			 Number of atoms in PDB (9500) and PSF (9500) are equal!!!!
+			 Number of bonds in PDB (9490) and PSF (9490) are equal!!!!
+
+
+
+			 Bonds in PDB and PSF seem to be equal!!!!
+
+
+		Job  Done at 16-11-2022 21:45:55 ============
+
+		Total time: 3.07 seconds

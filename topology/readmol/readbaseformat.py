@@ -61,7 +61,7 @@ class ReadBaseFormat(object):
 
         """
 
-        self._fnamepath = filenamepath
+        self._fnamepath = os.path.abspath(filenamepath)
         self._fname = filenamepath.split("/")[-1]
 
         self._natoms = 0
@@ -185,7 +185,7 @@ class ReadBaseFormat(object):
                     resname = "{}".format(self._atom3d_molname[idx][0:3])
 
                 fgro.write(fmt['xyz'].format(
-                    resid=self._atom3d_residue[idx],
+                    resid=self._atom3d_residue[idx] % 100000,
                     resname="{}".format(resname),
                     index=idx_local+1,
                     name=self._atom3d_element[idx],
@@ -318,7 +318,7 @@ class ReadBaseFormat(object):
 
             fpdb.write('END\n')
 
-            #if the number of atoms is greater than 99999 do not write CONECT section in the PDB file.
+            # If the number of atoms is greater than 99999 do not write CONECT section in the PDB file.
             if self._natoms < 99999:
                 for idx in range(self._natoms):
 
@@ -335,7 +335,6 @@ class ReadBaseFormat(object):
                     elif len(self._topology._graphdict[idx]) > 5:
                         print("WARNING: {} atom with more than 1 atom connected. idx: {} ({})".
                               format(self._topology.elements[idx], idx, len(self._topology._graphdict[idx])-1))
-
 
         if separate_chains:
             self._write_separate_chains(filename_pdb)
@@ -489,11 +488,11 @@ class ReadBaseFormat(object):
             # Title section
             f.write("PSF\n")
             f.write("\n")
-            line = str("%8d %s\n" % (2, '!NTITLE'))
+            line = str("%8d %s\n" % (3, '!NTITLE'))
             f.write(line)
             # TODO
-            line =  "* File created by Topology code *\n"
-            line +=  "* by Javier Ramos (IEM-CSIC) *\n"
+            line = "* File created by Topology code *\n"
+            line += "* by Javier Ramos (IEM-CSIC) *\n"
             now = datetime.datetime.now()
             line += "* DATE: {}\n".format(now)
             f.write(line)
@@ -507,34 +506,40 @@ class ReadBaseFormat(object):
                 # Atom backbone --> 0
                 # Atom no backbone --> >0
                 try:
-                    if self._atom3d_isbackbone[i]:
-                        tmp = '           0'
-                    else:
+                    # if self._atom3d_isbackbone[i]:
+                    if self._topology._isbackbone[i]:
                         tmp = '           1'
+                    else:
+                        tmp = '           0'
                 except IndexError:
-                    tmp = '           0'
+                    tmp = '           1'
+                try:
+                    resname = self._topology._resname[i][0:3]
+                except IndexError:
+                    resname = "UNK"
+
                 if len(self._topology._types) == 0:
                     line = str("{0:8d} {1:>4d}  {2:<3d} {3:>3s}  {4:<3s}  {5:<3s}  {6:10.6f}      {7:8.4f}{8:12s}\n"
-                           .format(i + 1,
-                            self._topology._iatch[i]+1,
-                            self._topology._iatch[i]+1,
-                            self._topology._resname[i][0:3],
-                            self._topology.elements[i],
-                            self._topology.elements[i],
-                            self._topology.charge[i],
-                            self._topology.mass[i],
-                            tmp))
+                               .format(i + 1,
+                                       self._topology._iatch[i]+1,
+                                       self._topology._iatch[i]+1,
+                                       resname,
+                                       self._topology.elements[i],
+                                       self._topology.elements[i],
+                                       self._topology.charge[i],
+                                       self._topology.mass[i],
+                                       tmp))
                 else:
                     line = str("{0:8d} {1:>4d}  {2:<3d} {3:>3s}  {4:<3s}  {5:<3s}  {6:10.6f}      {7:8.4f}{8:12s}\n"
-                           .format(i + 1,
-                            self._topology._iatch[i]+1,
-                            self._topology._iatch[i]+1,
-                            self._topology._resname[i][0:3],
-                            self._topology.elements[i],
-                            self._topology._types[i],
-                            self._topology.charge[i],
-                            self._topology.mass[i],
-                            tmp))
+                               .format(i + 1,
+                                       self._topology._iatch[i]+1,
+                                       self._topology._iatch[i]+1,
+                                       resname,
+                                       self._topology.elements[i],
+                                       self._topology._types[i],
+                                       self._topology.charge[i],
+                                       self._topology.mass[i],
+                                       tmp))
                 f.write(line)
             f.write("\n")
 

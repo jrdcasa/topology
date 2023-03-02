@@ -109,10 +109,11 @@ class ReadDataLammpsFormat(ReadBaseFormat):
         # with the name of the atom
         # Example:
         #   4
-        #   1 C
-        #   2 H
-        #   3 C
-        #   4 H
+        # # TypeLammps Name Element
+        #   1 CA C
+        #   2 HA H
+        #   3 CB C
+        #   4 HB H
         # Assign the atom name in the universe
         name_list = []
         element_list = []
@@ -141,7 +142,6 @@ class ReadDataLammpsFormat(ReadBaseFormat):
             self._atom3d_molname[idx] = iatom.resname
             self._atom3d_isbackbone[idx] = 0.0
             self._atom3d_occupancy[idx] = 0.0
-
 
         # Loop over bonds
         bond_list = []
@@ -172,6 +172,7 @@ class ReadDataLammpsFormat(ReadBaseFormat):
             self._boxangle[0] = self._universe.dimensions[3]*degtorad      # radians
             self._boxangle[1] = self._universe.dimensions[4]*degtorad
             self._boxangle[2] = self._universe.dimensions[5]*degtorad
+            self._isthere_boxdimension = True
 
         # Topology
         self._topology = top.Topology(natoms=self._natoms, listbonds=bond_list)

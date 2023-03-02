@@ -2,17 +2,20 @@ from MDAnalysis import Universe, exceptions
 from MDAnalysis.topology.core import guess_atom_element
 import topology as top
 from topology.readmol.readbaseformat import ReadBaseFormat
+from topology.internal_coordinates import unwrap
 from collections import defaultdict
 from topology.atomic_data import atomic_number
 import copy
 import os
 import numpy as np
+import warnings
+warnings.simplefilter("ignore", Warning)
 
 
 class ReadPdbFormat(ReadBaseFormat):
 
     # *************************************************************************
-    def __init__(self, filenamepath, assign_bondorders=False):
+    def __init__(self, filenamepath, filenametopo=None, assign_bondorders=False, isconect=True):
 
         super().__init__(filenamepath=filenamepath, assign_bondorders=assign_bondorders)
 
@@ -24,7 +27,15 @@ class ReadPdbFormat(ReadBaseFormat):
         self._tails = list()
 
         if filenamepath is not None:
-            self.read_pdb()
+            if filenametopo is not None:
+                self._fnametopopath = filenametopo
+                self.read_pdb(guess_bonds=False)
+            else:
+                self._fnametopopath = None
+                if isconect:
+                    self.read_pdb(guess_bonds=True)
+                else:
+                    self.read_pdb(guess_bonds=False)
 
     # *************************************************************************
     def __copy__(self):
@@ -69,7 +80,7 @@ class ReadPdbFormat(ReadBaseFormat):
         return res
 
     # *************************************************************************
-    def read_pdb(self):
+    def read_pdb(self, guess_bonds):
 
         """
         Base function to read the PDB format
@@ -83,11 +94,24 @@ class ReadPdbFormat(ReadBaseFormat):
         self._universe = Universe(self._fnamepath)
         self._natoms = self._universe.atoms.n_atoms
         self._dimensions = self._universe.dimensions
+        # Check for bond information
         try:
             self._nbonds = len(self._universe.bonds)
         except exceptions.NoDataError:
-            self._universe = Universe(self._fnamepath, guess_bonds=True)
-            self._nbonds = len(self._universe.bonds)
+            if self._fnametopopath is not None:
+                u_tmp = Universe(self._fnametopopath)
+                self._nbonds = len(u_tmp.bonds)
+                bondlist = []
+                for ibond in u_tmp.bonds:
+                    i = ibond.indices[0]
+                    j = ibond.indices[1]
+                    bondlist.append([i, j])
+                self._universe.add_TopologyAttr('bonds', bondlist)
+                del u_tmp
+            else:
+                self._universe = Universe(self._fnamepath, guess_bonds=True)
+                self._nbonds = len(self._universe.bonds)
+
         self._nres = len(self._universe.residues)
 
         # Loop over atoms
@@ -98,7 +122,7 @@ class ReadPdbFormat(ReadBaseFormat):
             except exceptions.NoDataError:
                 e = str(guess_atom_element(iatom.name))
                 listelements.append(e)
-            #cJ idx = iatom.id - 1
+            # cJ idx = iatom.id - 1
             idx = iatom.index
             self._atom3d_element[idx] = e
             self._atom3d_xyz[idx] = list(iatom.position)
@@ -128,7 +152,7 @@ class ReadPdbFormat(ReadBaseFormat):
                 line = f.readline()
                 if not line:
                     break
-                #if line.find("CRYST1") != -1:
+                # if line.find("CRYST1") != -1:
                 if line[0:6] == "CRYST1":
                     d = line.split()
                     if float(d[1]) != 0.0 and float(d[2]) != 0.0 and float(d[3]) != 0.0:
@@ -187,7 +211,7 @@ class ReadPdbFormat(ReadBaseFormat):
             type_list.append(self._universe.atoms.types[idx])
             mass_list.append(self._atom3d_mass[idx])
             resname_list.append(self._atom3d_resname[idx])
-            isbackbone_list.append(0)
+            isbackbone_list.append(self._atom3d_bfactor[idx])
 
         self._topology.set_elements(elements_list)
         self._topology.set_charge_mol(charge_list)
@@ -225,7 +249,7 @@ class ReadPdbFormat(ReadBaseFormat):
             self._boxlength[1] = ymax - ymin
             self._boxlength[2] = zmax - zmin
 
-            self._boxangle[0] = 90.0 * degtorad # Degrees
+            self._boxangle[0] = 90.0 * degtorad  # Degrees
             self._boxangle[1] = 90.0 * degtorad
             self._boxangle[2] = 90.0 * degtorad
 
@@ -238,10 +262,38 @@ class ReadPdbFormat(ReadBaseFormat):
         if self._assign_bo:
             self._topology.assign_bond_orders()
 
+        # Check if there are hydrogen atoms bonded to the carbon atoms
+        # in order to assign the correct
+        # Loop over atoms
+        listelements = list()
+        name_list = []
+        for iatom in self._universe.atoms:
+            try:
+                e = iatom.element
+            except exceptions.NoDataError:
+                e = str(guess_atom_element(iatom.name))
+                listelements.append(e)
+            if e == 'C' and \
+                    'H' not in iatom.bonded_atoms.elements and\
+                    set(iatom.bonded_atoms.elements) == {'C'}:
+                if len(iatom.bonded_atoms.elements) == 1:
+                    name_list.append("_CH3")
+                elif len(iatom.bonded_atoms.elements) == 2:
+                    name_list.append("_CH2")
+                elif len(iatom.bonded_atoms.elements) == 3:
+                    name_list.append("_CH")
+                elif len(iatom.bonded_atoms.elements) == 4:
+                    name_list.append("C")
+            else:
+                name_list.append(e)
+
+        self._topology.set_name(name_list)
+
         return None
 
     # *************************************************************************
-    def write_renumber_pdb(self, head_idx_atom, tail_idx_atom):
+    def write_renumber_pdb(self, head_idx_atom, tail_idx_atom,
+                           assign_residues_info=None, fnameout=None, isunwrap=False):
 
         """
         This method assign a new numbering scheme to the molecule. The algorithm is as follows:
@@ -253,6 +305,9 @@ class ReadPdbFormat(ReadBaseFormat):
 
         :param head_idx_atom: A list with the index of the head atoms for each mol/chain.
         :param tail_idx_atom: A list with the index of the tail atom for each mol/chain.
+        :param assign_residues_info
+        :param fnameout
+        :param isunwrap
 
         :return:
         """
@@ -337,7 +392,12 @@ class ReadPdbFormat(ReadBaseFormat):
         # ===========
 
         # ===========
-        def write_new_pdb(gnew):
+        def write_new_pdb(gnew, fnameout2=None):
+
+            if fnameout2 is None:
+                fnameout2 = os.path.splitext(self._fname)[0]+"_renumber.pdb"
+            else:
+                fnameout2 = fnameout2
 
             try:
                 remark_line = self._universe.trajectory.remarks
@@ -350,9 +410,8 @@ class ReadPdbFormat(ReadBaseFormat):
             remark_line += ["Tail     atoms --> Occupanccy field == 2.00"]
             remark_line += ["Middle   atoms --> Occupanccy field == 0.00"]
 
-            fnameout = os.path.splitext(self._fname)[0]+"_renumber.pdb"
             radtodeg = 180 / np.pi
-            with open(fnameout, 'w') as f:
+            with open(fnameout2, 'w') as f:
                 for ii in remark_line:
                     f.write("REMARK     {0:s}\n".format(ii))
 
@@ -375,7 +434,7 @@ class ReadPdbFormat(ReadBaseFormat):
                             "{4:1s}{5:4d}{6:1s}   "
                             "{7:8.3f}{8:8.3f}{9:8.3f}{10:6.2f}"
                             "{11:6.2f}      {12:<4s}{13:>2s}\n".format(aidx_new_normal,
-                                                                       self._topology._names[aidx_old],  # self._atom3d_element[aidx_old],
+                                                                       self._topology._names[aidx_old],
                                                                        '',
                                                                        self._atom3d_resname[aidx_old],
                                                                        '',
@@ -433,7 +492,7 @@ class ReadPdbFormat(ReadBaseFormat):
 
             backbone_list = self._topology.find_all_paths(ihead, itail)[0]
             for item in backbone_list:
-                    self._atom3d_bfactor[item] = 0.0
+                self._atom3d_bfactor[item] = 0.0
 
             # Create dictionary with the new numbers
             while queue:
@@ -502,7 +561,83 @@ class ReadPdbFormat(ReadBaseFormat):
                         break
             imol += 1
 
-        write_new_pdb(g_new)
+        # Unwrap coordinates
+        if isunwrap:
+            coords = np.array(list(self._atom3d_xyz.values()))
+            tupleout = self._topology.get_array_mols_neigh()
+            nmols_array = tupleout[0]
+            l_neigh_array = tupleout[1]
+            c = unwrap(coords, nmols_array, l_neigh_array, self._boxlength)
+            for idx, item in enumerate(c):
+                self._atom3d_xyz[idx] = item
+
+        # Write PDB before to change topology
+        if assign_residues_info is None:
+            write_new_pdb(g_new, fnameout2=fnameout)
+            fnamegro = os.path.splitext(fnameout)[0] + ".gro"
+            self.write_gro(filename_gro=fnamegro)
+
+        # Change self._topology object for PSF
+        elements_list = []
+        charge_list = []
+        mass_list = []
+        isbackbone_list = []
+        iatch_list = []
+        name_list = []
+        type_list = []
+        resname_list = []
+        xlist = []
+        ylist = []
+        zlist = []
+        occlist = []
+        bfactorlist = []
+        for aidx_newt, aidx_oldt in g_new.items():
+            elements_list.append(self._topology.elements[aidx_oldt])
+            charge_list.append(self._topology.charge[aidx_oldt])
+            mass_list.append(self._topology.mass[aidx_oldt])
+            isbackbone_list.append(self._atom3d_bfactor[aidx_oldt])
+            iatch_list.append(self._topology._iatch[aidx_oldt])
+            name_list.append(self._universe.atoms.names[aidx_oldt])
+            type_list.append(self._universe.atoms.types[aidx_oldt])
+            resname_list.append(self._atom3d_resname[aidx_oldt])
+            xlist.append(self._atom3d_xyz[aidx_oldt][0])
+            ylist.append(self._atom3d_xyz[aidx_oldt][1])
+            zlist.append(self._atom3d_xyz[aidx_oldt][2])
+            occlist.append(self._atom3d_occupancy[aidx_oldt])
+            bfactorlist.append(self._atom3d_bfactor[aidx_oldt])
+
+        self._topology.set_elements(elements_list)
+        self._topology.set_charge_mol(charge_list)
+        self._topology.set_mass(mass_list)
+        self._topology.set_isbackbone(isbackbone_list)
+        for idx, ich in enumerate(iatch_list):
+            self._topology._iatch[idx] = ich
+        self._topology.set_type(type_list)
+        self._topology.set_name(name_list)
+        self._topology.set_resname(resname_list)
+
+        graph_dict_new = defaultdict(list)
+        map_old_to_new = defaultdict()
+        for aidx_newt, aidx_oldt in g_new.items():
+            map_old_to_new[aidx_oldt] = aidx_newt
+        for oldkey, olditem in self._topology._graphdict.items():
+            lll = [map_old_to_new[i] for i in olditem]
+            graph_dict_new[map_old_to_new[oldkey]] = lll
+        self._topology._graphdict = graph_dict_new
+        self._topology._bonds = []
+
+        for idx, item in enumerate(elements_list):
+            self._atom3d_element[idx] = item
+            self._atom3d_xyz[idx][0] = xlist[idx]
+            self._atom3d_xyz[idx][1] = ylist[idx]
+            self._atom3d_xyz[idx][2] = zlist[idx]
+            self._atom3d_occupancy[idx] = occlist[idx]
+            self._atom3d_bfactor[idx] = bfactorlist[idx]
+            self._atom3d_isbackbone[idx] = int(bfactorlist[idx])
+
+        if assign_residues_info is not None:
+            self.assign_residues_chains(assign_residues_info, fout=fnameout)
+
         return g_new
 
     # *************************************************************************
@@ -562,7 +697,7 @@ class ReadPdbFormat(ReadBaseFormat):
         return self._heads, self._tails
 
     # *************************************************************************
-    def assign_residues_chains(self, fpathdat):
+    def assign_residues_chains(self, fpathdat, fout=None):
 
         """
         This method assign the name and number to the diferent residues in the
@@ -646,8 +781,14 @@ class ReadPdbFormat(ReadBaseFormat):
                                 return False
                             jjres += 1
                 idx_line += ires + 1
-            fnamegro = os.path.splitext(fname)[0] + ".gro"
-            fnamepdb = os.path.splitext(fname)[0] + ".pdb"
+
+            resname_list = []
+            for ikey, item in self._atom3d_resname.items():
+                resname_list.append(item)
+            self._topology.set_resname(resname_list)
+
+            fnamegro = os.path.splitext(fout)[0] + ".gro"
+            fnamepdb = os.path.splitext(fout)[0] + ".pdb"
             self.write_gro(filename_gro=fnamegro)
             self.write_pdb(filename_pdb=fnamepdb, atom_kind_molecule_label=atom_kind_molecule_label)
 

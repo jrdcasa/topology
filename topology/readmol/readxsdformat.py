@@ -3,7 +3,6 @@ from collections import defaultdict
 import numpy as np
 from periodictable import *
 import topology as top
-import os
 from topology.readmol.readbaseformat import ReadBaseFormat
 
 
@@ -102,34 +101,35 @@ class ReadXsdFormat(ReadBaseFormat):
             # from fractional to cartesian coordinates
             if self._isthere_boxdimension and self._nx == 1 and self._ny == 1 and self._nz == 1:
                 try:
-                    UVW = [float(i) for i in child.get("XYZ").split(",")]  # Fractional coordinates
+                    uvw = [float(i) for i in child.get("XYZ").split(",")]  # Fractional coordinates
                 except AttributeError:
                     # Supercell sometimes has the following entries:
                     # 	<Atom3d ID="377" Mapping="458" ImageOf="94" Visible="0"/>
                     # These entries must be skipped
                     continue
                 omega = np.dot(self._unitcell[0, :], np.cross(self._unitcell[1, :], self._unitcell[2, :]))
-                X = self._boxlength[0]*UVW[0] + \
-                    self._boxlength[1]*np.cos(self._boxangle[2])*UVW[1] + \
-                    self._boxlength[2]*np.cos(self._boxangle[1])*UVW[2]
+                X = self._boxlength[0]*uvw[0] + \
+                    self._boxlength[1]*np.cos(self._boxangle[2])*uvw[1] + \
+                    self._boxlength[2]*np.cos(self._boxangle[1])*uvw[2]
 
-                Y = self._boxlength[1]*np.sin(self._boxangle[2])*UVW[1] + \
+                Y = self._boxlength[1]*np.sin(self._boxangle[2])*uvw[1] + \
                     self._boxlength[2]*((np.cos(self._boxangle[0]) -
                                          np.cos(self._boxangle[1])*np.cos(self._boxangle[2])) /
-                                        np.sin(self._boxangle[1]))*UVW[1]
+                                        np.sin(self._boxangle[1]))*uvw[1]
 
-                Z = omega/(self._boxlength[0]*self._boxlength[1]*np.sin(self._boxangle[2]))*UVW[2]
+                Z = omega/(self._boxlength[0]*self._boxlength[1]*np.sin(self._boxangle[2]))*uvw[2]
                 XYZ = [X, Y, Z]
                 self._atom3d_xyz[idx] = XYZ
             else:
                 #for molecules and supercell
-                UVW = [float(i) for i in child.get("XYZ").split(",")]
-                XYZ = [UVW[0], UVW[1], UVW[2]]
+                uvw = [float(i) for i in child.get("XYZ").split(",")]
+                XYZ = [uvw[0], uvw[1], uvw[2]]
                 self._atom3d_xyz[idx] = XYZ
             idx += 1
             self._natoms += 1
 
         return None
+
     # *************************************************************************
     def setup_bonds(self, tree):
 

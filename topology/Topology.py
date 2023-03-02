@@ -24,6 +24,7 @@ ToDo: self._orderbonds can be improved. It is a bad idea to have a natomsxnatoms
 
 """
 
+
 class Topology(MolecularGraph):
 
     __slots__ = ['_orderbonds', '_nringsCauchy', 'elements', 'charge', 'mass',
@@ -32,7 +33,7 @@ class Topology(MolecularGraph):
                  '_types', '_names', '_canonical_order', '_resname']
 
     # #########################################################################
-    def __init__(self, natoms=-1, listbonds = None, undirected=True, logger=None):
+    def __init__(self, natoms=-1, listbonds=None, undirected=True, logger=None):
 
         """
         Topology constructor, Topology objects rarely are direcly build by users.
@@ -1005,6 +1006,7 @@ class Topology(MolecularGraph):
         if not isinstance(elements, list):
             return False
 
+        self.elements = []
         for item in elements:
             self.elements.append(item)
 
@@ -1016,6 +1018,7 @@ class Topology(MolecularGraph):
         if not isinstance(charge, list):
             return False
 
+        self.charge = []
         for item in charge:
             self.charge.append(item)
 
@@ -1031,6 +1034,7 @@ class Topology(MolecularGraph):
 
         self._totalcharge_mol = []
 
+        self.charge = []
         for item in charge:
             self.charge.append(item)
 
@@ -1052,6 +1056,7 @@ class Topology(MolecularGraph):
         if not isinstance(mass, list):
             return False
 
+        self.mass = []
         for item in mass:
             self.mass.append(item)
 
@@ -1063,6 +1068,7 @@ class Topology(MolecularGraph):
         if not isinstance(resname, list):
             return False
 
+        self._resname = []
         for item in resname:
             self._resname.append(item)
 
@@ -1074,6 +1080,7 @@ class Topology(MolecularGraph):
         if not isinstance(isbackbone, list):
             return False
 
+        self._isbackbone = []
         for item in isbackbone:
             self._isbackbone.append(item)
 
@@ -1085,6 +1092,7 @@ class Topology(MolecularGraph):
         if not isinstance(type_list, list):
             return False
 
+        self._types = []
         for item in type_list:
             self._types.append(item)
 
@@ -1096,6 +1104,7 @@ class Topology(MolecularGraph):
         if not isinstance(name_list, list):
             return False
 
+        self._names = []
         for item in name_list:
             self._names.append(item)
 

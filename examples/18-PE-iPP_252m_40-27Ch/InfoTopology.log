@@ -1,0 +1,69 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd.py -i 04-NPT_500K250ps.xsd -p PEiPP_film_252mon_40-27Ch -r PEiPP_film_252mon_40-27Ch_headtail.dat -a PEiPP_film_252mon_40-27Ch_residues.dat
+			         or
+			topology_cmd -i 04-NPT_500K250ps.xsd -p PEiPP_film_252mon_40-27Ch -r PEiPP_film_252mon_40-27Ch_headtail.dat -a PEiPP_film_252mon_40-27Ch_residues.dat
+
+		Starting: 	 18-11-2022 13:08:50
+
+		Input is a XSD format.
+		Reading... (18-11-2022 13:08:50)
+		End read   (18-11-2022 13:12:04)
+
+		Summarize of the input system (18-11-2022 13:12:04)
+		=======================================================
+		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/18-PE-iPP_252m_40-27Ch/04-NPT_500K250ps.xsd
+		Number of molecules       : 67
+		Number of residues        : 16911
+		Number of atoms           : 121931
+		Number of bonds           : 121864
+		Bond info available       : True
+		Simulation box dimension  : 5.5398 5.5398 41.3110 nm
+		Simulation box angles     : 90.00 90.00 90.00 degrees
+		=======================================================
+
+		****** WRITE PDB and PSF files (18-11-2022 13:12:04) ****** 
+		 Writing PDB file...PEiPP_film_252mon_40-27Ch.pdb (18-11-2022 13:12:04)
+		 CONECT table has NOT been written (natoms > 99999).
+		 Writing PSF file...PEiPP_film_252mon_40-27Ch.psf (18-11-2022 13:12:05)
+
+		****** END WRITE PDB and PSF files (18-11-2022 13:18:03) ****** 
+
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (18-11-2022 13:18:03) ****** 
+		 Renumbering PDB file... PEiPP_film_252mon_40-27Ch.pdb (18-11-2022 13:18:03)
+		 Head-Tail info from ... PEiPP_film_252mon_40-27Ch_headtail.dat (18-11-2022 13:24:01)
+		 Write renumbered file ... PEiPP_film_252mon_40-27Ch_residues.pdb (18-11-2022 13:24:01)
+		 Writing PSF file...PEiPP_film_252mon_40-27Ch_residues.psf (18-11-2022 13:26:15)
+
+		****** END RENUMBERING PDB and PSF files (18-11-2022 13:32:38) ****** 
+
+		****** SUMMARY (18-11-2022 13:32:38) ****** 
+		 PDB file: PEiPP_film_252mon_40-27Ch_residues.pdb
+		 GRO file: PEiPP_film_252mon_40-27Ch_residues.gro
+		 PSF file: PEiPP_film_252mon_40-27Ch_residues.psf
+		****** END SUMMARY (18-11-2022 13:32:38) ****** 
+
+		Job  Done at 18-11-2022 13:32:38 ============
+
+		Total time: 1427.32 seconds
