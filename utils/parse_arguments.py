@@ -57,7 +57,7 @@ def parse_arguments():
     # # group1 = parser.add_mutually_exclusive_group(required=True)
     parser.add_argument("-i", "--inp", dest="inputfile",
                         help="A file containing the input information. "
-                             "It should be a XTC, PDB or MOL2 file",
+                             "It should be a XSD, PDB or MOL2 file",
                         action="store", metavar="INPUT_FILE", required=True)
     parser.add_argument("-p", "--pattern", dest="pattern",
                         help="A string pattern to name the new files",

@@ -1,49 +1,50 @@
 
-		 Starting installation!!!! at 06/03/2023 17:21:51
+		 Starting installation!!!! at 07/03/2023 10:34:57
 
 		Python version 3.10
 
 		 ============== SYS PATH ==============
-/home/jramos/Programacion/topology
+/home/cgarcia/Programs/topology
 /usr/lib/python310.zip
 /usr/lib/python3.10
 /usr/lib/python3.10/lib-dynload
-/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.10/site-packages
-/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.10/site-packages/topology-1.0.0-py3.10-linux-x86_64.egg
+/home/cgarcia/Programs/sandboxes/sandbox_common/lib/python3.10/site-packages
+/home/cgarcia/Programs/sandboxes/sandbox_common/lib/python3.10/site-packages/topology-1.0.0-py3.10-linux-x86_64.egg
+/home/cgarcia/Programs/sandboxes/sandbox_common/lib/python3.10/site-packages/replicate_polymer-0.0.0-py3.10-linux-x86_64.egg
 
 		 ============== INSTALLING PIP PACKAGES ==============
 
-06/03/2023 17:21:52: ** TOPOLOGY: Installing GitPython==3.1.1
-06/03/2023 17:21:52: ** TOPOLOGY: Installing cython==0.29.24
-06/03/2023 17:21:53: ** TOPOLOGY: Installing numpy==1.21.3
-06/03/2023 17:21:54: ** TOPOLOGY: Installing periodictable==1.6.0
-06/03/2023 17:21:54: ** TOPOLOGY: Installing pygraphviz==1.7
-06/03/2023 17:21:55: ** TOPOLOGY: Installing networkx==2.6.3
-06/03/2023 17:21:55: ** TOPOLOGY: Installing matplotlib==3.4.3
-06/03/2023 17:21:56: ** TOPOLOGY: Installing MDAnalysis==2.2.0
-06/03/2023 17:21:57: ** TOPOLOGY: Installing psutil==5.8.0
-06/03/2023 17:21:57: ** TOPOLOGY: Installing rdkit-pypi
-06/03/2023 17:21:58: ** TOPOLOGY: Installing Sphinx==4.3.0
-06/03/2023 17:21:59: ** TOPOLOGY: Installing scipy==1.7.2
-06/03/2023 17:22:00: ** TOPOLOGY: Installing mock
+07/03/2023 10:34:57: ** TOPOLOGY: Installing GitPython==3.1.1
+07/03/2023 10:34:58: ** TOPOLOGY: Installing cython==0.29.24
+07/03/2023 10:34:58: ** TOPOLOGY: Installing numpy==1.21.3
+07/03/2023 10:34:59: ** TOPOLOGY: Installing periodictable==1.6.0
+07/03/2023 10:35:00: ** TOPOLOGY: Installing pygraphviz==1.7
+07/03/2023 10:35:00: ** TOPOLOGY: Installing networkx==2.6.3
+07/03/2023 10:35:01: ** TOPOLOGY: Installing matplotlib==3.4.3
+07/03/2023 10:35:01: ** TOPOLOGY: Installing MDAnalysis==2.2.0
+07/03/2023 10:35:02: ** TOPOLOGY: Installing psutil==5.8.0
+07/03/2023 10:35:03: ** TOPOLOGY: Installing rdkit-pypi
+07/03/2023 10:35:03: ** TOPOLOGY: Installing Sphinx==4.3.0
+07/03/2023 10:35:04: ** TOPOLOGY: Installing scipy==1.7.2
+07/03/2023 10:35:05: ** TOPOLOGY: Installing mock
 
 		 ============== COMPILING & INSTALLING INDIGO-BONDORDER PACKAGE ==============
 
-06/03/2023 17:22:00: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
+07/03/2023 10:35:05: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
 
-06/03/2023 17:22:00: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
+07/03/2023 10:35:05: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
 
 		 ============== COMPILING & INSTALLING EIGEN PACKAGE ==============
 
 
-06/03/2023 17:22:00: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
+07/03/2023 10:35:05: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
 
 		 ============== COMPILING & INSTALLING OPENBABEL PACKAGE ==============
 
 
-06/03/2023 17:22:00: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/topology/thirdparty/openbabel
+07/03/2023 10:35:05: ** TOPOLOGY: openbabel is already installed in your system. /home/cgarcia/Programs/topology/thirdparty/openbabel
 
-		 ============== RUNNING SETUP FROM SETUPTOOLS 06/03/2023 17:22:00 ==============
+		 ============== RUNNING SETUP FROM SETUPTOOLS 07/03/2023 10:35:05 ==============
 
 
 
@@ -51,10 +52,10 @@
 		 Pip packages in requirements.txt file have been succesfully imported.
 		 Indigox has been succesfully imported.
 		 Openbabel has been succesfully imported.
-		 Openbabel has been installed in /home/jramos/.local/openbabel.
+		 Openbabel has been installed in /home/cgarcia/.local/openbabel.
 		 Topology has been succesfully imported.
 		 ******************* SUMMARY *******************
 
-		 Installation Done!!!! at 06/03/2023 17:22:01
+		 Installation Done!!!! at 07/03/2023 10:35:05
 
 
