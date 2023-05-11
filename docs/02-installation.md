@@ -12,7 +12,7 @@ Previous to install the program  some software need to be installed in your syst
 
 * `git` (sudo apt-get install git)
 * `python3-venv` (sudo apt update; sudo apt-get install python3-venv)
-* `python3-dev` (sudo apt-get install python3-dev python-dev)
+* `python3-dev` (sudo apt-get install python3-dev python2-dev or sudo apt-get install python3-dev python-dev )
 * `cmake` (sudo apt-get install cmake)
 * `libgraphviz-dev` (sudo apt install libgraphviz-dev)
 * `swig` (sudo apt-get install swig)

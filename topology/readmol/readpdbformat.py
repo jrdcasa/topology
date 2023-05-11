@@ -747,10 +747,32 @@ class ReadPdbFormat(ReadBaseFormat):
             # Read composition
             try:
                 start_res_idx = lines.index("<COMPOSITION>")
-                lines.index("</COMPOSITION>")
+                end_res_idx = lines.index("</COMPOSITION>")
             except ValueError:
                 print("ERROR!!!!. <COMPOSITION> ... </COMPOSITION> labels must exist in the file {}".format(fpathdat))
                 return False
+
+            # Check number of residues in composition
+            nkinds = int(lines[start_res_idx+1])
+            idx = start_res_idx+2
+            while idx < end_res_idx:
+                for ikind in range(nkinds):
+                    count = 0
+                    _, _, nr, _ = [ii for ii in lines[idx].split()]
+                    nr = int(nr)
+                    idx += 1
+                    for ires in range(nr):
+                        try:
+                            _, _, _ = [ii for ii in lines[idx].split()]
+                            count += 1
+                            idx += 1
+                        except ValueError:
+                            break
+                    if count != nr:
+                        print("ERROR!!!!. <COMPOSITION> ... </COMPOSITION> "
+                              "number of residues incorrect in kind {}. File {}".format(
+                               ikind, fpathdat))
+                        exit()
 
             idx_line = start_res_idx + 1
             n_type_mols = int(lines[idx_line])
@@ -781,6 +803,17 @@ class ReadPdbFormat(ReadBaseFormat):
                                 return False
                             jjres += 1
                 idx_line += ires + 1
+
+            # Check if all atoms are assigned to a molecule
+            if len(atom_kind_molecule_label) != self._natoms:
+                print("\nERROR!!!!. <COMPOSITION> ... </COMPOSITION> "
+                      "Not all atoms have been correctly assigned to a chain.\n "
+                      "Usually, this is due to an incorrect number of residues in file {}.\n"
+                      "Check that file.\n"
+                      "natoms         = {}\n"
+                      "atoms assigned = {}\n".
+                      format(fpathdat, self._natoms, len(atom_kind_molecule_label)))
+                exit()
 
             resname_list = []
             for ikey, item in self._atom3d_resname.items():
