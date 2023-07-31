@@ -15,6 +15,7 @@ class ReadXsdFormat(ReadBaseFormat):
 
         self._atom3d_bfactor = defaultdict()
         self._atom3d_occupancy = defaultdict()
+        self._atom3d_displaystyle = defaultdict()
         self._heads = list()
         self._tails = list()
 
@@ -76,6 +77,7 @@ class ReadXsdFormat(ReadBaseFormat):
             except TypeError:
                 self._atom3d_parent[idx] = -1
             self._atom3d_element[idx] = child.get("Components")
+            self._atom3d_displaystyle[idx] = child.get("DisplayStyle")
             self._atom3d_mass[idx] = formula(self._atom3d_element[idx]).mass
             self._atom3d_occupancy[idx] = 0.0
 
@@ -115,20 +117,43 @@ class ReadXsdFormat(ReadBaseFormat):
                 Y = self._boxlength[1]*np.sin(self._boxangle[2])*uvw[1] + \
                     self._boxlength[2]*((np.cos(self._boxangle[0]) -
                                          np.cos(self._boxangle[1])*np.cos(self._boxangle[2])) /
-                                        np.sin(self._boxangle[1]))*uvw[1]
+                                         np.sin(self._boxangle[1]))*uvw[1]
 
                 Z = omega/(self._boxlength[0]*self._boxlength[1]*np.sin(self._boxangle[2]))*uvw[2]
                 XYZ = [X, Y, Z]
                 self._atom3d_xyz[idx] = XYZ
             else:
-                #for molecules and supercell
+                # for molecules and supercell
                 uvw = [float(i) for i in child.get("XYZ").split(",")]
                 XYZ = [uvw[0], uvw[1], uvw[2]]
                 self._atom3d_xyz[idx] = XYZ
             idx += 1
             self._natoms += 1
 
+        # Take head and tail indices from DisplatyAtoms != to Line
+        ishead = True
+        for idx in range(self._natoms):
+            if self._atom3d_displaystyle[idx] == "Line":
+                continue
+            if ishead:
+                self._heads.append(idx)
+                ishead = False
+            else:
+                self._tails.append(idx)
+                ishead = True
+
         return None
+
+    # *************************************************************************
+    def _writeheadtailfile(self, fheadname="headtail.dat"):
+
+        with open(fheadname, 'w') as fhead:
+            fhead.writelines("nmols: {}\n".format(self._nmols))
+            fhead.writelines("#ich idx-head idx-tail (indexes start at 0)\n")
+            for ich in range(self._nmols):
+                ihead = self._heads[ich]
+                itail = self._tails[ich]
+                fhead.writelines("{} {} {}\n".format(ich, ihead, itail))
 
     # *************************************************************************
     def setup_bonds(self, tree):
@@ -200,6 +225,9 @@ class ReadXsdFormat(ReadBaseFormat):
                 self._atom3d_imol[iatom] = idx_mol
                 self._atom3d_residue[iatom] = idx_mol + 1
             idx_mol += 1
+
+        if len(self._heads) > 0 and len(self._tails) > 0:
+            self._writeheadtailfile()
 
         return molecule_map
 

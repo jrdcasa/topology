@@ -1,0 +1,53 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd.py -i PHBHVrandom600.xsd -r PHBHV600_headtail.dat -a PHBHV600_residues.dat
+			         or
+			topology_cmd -i PHBHVrandom600.xsd -r PHBHV600_headtail.dat -a PHBHV600_residues.dat
+
+		Starting: 	 01-06-2023 15:38:53
+
+		Input is a XSD format.
+		Reading... (01-06-2023 15:38:53)
+		End read   (01-06-2023 15:38:55)
+
+		Summarize of the input system (01-06-2023 15:38:55)
+		=======================================================
+		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/21-P3HB-PHV_copolymer_OPLS/PHBHVrandom600.xsd
+		Number of molecules       : 1
+		Number of residues        : 150
+		Number of atoms           : 1847
+		Number of bonds           : 1846
+		Bond info available       : True
+		Simulation box dimension  : 0.0000 0.0000 0.0000 nm
+		Simulation box angles     : 0.00 0.00 0.00 degrees
+		=======================================================
+
+		****** WRITE PDB and PSF files (01-06-2023 15:38:55) ****** 
+		 Writing PDB file...topology.pdb (01-06-2023 15:38:55)
+		****** END WRITE PDB and PSF files (01-06-2023 15:38:55) ****** 
+
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (01-06-2023 15:38:55) ****** 
+		 Renumbering PDB file... topology.pdb (01-06-2023 15:38:55)
+		 Head-Tail info from ... PHBHV600_headtail.dat (01-06-2023 15:38:56)
+		 Write renumbered file ... topology_residues.pdb (01-06-2023 15:38:56)

@@ -1,0 +1,63 @@
+
+		 Starting installation!!!! at 30/06/2023 11:43:25
+
+		Python version 3.8
+
+		 ============== SYS PATH ==============
+/home/jramos/Programacion/GITHUB_REPO_DIR/topology
+/usr/lib/python38.zip
+/usr/lib/python3.8
+/usr/lib/python3.8/lib-dynload
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/topology-1.0.0-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/replicate_polymer-0.0.0-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/polyanagro-1.1-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/pyCGMapPol-0.0.0-py3.8.egg
+
+		 ============== INSTALLING PIP PACKAGES ==============
+
+30/06/2023 11:43:25: ** TOPOLOGY: Installing GitPython==3.1.1
+30/06/2023 11:43:26: ** TOPOLOGY: Installing cython==0.29.24
+30/06/2023 11:43:27: ** TOPOLOGY: Installing numpy==1.21.3
+30/06/2023 11:43:28: ** TOPOLOGY: Installing periodictable==1.6.0
+30/06/2023 11:43:29: ** TOPOLOGY: Installing pygraphviz==1.7
+30/06/2023 11:43:30: ** TOPOLOGY: Installing networkx==2.6.3
+30/06/2023 11:43:31: ** TOPOLOGY: Installing matplotlib==3.4.3
+30/06/2023 11:43:32: ** TOPOLOGY: Installing MDAnalysis==2.2.0
+30/06/2023 11:43:33: ** TOPOLOGY: Installing psutil==5.8.0
+30/06/2023 11:43:34: ** TOPOLOGY: Installing rdkit-pypi
+30/06/2023 11:43:36: ** TOPOLOGY: Installing Sphinx==4.3.0
+30/06/2023 11:43:37: ** TOPOLOGY: Installing scipy==1.7.2
+30/06/2023 11:43:38: ** TOPOLOGY: Installing mock
+
+		 ============== COMPILING & INSTALLING INDIGO-BONDORDER PACKAGE ==============
+
+30/06/2023 11:43:38: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
+
+30/06/2023 11:43:38: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
+
+		 ============== COMPILING & INSTALLING EIGEN PACKAGE ==============
+
+
+30/06/2023 11:43:39: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
+
+		 ============== COMPILING & INSTALLING OPENBABEL PACKAGE ==============
+
+
+30/06/2023 11:43:39: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
+
+		 ============== RUNNING SETUP FROM SETUPTOOLS 30/06/2023 11:43:39 ==============
+
+
+
+		 ******************* SUMMARY *******************
+		 Pip packages in requirements.txt file have been succesfully imported.
+		 Indigox has been succesfully imported.
+		 Openbabel has been succesfully imported.
+		 Openbabel has been installed in /home/jramos/.local/openbabel.
+		 Topology has been succesfully imported.
+		 ******************* SUMMARY *******************
+
+		 Installation Done!!!! at 30/06/2023 11:43:40
+
+

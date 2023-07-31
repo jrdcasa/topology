@@ -565,6 +565,8 @@ class Topology(MolecularGraph):
 
         self._topologyfile = filenametopo
 
+        print("cJJJJ: Topology.py", len(u.atoms))
+
         # NATOMS
         for iatom in u.atoms:
             self.add_vertex(iatom.index)

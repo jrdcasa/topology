@@ -1,0 +1,59 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd.py -i PE-iPP_more_99999_atoms_nooverlap.pdb
+			         or
+			topology_cmd -i PE-iPP_more_99999_atoms_nooverlap.pdb
+
+		Starting: 	 29-07-2023 12:52:48
+
+		Input is a PDB format.
+		Reading... (29-07-2023 12:52:48)
+		End read   (29-07-2023 13:01:25)
+
+		Summarize of the input system (29-07-2023 13:01:25)
+		=======================================================
+		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/22-PE-iPP_manyatoms_hexad/PE-iPP_more_99999_atoms_nooverlap.pdb
+		Number of molecules       : 480
+		Number of residues        : 480
+		Number of atoms           : 122640
+		Number of bonds           : 122160
+		Bond info available       : True
+		Simulation box dimension  : 0.0000 0.0000 0.0000 nm
+		Simulation box angles     : 0.00 0.00 0.00 degrees
+		=======================================================
+
+		****** WRITE PDB and PSF files (29-07-2023 13:01:25) ****** 
+		 Writing PDB file...topology.pdb (29-07-2023 13:01:25)
+		 CONECT table has NOT been written (natoms > 99999).
+		 Writing PSF file...topology.psf (29-07-2023 13:01:26)
+
+		****** END WRITE PDB and PSF files (29-07-2023 13:06:45) ****** 
+
+		****** SUMMARY (29-07-2023 13:06:45) ****** 
+		 PDB file: topology.pdb
+		****** END SUMMARY (29-07-2023 13:06:45) ****** 
+
+		Job  Done at 29-07-2023 13:06:45 ============
+
+		Total time: 836.96 seconds

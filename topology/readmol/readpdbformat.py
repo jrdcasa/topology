@@ -33,9 +33,9 @@ class ReadPdbFormat(ReadBaseFormat):
             else:
                 self._fnametopopath = None
                 if isconect:
-                    self.read_pdb(guess_bonds=True)
-                else:
                     self.read_pdb(guess_bonds=False)
+                else:
+                    self.read_pdb(guess_bonds=True)
 
     # *************************************************************************
     def __copy__(self):
@@ -276,6 +276,7 @@ class ReadPdbFormat(ReadBaseFormat):
             if e == 'C' and \
                     'H' not in iatom.bonded_atoms.elements and\
                     set(iatom.bonded_atoms.elements) == {'C'}:
+
                 if len(iatom.bonded_atoms.elements) == 1:
                     name_list.append("_CH3")
                 elif len(iatom.bonded_atoms.elements) == 2:
@@ -284,10 +285,19 @@ class ReadPdbFormat(ReadBaseFormat):
                     name_list.append("_CH")
                 elif len(iatom.bonded_atoms.elements) == 4:
                     name_list.append("C")
+                else:
+                    print("\t\tWARNING: Index: {} Element: {} Number of bonds: {}".
+                          format(iatom.id, e, len(iatom.bonded_atoms.elements)))
             else:
                 name_list.append(e)
 
         self._topology.set_name(name_list)
+
+        if len(self._universe.atoms.names) != len(self._topology._names):
+            print("ERROR!!!!!: The number of atoms ({}) is not equal to the dimension of names ({})".
+                  format(len(self._universe.atoms.names), len(self._topology._names)))
+            print("ERROR!!!!!: Probably the system is overlaped. Try minimize or equilibrate before.")
+            exit()
 
         return None
 
@@ -763,8 +773,8 @@ class ReadPdbFormat(ReadBaseFormat):
                     idx += 1
                     for ires in range(nr):
                         try:
-                            _, _, _ = [ii for ii in lines[idx].split()]
-                            count += 1
+                            aa, start, end = [ii for ii in lines[idx].split()]
+                            count += (int(end)-int(start))+1
                             idx += 1
                         except ValueError:
                             break
@@ -772,6 +782,7 @@ class ReadPdbFormat(ReadBaseFormat):
                         print("ERROR!!!!. <COMPOSITION> ... </COMPOSITION> "
                               "number of residues incorrect in kind {}. File {}".format(
                                ikind, fpathdat))
+                        print("ERROR!!!!. Counted residues {} of {}".format(count, nr))
                         exit()
 
             idx_line = start_res_idx + 1

@@ -432,7 +432,6 @@ def install_openbabel(log=None, namepkg=None):
                     ll = os.path.join(root, name)
                     exe_path = os.path.split(ll)[0]
 
-    
         dir_env_python = site.getsitepackages()[0]
         #dir_openbabel_installed = os.path.join(home_directory, os.path.split(exe_path))
         dir_openbabel_installed =  exe_path
@@ -467,7 +466,6 @@ def install_openbabel(log=None, namepkg=None):
 
 # Requeriments to be manually installed  ===========================================================================
 def check_requirements_outside(namepkg=None):
-
 
     # Check for swig (http://www.swig.org) ====================================
     if os.system("which swig"):

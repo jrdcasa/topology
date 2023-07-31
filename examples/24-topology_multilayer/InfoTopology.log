@@ -1,0 +1,59 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd.py -i 20230731170003_PE-iPP.pdb
+			         or
+			topology_cmd -i 20230731170003_PE-iPP.pdb
+
+		Starting: 	 31-07-2023 17:25:11
+
+		Input is a PDB format.
+		Reading... (31-07-2023 17:25:11)
+		End read   (31-07-2023 17:41:47)
+
+		Summarize of the input system (31-07-2023 17:41:47)
+		=======================================================
+		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/24-topology_multilayer/20230731170003_PE-iPP.pdb
+		Number of molecules       : 720
+		Number of residues        : 720
+		Number of atoms           : 183960
+		Number of bonds           : 183240
+		Bond info available       : True
+		Simulation box dimension  : 0.0000 0.0000 0.0000 nm
+		Simulation box angles     : 0.00 0.00 0.00 degrees
+		=======================================================
+
+		****** WRITE PDB and PSF files (31-07-2023 17:41:47) ****** 
+		 Writing PDB file...topology.pdb (31-07-2023 17:41:47)
+		 CONECT table has NOT been written (natoms > 99999).
+		 Writing PSF file...topology.psf (31-07-2023 17:41:48)
+
+		****** END WRITE PDB and PSF files (31-07-2023 17:52:53) ****** 
+
+		****** SUMMARY (31-07-2023 17:52:53) ****** 
+		 PDB file: topology.pdb
+		****** END SUMMARY (31-07-2023 17:52:53) ****** 
+
+		Job  Done at 31-07-2023 17:52:53 ============
+
+		Total time: 1662.24 seconds

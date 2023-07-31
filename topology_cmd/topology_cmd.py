@@ -66,7 +66,14 @@ def main_app(version):
         m = "\t\tInput is a PDB format.\n"
         m += "\t\tReading... ({})".format(now)
         print(m) if logger is None else logger.info(m)
-        obj = ReadPdbFormat(opts.inputfile)
+        # Check if Conect section is present in the PDB
+        with open(opts.inputfile) as f:
+            lines = str(f.readlines())
+            if lines.count("CONECT") != 0:
+                isconect = True
+            else:
+                isconect = False
+        obj = ReadPdbFormat(opts.inputfile, isconect=isconect)
     elif ext_inputfile == "MOL2":
         m = "\t\tInput is a MOL2 format.\n"
         m += "\t\tReading... ({})".format(now)

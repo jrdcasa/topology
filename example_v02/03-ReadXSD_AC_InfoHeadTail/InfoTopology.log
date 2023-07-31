@@ -1,0 +1,56 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd.py -i 00-Cubic_C9_4Ch.xsd
+			         or
+			topology_cmd -i 00-Cubic_C9_4Ch.xsd
+
+		Starting: 	 21-06-2023 10:53:08
+
+		Input is a XSD format.
+		Reading... (21-06-2023 10:53:08)
+		End read   (21-06-2023 10:53:08)
+
+		Summarize of the input system (21-06-2023 10:53:08)
+		=======================================================
+		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/example_v02/03-ReadXSD_AC_InfoHeadTail/00-Cubic_C9_4Ch.xsd
+		Number of molecules       : 4
+		Number of residues        : 20
+		Number of atoms           : 116
+		Number of bonds           : 112
+		Bond info available       : True
+		Simulation box dimension  : 1.1944 1.1944 1.1944 nm
+		Simulation box angles     : 90.00 90.00 90.00 degrees
+		=======================================================
+
+		****** WRITE PDB and PSF files (21-06-2023 10:53:08) ****** 
+		 Writing PDB file...topology.pdb (21-06-2023 10:53:08)
+		****** END WRITE PDB and PSF files (21-06-2023 10:53:08) ****** 
+
+		****** SUMMARY (21-06-2023 10:53:08) ****** 
+		 PDB file: topology.pdb
+		****** END SUMMARY (21-06-2023 10:53:08) ****** 
+
+		Job  Done at 21-06-2023 10:53:08 ============
+
+		Total time: 0.08 seconds
