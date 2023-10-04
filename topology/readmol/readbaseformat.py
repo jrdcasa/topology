@@ -14,10 +14,10 @@ class ReadBaseFormat(object):
                  '_boxlength', '_boxangle', '_assign_bo', '_topology', '_spacegroup',
                  '_zvalue', '_nres', '_isthere_boxdimension', '_nx', '_ny', '_nz',
                  '_universe', '_atom3d_xyz', '_atom3d_bfactor', '_atom3d_occupancy',
-                 '_heads', '_tails', '_atom3d_kindmolecule', '_dimensions']
+                 '_heads', '_tails', '_atom3d_kindmolecule', '_dimensions', '_logger']
 
     # *************************************************************************
-    def __init__(self, filenamepath, assign_bondorders=False):
+    def __init__(self, filenamepath, assign_bondorders=False, logger=None):
 
         """
         Read XSD format files creating some useful information for the
@@ -80,6 +80,8 @@ class ReadBaseFormat(object):
         self._atom3d_resname = defaultdict()
         self._atom3d_charge = defaultdict(float)
         self._atom3d_mass = defaultdict(float)
+        self._heads = list()
+        self._tails = list()
         self._nmols = 0
         self._nres = 0
         self._mol_residue_list = []
@@ -93,6 +95,7 @@ class ReadBaseFormat(object):
         self._nx = 1
         self._ny = 1
         self._nz = 1
+        self._logger = logger
 
     # *************************************************************************
     def get_natoms(self):
@@ -675,3 +678,33 @@ class ReadBaseFormat(object):
             f.write(line0)
             iline = 1
             line1 = ""
+
+    # *************************************************************************
+    def guessing_impropers(self):
+
+        print("HOLA", self._universe)
+        print(self._atom3d_isbackbone)
+        print(self._atom3d_element)
+
+        # Test connect atoms
+        print(self._topology._graphdict)
+        improper_atom = list()
+        for iatom, bonded_atoms in self._topology._graphdict.items():
+            # Continue if the atom is bonded to less thna three atoms.
+            if len(bonded_atoms) < 3:
+                continue
+            l_tmp = []
+            for jatom in bonded_atoms:
+                l_tmp.append(self._atom3d_element[jatom])
+
+
+
+            if any(l_tmp != 'H'):
+                improper_atom.append(iatom)
+
+            print(l_tmp)
+            exit()
+            print(iatom, bonded_atoms)
+
+
+

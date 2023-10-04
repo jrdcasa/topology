@@ -1,6 +1,7 @@
 from MDAnalysis import Universe, exceptions
 from MDAnalysis.topology.core import guess_atom_element
 import topology as top
+import datetime
 from topology.readmol.readbaseformat import ReadBaseFormat
 from topology.internal_coordinates import unwrap
 from collections import defaultdict
@@ -15,16 +16,16 @@ warnings.simplefilter("ignore", Warning)
 class ReadPdbFormat(ReadBaseFormat):
 
     # *************************************************************************
-    def __init__(self, filenamepath, filenametopo=None, assign_bondorders=False, isconect=True):
+    def __init__(self, filenamepath, filenametopo=None, inputbondlist=None,
+                 assign_bondorders=False, isconect=True, logger=None):
 
         super().__init__(filenamepath=filenamepath, assign_bondorders=assign_bondorders)
 
         self._atom3d_bfactor = defaultdict()
         self._atom3d_occupancy = defaultdict()
         self._atom3d_kindmolecule = defaultdict()
-        self._dimensions = []
-        self._heads = list()
-        self._tails = list()
+        self._dimensions = list()
+        self._bond_list = list()
 
         if filenamepath is not None:
             if filenametopo is not None:
@@ -109,7 +110,16 @@ class ReadPdbFormat(ReadBaseFormat):
                 self._universe.add_TopologyAttr('bonds', bondlist)
                 del u_tmp
             else:
+                now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+                m = "\t\t\t Start Guessing bonds using MDAnalysis library. ({})\n".format(now)
+                print(m) if self._logger is None else self._logger.info(m)
+
                 self._universe = Universe(self._fnamepath, guess_bonds=True)
+
+                now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+                m = "\t\t\t End Guessing bonds using MDAnalysis library. ({})\n".format(now)
+                print(m) if self._logger is None else self._logger.info(m)
+
                 self._nbonds = len(self._universe.bonds)
 
         self._nres = len(self._universe.residues)
@@ -139,9 +149,8 @@ class ReadPdbFormat(ReadBaseFormat):
             self._universe.add_TopologyAttr('element', listelements)
 
         # Loop over bonds
-        bond_list = []
         for ibond in self._universe.bonds:
-            bond_list.append([ibond[0].index, ibond[1].index])
+            self._bond_list.append([ibond[0].index, ibond[1].index])
 
         # Dimensions
         with open(self._fnamepath, 'r') as f:
@@ -173,7 +182,7 @@ class ReadPdbFormat(ReadBaseFormat):
                         self._boxangle = None
 
         # Topology
-        self._topology = top.Topology(natoms=self._natoms, listbonds=bond_list)
+        self._topology = top.Topology(natoms=self._natoms, listbonds=self._bond_list)
         self._nmols = len(self._topology.get_nmols())
         self._mol_residue_list = list(self._universe.residues.resnames)
         ires = 0
@@ -859,5 +868,8 @@ class ReadPdbFormat(ReadBaseFormat):
             for ich in d_bb:
                 f.writelines("{} {} {}\n".format(ich, d_bb[ich][0], d_bb[ich][-1]))
 
+    # *************************************************************************
+    def get_bond_list(self):
 
+        return self._bond_list
 

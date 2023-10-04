@@ -49,6 +49,7 @@ def command_info(opts, logger=None):
 
 # =============================================================================
 def parse_arguments():
+
     import time
 
     desc = """ Modify topology of a polymer or molecule.\n"""
@@ -96,7 +97,12 @@ def parse_arguments():
                         help="If true, the coordinates are unwrapped in the final structure.",
                         action="store_true", required=False, default=False)
 
+    parser.add_argument("--guess_improper", dest="guessimproper",
+                        help="Try to guess the improper angles in the system.",
+                        action="store_true", required=False, default=False)
+
     args = parser.parse_args()
+
     #
     # Check for existing files:
     if not os.path.isfile(args.inputfile):

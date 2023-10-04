@@ -13,8 +13,6 @@ class ReadMol2Format(ReadBaseFormat):
 
         self._atom3d_bfactor = defaultdict()
         self._atom3d_occupancy = defaultdict()
-        self._heads = list()
-        self._tails = list()
 
         self.__remove_comments
         self.read_mol2()

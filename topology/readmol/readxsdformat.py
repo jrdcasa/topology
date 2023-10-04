@@ -16,8 +16,6 @@ class ReadXsdFormat(ReadBaseFormat):
         self._atom3d_bfactor = defaultdict()
         self._atom3d_occupancy = defaultdict()
         self._atom3d_displaystyle = defaultdict()
-        self._heads = list()
-        self._tails = list()
 
         self.read_xsd()
 

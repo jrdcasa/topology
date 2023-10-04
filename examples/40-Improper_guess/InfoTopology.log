@@ -1,0 +1,56 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd.py -i sample_aPP_residues.pdb -r sample_aPP_headtail.dat -a sample_aPP_residues.dat --guess_improper
+			         or
+			topology_cmd -i sample_aPP_residues.pdb -r sample_aPP_headtail.dat -a sample_aPP_residues.dat --guess_improper
+
+		Starting: 	 11-09-2023 10:59:57
+
+		Input is a PDB format.
+		Reading... (11-09-2023 10:59:57)
+		End read   (11-09-2023 10:59:58)
+
+		Summarize of the input system (11-09-2023 10:59:58)
+		=======================================================
+		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/40-Improper_guess/sample_aPP_residues.pdb
+		Number of molecules       : 2
+		Number of residues        : 2
+		Number of atoms           : 614
+		Number of bonds           : 612
+		Bond info available       : True
+		Simulation box dimension  : 0.0000 0.0000 0.0000 nm
+		Simulation box angles     : 0.00 0.00 0.00 degrees
+		=======================================================
+
+		****** WRITE PDB and PSF files (11-09-2023 10:59:58) ****** 
+		 Writing PDB file...topology.pdb (11-09-2023 10:59:58)
+		****** END WRITE PDB and PSF files (11-09-2023 10:59:58) ****** 
+
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (11-09-2023 10:59:58) ****** 
+		 Renumbering PDB file... topology.pdb (11-09-2023 10:59:58)
+		 Head-Tail info from ... sample_aPP_headtail.dat (11-09-2023 10:59:58)
+		 Write renumbered file ... topology_residues.pdb (11-09-2023 10:59:58)
+		 Writing PSF file...topology_residues.psf (11-09-2023 10:59:58)
+
+		****** END RENUMBERING PDB and PSF files (11-09-2023 10:59:58) ****** 
