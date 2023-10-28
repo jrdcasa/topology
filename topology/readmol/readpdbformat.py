@@ -92,7 +92,7 @@ class ReadPdbFormat(ReadBaseFormat):
         degtorad = np.pi/180.0
 
         # MDAnalysis Universe
-        self._universe = Universe(self._fnamepath)
+        self._universe = Universe(self._fnamepath, guess_bonds=guess_bonds)
         self._natoms = self._universe.atoms.n_atoms
         self._dimensions = self._universe.dimensions
         # Check for bond information
@@ -111,13 +111,13 @@ class ReadPdbFormat(ReadBaseFormat):
                 del u_tmp
             else:
                 now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-                m = "\t\t\t Start Guessing bonds using MDAnalysis library. ({})\n".format(now)
+                m = "\t\t\t Start Guessing bonds using MDAnalysis library. ({})".format(now)
                 print(m) if self._logger is None else self._logger.info(m)
 
                 self._universe = Universe(self._fnamepath, guess_bonds=True)
 
                 now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-                m = "\t\t\t End Guessing bonds using MDAnalysis library. ({})\n".format(now)
+                m = "\t\t\t End Guessing bonds using MDAnalysis library. ({})".format(now)
                 print(m) if self._logger is None else self._logger.info(m)
 
                 self._nbonds = len(self._universe.bonds)
@@ -125,6 +125,9 @@ class ReadPdbFormat(ReadBaseFormat):
         self._nres = len(self._universe.residues)
 
         # Loop over atoms
+        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        m = "\n\t\t\t Start Loop over atoms. ({})".format(now)
+        print(m) if self._logger is None else self._logger.info(m)
         listelements = list()
         for iatom in self._universe.atoms:
             try:
@@ -144,6 +147,9 @@ class ReadPdbFormat(ReadBaseFormat):
                 self._atom3d_kindmolecule[idx] = iatom.chainID
             except KeyError:
                 self._atom3d_kindmolecule[idx] = "X"
+        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        m = "\t\t\t End Loop over atoms. ({})".format(now)
+        print(m) if self._logger is None else self._logger.info(m)
 
         if len(listelements) > 0:
             self._universe.add_TopologyAttr('element', listelements)
@@ -182,6 +188,9 @@ class ReadPdbFormat(ReadBaseFormat):
                         self._boxangle = None
 
         # Topology
+        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        m = "\n\t\t\t Start Creating topology. ({})".format(now)
+        print(m) if self._logger is None else self._logger.info(m)
         self._topology = top.Topology(natoms=self._natoms, listbonds=self._bond_list)
         self._nmols = len(self._topology.get_nmols())
         self._mol_residue_list = list(self._universe.residues.resnames)
@@ -204,6 +213,9 @@ class ReadPdbFormat(ReadBaseFormat):
                 self._atom3d_mass[idx] = round(self._universe.atoms.masses[idx], 2)
 
             imol_idx += 1
+        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        m = "\t\t\t End Creating topology. ({})".format(now)
+        print(m) if self._logger is None else self._logger.info(m)
 
         # List
         charge_list = []

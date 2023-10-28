@@ -3,7 +3,7 @@
                      Manipulate topology for polymers
               ----------------------------------------------
 
-                                Version 1.1
+                                Version 1.0
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -19,13 +19,3 @@
 
     ***********************************************************************
         
-
-		Command line: 
-			python topology_cmd.py -i sample_aPP_residues.pdb -r sample_aPP_headtail.dat -a sample_aPP_residues.dat --guess_improper
-			         or
-			topology_cmd -i sample_aPP_residues.pdb -r sample_aPP_headtail.dat -a sample_aPP_residues.dat --guess_improper
-
-		Starting: 	 28-10-2023 18:31:59
-
-		Input is a PDB format.
-		Reading... (28-10-2023 18:31:59)
