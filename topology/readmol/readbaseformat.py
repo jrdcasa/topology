@@ -376,55 +376,46 @@ class ReadBaseFormat(object):
         zvalue = 1
         radtodeg = 180/np.pi
 
-        ich_current = -1
-        for idx in range(self._natoms):
-            ich = self._atom3d_imol[idx]
-            if ich != ich_current:
-                ich_current = ich
-                idx_stride = idx
-                try:
-                    fpdb.write('END\n')
-                    fpdb.write(line_connect)
-                    line_connect = ""
-                    idx_local = 0
-                    fpdb.close()
-                except UnboundLocalError:
-                    idx_local = 0
-                    line_connect = ""
-                    pass
-                fpdb = open("{0:s}_{1:04d}.pdb".format(pattern, ich_current), 'w')
-                fpdb.write(fmt['REMARK'].format('Written by MStoLAGRO (J.Ramos). Molecule {0:4d}'.format(ich_current)))
-                fpdb.write(fmt['CRYST1'].format(self._boxlength[0], self._boxlength[1], self._boxlength[2],
-                                                self._boxangle[0] * radtodeg,
-                                                self._boxangle[1] * radtodeg,
-                                                self._boxangle[2] * radtodeg,
-                                                spacegroup, zvalue))
-            fpdb.write(fmt['HETATM'].format(
-                serial=idx_local + 1,
-                name=self._atom3d_element[idx],
-                altLoc=" ",
-                resName="{}".format(self._atom3d_molname[idx][0:3]),
-                chainID=" ",
-                resSeq= 1,
-                iCode=" ",
-                pos=[i for i in self._atom3d_xyz[idx]],
-                occupancy=1.0,
-                tempFactor=self._atom3d_isbackbone[idx],
-                segID="    ",
-                element=self._atom3d_element[idx]
-            ))
+        idx_stride = 0
+        for ich, imol in enumerate(self._topology.get_nmols()):
+            fpdb = open("{0:s}_{1:04d}.pdb".format(pattern, ich), 'w')
+            fpdb.write(fmt['REMARK'].format('Written by MStoLAGRO (J.Ramos). Molecule {0:4d}. Natoms: {1:7d}'.
+                                            format(ich, len(imol))))
+            fpdb.write(fmt['CRYST1'].format(self._boxlength[0], self._boxlength[1], self._boxlength[2],
+                                            self._boxangle[0] * radtodeg,
+                                            self._boxangle[1] * radtodeg,
+                                            self._boxangle[2] * radtodeg,
+                                            spacegroup, zvalue))
+            idx_local = 0
+            line_connect = ""
+            for idx in imol:
+                fpdb.write(fmt['HETATM'].format(
+                           serial=idx_local + 1,
+                           name=self._atom3d_element[idx],
+                           altLoc=" ",
+                           resName="{}".format(self._atom3d_molname[idx][0:3]),
+                           chainID=" ",
+                           resSeq= 1,
+                           iCode=" ",
+                           pos=[i for i in self._atom3d_xyz[idx]],
+                           occupancy=0.0,
+                           tempFactor=self._atom3d_isbackbone[idx],
+                           segID="    ",
+                           element=self._atom3d_element[idx]))
 
-            line_connect += 'CONECT{0:>5d}'.format(idx_local + 1)
-            for ineigh in self._topology._graphdict[idx]:
-                line_connect += '{0:>5d}'.format((ineigh -idx_stride) + 1)
-            line_connect += "\n"
+                line_connect += 'CONECT{0:>5d}'.format(idx_local + 1)
+                for ineigh in self._topology._graphdict[idx]:
+                    line_connect += '{0:>5d}'.format((ineigh - idx_stride) + 1)
+                line_connect += "\n"
+                idx_local += 1
 
-            idx_local += 1
+            idx_stride += len(imol)
 
-        # Last chain
-        fpdb.write('END\n')
-        fpdb.write(line_connect)
-        fpdb.close()
+            # Last chain
+            fpdb.write('END\n')
+            fpdb.write(line_connect)
+            fpdb.write('END\n')
+            fpdb.close()
 
     # *************************************************************************
     @staticmethod

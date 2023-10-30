@@ -81,7 +81,6 @@ class Topology(MolecularGraph):
         self._topologyfile = ""
         self._isbackbone = []
         self._canonical_order = None
-
         self.elements = []
         self.charge = []
         self.mass = []

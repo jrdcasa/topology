@@ -19,7 +19,7 @@ class ReadPdbFormat(ReadBaseFormat):
     def __init__(self, filenamepath, filenametopo=None, inputbondlist=None,
                  assign_bondorders=False, isconect=True, logger=None):
 
-        super().__init__(filenamepath=filenamepath, assign_bondorders=assign_bondorders)
+        super().__init__(filenamepath=filenamepath, assign_bondorders=assign_bondorders, logger=logger)
 
         self._atom3d_bfactor = defaultdict()
         self._atom3d_occupancy = defaultdict()
@@ -63,10 +63,10 @@ class ReadPdbFormat(ReadBaseFormat):
         keys = super().__slots__
         for key in keys:
             print(key)
-            if isinstance(getattr(self,key), np.ndarray):
-                par = np.array_equal(getattr(self,key), getattr(other,key))
+            if isinstance(getattr(self, key), np.ndarray):
+                par = np.array_equal(getattr(self, key), getattr(other,key))
                 res = res and par
-            elif isinstance(getattr(self,key), top.Topology):
+            elif isinstance(getattr(self, key), top.Topology):
                 par = getattr(self, key) == getattr(other, key)
                 res = res and par
             elif isinstance(getattr(self, key), Universe):
@@ -92,7 +92,16 @@ class ReadPdbFormat(ReadBaseFormat):
         degtorad = np.pi/180.0
 
         # MDAnalysis Universe
+        if guess_bonds:
+            now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+            m = "\t\t\t Start Guessing bonds using MDAnalysis library. ({})".format(now)
+            print(m) if self._logger is None else self._logger.info(m)
         self._universe = Universe(self._fnamepath, guess_bonds=guess_bonds)
+        if guess_bonds:
+            now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+            m = "\t\t\t End Guessing bonds using MDAnalysis library. ({})".format(now)
+            print(m) if self._logger is None else self._logger.info(m)
+
         self._natoms = self._universe.atoms.n_atoms
         self._dimensions = self._universe.dimensions
         # Check for bond information
@@ -151,6 +160,15 @@ class ReadPdbFormat(ReadBaseFormat):
         m = "\t\t\t End Loop over atoms. ({})".format(now)
         print(m) if self._logger is None else self._logger.info(m)
 
+        # Check if there is information about head-tail atoms
+        for idx, value in self._atom3d_occupancy.items():
+            if value == 1.0:
+                self._heads.append(value)
+            elif value == 2.0:
+                self._tails.append(value)
+        nheads = len(self._heads)
+        ntails = len(self._tails)
+
         if len(listelements) > 0:
             self._universe.add_TopologyAttr('element', listelements)
 
@@ -192,6 +210,7 @@ class ReadPdbFormat(ReadBaseFormat):
         m = "\n\t\t\t Start Creating topology. ({})".format(now)
         print(m) if self._logger is None else self._logger.info(m)
         self._topology = top.Topology(natoms=self._natoms, listbonds=self._bond_list)
+
         self._nmols = len(self._topology.get_nmols())
         self._mol_residue_list = list(self._universe.residues.resnames)
         ires = 0
@@ -213,9 +232,6 @@ class ReadPdbFormat(ReadBaseFormat):
                 self._atom3d_mass[idx] = round(self._universe.atoms.masses[idx], 2)
 
             imol_idx += 1
-        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-        m = "\t\t\t End Creating topology. ({})".format(now)
-        print(m) if self._logger is None else self._logger.info(m)
 
         # List
         charge_list = []
@@ -241,6 +257,10 @@ class ReadPdbFormat(ReadBaseFormat):
         self._topology.set_type(type_list)
         self._topology.set_name(name_list)
         self._topology.set_resname(resname_list)
+
+        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        m = "\t\t\t End Creating topology. ({})".format(now)
+        print(m) if self._logger is None else self._logger.info(m)
 
         # Guess box length
         xmax = -1.0E12
@@ -313,12 +333,6 @@ class ReadPdbFormat(ReadBaseFormat):
                 name_list.append(e)
 
         self._topology.set_name(name_list)
-
-        if len(self._universe.atoms.names) != len(self._topology._names):
-            print("ERROR!!!!!: The number of atoms ({}) is not equal to the dimension of names ({})".
-                  format(len(self._universe.atoms.names), len(self._topology._names)))
-            print("ERROR!!!!!: Probably the system is overlaped. Try minimize or equilibrate before.")
-            exit()
 
         return None
 
@@ -703,9 +717,24 @@ class ReadPdbFormat(ReadBaseFormat):
             try:
                 nmols = int(nmols[0].split()[-1])
                 if nmols != self._nmols:
-                    print("ERROR: nmols keyword in {} must be \n"
-                          "equal to the number of mols \n" 
-                          "in the PDB file ({})".format(fpathdat, self._fnamepath))
+                    m = "\n\t\t ERROR: The 'nmols' keyword in {}\n".format(fpathdat)
+                    m += "\t\t must match the number of molecules\n"
+                    m += "\t\t in the PDB file ({})\n".format(self._fnamepath)
+                    m += "\t\t nmols = {}\n".format(nmols)
+                    m += "\t\t Number of molecules = {}\n".format(self._nmols)
+                    m += "\t\t This is probably caused by the overlapping of atoms from different molecules.\n"
+                    m += "\t\t Aborting!!!!".format(fpathdat, self._fnamepath)
+                    print(m) if self._logger is None else self._logger.error(m)
+                    # Summarize chains in a file
+                    natch_dict = defaultdict(list)
+                    with open("error_summarize_chains.dar", 'w') as fchain:
+                        line1 = "# Expected number of chains: {}\n".format(nmols)
+                        line1 += "# Number_of_Atoms Number_of_chains\n"
+                        for imol in self._topology.get_nmols():
+                            natch_dict[len(imol)].append(imol)
+                        for key, values in natch_dict.items():
+                            line1 += "{0:6d} {1:6d}\n".format(key, len(values))
+                        fchain.writelines(line1)
                     exit()
                 elif len(lines) != nmols + 1:
                     print("ERROR: The number of lines must be equal to the to the number of mols\n "
@@ -884,4 +913,55 @@ class ReadPdbFormat(ReadBaseFormat):
     def get_bond_list(self):
 
         return self._bond_list
+
+    # *************************************************************************
+    def check_read_structure(self):
+
+        """
+        Review certain aspects of the structure obtained from the PDB file.
+        """
+
+        # Check for number of molecules and head/tail
+        if len(self._heads) != 0 and len(self._heads) != len(self._tails):
+            m = "\n\t\t ERROR: It appears that information about 'heads and tails' " \
+                "is available in the PDB file (occupancy column)\n"
+            m += "\t\t ERROR: The count of heads ({}) does not match the count of tail numbers ({})\n".\
+                format(len(self._heads), len(self._tails))
+            m += "\t\t Aborting!!!!!"
+            print(m) if self._logger is None else self._logger.error(m)
+            exit()
+
+        if len(self._heads) != 0 and len(self._heads) != self._nmols:
+            m = "\n\t\t ERROR: It appears that information about 'heads and tails' " \
+                "is available in the PDB file (occupancy column)\n"
+            m += "\t\t ERROR: The count of heads ({}) does not match the count of " \
+                 "molecules after guessing the topology ({})\n".\
+                format(len(self._heads), self._nmols)
+            m += "\t\t ERROR: Number of bonds ({})\n".\
+                format(self._nbonds)
+            m += "\t\t ERROR: Probable overlap from atoms.\n"
+            m += "\t\t ERROR: Use a topology file to get the bond list or \n" \
+                 "try to minimize/equilibrate before to use topology.\n"
+            m += "\t\t Aborting!!!!!"
+            print(m) if self._logger is None else self._logger.error(m)
+            # Summarize chains in a file
+            natch_dict = defaultdict(list)
+            with open("error_summarize_chains.dar", 'w') as fchain:
+                line1 = "# Expected number of chains: {}\n".format(self._nmols)
+                line1 += "# Number_of_Atoms Number_of_chains\n"
+                for imol in self._topology.get_nmols():
+                    natch_dict[len(imol)].append(imol)
+                for key, values in natch_dict.items():
+                    line1 += "{0:6d} {1:6d}\n".format(key, len(values))
+                fchain.writelines(line1)
+
+            exit()
+
+        if len(self._universe.atoms.names) != len(self._topology._names):
+            m = "\n\t\tERROR!!!!!: The number of atoms ({}) is not equal to the dimension of names ({})".\
+                  format(len(self._universe.atoms.names), len(self._topology._names))
+            m += "\t\tERROR!!!!!: Probably the system is overlaped. Try minimize or equilibrate before.\n"
+            m += "\t\t Aborting!!!!!"
+            print(m) if self._logger is None else self._logger.error(m)
+            exit()
 
