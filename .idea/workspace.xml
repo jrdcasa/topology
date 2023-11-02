@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e2bf383-3776-4d6c-a9f3-bee8797e69b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/readmol/readpdbformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/readmol/readpdbformat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/topology_cmd/topology_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology_cmd/topology_cmd.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,16 +37,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/jramos/Programacion/GITHUB_REPO_DIR/topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jramos/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/02-TOPOLOGY_Layer_PE&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/topology_cmd" />
@@ -58,8 +57,8 @@
       <recent name="$PROJECT_DIR$/topology_cmd" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.004-PE_10mon_40Ch_nocon_bad">
-    <configuration name="004-PE_10mon_40Ch_nocon_bad" type="PythonConfigurationType" factoryName="Python">
+  <component name="RunManager" selected="Python.997-bilayer_PE-iPP">
+    <configuration name="004-PE_10mon_40Ch_nocon_bad headinfo" type="PythonConfigurationType" factoryName="Python">
       <module name="topology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,6 +73,50 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
       <option name="PARAMETERS" value="-i 00-PE_UA.pdb" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="004-PE_10mon_40Ch_nocon_bad" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
+      <option name="PARAMETERS" value="-i 00-PE_UA.pdb --separate_chains" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="005-PE_Layer_bad" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../topology_examples/05-PE_Layer_bad" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
+      <option name="PARAMETERS" value="-i PE-iPP_PBC_noiPP_2.pdb --separate_chains" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -675,6 +718,72 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="997-bilayer_PE-iPP" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/03-BILAYER_PE-iPP" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
+      <option name="PARAMETERS" value="-i 01-PE_iPP_initial.pdb" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="998-Layer_PE_extract_from_MD" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/02-TOPOLOGY_Layer_PE" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
+      <option name="PARAMETERS" value="-i PE_layer_nocon.pdb -r PE-initial_HEADTAIL.dat -a PE-C204_FS_initial_RESIDUES.dat -p PE_layer1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="999-Layer_real" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/04-GROMACS_PREPARE" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
+      <option name="PARAMETERS" value="-i layer.pdb --separate_chains" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="TESTThio" type="PythonConfigurationType" factoryName="Python">
       <module name="topology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1017,6 +1126,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.004-PE_10mon_40Ch_nocon_bad" />
+      <item itemvalue="Python.004-PE_10mon_40Ch_nocon_bad headinfo" />
+      <item itemvalue="Python.005-PE_Layer_bad" />
+      <item itemvalue="Python.999-Layer_real" />
+      <item itemvalue="Python.998-Layer_PE_extract_from_MD" />
+      <item itemvalue="Python.997-bilayer_PE-iPP" />
       <item itemvalue="Python.01-topology_script" />
       <item itemvalue="Python.02-ReadXSD_InfoHeadTail" />
       <item itemvalue="Python.02-ReadXSD_InfoHeadTail 4Ch" />
@@ -1041,7 +1156,6 @@
       <item itemvalue="Python.27-topology_UA_noH_assignnames" />
       <item itemvalue="Python.28-topology_P3HB_150mon" />
       <item itemvalue="Python.39-CARLOS" />
-      <item itemvalue="Python.004-PE_10mon_40Ch_nocon_bad" />
       <item itemvalue="Python.40-improper_guess" />
       <item itemvalue="Python.99-Test" />
       <item itemvalue="Python.99-Test (1)" />
@@ -1144,7 +1258,8 @@
       <workItem from="1694177225914" duration="10893000" />
       <workItem from="1696010717824" duration="2645000" />
       <workItem from="1697530901564" duration="3250000" />
-      <workItem from="1698397088306" duration="9709000" />
+      <workItem from="1698397088306" duration="48916000" />
+      <workItem from="1698840518609" duration="48000" />
     </task>
     <servers />
   </component>
@@ -1211,7 +1326,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>436</line>
+          <line>441</line>
           <option name="timeStamp" value="268" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1230,24 +1345,14 @@
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>202</line>
-          <option name="timeStamp" value="299" />
+          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
+          <line>238</line>
+          <option name="timeStamp" value="304" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>133</line>
-          <option name="timeStamp" value="300" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="302" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="303" />
+          <url>file://$PROJECT_DIR$/topology/readmol/readbaseformat.py</url>
+          <line>405</line>
+          <option name="timeStamp" value="325" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1269,14 +1374,12 @@
         <watch expression="conf" />
       </configuration>
       <configuration name="PythonConfigurationType">
-        <watch expression="ext_inputfile" />
-        <watch expression="ext_inputfile == &quot;XSD&quot;" />
-        <watch expression="ext_inputfile == &quot;PDB&quot;" />
-        <watch expression="f" language="Python" />
-        <watch expression="lines" />
-        <watch expression="obj" />
-        <watch expression="lines.count(&quot;CONECT&quot;)" />
-        <watch expression="len(self._universe.bonds)" />
+        <watch expression="self._topology.get_nmols()[79][205]" language="Python" />
+        <watch expression="self._atom3d_imol[26692]" language="Python" />
+        <watch expression="idx" />
+        <watch expression="ineigh" />
+        <watch expression="(ineigh - idx_stride) + 1" />
+        <watch expression="self._topology._graphdict" />
       </configuration>
     </watches-manager>
   </component>
@@ -1299,9 +1402,11 @@
     <SUITE FILE_PATH="coverage/topology$TESTThio.coverage" NAME="TESTThio Coverage Results" MODIFIED="1685814448939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2023-AMullerTiofenoles/03-Calculations/01-MOLECULES_MODEL/02-CSCCOC_2/02-REPLICATE_POLYMER_OPLSAA" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_Test_readxsd_TestReadXsd_test_01_readfile_polymer_periodic.coverage" NAME="Unittests for Test_readxsd.TestReadXsd.test_01_readfile_polymer_periodic Coverage Results" MODIFIED="1659165529823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-ReadXSD" />
     <SUITE FILE_PATH="coverage/topology$aaa.coverage" NAME="aaa Coverage Results" MODIFIED="1664824956666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/SC_TMP/12-PE_C500_MC_newCode_PDB_extended_TOX/01-PREPARE" />
+    <SUITE FILE_PATH="coverage/topology$998_Layer_PE_extract_from_MD.coverage" NAME="998-Layer_PE_extract_from_MD Coverage Results" MODIFIED="1698657579860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/02-TOPOLOGY_Layer_PE" />
     <SUITE FILE_PATH="coverage/topology$07_topology_script.coverage" NAME="07-topology_script Coverage Results" MODIFIED="1661412731895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/07-blend_xsd" />
     <SUITE FILE_PATH="coverage/topology$Test_moleculargraph.coverage" NAME="Test_moleculargraph Coverage Results" MODIFIED="1661866927066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$Test_xsd.coverage" NAME="Test_xsd Coverage Results" MODIFIED="1661866664488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$999_Layer_real.coverage" NAME="999-Layer_real Coverage Results" MODIFIED="1698655965982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/04-GROMACS_PREPARE" />
     <SUITE FILE_PATH="coverage/topology$Test_internalcoordinates.coverage" NAME="Test_internalcoordinates Coverage Results" MODIFIED="1662367746318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$02_ReadXSD_InfoHeadTail_4Ch.coverage" NAME="02-ReadXSD_InfoHeadTail 4Ch Coverage Results" MODIFIED="1687337587577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/example_v02/03-ReadXSD_AC_InfoHeadTail" />
     <SUITE FILE_PATH="coverage/topology$24_topology_multilayer.coverage" NAME="24-topology_multilayer Coverage Results" MODIFIED="1690817108707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/24-topology_multilayer" />
@@ -1318,12 +1423,15 @@
     <SUITE FILE_PATH="coverage/topology$16_command_test_more_100000__1_.coverage" NAME="16-command_test more 100000 (1) Coverage Results" MODIFIED="1668643707732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch" />
     <SUITE FILE_PATH="coverage/topology$40_improper_guess.coverage" NAME="40-improper_guess Coverage Results" MODIFIED="1698510718875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/40-Improper_guess" />
     <SUITE FILE_PATH="coverage/topology$30_improper_guess.coverage" NAME="40-improper_guess Coverage Results" MODIFIED="1694422796708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/40-Improper_guess" />
+    <SUITE FILE_PATH="coverage/topology$997_bilayer_PE_iPP.coverage" NAME="997-bilayer_PE-iPP Coverage Results" MODIFIED="1698786286173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/03-BILAYER_PE-iPP" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_Test_readmol2_TestReadMol2_test_08_separatechains_polymer_periodic_real.coverage" NAME="Unittests for Test_readmol2.TestReadMol2.test_08_separatechains_polymer_periodic_real Coverage Results" MODIFIED="1661866261070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-ReadMol2" />
     <SUITE FILE_PATH="coverage/topology$99_Test.coverage" NAME="99-Test Coverage Results" MODIFIED="1690627967268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/22-PE-iPP_manyatoms_hexad" />
     <SUITE FILE_PATH="coverage/topology$25_topology_script.coverage" NAME="25-topology_script Coverage Results" MODIFIED="1660294559171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$15_topology_ua.coverage" NAME="15-topology_ua Coverage Results" MODIFIED="1664825711731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/15-Topology_from_UA_model" />
     <SUITE FILE_PATH="coverage/topology$20_P3HB_alternate.coverage" NAME="20-P3HB_alternate Coverage Results" MODIFIED="1683653396343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/20-P3HB_alternate" />
-    <SUITE FILE_PATH="coverage/topology$004_PE_10mon_40Ch_nocon_bad.coverage" NAME="004-PE_10mon_40Ch_nocon_bad Coverage Results" MODIFIED="1698572737474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
+    <SUITE FILE_PATH="coverage/topology$004_PE_10mon_40Ch_nocon_bad_headinfo.coverage" NAME="004-PE_10mon_40Ch_nocon_bad headinfo Coverage Results" MODIFIED="1698655923447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
+    <SUITE FILE_PATH="coverage/topology$005_PE_Layer_bad.coverage" NAME="005-PE_Layer_bad Coverage Results" MODIFIED="1698605337428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/05-PE_Layer_bad" />
+    <SUITE FILE_PATH="coverage/topology$004_PE_10mon_40Ch_nocon_bad.coverage" NAME="004-PE_10mon_40Ch_nocon_bad Coverage Results" MODIFIED="1698650984247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
     <SUITE FILE_PATH="coverage/topology$16_command_test_more_100000.coverage" NAME="16-command_test more 100000 Coverage Results" MODIFIED="1668773330360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_test_topology_TopologyTests_test_23_assignresidues_fromlist.coverage" NAME="Unittests for test_topology.TopologyTests.test_23_assignresidues_fromlist Coverage Results" MODIFIED="1659165141789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-Topology" />
     <SUITE FILE_PATH="coverage/topology$25_bondlist_readpdb.coverage" NAME="25_bondlist_readpdb Coverage Results" MODIFIED="1694112509271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/25-topology_bondlist_readpdb_class" />

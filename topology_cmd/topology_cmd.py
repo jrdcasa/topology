@@ -151,10 +151,9 @@ def main_app(version):
         now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
         m += "\t\t Writing PSF file...{} ({})\n".format(filenamepsf, now)
         print(m) if logger is None else logger.info(m)
-
         obj.write_psf(filename_psf=filenamepsf, improper_angles=None)
         isconect = False
-        dict_messages['CONECT_Table'] = False
+        dict_messages['CONECT_out_Table'] = False
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     m = "\t\t****** END WRITE PDB and PSF files ({}) ****** ".format(now)
     print(m) if logger is None else logger.info(m)
