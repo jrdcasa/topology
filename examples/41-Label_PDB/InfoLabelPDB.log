@@ -3,7 +3,7 @@
                      Manipulate topology for polymers
               ----------------------------------------------
 
-                                Version None
+                                Version 0.1
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -19,3 +19,18 @@
 
     ***********************************************************************
         
+		****** LABELLING PDB file (23-11-2023 15:50:27) ****** 
+		 PDB file:  confout_unwrp.pdb
+
+			 Start Guessing bonds using MDAnalysis library. (23-11-2023 15:50:27)
+			 End Guessing bonds using MDAnalysis library. (23-11-2023 15:50:27)
+
+			 Start Loop over atoms. (23-11-2023 15:50:27)
+			 End Loop over atoms. (23-11-2023 15:50:27)
+
+			 Start Creating topology. (23-11-2023 15:50:27)
+			 End Creating topology. (23-11-2023 15:50:27)
+
+		Job  Done at 23-11-2023 15:50:27 ============
+
+		Total time: 0.41 seconds

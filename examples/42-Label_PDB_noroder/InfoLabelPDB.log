@@ -3,7 +3,7 @@
                      Manipulate topology for polymers
               ----------------------------------------------
 
-                                Version None
+                                Version 0.1
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -19,3 +19,22 @@
 
     ***********************************************************************
         
+		****** LABELLING PDB file (23-11-2023 19:10:41) ****** 
+		 PDB file:  PE300_04br04_0000.pdb
+
+
+			 Start Loop over atoms. (23-11-2023 19:10:41)
+			 End Loop over atoms. (23-11-2023 19:10:41)
+
+			 Start Creating topology. (23-11-2023 19:10:41)
+			 End Creating topology. (23-11-2023 19:10:41)
+
+			 Start Loop over atoms. (23-11-2023 19:10:41)
+			 End Loop over atoms. (23-11-2023 19:10:41)
+
+			 Start Creating topology. (23-11-2023 19:10:41)
+			 End Creating topology. (23-11-2023 19:10:41)
+
+		Job  Done at 23-11-2023 19:10:41 ============
+
+		Total time: 0.62 seconds

@@ -1,0 +1,48 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 0.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python label_pdb_withoutrenumber_cmd.py -p confout_unwrp.pdb --headfile headtail.dat -a residues.dat
+			         or
+			topology_cmd -p confout_unwrp.pdb --headfile headtail.dat -a residues.dat
+
+		****** LABELLING PDB file (26-11-2023 20:02:12) ****** 
+		 PDB file:  confout_unwrp.pdb
+
+			 Start Guessing bonds using MDAnalysis library. (26-11-2023 20:02:12)
+			 End Guessing bonds using MDAnalysis library. (26-11-2023 20:02:12)
+
+			 Start Loop over atoms. (26-11-2023 20:02:12)
+			 End Loop over atoms. (26-11-2023 20:02:12)
+
+			 Start Creating topology. (26-11-2023 20:02:12)
+			 End Creating topology. (26-11-2023 20:02:12)
+
+			 Start Loop over atoms. (26-11-2023 20:02:12)
+			 End Loop over atoms. (26-11-2023 20:02:12)
+
+			 Start Creating topology. (26-11-2023 20:02:12)
+			 End Creating topology. (26-11-2023 20:02:12)
+
+		Job  Done at 26-11-2023 20:02:12 ============
+
+		Total time: 0.27 seconds

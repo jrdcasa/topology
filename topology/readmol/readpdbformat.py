@@ -64,7 +64,7 @@ class ReadPdbFormat(ReadBaseFormat):
         for key in keys:
             print(key)
             if isinstance(getattr(self, key), np.ndarray):
-                par = np.array_equal(getattr(self, key), getattr(other,key))
+                par = np.array_equal(getattr(self, key), getattr(other, key))
                 res = res and par
             elif isinstance(getattr(self, key), top.Topology):
                 par = getattr(self, key) == getattr(other, key)
@@ -142,6 +142,10 @@ class ReadPdbFormat(ReadBaseFormat):
             try:
                 e = iatom.element
             except exceptions.NoDataError:
+                # Avoid mistakes when the atom name matches some element name
+                # Example: CS is not Cs
+                if not iatom.name[1].islower():
+                    iatom.name = iatom.name[0]
                 e = str(guess_atom_element(iatom.name))
                 listelements.append(e)
             # cJ idx = iatom.id - 1
@@ -161,13 +165,13 @@ class ReadPdbFormat(ReadBaseFormat):
         print(m) if self._logger is None else self._logger.info(m)
 
         # Check if there is information about head-tail atoms
-        for idx, value in self._atom3d_occupancy.items():
-            if value == 1.0:
-                self._heads.append(value)
-            elif value == 2.0:
-                self._tails.append(value)
-        nheads = len(self._heads)
-        ntails = len(self._tails)
+        # for idx, value in self._atom3d_occupancy.items():
+        #     if value == 1.0:
+        #         self._heads.append(value)
+        #     elif value == 2.0:
+        #         self._tails.append(value)
+        # nheads = len(self._heads)
+        # ntails = len(self._tails)
 
         if len(listelements) > 0:
             self._universe.add_TopologyAttr('element', listelements)
@@ -297,7 +301,7 @@ class ReadPdbFormat(ReadBaseFormat):
             self._unitcell[0, :], self._unitcell[1, :], self._unitcell[2, :] = \
                 self.lengths_and_angles_to_box_vectors(self._boxlength[0], self._boxlength[1],
                                                        self._boxlength[2], self._boxangle[0],
-                                                       self._boxangle[1] , self._boxangle[2])
+                                                       self._boxangle[1], self._boxangle[2])
 
         # Assign bond orders ==================================================
         if self._assign_bo:
@@ -333,8 +337,6 @@ class ReadPdbFormat(ReadBaseFormat):
                 name_list.append(e)
 
         self._topology.set_name(name_list)
-
-        return None
 
     # *************************************************************************
     def write_renumber_pdb(self, head_idx_atom, tail_idx_atom,
@@ -508,10 +510,10 @@ class ReadPdbFormat(ReadBaseFormat):
                 # cJ: Bug for systems with more than 100000 atoms
                 if self._natoms < 100000:
                     for k in sorted(dd.keys()):
-                        c = [k+1]
+                        cc = [k+1]
                         for ival in dd[k]:
-                            c.append(ival+1)
-                        conect = ["{0:5d}".format(entry) for entry in c]
+                            cc.append(ival+1)
+                        conect = ["{0:5d}".format(entry) for entry in cc]
                         conect = "".join(conect)
                         f.write("CONECT{0}\n".format(conect))
 
@@ -578,7 +580,7 @@ class ReadPdbFormat(ReadBaseFormat):
                                             if len(ll[0]) > max_path:
                                                 max_path = len(ll[0])
                                         lengths_path[item2] = max_path
-                                    for ikey2, value in sorted(lengths_path.items(), key=lambda item: item[1]):
+                                    for ikey2, value in sorted(lengths_path.items(), key=lambda item3: item3[1]):
                                         if ikey2 not in queue:
                                             queue.append(ikey2)
                                 else:
@@ -679,6 +681,152 @@ class ReadPdbFormat(ReadBaseFormat):
             self._atom3d_occupancy[idx] = occlist[idx]
             self._atom3d_bfactor[idx] = bfactorlist[idx]
             self._atom3d_isbackbone[idx] = int(bfactorlist[idx])
+
+        if assign_residues_info is not None:
+            self.assign_residues_chains(assign_residues_info, fout=fnameout)
+
+        return g_new
+
+    # *************************************************************************
+    def write_label_pdb(self, head_idx_atom, tail_idx_atom,
+                        assign_residues_info=None, fnameout=None, isunwrap=False):
+
+        """
+        This method label a pdb file
+
+        :param head_idx_atom: A list with the index of the head atoms for each mol/chain.
+        :param tail_idx_atom: A list with the index of the tail atom for each mol/chain.
+        :param assign_residues_info
+        :param fnameout
+        :param isunwrap
+
+        :return:
+        """
+        # ===========
+        def write_new_pdb_norenumber(gnew, fnameout2=None):
+
+            if fnameout2 is None:
+                fnameout2 = os.path.splitext(self._fname)[0]+"_labeled.pdb"
+            else:
+                fnameout2 = fnameout2
+
+            try:
+                remark_line = self._universe.trajectory.remarks
+                remark_line[0] += ". Labeled with topology"
+            except IndexError:
+                remark_line = [" Labeled with topology"]
+            remark_line += ["Backbone atoms --> Beta field == 0.00"]
+            remark_line += ["Branch   atoms --> Beta field >= 1.00"]
+            remark_line += ["Head     atoms --> Occupanccy field == 1.00"]
+            remark_line += ["Tail     atoms --> Occupanccy field == 2.00"]
+            remark_line += ["Middle   atoms --> Occupanccy field == 0.00"]
+
+            radtodeg = 180 / np.pi
+            with open(fnameout2, 'w') as f:
+                for ii in remark_line:
+                    f.write("REMARK     {0:s}\n".format(ii))
+
+                f.write("CRYST1{0:9.3f}{1:9.3f}{2:9.3f}"
+                        "{3:7.2f}{4:7.2f}{5:7.2f} "
+                        "{6:<11s}{7:4d}\n".format(self._boxlength[0],
+                                                  self._boxlength[1],
+                                                  self._boxlength[2],
+                                                  self._boxangle[0]*radtodeg,
+                                                  self._boxangle[1]*radtodeg,
+                                                  self._boxangle[2]*radtodeg,
+                                                  self._spacegroup, self._zvalue))
+
+                for aidx_new, aidx_old in gnew.items():
+
+                    # cJ: Bug for systems with more than 100000 atoms
+                    aidx_new_normal = (aidx_new+1) % 100000
+
+                    f.write("HETATM{0:5d} {1:<4s}{2:<1s}{3:<4s}"
+                            "{4:1s}{5:4d}{6:1s}   "
+                            "{7:8.3f}{8:8.3f}{9:8.3f}{10:6.2f}"
+                            "{11:6.2f}      {12:<4s}{13:>2s}\n".format(aidx_new_normal,
+                                                                       self._topology._names[aidx_old],
+                                                                       '',
+                                                                       self._atom3d_resname[aidx_old],
+                                                                       '',
+                                                                       self._atom3d_residue[aidx_old],
+                                                                       '',
+                                                                       self._atom3d_xyz[aidx_old][0],
+                                                                       self._atom3d_xyz[aidx_old][1],
+                                                                       self._atom3d_xyz[aidx_old][2],
+                                                                       self._atom3d_occupancy[aidx_old],
+                                                                       self._atom3d_bfactor[aidx_old],
+                                                                       '',
+                                                                       self._atom3d_element[aidx_old]))
+                f.write("END\n")
+                bondlist = self._topology.get_allbonds()
+
+                dd = defaultdict(list)
+                res = dict((v, k) for k, v in gnew.items())
+                for ibond in bondlist:
+                    iat_old = ibond[0]
+                    jat_old = ibond[1]
+                    iat = res[iat_old]
+                    jat = res[jat_old]
+                    dd[iat].append(jat)
+                    dd[jat].append(iat)
+
+                # cJ: Bug for systems with more than 100000 atoms
+                if self._natoms < 100000:
+                    for k in sorted(dd.keys()):
+                        cc = [k+1]
+                        for ival in dd[k]:
+                            cc.append(ival+1)
+                        conect = ["{0:5d}".format(entry) for entry in cc]
+                        conect = "".join(conect)
+                        f.write("CONECT{0}\n".format(conect))
+
+        # =====================================
+        # Dictionary g_new = {new_idx: old_idx, ...}
+        g_new = defaultdict()
+        for i in range(self._natoms):
+            g_new[i] = i
+        imol = 0
+
+        for iatom, _ in self._atom3d_occupancy.items():
+            self._atom3d_occupancy[iatom] = 0.0
+            self._atom3d_bfactor[iatom] = 1.0
+            self._atom3d_isbackbone[iatom] = 1.0
+
+        for ihead in head_idx_atom:
+
+            itail = tail_idx_atom[imol]
+
+            self._atom3d_occupancy[ihead] = 1.0
+            self._atom3d_occupancy[itail] = 2.0
+            try:
+                backbone_list = self._topology.find_all_paths(ihead, itail)[0]
+            except IndexError:
+                backbone_list = None
+                m = "\n\t\t ERROR: There is a problem with the head {} and tail {} atoms in mol {}".\
+                    format(ihead, itail, imol)
+                print(m) if self._logger is None else self._logger.error(m)
+                exit()
+            for item in backbone_list:
+                self._atom3d_bfactor[item] = 0.0
+                self._atom3d_isbackbone[item] = 0.0
+            imol += 1
+
+        # Unwrap coordinates
+        if isunwrap:
+            coords = np.array(list(self._atom3d_xyz.values()))
+            tupleout = self._topology.get_array_mols_neigh()
+            nmols_array = tupleout[0]
+            l_neigh_array = tupleout[1]
+            c = unwrap(coords, nmols_array, l_neigh_array, self._boxlength)
+            for idx, item in enumerate(c):
+                self._atom3d_xyz[idx] = item
+
+        # Write PDB before to change topology
+        if assign_residues_info is None:
+            write_new_pdb_norenumber(g_new, fnameout2=fnameout)
+            fnamegro = os.path.splitext(fnameout)[0] + ".gro"
+            self.write_gro(filename_gro=fnamegro)
 
         if assign_residues_info is not None:
             self.assign_residues_chains(assign_residues_info, fout=fnameout)
@@ -795,7 +943,7 @@ class ReadPdbFormat(ReadBaseFormat):
                 print("ERROR!!!!. <RESIDUES> ... </RESIDUES> labels must exist in the file {}".format(fpathdat))
                 return False
             try:
-                nres = int(lines[start_idx+1])
+                _ = int(lines[start_idx+1])
             except ValueError:
                 print("ERROR!!!!. Number of residues must be an integer in the file {}".format(fpathdat))
                 return False
@@ -818,6 +966,7 @@ class ReadPdbFormat(ReadBaseFormat):
             while idx < end_res_idx:
                 for ikind in range(nkinds):
                     count = 0
+                    count_lines = 0
                     _, _, nr, _ = [ii for ii in lines[idx].split()]
                     nr = int(nr)
                     idx += 1
@@ -825,14 +974,15 @@ class ReadPdbFormat(ReadBaseFormat):
                         try:
                             aa, start, end = [ii for ii in lines[idx].split()]
                             count += (int(end)-int(start))+1
+                            count_lines += 1
                             idx += 1
                         except ValueError:
                             break
-                    if count != nr:
+                    if count_lines != nr:
                         print("ERROR!!!!. <COMPOSITION> ... </COMPOSITION> "
-                              "number of residues incorrect in kind {}. File {}".format(
+                              "number of residues incorrect in chain kind {}. File {}".format(
                                ikind, fpathdat))
-                        print("ERROR!!!!. Counted residues {} of {}".format(count, nr))
+                        print("ERROR!!!!. Counted residue lines {} of {}".format(count_lines, nr))
                         exit()
 
             idx_line = start_res_idx + 1
@@ -892,76 +1042,121 @@ class ReadPdbFormat(ReadBaseFormat):
     def get_backbone_headtail_files_for_analysis(self):
 
         d_bb = defaultdict(list)
+        d_br = defaultdict(list)
 
-        for iatom, ivalue in self._atom3d_bfactor.items():
-            ich = self._topology._iatch[iatom]
-            if ivalue != 0.0:
-                d_bb[ich].append(iatom)
+        # for iatom, ivalue in self._atom3d_bfactor.items():
+        #     ich = self._topology._iatch[iatom]
+        #     if ivalue == 0.0:
+        #         d_bb[ich].append(iatom)
+        #     else:
+        #         d_br[ich].append(iatom)
 
         with open('backbone_idx.dat', 'w') as f:
-            for ich in d_bb:
+            ich = 0
+            for ihead in self._heads:
+                iatom = ihead
                 f.writelines("[mol{}]\n".format(ich))
-                for ivalue in d_bb[ich]:
-                    f.writelines("{}\n".format(ivalue))
+                f.writelines("{}\n".format(iatom))
+                isvisited = list()
+                isvisited.append(iatom)
+                d_bb[ich].append(iatom)
+
+                while iatom != self._tails[ich]:
+                    neigh_bb = [i for i in self._topology._graphdict[iatom] if self._atom3d_bfactor[i] == 0.0]
+                    for jatom in neigh_bb:
+                        if jatom not in isvisited:
+                            f.writelines("{}\n".format(jatom))
+                            isvisited.append(jatom)
+                            d_bb[ich].append(jatom)
+                            iatom = jatom
+                            continue
+
+                ich += 1
+
+        # # FOR DEBUG PURPOSES
+        # with open('backbone_idx_vmd.dat', 'w') as f:
+        #     for ich in d_bb:
+        #         f.writelines("[mol{}]\n".format(ich))
+        #         for ivalue in d_bb[ich]:
+        #             f.writelines("{} ".format(ivalue))
+        #         f.writelines("\n")
+
+        with open('branch_idx.dat', 'w') as f:
+            for ich in range(len(self._topology._nmols)):
+                f.writelines("[mol{}]\n".format(ich))
+                for ivalue in self._topology._nmols[ich]:
+                    if ivalue not in d_bb[ich]:
+                        f.writelines("{}\n".format(ivalue))
+                        d_br[ich].append(ivalue)
 
         with open('listend2end.dat', 'w') as f:
             f.writelines("# ich head tail\n".format(ich))
-            for ich in d_bb:
-                f.writelines("{} {} {}\n".format(ich, d_bb[ich][0], d_bb[ich][-1]))
+            for ich in range(self._nmols):
+                f.writelines("{} {} {}\n".format(ich, self._heads[ich], self._tails[ich]))
+
+        # # FOR DEBUG PURPOSES
+        # with open('listend2end_heads_vmd.dat', 'w') as f:
+        #     for ich in range(self._nmols):
+        #         f.writelines("{} ".format(self._heads[ich]))
+        #     f.writelines("\n")
+        #
+        # with open('listend2end_tails_vmd.dat', 'w') as f:
+        #     for ich in range(self._nmols):
+        #         f.writelines("{} ".format(self._tails[ich]))
+        #     f.writelines("\n")
 
     # *************************************************************************
     def get_bond_list(self):
 
         return self._bond_list
 
-    # *************************************************************************
-    def check_read_structure(self):
-
-        """
-        Review certain aspects of the structure obtained from the PDB file.
-        """
-
-        # Check for number of molecules and head/tail
-        if len(self._heads) != 0 and len(self._heads) != len(self._tails):
-            m = "\n\t\t ERROR: It appears that information about 'heads and tails' " \
-                "is available in the PDB file (occupancy column)\n"
-            m += "\t\t ERROR: The count of heads ({}) does not match the count of tail numbers ({})\n".\
-                format(len(self._heads), len(self._tails))
-            m += "\t\t Aborting!!!!!"
-            print(m) if self._logger is None else self._logger.error(m)
-            exit()
-
-        if len(self._heads) != 0 and len(self._heads) != self._nmols:
-            m = "\n\t\t ERROR: It appears that information about 'heads and tails' " \
-                "is available in the PDB file (occupancy column)\n"
-            m += "\t\t ERROR: The count of heads ({}) does not match the count of " \
-                 "molecules after guessing the topology ({})\n".\
-                format(len(self._heads), self._nmols)
-            m += "\t\t ERROR: Number of bonds ({})\n".\
-                format(self._nbonds)
-            m += "\t\t ERROR: Probable overlap from atoms.\n"
-            m += "\t\t ERROR: Use a topology file to get the bond list or \n" \
-                 "try to minimize/equilibrate before to use topology.\n"
-            m += "\t\t Aborting!!!!!"
-            print(m) if self._logger is None else self._logger.error(m)
-            # Summarize chains in a file
-            natch_dict = defaultdict(list)
-            with open("error_summarize_chains.dar", 'w') as fchain:
-                line1 = "# Expected number of chains: {}\n".format(self._nmols)
-                line1 += "# Number_of_Atoms Number_of_chains\n"
-                for imol in self._topology.get_nmols():
-                    natch_dict[len(imol)].append(imol)
-                for key, values in natch_dict.items():
-                    line1 += "{0:6d} {1:6d}\n".format(key, len(values))
-                fchain.writelines(line1)
-
-            exit()
-
-        if len(self._universe.atoms.names) != len(self._topology._names):
-            m = "\n\t\tERROR!!!!!: The number of atoms ({}) is not equal to the dimension of names ({})".\
-                  format(len(self._universe.atoms.names), len(self._topology._names))
-            m += "\t\tERROR!!!!!: Probably the system is overlaped. Try minimize or equilibrate before.\n"
-            m += "\t\t Aborting!!!!!"
-            print(m) if self._logger is None else self._logger.error(m)
-            exit()
-
+    # # *************************************************************************
+    # def check_read_structure(self):
+    #
+    #     """
+    #     Review certain aspects of the structure obtained from the PDB file.
+    #     """
+    #
+    #     # Check for number of molecules and head/tail
+    #     if len(self._heads) != 0 and len(self._heads) != len(self._tails):
+    #         m = "\n\t\t ERROR: It appears that information about 'heads and tails' " \
+    #             "is available in the PDB file (occupancy column)\n"
+    #         m += "\t\t ERROR: The count of heads ({}) does not match the count of tail numbers ({})\n".\
+    #             format(len(self._heads), len(self._tails))
+    #         m += "\t\t Aborting!!!!!"
+    #         print(m) if self._logger is None else self._logger.error(m)
+    #         exit()
+    #
+    #     if len(self._heads) != 0 and len(self._heads) != self._nmols:
+    #         m = "\n\t\t ERROR: It appears that information about 'heads and tails' " \
+    #             "is available in the PDB file (occupancy column)\n"
+    #         m += "\t\t ERROR: The count of heads ({}) does not match the count of " \
+    #              "molecules after guessing the topology ({})\n".\
+    #             format(len(self._heads), self._nmols)
+    #         m += "\t\t ERROR: Number of bonds ({})\n".\
+    #             format(self._nbonds)
+    #         m += "\t\t ERROR: Probable overlap from atoms.\n"
+    #         m += "\t\t ERROR: Use a topology file to get the bond list or \n" \
+    #              "try to minimize/equilibrate before to use topology.\n"
+    #         m += "\t\t Aborting!!!!!"
+    #         print(m) if self._logger is None else self._logger.error(m)
+    #         # Summarize chains in a file
+    #         natch_dict = defaultdict(list)
+    #         with open("error_summarize_chains.dar", 'w') as fchain:
+    #             line1 = "# Expected number of chains: {}\n".format(self._nmols)
+    #             line1 += "# Number_of_Atoms Number_of_chains\n"
+    #             for imol in self._topology.get_nmols():
+    #                 natch_dict[len(imol)].append(imol)
+    #             for key, values in natch_dict.items():
+    #                 line1 += "{0:6d} {1:6d}\n".format(key, len(values))
+    #             fchain.writelines(line1)
+    #
+    #         exit()
+    #
+    #     if len(self._universe.atoms.names) != len(self._topology._names):
+    #         m = "\n\t\tERROR!!!!!: The number of atoms ({}) is not equal to the dimension of names ({})".\
+    #               format(len(self._universe.atoms.names), len(self._topology._names))
+    #         m += "\t\tERROR!!!!!: Probably the system is overlaped. Try minimize or equilibrate before.\n"
+    #         m += "\t\t Aborting!!!!!"
+    #         print(m) if self._logger is None else self._logger.error(m)
+    #         exit()

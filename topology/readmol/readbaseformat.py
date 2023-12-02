@@ -286,7 +286,7 @@ class ReadBaseFormat(object):
                     idx_local = 0
 
                 if atom_kind_molecule_label is None:
-                    fpdb.write(fmt['HETATM'].format(
+                    fpdb.write(fmt['ATOM'].format(
                         serial=idx_local+1,
                         name=self._topology._names[idx],             # name = self._atom3d_element[idx]
                         altLoc=" ",
@@ -301,7 +301,7 @@ class ReadBaseFormat(object):
                         element=self._atom3d_element[idx]
                     ))
                 else:
-                    fpdb.write(fmt['HETATM'].format(
+                    fpdb.write(fmt['ATOM'].format(
                         serial=idx_local+1,
                         name=self._topology._names[idx],             # name = self._atom3d_element[idx]
                         altLoc=" ",
@@ -319,7 +319,7 @@ class ReadBaseFormat(object):
                 idx_local += 1
                 idx += 1
 
-            fpdb.write('END\n')
+            fpdb.write('ENDMDL\n')
 
             # If the number of atoms is greater than 99999 do not write CONECT section in the PDB file.
             if self._natoms < 99999:
@@ -330,14 +330,29 @@ class ReadBaseFormat(object):
                         fpdb.writelines('{0:>5d}'.format(ineigh+1))
                     fpdb.writelines("\n")
                     if self._topology.elements[idx] == 'H' and len(self._topology._graphdict[idx]) >= 2:
-                        print("WARNING: Hydrogen atom with more than 1 atom connected. idx: {} ({})"
-                              .format(idx, len(self._topology._graphdict[idx])))
+                        mm = "\t\tWARNING: Hydrogen atom with more than 1 atom connected. idx: {} ({}) -->"\
+                            .format(idx, len(self._topology._graphdict[idx]))
+                        mm += " {} ({},{}): ".format(idx, self._topology.elements[idx], self._universe.atoms[idx].type)
+                        for jdx in self._topology._graphdict[idx]:
+                            mm += "{}-{}-{}, ".format(jdx, self._topology.elements[jdx],
+                                                      self._universe.atoms[jdx].type)
+                        print(mm) if self._logger is None else self._logger.info(mm)
                     elif self._topology.elements[idx] == 'C' and len(self._topology._graphdict[idx]) >= 5:
-                        print("WARNING: Carbon atom with more than 4 atoms connected. idx: {} ({})"
-                              .format(idx, len(self._topology._graphdict[idx])))
+                        mm = "\t\tWARNING: Carbon atom with more than 4 atoms connected. idx: {} ({}) -->"\
+                            .format(idx, len(self._topology._graphdict[idx]))
+                        mm += " {} ({},{}): ".format(idx, self._topology.elements[idx], self._universe.atoms[idx].type)
+                        for jdx in self._topology._graphdict[idx]:
+                            mm += "{}-{}-{}, ".format(jdx, self._topology.elements[jdx],
+                                                      self._universe.atoms[jdx].type)
+                        print(mm) if self._logger is None else self._logger.info(mm)
                     elif len(self._topology._graphdict[idx]) > 5:
-                        print("WARNING: {} atom with more than 1 atom connected. idx: {} ({})".
-                              format(self._topology.elements[idx], idx, len(self._topology._graphdict[idx])-1))
+                        mm = "\t\tWARNING: Atom with more than 5 atoms connected. idx: {} ({}) -->"\
+                            .format(idx, len(self._topology._graphdict[idx]))
+                        mm += " {} ({},{}): ".format(idx, self._topology.elements[idx], self._universe.atoms[idx].type)
+                        for jdx in self._topology._graphdict[idx]:
+                            mm += "{}-{}-{}, ".format(jdx, self._topology.elements[jdx],
+                                                      self._universe.atoms[jdx].type)
+                        print(mm) if self._logger is None else self._logger.info(mm)
 
         if separate_chains:
             self._write_separate_chains(filename_pdb)
@@ -389,7 +404,7 @@ class ReadBaseFormat(object):
             idx_local = 0
             line_connect = ""
             for idx in imol:
-                fpdb.write(fmt['HETATM'].format(
+                fpdb.write(fmt['ATOM'].format(
                            serial=idx_local + 1,
                            name=self._atom3d_element[idx],
                            altLoc=" ",
@@ -412,7 +427,7 @@ class ReadBaseFormat(object):
             idx_stride += len(imol)
 
             # Last chain
-            fpdb.write('END\n')
+            fpdb.write('ENDMDL\n')
             fpdb.write(line_connect)
             fpdb.write('END\n')
             fpdb.close()
@@ -669,6 +684,62 @@ class ReadBaseFormat(object):
             f.write(line0)
             iline = 1
             line1 = ""
+
+    # *************************************************************************
+    def check_read_structure(self):
+
+        """
+        Review certain aspects of the structure obtained from the PDB file.
+        """
+
+        # Check for number of molecules and head/tail
+        if len(self._heads) != 0 and len(self._heads) != len(self._tails):
+            m = "\n\t\t ERROR: It appears that information about 'heads and tails' " \
+                "is available in the input file (occupancy column)\n"
+            m += "\t\t ERROR: The count of heads ({}) does not match the count of tail numbers ({})\n".\
+                format(len(self._heads), len(self._tails))
+            m += "\t\t Aborting!!!!!"
+            print(m) if self._logger is None else self._logger.error(m)
+            exit()
+
+        if len(self._heads) != 0 and len(self._heads) != self._nmols:
+            m = "\n\t\t ERROR: It appears that information about 'heads and tails' " \
+                "is available in the input file (occupancy column)\n"
+            m += "\t\t ERROR: The count of heads ({}) does not match the count of " \
+                 "molecules after guessing the topology ({})\n".\
+                format(len(self._heads), self._nmols)
+            m += "\t\t ERROR: Number of bonds ({})\n".\
+                format(self._nbonds)
+            m += "\t\t ERROR: Probable overlap from atoms.\n"
+            m += "\t\t ERROR: Use a topology file to get the bond list or \n" \
+                 "\t\t        try to minimize/equilibrate before to use topology.\n"
+            m += "\t\t Aborting!!!!!"
+            print(m) if self._logger is None else self._logger.error(m)
+            # Summarize chains in a file
+            natch_dict = defaultdict(list)
+            with open("error_summarize_chains.dar", 'w') as fchain:
+                line1 = "# Expected number of chains: {}\n".format(self._nmols)
+                line1 += "# Number_of_Atoms Number_of_chains\n"
+                for imol in self._topology.get_nmols():
+                    natch_dict[len(imol)].append(imol)
+                for key, values in natch_dict.items():
+                    line1 += "{0:6d} {1:6d}\n".format(key, len(values))
+                fchain.writelines(line1)
+
+            exit()
+
+        try:
+            if len(self._universe.atoms.names) != len(self._topology._names):
+                m = "\n\t\tERROR!!!!!: The number of atoms ({}) is not equal to the dimension of names ({})".\
+                      format(len(self._universe.atoms.names), len(self._topology._names))
+                m += "\t\tERROR!!!!!: Probably the system is overlaped. Try minimize or equilibrate before.\n"
+                m += "\t\t Aborting!!!!!"
+                print(m) if self._logger is None else self._logger.error(m)
+                exit()
+        except AttributeError:
+            pass
+
+
 
     # *************************************************************************
     def guessing_impropers(self):

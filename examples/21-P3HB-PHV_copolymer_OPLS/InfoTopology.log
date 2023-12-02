@@ -25,29 +25,11 @@
 			         or
 			topology_cmd -i PHBHVrandom600.xsd -r PHBHV600_headtail.dat -a PHBHV600_residues.dat
 
-		Starting: 	 01-06-2023 15:38:53
+		Starting: 	 26-11-2023 18:55:31
 
 		Input is a XSD format.
-		Reading... (01-06-2023 15:38:53)
-		End read   (01-06-2023 15:38:55)
+		Reading... (26-11-2023 18:55:31)
+		End read   (26-11-2023 18:55:31)
 
-		Summarize of the input system (01-06-2023 15:38:55)
-		=======================================================
-		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/21-P3HB-PHV_copolymer_OPLS/PHBHVrandom600.xsd
-		Number of molecules       : 1
-		Number of residues        : 150
-		Number of atoms           : 1847
-		Number of bonds           : 1846
-		Bond info available       : True
-		Simulation box dimension  : 0.0000 0.0000 0.0000 nm
-		Simulation box angles     : 0.00 0.00 0.00 degrees
-		=======================================================
-
-		****** WRITE PDB and PSF files (01-06-2023 15:38:55) ****** 
-		 Writing PDB file...topology.pdb (01-06-2023 15:38:55)
-		****** END WRITE PDB and PSF files (01-06-2023 15:38:55) ****** 
-
-		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (01-06-2023 15:38:55) ****** 
-		 Renumbering PDB file... topology.pdb (01-06-2023 15:38:55)
-		 Head-Tail info from ... PHBHV600_headtail.dat (01-06-2023 15:38:56)
-		 Write renumbered file ... topology_residues.pdb (01-06-2023 15:38:56)
+		****** WRITE PDB and PSF files (26-11-2023 18:55:31) ****** 
+		 Writing PDB file...topology.pdb (26-11-2023 18:55:31)

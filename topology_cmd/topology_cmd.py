@@ -63,7 +63,7 @@ def summary_initial_log(topobj, dict_messages, log=None):
 
 
 # =============================================================================
-def main_app(version):
+def main_app(version=None):
 
     # Init logger =============================================================
     starttime = datetime.datetime.now()

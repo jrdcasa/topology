@@ -83,7 +83,7 @@ def bonds_from_conect_psf(psffname):
 
 
 # =============================================================================
-def main_app(version):
+def main_app(version=None):
 
     # Init logger =============================================================
     starttime = datetime.datetime.now()

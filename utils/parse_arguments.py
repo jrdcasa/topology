@@ -42,7 +42,7 @@ def command_info(opts, logger=None):
     m += "\t\t\tpython {}".format(os.path.split(sys.argv[0])[1])
     m += m1+"\n"
     m += "\t\t\t         or\n"
-    m += "\t\t\ttopology_cmd".format(os.path.split(sys.argv[0])[1])
+    m += "\t\t\t{} ".format(os.path.split(sys.argv[0])[1])
     m += m1+"\n"
     print(m) if logger is None else logger.info(m)
 
@@ -151,3 +151,46 @@ def parse_arguments_check():
 
     return args
 
+
+# =============================================================================
+def parse_arguments_label():
+
+    import time
+
+    desc = """ Label a PDB file, designating head and tail atoms as well as backbone atoms.
+     Additionally, generate a list of atoms  \n"""
+
+    parser = argparse.ArgumentParser(description=desc, formatter_class=argparse.RawTextHelpFormatter)
+
+    parser.add_argument("-p", "--pdb", dest="pdbfile",
+                        help="A PDB file to be labelled",
+                        action="store", metavar="PDB_FILE", required=True)
+
+    parser.add_argument("-f", "--headfile", dest="headfile",
+                        help=textwrap.dedent("Renumber pdb in accordance with the head and tail info"
+                                             " in the provided file. The format is:\n"
+                                             "  nmols: 40\n"
+                                             "  #ich idx-head idx-tail (indexes start at 0)\n"
+                                             "  0 1 456\n"
+                                             "  1 465 920\n"
+                                             "  ...\n"
+                                             "  39 18097 18552\n"),
+                        action="store", metavar="HEAD_TAIL_file", required=True)
+
+    parser.add_argument("-a", "--assign_residues", dest="assignresidues",
+                        help=textwrap.dedent("Assign residues in accordance with residue file."),
+                        action="store", metavar="SETUP_RESIDUE_file", required=False)
+
+    args = parser.parse_args()
+
+    # Check for existing files:
+    if not os.path.isfile(args.pdbfile):
+        print(desc)
+        time.sleep(.25)
+        parser.error("PDB file must exist!!!! ({})".format(os.path.abspath(args.pdbfile)))
+    if not os.path.isfile(args.headfile):
+        print(desc)
+        time.sleep(.25)
+        parser.error("Head-Tail file must exist!!!! ({})".format(os.path.abspath(args.headfile)))
+
+    return args
