@@ -291,7 +291,7 @@ class ReadBaseFormat(object):
                         name=self._topology._names[idx],             # name = self._atom3d_element[idx]
                         altLoc=" ",
                         resName=resname,
-                        chainID=" ",
+                        chainID=self._atom3d_kindmolecule[idx],
                         resSeq=self._atom3d_residue[idx] % 10000,
                         iCode=" ",
                         pos=[i for i in self._atom3d_xyz[idx]],
@@ -322,7 +322,7 @@ class ReadBaseFormat(object):
             fpdb.write('ENDMDL\n')
 
             # If the number of atoms is greater than 99999 do not write CONECT section in the PDB file.
-            if self._natoms < 99999:
+            if self._natoms <= 99999:
                 for idx in range(self._natoms):
 
                     fpdb.write('CONECT{0:>5d}'.format(idx+1))

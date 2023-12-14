@@ -10,3 +10,4 @@ docs/_static/**
 docs/_templates/**
 *.lock
 *.swp
+test/TEst.py
