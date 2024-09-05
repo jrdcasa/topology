@@ -327,6 +327,83 @@ def dihedral_angle_purepython(ci, cj, ck, cl, radians=False):
 
 
 # #############################################################################
+def dihedral_angle_purepython_vmd(ci, cj, ck, cl, radians=False):
+
+    """
+
+    Calculate the dihedral or improper angle
+    PBCs are not corrected in the function
+
+    .. image:: ../../figures/dih_imp.png
+
+    Parameters:
+        * ``ci`` :
+        * ``cj`` :
+        * ``ck`` :
+        * ``cl`` :
+        * ``radians`` :
+
+    Returns:
+        * ``phi`` :
+    """
+
+    # 1st bond
+    delx1 = ci[0] - cj[0]
+    dely1 = ci[1] - cj[1]
+    delz1 = ci[2] - cj[2]
+
+    # 2nd bond
+    delx2 = ck[0] - cj[0]
+    dely2 = ck[1] - cj[1]
+    delz2 = ck[2] - cj[2]
+
+    delx2m = -delx2
+    dely2m = -dely2
+    delz2m = -delz2
+
+    # 3rd bond
+    delx3 = cl[0] - ck[0]
+    dely3 = cl[1] - ck[1]
+    delz3 = cl[2] - ck[2]
+
+    # c,s calculation
+    ax = dely1*delz2m - delz1*dely2m
+    ay = delz1*delx2m - delx1*delz2m
+    az = delx1*dely2m - dely1*delx2m
+    bx = dely3*delz2m - delz3*dely2m
+    by = delz3*delx2m - delx3*delz2m
+    bz = delx3*dely2m - dely3*delx2m
+
+    rasq = ax*ax + ay*ay + az*az
+    rbsq = bx*bx + by*by + bz*bz
+    rgsq = delx2m*delx2m + dely2m*dely2m + delz2m*delz2m
+    rg = np.sqrt(rgsq)
+
+    rginv = ra2inv = rb2inv = 0.0
+    if rg > 0:
+        rginv = 1.0/rg
+    if rasq > 0:
+        ra2inv = 1.0/rasq
+    if rbsq > 0:
+        rb2inv = 1.0/rbsq;
+    rabinv = np.sqrt(ra2inv*rb2inv)
+
+    c = (ax*bx + ay*by + az*bz)*rabinv
+    s = rg*rabinv*(ax*delx3+ay*dely3+az*delz3)
+
+    if c > 1.0:
+        c = 1.0
+    if c < -1.0:
+        c = -1.0
+
+    phi = np.arctan2(s, c)
+    if not radians:
+        phi = phi * 180. / math.pi
+
+    return phi
+
+
+# #############################################################################
 def cos_angle_purepython(ci, cj, ck, cl, radians=False):
 
     """

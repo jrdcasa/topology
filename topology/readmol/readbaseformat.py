@@ -271,6 +271,7 @@ class ReadBaseFormat(object):
                                             self._boxangle[1]*radtodeg,
                                             self._boxangle[2]*radtodeg,
                                             spacegroup, zvalue))
+            fpdb.write('MODEL 1\n')
 
             idx = 0
             idx_local = 0
@@ -286,12 +287,16 @@ class ReadBaseFormat(object):
                     idx_local = 0
 
                 if atom_kind_molecule_label is None:
+                    try:
+                        chainid = self._atom3d_kindmolecule[idx]
+                    except AttributeError:
+                        chainid = 'A'
                     fpdb.write(fmt['ATOM'].format(
                         serial=idx_local+1,
                         name=self._topology._names[idx],             # name = self._atom3d_element[idx]
                         altLoc=" ",
                         resName=resname,
-                        chainID=self._atom3d_kindmolecule[idx],
+                        chainID=chainid,
                         resSeq=self._atom3d_residue[idx] % 10000,
                         iCode=" ",
                         pos=[i for i in self._atom3d_xyz[idx]],

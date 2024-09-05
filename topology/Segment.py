@@ -228,10 +228,10 @@ class Segment(object):
                    "\tNumber of atoms: %d\n" \
                     "\tCoordfile: %s\n" \
                     "\tTopofile: %s\n" \
-                   "\t======== ERROR ==========\n"%(self._coords.shape[0] ,   len(self._elements), self._natoms,
+                   "\t======== ERROR ==========\n"%(self._coords.shape[0], len(self._elements), self._natoms,
                                                     self._filecoord, self._filetop)
 
-            #print(line)
+            # print(line)
             self._logger.error(line)
             raise ValueError ("Coordinates arrays must have equal length and equal to number of atoms")
 

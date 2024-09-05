@@ -21,6 +21,7 @@ class ExtTrajectory(object):
 
     __slots__ = ['trjtype', 'trjpath', 'dt', 'topology',
                  'logger', 'universe', 'nframes', 'natoms', 'trjlist']
+
     # ***********************************************************************************
     def __init__(self, trjlist=None, topfile=None, templatefile=None, logger=None, is_unitedatom=False):
 

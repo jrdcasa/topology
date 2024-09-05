@@ -96,7 +96,7 @@ class ReadPdbFormat(ReadBaseFormat):
             now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
             m = "\t\t\t Start Guessing bonds using MDAnalysis library. ({})".format(now)
             print(m) if self._logger is None else self._logger.info(m)
-        self._universe = Universe(self._fnamepath, guess_bonds=guess_bonds)
+        self._universe = Universe(self._fnamepath, guess_bonds=guess_bonds, fudge_factor=0.6)
         if guess_bonds:
             now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
             m = "\t\t\t End Guessing bonds using MDAnalysis library. ({})".format(now)
@@ -144,9 +144,11 @@ class ReadPdbFormat(ReadBaseFormat):
             except exceptions.NoDataError:
                 # Avoid mistakes when the atom name matches some element name
                 # Example: CS is not Cs
-                if not iatom.name[1].islower():
-                    iatom.name = iatom.name[0]
-                e = str(guess_atom_element(iatom.name))
+
+                if len(iatom.name) > 1 and not iatom.name[1].islower():
+                #    iatom.name = iatom.name[0]
+                    element = iatom.name[0]
+                e = str(guess_atom_element(element))
                 listelements.append(e)
             # cJ idx = iatom.id - 1
             idx = iatom.index
@@ -334,7 +336,8 @@ class ReadPdbFormat(ReadBaseFormat):
                     print("\t\tWARNING: Index: {} Element: {} Number of bonds: {}".
                           format(iatom.id, e, len(iatom.bonded_atoms.elements)))
             else:
-                name_list.append(e)
+                # name_list.append(e) cJ 5-Mar-2024
+                name_list.append(iatom.name)
 
         self._topology.set_name(name_list)
 
@@ -360,7 +363,7 @@ class ReadPdbFormat(ReadBaseFormat):
         """
 
         # ===========
-        def create_subgraph_from_node(inode, isvisitedlist):
+        def create_subgraph_from_node(inode, isvisitedlist, backbonelist):
 
             """
             Subgraph to calculate longest distance. As the subgraph is searched using a bfs algorithm, the likely
@@ -384,7 +387,7 @@ class ReadPdbFormat(ReadBaseFormat):
                 if cnode not in isvisitedlist:
                     neighs = topo.get_neighbours(cnode)
                     for ineigh in neighs:
-                        if ineigh in isvisitedlist:
+                        if ineigh in isvisitedlist or ineigh in backbonelist:
                             continue
                         else:
                             subgraph[cnode].append(ineigh)
@@ -528,7 +531,8 @@ class ReadPdbFormat(ReadBaseFormat):
             self._atom3d_bfactor[iatom] = 1.0
 
         for ihead in head_idx_atom:
-
+            now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+            print("Mol = {}, Head = {}, Tail = {} ({})".format(imol, ihead, tail_idx_atom[imol], now))
             visitedlist = []
             queue = [ihead]
             topo = self._topology
@@ -537,7 +541,8 @@ class ReadPdbFormat(ReadBaseFormat):
             self._atom3d_occupancy[ihead] = 1.0
             self._atom3d_occupancy[itail] = 2.0
 
-            backbone_list = self._topology.find_all_paths(ihead, itail)[0]
+            # backbone_list = self._topology.find_all_paths(ihead, itail)[0]
+            backbone_list = self._topology.find_all_paths_iterative(ihead, itail)
             for item in backbone_list:
                 self._atom3d_bfactor[item] = 0.0
 
@@ -572,7 +577,7 @@ class ReadPdbFormat(ReadBaseFormat):
                                 if len(br_atom) > 1:
                                     lengths_path = defaultdict()
                                     for item2 in br_atom:
-                                        sg, leaves = create_subgraph_from_node(item2, visitedlist)
+                                        sg, leaves = create_subgraph_from_node(item2, visitedlist, backbone_list)
                                         # Only the  last five nodes are inspected.
                                         max_path = 0
                                         for ileave in leaves[-5:]:
@@ -587,7 +592,7 @@ class ReadPdbFormat(ReadBaseFormat):
                                     item = br_atom[0]
                                     queue.append(item)
                                     # Put in the queue all branch atoms before to the backbone atom
-                                    sg, leaves = create_subgraph_from_node(item, visitedlist)
+                                    sg, leaves = create_subgraph_from_node(item, visitedlist, backbone_list)
                                     for ileave in leaves:
                                         ll = longest_path(item, ileave, sg)
                                         for ipath in ll:
@@ -800,7 +805,8 @@ class ReadPdbFormat(ReadBaseFormat):
             self._atom3d_occupancy[ihead] = 1.0
             self._atom3d_occupancy[itail] = 2.0
             try:
-                backbone_list = self._topology.find_all_paths(ihead, itail)[0]
+                # backbone_list = self._topology.find_all_paths(ihead, itail)[0]
+                backbone_list = self._topology.find_all_paths_iterative(ihead, itail)
             except IndexError:
                 backbone_list = None
                 m = "\n\t\t ERROR: There is a problem with the head {} and tail {} atoms in mol {}".\
@@ -875,7 +881,7 @@ class ReadPdbFormat(ReadBaseFormat):
                     print(m) if self._logger is None else self._logger.error(m)
                     # Summarize chains in a file
                     natch_dict = defaultdict(list)
-                    with open("error_summarize_chains.dar", 'w') as fchain:
+                    with open("error_summarize_chains.dat", 'w') as fchain:
                         line1 = "# Expected number of chains: {}\n".format(nmols)
                         line1 += "# Number_of_Atoms Number_of_chains\n"
                         for imol in self._topology.get_nmols():
@@ -900,7 +906,8 @@ class ReadPdbFormat(ReadBaseFormat):
                     self._tails.append(int(itail))
             except ValueError:
                 print("ERROR: There are problems with the lines containing head and tail atoms ({})".format(fpathdat))
-                return [], []
+                exit()
+                #return [], [] #cJ 6-Mar-2024
 
         return self._heads, self._tails
 

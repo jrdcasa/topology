@@ -194,3 +194,67 @@ def parse_arguments_label():
         parser.error("Head-Tail file must exist!!!! ({})".format(os.path.abspath(args.headfile)))
 
     return args
+
+
+# =============================================================================
+def parse_arguments_typing_carb():
+
+    import time
+
+    desc = """ Type a PDB containing a polysaccharide.\n"""
+
+    parser = argparse.ArgumentParser(description=desc, formatter_class=argparse.RawTextHelpFormatter)
+
+    parser.add_argument("-p", "--pdb", dest="pdbfile",
+                        help="A PDB file contaning a polysaccharide for typing",
+                        action="store", metavar="PDB_FILE", required=True)
+
+    parser.add_argument("-b", "--box", dest="boxdimensions", nargs="+",
+                        help="Box dimensions in the GRO format, "
+                             "lx, ly, lz",
+                        action="store", metavar="PDB_FILE", required=False, default=None)
+
+    args = parser.parse_args()
+
+    # Check for existing files:
+    if not os.path.isfile(args.pdbfile):
+        print(desc)
+        time.sleep(.25)
+        parser.error("PDB file must exist!!!! ({})".format(os.path.abspath(args.pdbfile)))
+
+    # Check dimensions
+    if args.boxdimensions is not None:
+        if len(args.boxdimensions) not in [1, 3]:
+            print("ERROR in box dimensions")
+            exit()
+
+    return args
+
+
+# =============================================================================
+def print_header_type_cb(version, logger_log=None):
+    msg = """
+    ***********************************************************************
+                     Typing carbohydrates to run MD
+              ----------------------------------------------
+
+                                Version {}
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        This program processes a PDB file containing a carbohydrate generated 
+        by either CarbBuilder (https://people.cs.uct.ac.za/~mkuttel/Downloads.html) 
+        or DoGlycans (https://bitbucket.org/biophys-uh/doglycans/src/main/). 
+        It attempts to type the molecule using the CHARMM36 force field for sugars.
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        """.format(version)
+
+    print(msg) if logger_log is None else logger_log.info(msg)

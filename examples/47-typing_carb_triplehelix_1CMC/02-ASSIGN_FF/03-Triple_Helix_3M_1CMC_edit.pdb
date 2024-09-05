@@ -1,0 +1,417 @@
+REMARK     Renumbered with topology (J.Ramos)
+REMARK     Backbone atoms --> Beta field == 0.00
+REMARK     Branch   atoms --> Beta field >= 1.00
+REMARK     Head     atoms --> Occupanccy field == 1.00
+REMARK     Tail     atoms --> Occupanccy field == 2.00
+REMARK     Middle   atoms --> Occupanccy field == 0.00
+CRYST1   17.378   14.558   10.805  90.00  90.00  90.00 P -1          1
+MODEL 1
+ATOM      1 O3   BGL A   1      -9.221   9.349   0.000  1.00  0.00           O
+ATOM      2 HO3  BGL A   1     -10.247   9.772  -0.000  0.00  1.00           H
+ATOM      3 C3   BGL A   1      -8.825   9.057   1.345  0.00  0.00           C
+ATOM      4 H3   BGL A   1      -9.431   9.631   1.982  0.00  1.00           H
+ATOM      5 C4   BGL A   1      -9.108   7.589   1.650  0.00  1.00           C
+ATOM      6 H4   BGL A   1      -8.697   7.000   0.884  0.00  1.00           H
+ATOM      7 C5   BGL A   1      -8.477   7.182   2.973  0.00  1.00           C
+ATOM      8 H5   BGL A   1      -8.964   7.679   3.759  0.00  1.00           H
+ATOM      9 O4   BGL A   1     -10.510   7.357   1.703  0.00  1.00           O
+ATOM     10 HO4  BGL A   1     -10.726   6.565   2.449  0.00  1.00           H
+ATOM     11 C6   BGL A   1      -8.516   5.694   3.219  0.00  1.00           C
+ATOM     12 H6A  BGL A   1      -7.750   5.429   3.886  0.00  1.00           H
+ATOM     13 H6B  BGL A   1      -8.350   5.200   2.307  0.00  1.00           H
+ATOM     14 O6   BGL A   1      -9.775   5.267   3.744  0.00  1.00           O
+ATOM     15 HO6  BGL A   1     -10.043   5.896   4.619  0.00  1.00           H
+ATOM     16 O5   BGL A   1      -7.087   7.532   2.976  0.00  1.00           O
+ATOM     17 C1   BGL A   1      -6.883   8.948   2.912  0.00  0.00           C
+ATOM     18 H1   BGL A   1      -7.355   9.433   3.715  0.00  1.00           H
+ATOM     19 C2   BGL A   1      -7.384   9.486   1.578  0.00  0.00           C
+ATOM     20 H2   BGL A   1      -6.785   9.095   0.809  0.00  1.00           H
+ATOM     21 O2   BGL A   1      -7.288  10.913   1.566  0.00  1.00           O
+ATOM     22 HO2  BGL A   1      -6.221  11.213   1.632  0.00  1.00           H
+ATOM     23 O3   BGL A   2      -5.502   9.169   2.935  0.00  0.00           O
+ATOM     24 C3   BGL A   2      -5.051   9.365   4.280  0.00  0.00           C
+ATOM     25 H3   BGL A   2      -5.852   9.128   4.917  0.00  1.00           H
+ATOM     26 C4   BGL A   2      -3.922   8.386   4.585  0.00  1.00           C
+ATOM     27 H4   BGL A   2      -3.206   8.448   3.819  0.00  1.00           H
+ATOM     28 C5   BGL A   2      -3.254   8.729   5.908  0.00  1.00           C
+ATOM     29 H5   BGL A   2      -3.928   8.556   6.694  0.00  1.00           H
+ATOM     30 O4   BGL A   2      -4.422   7.056   4.638  0.00  1.00           O
+ATOM     31 HO4  BGL A   2      -3.843   6.473   5.384  0.00  1.00           H
+ATOM     32 C6   BGL A   2      -1.985   7.952   6.154  0.00  1.00           C
+ATOM     33 H6A  BGL A   2      -1.372   8.482   6.821  0.00  1.00           H
+ATOM     34 H6B  BGL A   2      -1.474   7.848   5.242  0.00  1.00           H
+ATOM     35 O6   BGL A   2      -2.244   6.648   6.679  0.00  1.00           O
+ATOM     36 HO6  BGL A   2      -2.923   6.729   7.554  0.00  1.00           H
+ATOM     37 O5   BGL A   2      -2.862  10.108   5.911  0.00  1.00           O
+ATOM     38 C1   BGL A   2      -3.986  10.993   5.847  0.00  0.00           C
+ATOM     39 H1   BGL A   2      -4.642  10.827   6.650  0.00  1.00           H
+ATOM     40 C2   BGL A   2      -4.702  10.828   4.513  0.00  0.00           C
+ATOM     41 H2   BGL A   2      -4.064  11.151   3.744  0.00  1.00           H
+ATOM     42 O2   BGL A   2      -5.890  11.625   4.501  0.00  1.00           O
+ATOM     43 HO2  BGL A   2      -5.616  12.698   4.567  0.00  1.00           H
+ATOM     44 O3   BGL A   3      -3.486  12.299   5.870  0.00  0.00           O
+ATOM     45 C3   BGL A   3      -3.431  12.787   7.215  0.00  0.00           C
+ATOM     46 H3   BGL A   3      -3.626  11.976   7.852  0.00  1.00           H
+ATOM     47 C4   BGL A   3      -2.019  13.276   7.520  0.00  1.00           C
+ATOM     48 H4   BGL A   3      -1.714  13.927   6.754  0.00  1.00           H
+ATOM     49 C5   BGL A   3      -1.982  14.026   8.843  0.00  1.00           C
+ATOM     50 H5   BGL A   3      -2.169  13.356   9.629  0.00  1.00           H
+ATOM     51 O4   BGL A   3      -1.117  12.178   7.573  0.00  1.00           O
+ATOM     52 HO4  BGL A   3      -0.322  12.388   8.319  0.00  1.00           H
+ATOM     53 C6   BGL A   3      -0.674  14.737   9.089  0.00  1.00           C
+ATOM     54 H6A  BGL A   3      -0.827  15.532   9.756  0.00  1.00           H
+ATOM     55 H6B  BGL A   3      -0.329  15.127   8.177  0.00  1.00           H
+ATOM     56 O6   BGL A   3       0.326  13.860   9.614  0.00  1.00           O
+ATOM     57 HO6  BGL A   3      -0.084  13.313  10.489  0.00  1.00           H
+ATOM     58 O5   BGL A   3      -2.980  15.055   8.846  0.00  1.00           O
+ATOM     59 C1   BGL A   3      -4.308  14.524   8.782  0.00  0.00           C
+ATOM     60 H1   BGL A   3      -4.492  13.873   9.585  0.00  1.00           H
+ATOM     61 C2   BGL A   3      -4.523  13.821   7.448  0.00  0.00           C
+ATOM     62 H2   BGL A   3      -4.484  14.535   6.679  0.00  1.00           H
+ATOM     63 O2   BGL A   3      -5.807  13.191   7.436  0.00  1.00           O
+ATOM     64 HO2  BGL A   3      -6.600  13.965   7.502  0.00  1.00           H
+ATOM     65 O3   BGL A   3      -5.189  15.609   8.805  2.00  0.00           O
+ATOM     66 HO3  BGL A   3      -4.726  16.450   9.364  0.00  1.00           H
+ATOM     67 O3   BGL A   4      -3.486  12.299   0.000  1.00  0.00           O
+ATOM     68 HO3  BGL A   4      -4.546  12.203  -0.316  0.00  1.00           H
+ATOM     69 C3   BGL A   4      -3.431  12.787   1.345  0.00  0.00           C
+ATOM     70 H3   BGL A   4      -3.626  11.976   1.982  0.00  1.00           H
+ATOM     71 C4   BGL A   4      -2.019  13.276   1.650  0.00  1.00           C
+ATOM     72 H4   BGL A   4      -1.714  13.927   0.884  0.00  1.00           H
+ATOM     73 C5   BGL A   4      -1.982  14.026   2.973  0.00  1.00           C
+ATOM     74 H5   BGL A   4      -2.169  13.356   3.759  0.00  1.00           H
+ATOM     75 O4   BGL A   4      -1.117  12.178   1.703  0.00  1.00           O
+ATOM     76 HO4  BGL A   4      -0.322  12.388   2.449  0.00  1.00           H
+ATOM     77 C6   BGL A   4      -0.674  14.737   3.219  0.00  1.00           C
+ATOM     78 H6A  BGL A   4      -0.827  15.532   3.886  0.00  1.00           H
+ATOM     79 H6B  BGL A   4      -0.329  15.127   2.307  0.00  1.00           H
+ATOM     80 O6   BGL A   4       0.326  13.860   3.744  0.00  1.00           O
+ATOM     81 HO6  BGL A   4      -0.084  13.313   4.619  0.00  1.00           H
+ATOM     82 O5   BGL A   4      -2.980  15.055   2.976  0.00  1.00           O
+ATOM     83 C1   BGL A   4      -4.308  14.524   2.912  0.00  0.00           C
+ATOM     84 H1   BGL A   4      -4.492  13.873   3.715  0.00  1.00           H
+ATOM     85 C2   BGL A   4      -4.523  13.821   1.578  0.00  0.00           C
+ATOM     86 H2   BGL A   4      -4.484  14.535   0.809  0.00  1.00           H
+ATOM     87 O2   BGL A   4      -5.807  13.191   1.566  0.00  1.00           O
+ATOM     88 HO2  BGL A   4      -6.600  13.965   1.632  0.00  1.00           H
+ATOM     89 O3   BGL A   5      -5.189  15.609   2.935  0.00  0.00           O
+ATOM     90 C3   BGL A   5      -5.585  15.901   4.280  0.00  0.00           C
+ATOM     91 H3   BGL A   5      -4.979  15.327   4.917  0.00  1.00           H
+ATOM     92 C4   BGL A   5      -5.302  17.369   4.585  0.00  1.00           C
+ATOM     93 H4   BGL A   5      -5.713  17.958   3.819  0.00  1.00           H
+ATOM     94 C5   BGL A   5      -5.933  17.776   5.908  0.00  1.00           C
+ATOM     95 H5   BGL A   5      -5.446  17.279   6.694  0.00  1.00           H
+ATOM     96 O4   BGL A   5      -3.900  17.601   4.638  0.00  1.00           O
+ATOM     97 HO4  BGL A   5      -3.684  18.394   5.384  0.00  1.00           H
+ATOM     98 C6   BGL A   5      -5.894  19.264   6.154  0.00  1.00           C
+ATOM     99 H6A  BGL A   5      -6.660  19.529   6.821  0.00  1.00           H
+ATOM    100 H6B  BGL A   5      -6.060  19.758   5.242  0.00  1.00           H
+ATOM    101 O6   BGL A   5      -4.635  19.691   6.679  0.00  1.00           O
+ATOM    102 HO6  BGL A   5      -4.367  19.063   7.554  0.00  1.00           H
+ATOM    103 O5   BGL A   5      -7.323  17.426   5.911  0.00  1.00           O
+ATOM    104 C1   BGL A   5      -7.527  16.010   5.847  0.00  0.00           C
+ATOM    105 H1   BGL A   5      -7.055  15.525   6.650  0.00  1.00           H
+ATOM    106 C2   BGL A   5      -7.026  15.472   4.513  0.00  0.00           C
+ATOM    107 H2   BGL A   5      -7.625  15.863   3.744  0.00  1.00           H
+ATOM    108 O2   BGL A   5      -7.122  14.045   4.501  0.00  1.00           O
+ATOM    109 HO2  BGL A   5      -8.189  13.746   4.567  0.00  1.00           H
+ATOM    110 O3   BGL A   6      -8.908  15.790   5.870  0.00  0.00           O
+ATOM    111 C3   BGL A   6      -9.359  15.593   7.215  0.00  0.00           C
+ATOM    112 H3   BGL A   6      -8.558  15.831   7.852  0.00  1.00           H
+ATOM    113 C4   BGL A   6     -10.488  16.572   7.520  0.00  1.00           C
+ATOM    114 H4   BGL A   6     -11.204  16.511   6.754  0.00  1.00           H
+ATOM    115 C5   BGL A   6     -11.156  16.230   8.843  0.00  1.00           C
+ATOM    116 H5   BGL A   6     -10.482  16.403   9.629  0.00  1.00           H
+ATOM    117 O4   BGL A   6      -9.988  17.903   7.573  0.00  1.00           O
+ATOM    118 HO4  BGL A   6     -10.567  18.486   8.319  0.00  1.00           H
+ATOM    119 C6   BGL A   6     -12.425  17.007   9.089  0.00  1.00           C
+ATOM    120 H6A  BGL A   6     -13.038  16.476   9.756  0.00  1.00           H
+ATOM    121 H6B  BGL A   6     -12.936  17.111   8.177  0.00  1.00           H
+ATOM    122 O6   BGL A   6     -12.166  18.311   9.614  0.00  1.00           O
+ATOM    123 HO6  BGL A   6     -11.487  18.229  10.489  0.00  1.00           H
+ATOM    124 O5   BGL A   6     -11.548  14.851   8.846  0.00  1.00           O
+ATOM    125 C1   BGL A   6     -10.424  13.966   8.782  0.00  0.00           C
+ATOM    126 H1   BGL A   6      -9.768  14.132   9.585  0.00  1.00           H
+ATOM    127 C2   BGL A   6      -9.708  14.131   7.448  0.00  0.00           C
+ATOM    128 H2   BGL A   6     -10.346  13.808   6.679  0.00  1.00           H
+ATOM    129 O2   BGL A   6      -8.520  13.334   7.436  0.00  1.00           O
+ATOM    130 HO2  BGL A   6      -8.794  12.261   7.502  0.00  1.00           H
+ATOM    131 O3   BGL A   6     -10.924  12.660   8.805  2.00  0.00           O
+ATOM    132 HO3  BGL A   6     -11.973  12.672   9.168  0.00  1.00           H
+ATOM    133 O3   BGL B   7      -8.908  15.790   0.000  1.00  0.00           O
+ATOM    134 HO3  BGL B   7      -7.876  16.201   0.012  0.00  1.00           H
+ATOM    135 C3   BGL B   7      -9.359  15.593   1.345  0.00  0.00           C
+ATOM    136 H3   BGL B   7      -8.558  15.831   1.982  0.00  1.00           H
+ATOM    137 C4   BGL B   7     -10.488  16.572   1.650  0.00  1.00           C
+ATOM    138 H4   BGL B   7     -11.204  16.511   0.884  0.00  1.00           H
+ATOM    139 C5   BGL B   7     -11.156  16.230   2.973  0.00  1.00           C
+ATOM    140 H5   BGL B   7     -10.482  16.403   3.759  0.00  1.00           H
+ATOM    141 O4   BGL B   7      -9.988  17.903   1.703  0.00  1.00           O
+ATOM    142 HO4  BGL B   7     -10.567  18.486   2.449  0.00  1.00           H
+ATOM    143 C6   BGL B   7     -12.425  17.007   3.219  0.00  1.00           C
+ATOM    144 H6A  BGL B   7     -13.038  16.476   3.886  0.00  1.00           H
+ATOM    145 H6B  BGL B   7     -12.936  17.111   2.307  0.00  1.00           H
+ATOM    146 O6   BGL B   7     -12.166  18.311   3.744  0.00  1.00           O
+ATOM    147 HO6  BGL B   7     -11.487  18.229   4.619  0.00  1.00           H
+ATOM    148 O5   BGL B   7     -11.548  14.851   2.976  0.00  1.00           O
+ATOM    149 C1   BGL B   7     -10.424  13.966   2.912  0.00  0.00           C
+ATOM    150 H1   BGL B   7      -9.768  14.132   3.715  0.00  1.00           H
+ATOM    151 C2   BGL B   7      -9.708  14.131   1.578  0.00  0.00           C
+ATOM    152 H2   BGL B   7     -10.346  13.808   0.809  0.00  1.00           H
+ATOM    153 O2   BGL B   7      -8.520  13.334   1.566  0.00  1.00           O
+ATOM    154 HO2  BGL B   7      -8.794  12.261   1.632  0.00  1.00           H
+ATOM    155 O3   BGL B   8     -10.924  12.660   2.935  0.00  0.00           O
+ATOM    156 C3   BGL B   8     -10.979  12.171   4.280  0.00  0.00           C
+ATOM    157 H3   BGL B   8     -10.784  12.983   4.917  0.00  1.00           H
+ATOM    158 C4   BGL B   8     -12.391  11.682   4.585  0.00  1.00           C
+ATOM    159 H4   BGL B   8     -12.696  11.032   3.819  0.00  1.00           H
+ATOM    160 C5   BGL B   8     -12.428  10.933   5.908  0.00  1.00           C
+ATOM    161 H5   BGL B   8     -12.241  11.603   6.694  0.00  1.00           H
+ATOM    162 O4   BGL B   8     -13.293  12.781   4.638  0.00  1.00           O
+ATOM    163 HO4  BGL B   8     -14.088  12.571   5.384  0.00  1.00           H
+ATOM    164 C6   BGL B   8     -13.736  10.222   6.154  0.00  1.00           C
+ATOM    165 H6A  BGL B   8     -13.583   9.426   6.821  0.00  1.00           H
+ATOM    166 H6B  BGL B   8     -14.081   9.832   5.242  0.00  1.00           H
+ATOM    167 O6   BGL B   8     -14.736  11.099   6.679  0.00  1.00           O
+ATOM    168 Cm1  BGL B   8     -14.178  11.843   7.869  0.00  1.00           C
+ATOM    169 Hm2  BGL B   8     -13.869  11.096   8.673  0.00  1.00           H
+ATOM    170 Hm1  BGL B   8     -13.270  12.451   7.546  0.00  1.00           H
+ATOM    171 O5   BGL B   8     -11.430   9.904   5.911  0.00  1.00           O
+ATOM    172 Cm2  BGL B   8     -15.255  12.787   8.434  0.00  1.00           C
+ATOM    173 C2   BGL B   8      -9.887  11.138   4.513  0.00  0.00           C
+ATOM    174 Om1  BGL B   8     -15.406  14.337   7.958  0.00  1.00           O
+ATOM    175 Om2  BGL B   8     -16.250  12.360   9.650  0.00  1.00           O
+ATOM    176 H2   BGL B   8      -9.926  10.424   3.744  0.00  1.00           H
+ATOM    177 O2   BGL B   8      -8.603  11.768   4.501  0.00  1.00           O
+ATOM    178 HO2  BGL B   8      -7.810  10.994   4.567  0.00  1.00           H
+ATOM    179 Na   BGL B   8     -17.052  14.532   9.577  0.00  1.00          Na
+ATOM    180 C1   BGL B   8     -10.102  10.435   5.847  0.00  0.00           C
+ATOM    181 H1   BGL B   8      -9.918  11.086   6.650  0.00  1.00           H
+ATOM    182 O3   BGL B   9      -9.221   9.349   5.870  0.00  0.00           O
+ATOM    183 C3   BGL B   9      -8.825   9.057   7.215  0.00  0.00           C
+ATOM    184 H3   BGL B   9      -9.431   9.631   7.852  0.00  1.00           H
+ATOM    185 C4   BGL B   9      -9.108   7.589   7.520  0.00  1.00           C
+ATOM    186 H4   BGL B   9      -8.697   7.000   6.754  0.00  1.00           H
+ATOM    187 C5   BGL B   9      -8.477   7.182   8.843  0.00  1.00           C
+ATOM    188 H5   BGL B   9      -8.964   7.679   9.629  0.00  1.00           H
+ATOM    189 O4   BGL B   9     -10.510   7.357   7.573  0.00  1.00           O
+ATOM    190 HO4  BGL B   9     -10.726   6.565   8.319  0.00  1.00           H
+ATOM    191 C6   BGL B   9      -8.516   5.694   9.089  0.00  1.00           C
+ATOM    192 H6A  BGL B   9      -7.750   5.429   9.756  0.00  1.00           H
+ATOM    193 H6B  BGL B   9      -8.350   5.200   8.177  0.00  1.00           H
+ATOM    194 O6   BGL B   9      -9.775   5.267   9.614  0.00  1.00           O
+ATOM    195 HO6  BGL B   9     -10.043   5.896  10.489  0.00  1.00           H
+ATOM    196 O5   BGL B   9      -7.087   7.532   8.846  0.00  1.00           O
+ATOM    197 C1   BGL B   9      -6.883   8.948   8.782  0.00  0.00           C
+ATOM    198 H1   BGL B   9      -7.355   9.433   9.585  0.00  1.00           H
+ATOM    199 C2   BGL B   9      -7.384   9.486   7.448  0.00  0.00           C
+ATOM    200 H2   BGL B   9      -6.785   9.095   6.679  0.00  1.00           H
+ATOM    201 O2   BGL B   9      -7.288  10.913   7.436  0.00  1.00           O
+ATOM    202 HO2  BGL B   9      -6.221  11.213   7.502  0.00  1.00           H
+ATOM    203 O3   BGL B   9      -5.502   9.169   8.805  2.00  0.00           O
+ATOM    204 HO3  BGL B   9      -5.266   9.961   9.545  0.00  1.00           H
+ENDMDL
+CONECT    1    3    2
+CONECT    2    1
+CONECT    3    1   19    5    4
+CONECT    4    3
+CONECT    5    3    7    9    6
+CONECT    6    5
+CONECT    7    5   11   16    8
+CONECT    8    7
+CONECT    9    5   10
+CONECT   10    9
+CONECT   11    7   14   12   13
+CONECT   12   11
+CONECT   13   11
+CONECT   14   15   11
+CONECT   15   14
+CONECT   16   17    7
+CONECT   17   19   16   18   23
+CONECT   18   17
+CONECT   19   17    3   21   20
+CONECT   20   19
+CONECT   21   19   22
+CONECT   22   21
+CONECT   23   17   24
+CONECT   24   23   40   26   25
+CONECT   25   24
+CONECT   26   24   28   30   27
+CONECT   27   26
+CONECT   28   26   32   37   29
+CONECT   29   28
+CONECT   30   31   26
+CONECT   31   30
+CONECT   32   28   35   33   34
+CONECT   33   32
+CONECT   34   32
+CONECT   35   36   32
+CONECT   36   35
+CONECT   37   38   28
+CONECT   38   44   40   37   39
+CONECT   39   38
+CONECT   40   38   24   42   41
+CONECT   41   40
+CONECT   42   43   40
+CONECT   43   42
+CONECT   44   45   38
+CONECT   45   44   61   47   46
+CONECT   46   45
+CONECT   47   45   49   51   48
+CONECT   48   47
+CONECT   49   47   53   58   50
+CONECT   50   49
+CONECT   51   47   52
+CONECT   52   51
+CONECT   53   49   56   54   55
+CONECT   54   53
+CONECT   55   53
+CONECT   56   53   57
+CONECT   57   56
+CONECT   58   59   49
+CONECT   59   61   58   60   65
+CONECT   60   59
+CONECT   61   59   45   63   62
+CONECT   62   61
+CONECT   63   61   64
+CONECT   64   63
+CONECT   65   59   66
+CONECT   66   65
+CONECT   67   69   68
+CONECT   68   67
+CONECT   69   67   85   71   70
+CONECT   70   69
+CONECT   71   69   73   75   72
+CONECT   72   71
+CONECT   73   71   77   82   74
+CONECT   74   73
+CONECT   75   71   76
+CONECT   76   75
+CONECT   77   73   80   78   79
+CONECT   78   77
+CONECT   79   77
+CONECT   80   77   81
+CONECT   81   80
+CONECT   82   83   73
+CONECT   83   85   82   84   89
+CONECT   84   83
+CONECT   85   83   69   87   86
+CONECT   86   85
+CONECT   87   85   88
+CONECT   88   87
+CONECT   89   83   90
+CONECT   90   89  106   92   91
+CONECT   91   90
+CONECT   92   90   94   96   93
+CONECT   93   92
+CONECT   94   92   98  103   95
+CONECT   95   94
+CONECT   96   97   92
+CONECT   97   96
+CONECT   98   94  101   99  100
+CONECT   99   98
+CONECT  100   98
+CONECT  101   98  102
+CONECT  102  101
+CONECT  103  104   94
+CONECT  104  110  106  103  105
+CONECT  105  104
+CONECT  106  104   90  108  107
+CONECT  107  106
+CONECT  108  109  106
+CONECT  109  108
+CONECT  110  111  104
+CONECT  111  110  127  113  112
+CONECT  112  111
+CONECT  113  111  115  117  114
+CONECT  114  113
+CONECT  115  113  119  124  116
+CONECT  116  115
+CONECT  117  113  118
+CONECT  118  117
+CONECT  119  115  122  120  121
+CONECT  120  119
+CONECT  121  119
+CONECT  122  119  123
+CONECT  123  122
+CONECT  124  125  115
+CONECT  125  127  124  126  131
+CONECT  126  125
+CONECT  127  125  111  129  128
+CONECT  128  127
+CONECT  129  127  130
+CONECT  130  129
+CONECT  131  125  132
+CONECT  132  131
+CONECT  133  135  134
+CONECT  134  133
+CONECT  135  133  151  137  136
+CONECT  136  135
+CONECT  137  135  139  141  138
+CONECT  138  137
+CONECT  139  137  143  148  140
+CONECT  140  139
+CONECT  141  137  142
+CONECT  142  141
+CONECT  143  139  146  144  145
+CONECT  144  143
+CONECT  145  143
+CONECT  146  143  147
+CONECT  147  146
+CONECT  148  149  139
+CONECT  149  151  148  150  155
+CONECT  150  149
+CONECT  151  149  135  153  152
+CONECT  152  151
+CONECT  153  151  154
+CONECT  154  153
+CONECT  155  149  156
+CONECT  156  155  173  158  157
+CONECT  157  156
+CONECT  158  156  160  162  159
+CONECT  159  158
+CONECT  160  158  164  171  161
+CONECT  161  160
+CONECT  162  163  158
+CONECT  163  162
+CONECT  164  160  167  165  166
+CONECT  165  164
+CONECT  166  164
+CONECT  167  164  168
+CONECT  168  167  172  169  170
+CONECT  169  168
+CONECT  170  168
+CONECT  171  180  160
+CONECT  172  168  174  175
+CONECT  173  180  156  177  176
+CONECT  174  172  179
+CONECT  175  172  179
+CONECT  176  173
+CONECT  177  178  173
+CONECT  178  177
+CONECT  179  174  175
+CONECT  180  182  173  171  181
+CONECT  181  180
+CONECT  182  183  180
+CONECT  183  182  199  185  184
+CONECT  184  183
+CONECT  185  183  187  189  186
+CONECT  186  185
+CONECT  187  185  191  196  188
+CONECT  188  187
+CONECT  189  185  190
+CONECT  190  189
+CONECT  191  187  194  192  193
+CONECT  192  191
+CONECT  193  191
+CONECT  194  195  191
+CONECT  195  194
+CONECT  196  197  187
+CONECT  197  199  196  198  203
+CONECT  198  197
+CONECT  199  197  183  201  200
+CONECT  200  199
+CONECT  201  199  202
+CONECT  202  201
+CONECT  203  197  204
+CONECT  204  203

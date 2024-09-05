@@ -23,13 +23,26 @@
 		Command line: 
 			python topology_cmd.py -i PHBHVrandom600.xsd -r PHBHV600_headtail.dat -a PHBHV600_residues.dat
 			         or
-			topology_cmd -i PHBHVrandom600.xsd -r PHBHV600_headtail.dat -a PHBHV600_residues.dat
+			topology_cmd.py  -i PHBHVrandom600.xsd -r PHBHV600_headtail.dat -a PHBHV600_residues.dat
 
-		Starting: 	 26-11-2023 18:55:31
+		Starting: 	 22-08-2024 11:40:08
 
 		Input is a XSD format.
-		Reading... (26-11-2023 18:55:31)
-		End read   (26-11-2023 18:55:31)
+		Reading... (22-08-2024 11:40:08)
+		End read   (22-08-2024 11:40:08)
 
-		****** WRITE PDB and PSF files (26-11-2023 18:55:31) ****** 
-		 Writing PDB file...topology.pdb (26-11-2023 18:55:31)
+		****** WRITE PDB and PSF files (22-08-2024 11:40:08) ****** 
+		 Writing PDB file...topology.pdb (22-08-2024 11:40:08)
+		 CONECT table has been written.
+		****** END WRITE PDB and PSF files (22-08-2024 11:40:08) ****** 
+
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (22-08-2024 11:40:08) ****** 
+		 Renumbering PDB file... topology.pdb (22-08-2024 11:40:08)
+
+			 Start Loop over atoms. (22-08-2024 11:40:09)
+			 End Loop over atoms. (22-08-2024 11:40:09)
+
+			 Start Creating topology. (22-08-2024 11:40:09)
+			 End Creating topology. (22-08-2024 11:40:09)
+		 Head-Tail info from ... PHBHV600_headtail.dat (22-08-2024 11:40:09)
+		 Write renumbered file ... topology_residues.pdb (22-08-2024 11:40:09)
