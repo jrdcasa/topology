@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e2bf383-3776-4d6c-a9f3-bee8797e69b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/topology_cmd/assign_name_helix_curdlan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topology_cmd/improper_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topology_cmd/typing_carb_cmd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_v02/02-ReadXSD_InfoHeadTail/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/example_v02/02-ReadXSD_InfoHeadTail/InfoTopology.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/20-P3HB_alternate/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/20-P3HB_alternate/InfoTopology.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small_residues.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small_residues.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small_residues.psf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small_residues.psf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/21-P3HB-PHV_copolymer_OPLS/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/21-P3HB-PHV_copolymer_OPLS/InfoTopology.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/21-P3HB-PHV_copolymer_OPLS/topology.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/21-P3HB-PHV_copolymer_OPLS/topology.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/install.log" beforeDir="false" afterPath="$PROJECT_DIR$/install.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/ExtTrajectory.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ExtTrajectory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/MolecularGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/MolecularGraph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/Segment.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/Segment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_distances.c" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_distances.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_distances_openmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_distances_openmp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_unwrap_openmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_unwrap_openmp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/internal_coordinates.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/internal_coordinates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/readmol/readbaseformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/readmol/readbaseformat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/readmol/readpdbformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/readmol/readpdbformat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/parse_arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/parse_arguments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology_cmd/topology_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology_cmd/topology_cmd.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,17 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/media/jramos/PortableSSD/2024-CB_Granada/04-CARB_DERIVATES/11-12MLG_NOASSOC_3H_Frame04/01-TOPOLOGY",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/jramos/PortableSSD/2024-CB_Granada/04-CARB_DERIVATES/11-12MLG_NOASSOC_3H_Frame04/01-TOPOLOGY&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/topology_cmd" />
@@ -954,13 +933,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
-      <option name="WORKING_DIRECTORY" value="/media/jramos/PortableSSD/2024-CB_Granada/04-CARB_DERIVATES/11-12MLG_NOASSOC_3H_Frame04/01-TOPOLOGY" />
+      <option name="WORKING_DIRECTORY" value="/media/jramos/PortableSSD/2024-CB_Granada/04-CARB_DERIVATES/11-12MLG_NOASSOC_3H_Frame04/01-TOPOLOGY_b" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
-      <option name="PARAMETERS" value="-i Frame04.pdb -r headtail.dat -a residues.dat -p 03-TripleHelix_12M_topo" />
+      <option name="PARAMETERS" value="-i Frame04_vmd.pdb -r headtail.dat -a residues.dat -p 03-TripleHelix_12M_topo" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -1639,6 +1618,8 @@
       <workItem from="1725219362401" duration="3492000" />
       <workItem from="1725273950397" duration="2417000" />
       <workItem from="1725480639508" duration="1890000" />
+      <workItem from="1725559136961" duration="649000" />
+      <workItem from="1725636417287" duration="5608000" />
     </task>
     <servers />
   </component>
@@ -1725,11 +1706,6 @@
           <option name="timeStamp" value="277" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
-          <line>238</line>
-          <option name="timeStamp" value="304" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/readmol/readbaseformat.py</url>
           <line>410</line>
           <option name="timeStamp" value="325" />
@@ -1738,16 +1714,6 @@
           <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
           <line>836</line>
           <option name="timeStamp" value="339" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>1043</line>
-          <option name="timeStamp" value="340" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>932</line>
-          <option name="timeStamp" value="341" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
@@ -1785,24 +1751,9 @@
           <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>907</line>
-          <option name="timeStamp" value="387" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>594</line>
-          <option name="timeStamp" value="392" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology_cmd/typing_carb_cmd.py</url>
           <line>629</line>
           <option name="timeStamp" value="453" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>616</line>
-          <option name="timeStamp" value="457" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
@@ -1810,104 +1761,14 @@
           <option name="timeStamp" value="464" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>544</line>
-          <option name="timeStamp" value="466" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
-          <line>451</line>
-          <option name="timeStamp" value="469" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology_cmd/typing_carb_cmd.py</url>
           <line>601</line>
           <option name="timeStamp" value="470" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
-          <line>182</line>
-          <option name="timeStamp" value="471" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
-          <line>187</line>
-          <option name="timeStamp" value="485" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
-          <line>192</line>
-          <option name="timeStamp" value="486" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
-          <line>190</line>
-          <option name="timeStamp" value="487" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>901</line>
-          <option name="timeStamp" value="488" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>867</line>
-          <option name="timeStamp" value="489" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="490" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="491" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>214</line>
-          <option name="timeStamp" value="492" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/Topology.py</url>
-          <line>64</line>
-          <option name="timeStamp" value="493" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="494" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
-          <line>797</line>
-          <option name="timeStamp" value="495" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
-          <line>790</line>
-          <option name="timeStamp" value="496" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
-          <line>785</line>
-          <option name="timeStamp" value="497" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
           <line>571</line>
           <option name="timeStamp" value="498" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
-          <line>116</line>
-          <option name="timeStamp" value="500" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>181</line>
-          <option name="timeStamp" value="501" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1929,17 +1790,9 @@
         <watch expression="conf" />
       </configuration>
       <configuration name="PythonConfigurationType">
-        <watch expression="self._topology" language="Python" />
-        <watch expression="self._universe.atoms.names" language="Python" />
-        <watch expression="iatom" language="Python" />
-        <watch expression="self._nmols" language="Python" />
-        <watch expression="self._universe " />
-        <watch expression="pdbobj._nmols" language="Python" />
-        <watch expression="self._universe" />
-        <watch expression="self._nres" />
-        <watch expression="self._graphdict" />
-        <watch expression="listbonds" />
-        <watch expression=" self._universe.bonds" />
+        <watch expression="bb_ch" />
+        <watch expression="trjobj" />
+        <watch expression="sorted(bb_ch)" />
       </configuration>
     </watches-manager>
   </component>
@@ -2014,7 +1867,7 @@
     <SUITE FILE_PATH="coverage/topology$16_command_test_more_100000.coverage" NAME="16-command_test more 100000 Coverage Results" MODIFIED="1668773330360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_test_topology_TopologyTests_test_23_assignresidues_fromlist.coverage" NAME="Unittests for test_topology.TopologyTests.test_23_assignresidues_fromlist Coverage Results" MODIFIED="1659165141789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-Topology" />
     <SUITE FILE_PATH="coverage/topology$25_bondlist_readpdb.coverage" NAME="25_bondlist_readpdb Coverage Results" MODIFIED="1694112509271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/25-topology_bondlist_readpdb_class" />
-    <SUITE FILE_PATH="coverage/topology$50_Test_Carbbuilder__1_.coverage" NAME="50-Test_Carbbuilder (1) Coverage Results" MODIFIED="1725481904487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/jramos/PortableSSD/2024-CB_Granada/04-CARB_DERIVATES/11-12MLG_NOASSOC_3H_Frame04/01-TOPOLOGY" />
+    <SUITE FILE_PATH="coverage/topology$50_Test_Carbbuilder__1_.coverage" NAME="50-Test_Carbbuilder (1) Coverage Results" MODIFIED="1725646463967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/jramos/PortableSSD/2024-CB_Granada/04-CARB_DERIVATES/11-12MLG_NOASSOC_3H_Frame04/01-TOPOLOGY_b" />
     <SUITE FILE_PATH="coverage/topology$Test_indigo_py.coverage" NAME="Test_indigo.py Coverage Results" MODIFIED="1659092646440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$25_topology_script___1_.coverage" NAME="25-topology_script  (1) Coverage Results" MODIFIED="1662976072317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/04-PE_AA/2022-Layer01b_PE_200Ch_TrappeTox/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$99_Test__1_.coverage" NAME="99-Test (1) Coverage Results" MODIFIED="1704314876669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2023-AMullerPolyTioEthers/03-Calculations/01-MOLECULES_MODEL/14-CCOCCOCCOCCOCCOCCOCC-OHend/04-FROM_MD/01-TOPOLOGY" />

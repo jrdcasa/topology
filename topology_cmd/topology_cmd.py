@@ -32,8 +32,8 @@ def summary_initial_log(topobj, dict_messages, log=None):
         mm += "\t\tBond info available         : False\n"
     if topobj._isthere_boxdimension:
         mm += "\t\tSimulation box dimension    : {0:.4f} {1:.4f} {2:.4f} nm\n".format(float(topobj._boxlength[0]/10.),
-                                                                                    float(topobj._boxlength[1]/10.),
-                                                                                    float(topobj._boxlength[2]/10.))
+                                                                                      float(topobj._boxlength[1]/10.),
+                                                                                      float(topobj._boxlength[2]/10.))
         mm += "\t\tSimulation box angles       : {0:.2f} {1:.2f} {2:.2f} degrees\n".\
             format(float(topobj._boxangle[0]*180/np.pi), float(topobj._boxangle[1]*180/np.pi),
                    float(topobj._boxangle[2]*180/np.pi))
@@ -60,6 +60,56 @@ def summary_initial_log(topobj, dict_messages, log=None):
         nw += 1
     mm = mm[:-1]
     print(mm) if log is None else log.info(mm)
+
+
+# ==================================================
+def write_etoe_bb_info(trjobj):
+
+    fee = open("listendtoend_replicate.dat", 'w')
+    fbb = open("backbone_idx_replicate.dat", 'w')
+    faa = open("allatom_idx_replicate.dat", 'w')
+    fee.writelines("# ich head tail\n")
+
+    ich = 0
+    itail = -1
+    ihead = -1
+    for item in trjobj._topology._nmols:
+        fbb.writelines("[mol{}]\n".format(ich))
+        faa.writelines("[mol{}]\n".format(ich))
+        aa_ch = []
+        for idx in item:
+            if trjobj._atom3d_occupancy[idx] == 1:
+                ihead = idx
+            elif trjobj._atom3d_occupancy[idx] == 2:
+                itail = idx
+            aa_ch.append(idx)
+
+        # Get the backbone atoms
+        queue = [ihead]
+        bb_ch = [ihead]
+        visit_bb = [ihead]
+        while queue:
+            ibb = queue.pop()
+            neighs = trjobj._topology._graphdict[ibb]
+            for jbb in neighs:
+                if trjobj._atom3d_bfactor[jbb] == 0 and jbb not in visit_bb:
+                    bb_ch.append(jbb)
+                    visit_bb.append(jbb)
+                    queue.append(jbb)
+
+        for ibb in bb_ch:
+            fbb.writelines("{}\n".format(ibb))
+        for iaa in aa_ch:
+            faa.writelines("{}\n".format(iaa))
+        try:
+            fee.writelines('{} {} {}\n'.format(ich, ihead, itail))
+        except Exception as e:
+            print(e)
+            continue
+        ich += 1
+
+    fee.close()
+    fbb.close()
 
 
 # =============================================================================
@@ -162,6 +212,7 @@ def main_app(version=None):
     headinfo_file = opts.renumberpdb
     dict_messages['headinfo_file'] = headinfo_file
     dict_messages['residueinfo_file'] = opts.assignresidues
+    pdbobj = None
     if headinfo_file:
         now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
         if opts.assignresidues is not None:
@@ -235,6 +286,9 @@ def main_app(version=None):
         m += "\t\t PDB file: {}\n".format(filenamepdb)
         m += "\t\t****** END SUMMARY ({}) ****** ".format(now)
         print(m) if logger is None else logger.info(m)
+
+    # Write end-to-end and backbone information
+    write_etoe_bb_info(pdbobj)
 
     summary_initial_log(obj, dict_messages, logger)
 
