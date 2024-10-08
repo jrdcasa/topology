@@ -10,6 +10,7 @@ import copy
 import os
 import numpy as np
 import warnings
+
 warnings.simplefilter("ignore", Warning)
 
 
@@ -17,7 +18,7 @@ class ReadPdbFormat(ReadBaseFormat):
 
     # *************************************************************************
     def __init__(self, filenamepath, filenametopo=None, inputbondlist=None,
-                 assign_bondorders=False, isconect=True, logger=None):
+                 assign_bondorders=False, isconect=True, ister=False, logger=None):
 
         super().__init__(filenamepath=filenamepath, assign_bondorders=assign_bondorders, logger=logger)
 
@@ -26,6 +27,11 @@ class ReadPdbFormat(ReadBaseFormat):
         self._atom3d_kindmolecule = defaultdict()
         self._dimensions = list()
         self._bond_list = list()
+
+        # TER labels can be problematic, remove them and modify atoms and connect matrix
+        if ister:
+            filenamepath = self._removeterm_and_savepdb(filenamepath)
+            self._fnamepath = filenamepath
 
         if filenamepath is not None:
             if filenametopo is not None:
@@ -89,7 +95,7 @@ class ReadPdbFormat(ReadBaseFormat):
 
         """
 
-        degtorad = np.pi/180.0
+        degtorad = np.pi / 180.0
 
         # MDAnalysis Universe
         if guess_bonds:
@@ -146,7 +152,7 @@ class ReadPdbFormat(ReadBaseFormat):
                 # Example: CS is not Cs
 
                 if len(iatom.name) > 1 and not iatom.name[1].islower():
-                #    iatom.name = iatom.name[0]
+                    #    iatom.name = iatom.name[0]
                     element = iatom.name[0]
                 e = str(guess_atom_element(element))
                 listelements.append(e)
@@ -195,18 +201,18 @@ class ReadPdbFormat(ReadBaseFormat):
                 if line[0:6] == "CRYST1":
                     d = line.split()
                     if float(d[1]) != 0.0 and float(d[2]) != 0.0 and float(d[3]) != 0.0:
-                        self._boxlength[0] = float(d[1])              # Angstroms
+                        self._boxlength[0] = float(d[1])  # Angstroms
                         self._boxlength[1] = float(d[2])
                         self._boxlength[2] = float(d[3])
-                        self._boxangle[0] = float(d[4])*degtorad      # radians
-                        self._boxangle[1] = float(d[5])*degtorad
-                        self._boxangle[2] = float(d[6])*degtorad
+                        self._boxangle[0] = float(d[4]) * degtorad  # radians
+                        self._boxangle[1] = float(d[5]) * degtorad
+                        self._boxangle[2] = float(d[6]) * degtorad
 
                         if self._boxlength[0] != 0.0 and self._boxlength[1] != 0.0 and self._boxlength[2] != 0.0:
                             self._unitcell[0, :], self._unitcell[1, :], self._unitcell[2, :] = \
                                 self.lengths_and_angles_to_box_vectors(self._boxlength[0], self._boxlength[1],
                                                                        self._boxlength[2], self._boxangle[0],
-                                                                       self._boxangle[1],  self._boxangle[2])
+                                                                       self._boxangle[1], self._boxangle[2])
                     else:
                         self._boxlength = None
                         self._boxangle = None
@@ -223,7 +229,7 @@ class ReadPdbFormat(ReadBaseFormat):
         for item_list in self._universe.residues.indices:
             for idx in item_list:
                 self._atom3d_resname[idx] = self._mol_residue_list[ires]
-                self._atom3d_residue[idx] = ires+1
+                self._atom3d_residue[idx] = ires + 1
             ires += 1
         # Get atom properties
         imol_idx = 0
@@ -321,7 +327,7 @@ class ReadPdbFormat(ReadBaseFormat):
                 e = str(guess_atom_element(iatom.name))
                 listelements.append(e)
             if e == 'C' and \
-                    'H' not in iatom.bonded_atoms.elements and\
+                    'H' not in iatom.bonded_atoms.elements and \
                     set(iatom.bonded_atoms.elements) == {'C'}:
 
                 if len(iatom.bonded_atoms.elements) == 1:
@@ -397,6 +403,7 @@ class ReadPdbFormat(ReadBaseFormat):
                                 queue_sg.insert(0, ineigh)
 
             return subgraph, leaves_sub
+
         # ===========
 
         # ===========
@@ -439,13 +446,14 @@ class ReadPdbFormat(ReadBaseFormat):
                     path.pop()
 
             return paths
+
         # ===========
 
         # ===========
         def write_new_pdb(gnew, fnameout2=None):
 
             if fnameout2 is None:
-                fnameout2 = os.path.splitext(self._fname)[0]+"_renumber.pdb"
+                fnameout2 = os.path.splitext(self._fname)[0] + "_renumber.pdb"
             else:
                 fnameout2 = fnameout2
 
@@ -470,15 +478,14 @@ class ReadPdbFormat(ReadBaseFormat):
                         "{6:<11s}{7:4d}\n".format(self._boxlength[0],
                                                   self._boxlength[1],
                                                   self._boxlength[2],
-                                                  self._boxangle[0]*radtodeg,
-                                                  self._boxangle[1]*radtodeg,
-                                                  self._boxangle[2]*radtodeg,
+                                                  self._boxangle[0] * radtodeg,
+                                                  self._boxangle[1] * radtodeg,
+                                                  self._boxangle[2] * radtodeg,
                                                   self._spacegroup, self._zvalue))
 
                 for aidx_new, aidx_old in gnew.items():
-
                     # cJ: Bug for systems with more than 100000 atoms
-                    aidx_new_normal = (aidx_new+1) % 100000
+                    aidx_new_normal = (aidx_new + 1) % 100000
 
                     f.write("HETATM{0:5d} {1:<4s}{2:<1s}{3:<4s}"
                             "{4:1s}{5:4d}{6:1s}   "
@@ -513,9 +520,9 @@ class ReadPdbFormat(ReadBaseFormat):
                 # cJ: Bug for systems with more than 100000 atoms
                 if self._natoms < 100000:
                     for k in sorted(dd.keys()):
-                        cc = [k+1]
+                        cc = [k + 1]
                         for ival in dd[k]:
-                            cc.append(ival+1)
+                            cc.append(ival + 1)
                         conect = ["{0:5d}".format(entry) for entry in cc]
                         conect = "".join(conect)
                         f.write("CONECT{0}\n".format(conect))
@@ -707,11 +714,12 @@ class ReadPdbFormat(ReadBaseFormat):
 
         :return:
         """
+
         # ===========
         def write_new_pdb_norenumber(gnew, fnameout2=None):
 
             if fnameout2 is None:
-                fnameout2 = os.path.splitext(self._fname)[0]+"_labeled.pdb"
+                fnameout2 = os.path.splitext(self._fname)[0] + "_labeled.pdb"
             else:
                 fnameout2 = fnameout2
 
@@ -736,15 +744,14 @@ class ReadPdbFormat(ReadBaseFormat):
                         "{6:<11s}{7:4d}\n".format(self._boxlength[0],
                                                   self._boxlength[1],
                                                   self._boxlength[2],
-                                                  self._boxangle[0]*radtodeg,
-                                                  self._boxangle[1]*radtodeg,
-                                                  self._boxangle[2]*radtodeg,
+                                                  self._boxangle[0] * radtodeg,
+                                                  self._boxangle[1] * radtodeg,
+                                                  self._boxangle[2] * radtodeg,
                                                   self._spacegroup, self._zvalue))
 
                 for aidx_new, aidx_old in gnew.items():
-
                     # cJ: Bug for systems with more than 100000 atoms
-                    aidx_new_normal = (aidx_new+1) % 100000
+                    aidx_new_normal = (aidx_new + 1) % 100000
 
                     f.write("HETATM{0:5d} {1:<4s}{2:<1s}{3:<4s}"
                             "{4:1s}{5:4d}{6:1s}   "
@@ -779,9 +786,9 @@ class ReadPdbFormat(ReadBaseFormat):
                 # cJ: Bug for systems with more than 100000 atoms
                 if self._natoms < 100000:
                     for k in sorted(dd.keys()):
-                        cc = [k+1]
+                        cc = [k + 1]
                         for ival in dd[k]:
-                            cc.append(ival+1)
+                            cc.append(ival + 1)
                         conect = ["{0:5d}".format(entry) for entry in cc]
                         conect = "".join(conect)
                         f.write("CONECT{0}\n".format(conect))
@@ -809,7 +816,7 @@ class ReadPdbFormat(ReadBaseFormat):
                 backbone_list = self._topology.find_all_paths_iterative(ihead, itail)
             except IndexError:
                 backbone_list = None
-                m = "\n\t\t ERROR: There is a problem with the head {} and tail {} atoms in mol {}".\
+                m = "\n\t\t ERROR: There is a problem with the head {} and tail {} atoms in mol {}". \
                     format(ihead, itail, imol)
                 print(m) if self._logger is None else self._logger.error(m)
                 exit()
@@ -907,7 +914,7 @@ class ReadPdbFormat(ReadBaseFormat):
             except ValueError:
                 print("ERROR: There are problems with the lines containing head and tail atoms ({})".format(fpathdat))
                 exit()
-                #return [], [] #cJ 6-Mar-2024
+                # return [], [] #cJ 6-Mar-2024
 
         return self._heads, self._tails
 
@@ -950,12 +957,12 @@ class ReadPdbFormat(ReadBaseFormat):
                 print("ERROR!!!!. <RESIDUES> ... </RESIDUES> labels must exist in the file {}".format(fpathdat))
                 return False
             try:
-                _ = int(lines[start_idx+1])
+                _ = int(lines[start_idx + 1])
             except ValueError:
                 print("ERROR!!!!. Number of residues must be an integer in the file {}".format(fpathdat))
                 return False
 
-            for idx in range(start_idx+2, end_idx):
+            for idx in range(start_idx + 2, end_idx):
                 iline = lines[idx].split()
                 dict_residues_read[iline[1]] = int(iline[2])
 
@@ -968,8 +975,8 @@ class ReadPdbFormat(ReadBaseFormat):
                 return False
 
             # Check number of residues in composition
-            nkinds = int(lines[start_res_idx+1])
-            idx = start_res_idx+2
+            nkinds = int(lines[start_res_idx + 1])
+            idx = start_res_idx + 2
             while idx < end_res_idx:
                 for ikind in range(nkinds):
                     count = 0
@@ -980,7 +987,7 @@ class ReadPdbFormat(ReadBaseFormat):
                     for ires in range(nr):
                         try:
                             aa, start, end = [ii for ii in lines[idx].split()]
-                            count += (int(end)-int(start))+1
+                            count += (int(end) - int(start)) + 1
                             count_lines += 1
                             idx += 1
                         except ValueError:
@@ -988,7 +995,7 @@ class ReadPdbFormat(ReadBaseFormat):
                     if count_lines != nr:
                         print("ERROR!!!!. <COMPOSITION> ... </COMPOSITION> "
                               "number of residues incorrect in chain kind {}. File {}".format(
-                               ikind, fpathdat))
+                            ikind, fpathdat))
                         print("ERROR!!!!. Counted residue lines {} of {}".format(count_lines, nr))
                         exit()
 
@@ -1001,15 +1008,15 @@ class ReadPdbFormat(ReadBaseFormat):
             for itype in range(0, n_type_mols):
                 start_mol_idx, end_mol_idx, nres_mol, kind_molecule_label = lines[idx_line].split()
                 # print(start_mol_idx, end_mol_idx, nres_mol, kind_molecule_label)
-                for imol in range(int(start_mol_idx), int(end_mol_idx)+1):
+                for imol in range(int(start_mol_idx), int(end_mol_idx) + 1):
                     for ires in range(1, int(nres_mol) + 1):
-                        name_res = str(lines[idx_line+ires].split()[0])
-                        start_res_idx = int(lines[idx_line+ires].split()[1])
-                        end_res_idx = int(lines[idx_line+ires].split()[2])
-                        for jres in range(start_res_idx, end_res_idx+1):
+                        name_res = str(lines[idx_line + ires].split()[0])
+                        start_res_idx = int(lines[idx_line + ires].split()[1])
+                        end_res_idx = int(lines[idx_line + ires].split()[2])
+                        for jres in range(start_res_idx, end_res_idx + 1):
                             # print(iat + dict_residues_read[name_res])
                             try:
-                                for j in range(iat, iat+dict_residues_read[name_res]):
+                                for j in range(iat, iat + dict_residues_read[name_res]):
                                     self._atom3d_resname[j] = name_res
                                     self._atom3d_residue[j] = jjres + 1
                                     atom_kind_molecule_label[j] = kind_molecule_label
@@ -1116,6 +1123,68 @@ class ReadPdbFormat(ReadBaseFormat):
     def get_bond_list(self):
 
         return self._bond_list
+
+    # *************************************************************************
+    def _removeterm_and_savepdb(self, fnamepdb):
+
+        idx_old = 1
+        idx_new = -1
+        idx_old_to_new = defaultdict()
+        nter = 0
+        nnter = -2
+        lines_new_pdb = list()
+        with open(fnamepdb, 'r') as fpdb:
+            lines_old_pdb = fpdb.readlines()
+            for iline in lines_old_pdb:
+                if iline.count("ATOM") == 0 and \
+                        iline.count("HETATM") == 0 and \
+                        iline.count("CONECT") == 0 and \
+                        iline.count("TER") == 0:
+                    lines_new_pdb.append(iline)
+                elif iline.count("ATOM") != 0 or iline.count("HETATM") != 0:
+                    idx_old = int(iline[6:11])
+                    idx_new = idx_old - nter
+                    idx_old_to_new[idx_old] = idx_new
+                    inewline = iline[0:6] + "{0:>5s}".format(str(idx_new)) + iline[11:22] \
+                        + "{0:>4s}".format(str(nter + 1)) + iline[26:]
+                    lines_new_pdb.append(inewline)
+                elif iline.count("TER") != 0:
+                    idx_old = int(iline[6:11])
+                    idx_new = idx_old - nter
+                    idx_old_to_new[idx_old] = idx_new
+                    nter += 1
+                elif iline.count("CONECT"):
+                    tokens = []
+                    idx_token = 6
+                    while True:
+                        tt = iline[idx_token:idx_token+5]
+                        if tt.count("\n") != 0:
+                            break
+                        tokens.append(int(iline[idx_token:idx_token+5]))
+                        idx_token = idx_token+5
+                    inewline = "CONECT"
+                    for item_old in tokens:
+                        try:
+                            inewline += "{0:>5d}".format(idx_old_to_new[item_old])
+                        except KeyError:
+                            nnter += 1
+                            inewline += "{0:>5d}".format(item_old-nnter)
+
+                    inewline += "\n"
+                    lines_new_pdb.append(inewline)
+                else:
+                    lines_new_pdb.append(iline)
+
+        basefile = os.path.split(fnamepdb)[-1]
+        basename = os.path.splitext(basefile)[0]
+
+        fnamepdbmod = basename + "_mod.pdb"
+        with open(fnamepdbmod, 'w') as foutpdb:
+            foutpdb.writelines(lines_new_pdb)
+
+        self._fnamepath = fnamepdbmod
+
+        return fnamepdbmod
 
     # # *************************************************************************
     # def check_read_structure(self):

@@ -18,7 +18,7 @@ class MolecularGraph(object):
     __slots__ = ['_graphdict', '_nmols', 'natoms', '_undirected', '_bonds', '_cycles', '_iatch']
 
     # ##################################################################################################################
-    def __init__(self, nvert=-1, listbonds=None, undirected=True):
+    def __init__(self, nvert=-1, listvert=None, listbonds=None, undirected=True):
 
         """
         `MolecularGraph` implements objects that describe the connectivity of the atoms in a molecule or polymer chain.

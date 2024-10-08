@@ -33,7 +33,7 @@ class Topology(MolecularGraph):
                  '_types', '_names', '_canonical_order', '_resname']
 
     # #########################################################################
-    def __init__(self, natoms=-1, listbonds=None, undirected=True, logger=None):
+    def __init__(self, natoms=-1, listatoms=None, listbonds=None, undirected=True, logger=None):
 
         """
         Topology constructor, Topology objects rarely are direcly build by users.
@@ -62,7 +62,7 @@ class Topology(MolecularGraph):
 
         """
 
-        super().__init__(nvert=natoms, listbonds=listbonds, undirected=undirected)
+        super().__init__(nvert=natoms, listvert=listatoms, listbonds=listbonds, undirected=undirected)
 
         if logger is not None:
             self.logger = logger

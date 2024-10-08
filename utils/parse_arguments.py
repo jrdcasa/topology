@@ -232,6 +232,54 @@ def parse_arguments_typing_carb():
 
 
 # =============================================================================
+def parse_arguments_multiplepdb():
+
+    import time
+
+    desc = """ Build a XTC trajectory from PDB.\n"""
+
+    parser = argparse.ArgumentParser(description=desc, formatter_class=argparse.RawTextHelpFormatter)
+
+    parser.add_argument("-d", "--dir", dest="pdbdir",
+                        help="A directory containing the PDB files.",
+                        action="store", metavar="PDB_FILE", required=True)
+
+    parser.add_argument("-r", "--renumber_pdb", dest="renumberpdb",
+                        help=textwrap.dedent("Renumber pdb in accordance with the head and tail info"
+                                             " in the provided file. The format is:\n"
+                                             "  nmols: 40\n"
+                                             "  #ich idx-head idx-tail (indexes start at 0)\n"
+                                             "  0 1 456\n"
+                                             "  1 465 920\n"
+                                             "  ...\n"
+                                             "  39 18097 18552\n"),
+                        action="store", metavar="HEAD_TAIL_file", required=True
+
+
+                        )
+
+    parser.add_argument("-n", "--ncpus", dest="ncpus", type=int,
+                        help=("Number of cpus to be used\n"),
+                        action="store", metavar="NCPUS", required=False
+                        )
+
+    parser.add_argument("-p", "--pattern", dest="pattern",
+                        help="A string pattern to name the new files",
+                        action="store", metavar="STR_PATTERN", required=False, default="trajectory")
+
+
+    args = parser.parse_args()
+
+    # Check for existing files:
+    if not os.path.isdir(args.pdbdir):
+        print(desc)
+        time.sleep(.25)
+        parser.error("Directory with PDB files must exist!!!! ({})".format(os.path.abspath(args.pdbdir)))
+
+    return args
+
+
+# =============================================================================
 def print_header_type_cb(version, logger_log=None):
     msg = """
     ***********************************************************************
@@ -249,6 +297,34 @@ def print_header_type_cb(version, logger_log=None):
         by either CarbBuilder (https://people.cs.uct.ac.za/~mkuttel/Downloads.html) 
         or DoGlycans (https://bitbucket.org/biophys-uh/doglycans/src/main/). 
         It attempts to type the molecule using the CHARMM36 force field for sugars.
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        """.format(version)
+
+    print(msg) if logger_log is None else logger_log.info(msg)
+
+
+# =============================================================================
+def print_header_multiplepdb(version, logger_log=None):
+    msg = """
+    ***********************************************************************
+                     Typing carbohydrates to run MD
+              ----------------------------------------------
+
+                                Version {}
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        This program processes a set of PDB files, typically generated 
+        by Materials Studio, representing a molecular trajectory and 
+        converts them into GRO and XTC formats compatible with GROMACS.
 
         This software is distributed under the terms of the
         GNU General Public License v3.0 (GNU GPLv3). A copy of

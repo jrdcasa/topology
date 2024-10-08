@@ -1,0 +1,19 @@
+; top created with typing_carb_cmd.py program from Topology library
+;                   Javier Ramos (IEM-CSIC)                        
+;           Created:    12-09-2024 21:45:53                                   
+#include "./charmm36_ljpme-jul2022.ff/forcefield.itp"
+#include "./charmm36_ljpme-jul2022.ff/tip3p.itp"
+#include "./charmm36_ljpme-jul2022.ff/ions.itp"
+#include "CARB00.itp"
+#include "CARB01.itp"
+#include "CARB02.itp"
+
+[ system ]
+; Name
+CARB
+
+[ molecules ]
+; Compound        mols
+CARB00             1
+CARB01             1
+CARB02             1

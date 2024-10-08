@@ -288,7 +288,8 @@ def main_app(version=None):
         print(m) if logger is None else logger.info(m)
 
     # Write end-to-end and backbone information
-    write_etoe_bb_info(pdbobj)
+    if headinfo_file:
+        write_etoe_bb_info(pdbobj)
 
     summary_initial_log(obj, dict_messages, logger)
 
