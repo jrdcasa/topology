@@ -254,12 +254,14 @@ def parse_arguments_multiplepdb():
                                              "  ...\n"
                                              "  39 18097 18552\n"),
                         action="store", metavar="HEAD_TAIL_file", required=True
-
-
                         )
 
+    parser.add_argument("-a", "--assign_residues", dest="assignresidues",
+                        help=textwrap.dedent("Assign residues in accordance with residue file."),
+                        action="store", metavar="SETUP_RESIDUE_file", required=False)
+
     parser.add_argument("-n", "--ncpus", dest="ncpus", type=int,
-                        help=("Number of cpus to be used\n"),
+                        help="Number of cpus to be used\n",
                         action="store", metavar="NCPUS", required=False
                         )
 

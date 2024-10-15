@@ -113,6 +113,11 @@ def renumber_pdb_file(args):
     # Renumber topology =======================================================
     headinfo_file = opts.renumberpdb
 
+    if opts.assignresidues is not None:
+        residueinfo_file = opts.assignresidues
+    else:
+        residueinfo_file = None
+
     if isconect:
         pdbobj = ReadPdbFormat(ipdb, isconect=isconect, logger=None)
     else:
@@ -124,7 +129,7 @@ def renumber_pdb_file(args):
 
     # Write the renumbered PDB file
     pdbobj.write_renumber_pdb(head_idx_atom=head_atoms, tail_idx_atom=tail_atoms,
-                              assign_residues_info=None, fnameout=filenamepdb_renumber,
+                              assign_residues_info=residueinfo_file, fnameout=filenamepdb_renumber,
                               isunwrap=False)
 
         # Write end-to-end and backbone information

@@ -1,0 +1,21 @@
+<RESIDUES>
+# Number of residues
+3
+# idx-residue name_residue natoms_resiude
+0 M01 866
+1 M02 866
+2 M03 866
+</RESIDUES>
+
+<COMPOSITION>
+# Number of different molecules
+3
+# Start_chain End_chain nresidues
+0 9 1 A
+M01 0 0
+10 19 1 B
+M02 0 0
+20 29 1 C 
+M03 0 0
+</COMPOSITION>
+
