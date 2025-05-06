@@ -7,6 +7,7 @@ import sys
 
 # =============================================================================
 def print_header(version, logger_log=None):
+
     msg = """
     ***********************************************************************
                      Manipulate topology for polymers
@@ -268,7 +269,6 @@ def parse_arguments_multiplepdb():
     parser.add_argument("-p", "--pattern", dest="pattern",
                         help="A string pattern to name the new files",
                         action="store", metavar="STR_PATTERN", required=False, default="trajectory")
-
 
     args = parser.parse_args()
 

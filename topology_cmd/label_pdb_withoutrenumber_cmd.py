@@ -56,6 +56,8 @@ def main_app(version=None):
     pdbobj = ReadPdbFormat(filenamepdb_labeled, isconect=isconect, logger=logger)
     pdbobj.read_head_tail_info(opts.headfile)
     pdbobj.get_backbone_headtail_files_for_analysis()
+    filename_psf = os.path.splitext(filenamepdb_labeled)[0]+".psf"
+    pdbobj.write_psf(filename_psf=filename_psf, improper_angles=None)
 
     # Final message ===========================================================
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")

@@ -1,0 +1,9 @@
+REMARK     Renumbered with topology (J.Ramos)
+REMARK     Backbone atoms --> Beta field == 0.00
+REMARK     Branch   atoms --> Beta field >= 1.00
+REMARK     Head     atoms --> Occupanccy field == 1.00
+REMARK     Tail     atoms --> Occupanccy field == 2.00
+REMARK     Middle   atoms --> Occupanccy field == 0.00
+CRYST1  500.000  500.000  500.000  90.00  90.00  90.00 P -1          1
+MODEL 1
+ENDMDL

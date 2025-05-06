@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e2bf383-3776-4d6c-a9f3-bee8797e69b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/topology_cmd/create_index_dih_carb_cmd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/topology.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/topology.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology_cmd/multiplePDBs_to_XTC_parallel.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology_cmd/multiplePDBs_to_XTC_parallel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/lammps_read.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/lammps_read.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/44-Label_PDB_with_residues/InfoLabelPDB.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/44-Label_PDB_with_residues/InfoLabelPDB.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/44-Label_PDB_with_residues/confout_unwrp_labeled.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/44-Label_PDB_with_residues/confout_unwrp_labeled.gro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/44-Label_PDB_with_residues/confout_unwrp_labeled.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/44-Label_PDB_with_residues/confout_unwrp_labeled.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install.log" beforeDir="false" afterPath="$PROJECT_DIR$/install.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/readmol/readpdbformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/readmol/readpdbformat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology_cmd/label_pdb_withoutrenumber_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology_cmd/label_pdb_withoutrenumber_cmd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/parse_arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/parse_arguments.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,10 +60,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/jramos/Programacion/GITHUB_REPO_DIR/topology/topology_cmd/multiplePDBs_to_XTC_parallel.py",
+    "last_opened_file_path": "/home/jramos/Programacion/GITHUB_REPO_DIR/topology/setup.py",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "Errors"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -66,7 +76,7 @@
       <recent name="$PROJECT_DIR$/topology_cmd" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.49-FromPDB_to_XTC">
+  <component name="RunManager" selected="Python.INSTALL">
     <configuration name="004-PE_10mon_40Ch_nocon_bad headinfo" type="PythonConfigurationType" factoryName="Python">
       <module name="topology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,7 +254,7 @@
       <method v="2" />
     </configuration>
     <configuration name="07-topology_script" type="PythonConfigurationType" factoryName="Python">
-      <module name="Topology" />
+      <module name="topology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -288,7 +298,7 @@
       <method v="2" />
     </configuration>
     <configuration name="12-example" type="PythonConfigurationType" factoryName="Python">
-      <module name="Topology" />
+      <module name="topology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -596,7 +606,7 @@
       <method v="2" />
     </configuration>
     <configuration name="25-topology_script " type="PythonConfigurationType" factoryName="Python">
-      <module name="Topology" />
+      <module name="topology" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -764,6 +774,28 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
       <option name="PARAMETERS" value="-i sample_aPP_residues.pdb -r sample_aPP_headtail.dat -a sample_aPP_residues.dat --guess_improper" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="41-sugar (1)" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="/mnt/DRAGO_FOLDER/2024-OLGA/01-QM_CONFORMERS/02-GLUC_1314_1Ch_100w/01-TOPOLOGY" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
+      <option name="PARAMETERS" value="-i ../00-INPUTS/Frame201.pdb -r headtail.dat" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -1035,6 +1067,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="51-XSD_DPD_to_PSF" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/51-fromXSD_DPD_toPDB" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
+      <option name="PARAMETERS" value="-i PE_iPP_500_Packed.xsd" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="99-Test (1)" type="PythonConfigurationType" factoryName="Python">
       <module name="topology" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1116,6 +1170,28 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/topology_cmd.py" />
       <option name="PARAMETERS" value="-i layer.pdb --separate_chains" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="INSTALL" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../MAMBA/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="install" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -1226,6 +1302,72 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/01-Benzene_at_hand/benzene_at_hand.py" />
       <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_index_dih_carb_cmd help" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/52-create_index_for_carbohydrates_link_dihedrals" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/create_index_dih_carb_cmd.py" />
+      <option name="PARAMETERS" value="-h" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_index_dih_carb_cmd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/52-create_index_for_carbohydrates_link_dihedrals" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/create_index_dih_carb_cmd.py" />
+      <option name="PARAMETERS" value="-i confout.part0001.gro -t new_topo.tpr --links 1-3 1-4" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="label_pdb_withoutrenumber_cmd" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="/media/jramos/Elements/2024-AM_POLYESTERS/11-PVL4_C5_LOPLS/04-PDB_LABELED" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topology_cmd/label_pdb_withoutrenumber_cmd.py" />
+      <option name="PARAMETERS" value="-p confout.part0001.gro --headfile headtail.dat -a residues.dat" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -1542,6 +1684,8 @@
       <item itemvalue="Python.40-frommonomers" />
       <item itemvalue="Python.40-improper_guess" />
       <item itemvalue="Python.41-sugar" />
+      <item itemvalue="Python.41-sugar (1)" />
+      <item itemvalue="Python.51-XSD_DPD_to_PSF" />
       <item itemvalue="Python.41-sugar_pdb_database" />
       <item itemvalue="Python.41-sugar_xsd" />
       <item itemvalue="Python.42-assign_name_helix_curdlan" />
@@ -1558,6 +1702,7 @@
       <item itemvalue="Python.998-Layer_PE_extract_from_MD" />
       <item itemvalue="Python.999-Layer_real" />
       <item itemvalue="Python.KK" />
+      <item itemvalue="Python.label_pdb_withoutrenumber_cmd" />
       <item itemvalue="Python.TESTThio" />
       <item itemvalue="Python.bbb" />
       <item itemvalue="Python.benzene_at_hand" />
@@ -1568,6 +1713,9 @@
       <item itemvalue="Python.test_glucido" />
       <item itemvalue="Python.X-01-PE_04br_xsd_convert" />
       <item itemvalue="Python.readpdbformat" />
+      <item itemvalue="Python.create_index_dih_carb_cmd help" />
+      <item itemvalue="Python.INSTALL" />
+      <item itemvalue="Python.create_index_dih_carb_cmd" />
       <item itemvalue="Python tests.Test_indigo.py" />
       <item itemvalue="Python tests.Test_topology" />
       <item itemvalue="Python tests.Test_xsd" />
@@ -1580,6 +1728,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.create_index_dih_carb_cmd" />
         <item itemvalue="Python tests.Unittests for Test_readmol2.TestReadMol2.test_08_separatechains_polymer_periodic_real" />
       </list>
     </recent_temporary>
@@ -1698,6 +1847,31 @@
       <workItem from="1728416220184" duration="724000" />
       <workItem from="1728839022864" duration="3000" />
       <workItem from="1728995516466" duration="2024000" />
+      <workItem from="1729259309814" duration="1348000" />
+      <workItem from="1729342391702" duration="1902000" />
+      <workItem from="1729603483069" duration="606000" />
+      <workItem from="1730405636361" duration="610000" />
+      <workItem from="1730626232803" duration="858000" />
+      <workItem from="1730906684471" duration="4000" />
+      <workItem from="1730906698978" duration="84000" />
+      <workItem from="1734350208785" duration="167000" />
+      <workItem from="1735775409738" duration="38000" />
+      <workItem from="1736264592093" duration="31000" />
+      <workItem from="1736934281588" duration="477000" />
+      <workItem from="1736957100262" duration="8566000" />
+      <workItem from="1737647918791" duration="9000" />
+      <workItem from="1738747608771" duration="2472000" />
+      <workItem from="1739037006705" duration="118000" />
+      <workItem from="1739202901738" duration="9000" />
+      <workItem from="1739544164274" duration="476000" />
+      <workItem from="1739555543555" duration="10749000" />
+      <workItem from="1740945321870" duration="599000" />
+      <workItem from="1741255806471" duration="1209000" />
+      <workItem from="1742374795047" duration="36000" />
+      <workItem from="1742375798587" duration="134000" />
+      <workItem from="1744569135769" duration="733000" />
+      <workItem from="1746386108470" duration="1454000" />
+      <workItem from="1746437554547" duration="17520000" />
     </task>
     <servers />
   </component>
@@ -1789,24 +1963,9 @@
           <option name="timeStamp" value="325" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>843</line>
-          <option name="timeStamp" value="339" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
-          <line>838</line>
-          <option name="timeStamp" value="342" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/internal_coordinates.py</url>
           <line>800</line>
           <option name="timeStamp" value="357" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology_cmd/assign_name_helix_curdlan.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="384" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
@@ -1817,11 +1976,6 @@
           <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
           <line>571</line>
           <option name="timeStamp" value="498" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/readmol/readbaseformat.py</url>
-          <line>277</line>
-          <option name="timeStamp" value="499" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
@@ -1853,6 +2007,51 @@
           <line>110</line>
           <option name="timeStamp" value="557" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readxsdformat.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="559" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology_cmd/label_pdb_withoutrenumber_cmd.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="561" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
+          <line>246</line>
+          <option name="timeStamp" value="562" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
+          <line>241</line>
+          <option name="timeStamp" value="563" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
+          <line>233</line>
+          <option name="timeStamp" value="564" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/readmol/readpdbformat.py</url>
+          <line>223</line>
+          <option name="timeStamp" value="565" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
+          <line>116</line>
+          <option name="timeStamp" value="566" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology_cmd/topology_cmd.py</url>
+          <line>307</line>
+          <option name="timeStamp" value="569" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/topology_cmd/create_index_dih_carb_cmd.py</url>
+          <line>259</line>
+          <option name="timeStamp" value="571" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -1873,7 +2072,13 @@
         <watch expression="conf" />
       </configuration>
       <configuration name="PythonConfigurationType">
-        <watch expression="results" />
+        <watch expression="__version__" />
+        <watch expression="idx" />
+        <watch expression="iatom" />
+        <watch expression="katom" />
+        <watch expression="katom.bonded_atoms.names" />
+        <watch expression="dict_psi" />
+        <watch expression="dict_phi" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -1887,23 +2092,25 @@
     <SUITE FILE_PATH="coverage/topology$01_topology_script.coverage" NAME="01-topology_script Coverage Results" MODIFIED="1661413369816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/08-blend_toxwaerd1mol_OPLS/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$49_FromPDB_to_XTC_parallel.coverage" NAME="49-FromPDB_to_XTC_parallel Coverage Results" MODIFIED="1727937486688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/2024-DPD/DPD_Files/Documents/01-Atomistic_models/01-PE/03-Equilibration/04-Prod_Temp/Annealing01/Trajectory_450K" />
     <SUITE FILE_PATH="coverage/topology$Test_mol2.coverage" NAME="Test_mol2 Coverage Results" MODIFIED="1661866566860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/topology$02_ReadXSD_InfoHeadTail.coverage" NAME="02-ReadXSD_InfoHeadTail Coverage Results" MODIFIED="1724319600702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/example_v02/02-ReadXSD_InfoHeadTail" />
     <SUITE FILE_PATH="coverage/topology$20_P3HB_alternate_big.coverage" NAME="20-P3HB_alternate big Coverage Results" MODIFIED="1724319631630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2022-Emma_Franco_Mateos/01-SINGLE_CHAIN_SIMULATIONS/02-P3HB600bb/01-TOPOLOGY" />
+    <SUITE FILE_PATH="coverage/topology$02_ReadXSD_InfoHeadTail.coverage" NAME="02-ReadXSD_InfoHeadTail Coverage Results" MODIFIED="1746443503716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/example_v02/02-ReadXSD_InfoHeadTail" />
     <SUITE FILE_PATH="coverage/topology$Test_pdb.coverage" NAME="Test_pdb Coverage Results" MODIFIED="1661866639277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$49_FromPDB_to_XTC_PDB_mods.coverage" NAME="49-FromPDB_to_XTC PDB_mods Coverage Results" MODIFIED="1727716118598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/49-FromPDB_to_XTC" />
     <SUITE FILE_PATH="coverage/topology$25_topology_script_.coverage" NAME="25-topology_script  Coverage Results" MODIFIED="1661863747210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$16_command_test_.coverage" NAME="16-command_test  Coverage Results" MODIFIED="1668773303083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/17-PE_04br_xsd_command" />
+    <SUITE FILE_PATH="coverage/topology$INSTALL.coverage" NAME="INSTALL Coverage Results" MODIFIED="1746517263157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$bbb.coverage" NAME="bbb Coverage Results" MODIFIED="1666432047690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/SC_TMP/17-PMMA_C500_newCODE_PDB_old/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$43_helix_sugar.coverage" NAME="43-helix_sugar Coverage Results" MODIFIED="1723294893009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/45-Helix_sugar" />
     <SUITE FILE_PATH="coverage/topology$01_Label_PDB_manychains_noorder_resiudes.coverage" NAME="01-Label_PDB_manychains_noorder resiudes Coverage Results" MODIFIED="1701025331342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/44-Label_PDB_with_residues" />
     <SUITE FILE_PATH="coverage/topology$09_P3HB_PHV_copolymer.coverage" NAME="09-P3HB-PHV_copolymer Coverage Results" MODIFIED="1724319607291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/21-P3HB-PHV_copolymer_OPLS" />
-    <SUITE FILE_PATH="coverage/topology$01_Label_PDB_manychains_noorder.coverage" NAME="01-Label_PDB_manychains_noorder Coverage Results" MODIFIED="1701022028013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/44-Label_PDB_with_residues" />
+    <SUITE FILE_PATH="coverage/topology$01_Label_PDB_manychains_noorder.coverage" NAME="01-Label_PDB_manychains_noorder Coverage Results" MODIFIED="1746443465665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/44-Label_PDB_with_residues" />
     <SUITE FILE_PATH="coverage/topology$40_frommonomers.coverage" NAME="40-frommonomers Coverage Results" MODIFIED="1706528180636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/40-From_Monomers/00-MONOMERS" />
     <SUITE FILE_PATH="coverage/topology$test_more100katoms.coverage" NAME="test_more100katoms Coverage Results" MODIFIED="1668339044994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/09-Layers/2022-PE-iPP_252m_40-27Ch_TrappeTox/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$45_typing_carb.coverage" NAME="45-typing_carb Coverage Results" MODIFIED="1723980530285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/45-typing_carb" />
     <SUITE FILE_PATH="coverage/topology$26_topology_unwrap.coverage" NAME="26-topology_unwrap Coverage Results" MODIFIED="1670328986701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/04-PE_AA/08-PE_Cryst_Stephanos/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$Test_topology.coverage" NAME="Test_topology Coverage Results" MODIFIED="1661866658070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$KK.coverage" NAME="KK Coverage Results" MODIFIED="1702593225915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2023-AMullerPolyTioEthers/03-Calculations/06-GENERATE_INITIAL_POLYPLY/03-BDDVE_N10/05-PDB_LABELED" />
+    <SUITE FILE_PATH="coverage/topology$51_XSD_DPD_to_PSF.coverage" NAME="51-XSD_DPD_to_PSF Coverage Results" MODIFIED="1729260128011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/51-fromXSD_DPD_toPDB" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_test_topology_TopologyTests_test_25_generate_topology_fromDATALammps_AA.coverage" NAME="Unittests for test_topology.TopologyTests.test_25_generate_topology_fromDATALammps_AA Coverage Results" MODIFIED="1661425137979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-Topology" />
     <SUITE FILE_PATH="coverage/topology$TEst.coverage" NAME="TEst Coverage Results" MODIFIED="1702563727792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/topology$TESTThio.coverage" NAME="TESTThio Coverage Results" MODIFIED="1685814448939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2023-AMullerTiofenoles/03-Calculations/01-MOLECULES_MODEL/02-CSCCOC_2/02-REPLICATE_POLYMER_OPLSAA" />
@@ -1918,6 +2125,7 @@
     <SUITE FILE_PATH="coverage/topology$Test_internalcoordinates.coverage" NAME="Test_internalcoordinates Coverage Results" MODIFIED="1662367746318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$02_ReadXSD_InfoHeadTail_4Ch.coverage" NAME="02-ReadXSD_InfoHeadTail 4Ch Coverage Results" MODIFIED="1687337587577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/example_v02/03-ReadXSD_AC_InfoHeadTail" />
     <SUITE FILE_PATH="coverage/topology$24_topology_multilayer.coverage" NAME="24-topology_multilayer Coverage Results" MODIFIED="1701021386865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/24-topology_multilayer" />
+    <SUITE FILE_PATH="coverage/topology$create_index_dih_carb_cmd.coverage" NAME="create_index_dih_carb_cmd Coverage Results" MODIFIED="1746513602880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/52-create_index_for_carbohydrates_link_dihedrals" />
     <SUITE FILE_PATH="coverage/topology$12_example.coverage" NAME="12-example Coverage Results" MODIFIED="1661415125080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_Test_readmol2_TestReadMol2_test_01_readfile_polymer_periodic.coverage" NAME="Unittests for Test_readmol2.TestReadMol2.test_01_readfile_polymer_periodic Coverage Results" MODIFIED="1659167112646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-ReadMol2" />
     <SUITE FILE_PATH="coverage/topology$Test_segment.coverage" NAME="Test_segment Coverage Results" MODIFIED="1659167512867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -1925,12 +2133,13 @@
     <SUITE FILE_PATH="coverage/topology$27_topology_UA_noH_assignnames.coverage" NAME="27-topology_UA_noH_assignnames Coverage Results" MODIFIED="1675074783617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/04-PE_AA/08-PE_Cryst_Stefanos/02-C10000_10Ch/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$X_01_PE_04br_xsd_convert.coverage" NAME="X-01-PE_04br_xsd_convert Coverage Results" MODIFIED="1723041610595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../TOREPO_examples/01-PE_04br_xsd_convert" />
     <SUITE FILE_PATH="coverage/topology$improper_test.coverage" NAME="improper_test Coverage Results" MODIFIED="1714376201780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topology_cmd" />
+    <SUITE FILE_PATH="coverage/topology$label_pdb_withoutrenumber_cmd.coverage" NAME="label_pdb_withoutrenumber_cmd Coverage Results" MODIFIED="1744569235198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/jramos/Elements/2024-AM_POLYESTERS/11-PVL4_C5_LOPLS/04-PDB_LABELED" />
     <SUITE FILE_PATH="coverage/topology$setup_install.coverage" NAME="setup install Coverage Results" MODIFIED="1727806598760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$42_assign_name_helix_curdlan.coverage" NAME="42-assign_name_helix_curdlan Coverage Results" MODIFIED="1709714218162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/2024-CB_Granada/03-12CURDLAN3H/02-ASSIGN_CORRECT_NAMES_TO_ATOMS" />
     <SUITE FILE_PATH="coverage/topology$41_sugar_pdb_database.coverage" NAME="41-sugar_pdb_database Coverage Results" MODIFIED="1709639333295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/TMP3/CURDLAN_HELIX/01-RENUMBER_Curdlan2_expanded" />
     <SUITE FILE_PATH="coverage/topology$19_command_test__lammps_data.coverage" NAME="19-command_test  lammps data Coverage Results" MODIFIED="1669115406457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd" />
     <SUITE FILE_PATH="coverage/topology$46_typing_carb_triplehelix.coverage" NAME="46-typing_carb_triplehelix big Coverage Results" MODIFIED="1724342798444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/2024-CB_Granada/04-CARB_DERIVATES/03-35CURDLAN_3H_1CMG/02-ASSIGN_FF" />
-    <SUITE FILE_PATH="coverage/topology$13_example.coverage" NAME="13-example Coverage Results" MODIFIED="1661415233795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic" />
+    <SUITE FILE_PATH="coverage/topology$13_example.coverage" NAME="13-example Coverage Results" MODIFIED="1746443429612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic" />
     <SUITE FILE_PATH="coverage/topology$16_command_test_help.coverage" NAME="16-command_test help Coverage Results" MODIFIED="1669114815876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/17-PE_04br_xsd_command" />
     <SUITE FILE_PATH="coverage/topology$07_topology_script__1_.coverage" NAME="23-topology_script Coverage Results" MODIFIED="1660204968829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/23-iPP_singleChain/00-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$benzene_at_hand.coverage" NAME="benzene_at_hand Coverage Results" MODIFIED="1666432258317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-Benzene_at_hand" />
@@ -1939,6 +2148,7 @@
     <SUITE FILE_PATH="coverage/topology$48_typing_carb_ionize.coverage" NAME="48-typing_carb_ionize Coverage Results" MODIFIED="1726170347109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/48-typing_carb_triplehelix_ionize/02-ASSIGN_FF" />
     <SUITE FILE_PATH="coverage/topology$40_improper_guess.coverage" NAME="40-improper_guess Coverage Results" MODIFIED="1698510718875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/40-Improper_guess" />
     <SUITE FILE_PATH="coverage/topology$30_improper_guess.coverage" NAME="40-improper_guess Coverage Results" MODIFIED="1694422796708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/40-Improper_guess" />
+    <SUITE FILE_PATH="coverage/topology$41_sugar__1_.coverage" NAME="41-sugar (1) Coverage Results" MODIFIED="1746386541503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/mnt/DRAGO_FOLDER/2024-OLGA/01-QM_CONFORMERS/02-GLUC_1314_1Ch_100w/01-TOPOLOGY" />
     <SUITE FILE_PATH="coverage/topology$50_Test_Carbbuilder.coverage" NAME="50-Test_Carbbuilder Coverage Results" MODIFIED="1725274953670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/2024-CB_Granada/04-CARB_DERIVATES/09-12MLG_Single/01-TOPOLOGY" />
     <SUITE FILE_PATH="coverage/topology$997_bilayer_PE_iPP.coverage" NAME="997-bilayer_PE-iPP Coverage Results" MODIFIED="1698786286173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/03-BILAYER_PE-iPP" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_Test_readmol2_TestReadMol2_test_08_separatechains_polymer_periodic_real.coverage" NAME="Unittests for Test_readmol2.TestReadMol2.test_08_separatechains_polymer_periodic_real Coverage Results" MODIFIED="1661866261070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-ReadMol2" />
@@ -1952,6 +2162,7 @@
     <SUITE FILE_PATH="coverage/topology$004_PE_10mon_40Ch_nocon_bad.coverage" NAME="004-PE_10mon_40Ch_nocon_bad Coverage Results" MODIFIED="1698650984247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
     <SUITE FILE_PATH="coverage/topology$16_command_test_more_100000.coverage" NAME="16-command_test more 100000 Coverage Results" MODIFIED="1668773330360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_test_topology_TopologyTests_test_23_assignresidues_fromlist.coverage" NAME="Unittests for test_topology.TopologyTests.test_23_assignresidues_fromlist Coverage Results" MODIFIED="1659165141789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-Topology" />
+    <SUITE FILE_PATH="coverage/topology$create_index_dih_carb_cmd_help.coverage" NAME="create_index_dih_carb_cmd help Coverage Results" MODIFIED="1746464829277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/52-create_index_for_carbohydrates_link_dihedrals" />
     <SUITE FILE_PATH="coverage/topology$25_bondlist_readpdb.coverage" NAME="25_bondlist_readpdb Coverage Results" MODIFIED="1694112509271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/25-topology_bondlist_readpdb_class" />
     <SUITE FILE_PATH="coverage/topology$50_Test_Carbbuilder__1_.coverage" NAME="50-Test_Carbbuilder (1) Coverage Results" MODIFIED="1726166596285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/jramos/PortableSSD/2024-CB_Granada/04-CARB_DERIVATES/16-35MLG_21Ch/01-TOPOLOGY" />
     <SUITE FILE_PATH="coverage/topology$Test_indigo_py.coverage" NAME="Test_indigo.py Coverage Results" MODIFIED="1659092646440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

@@ -21,28 +21,17 @@
         
 
 		Command line: 
-			python label_pdb_withoutrenumber_cmd.py -p confout_unwrp.pdb --headfile headtail.dat -a residues.dat
+			python label_pdb_withoutrenumber_cmd.py -p confout_unwrp.pdb --headfile headtail.dat
 			         or
-			topology_cmd -p confout_unwrp.pdb --headfile headtail.dat -a residues.dat
+			label_pdb_withoutrenumber_cmd.py  -p confout_unwrp.pdb --headfile headtail.dat
 
-		****** LABELLING PDB file (26-11-2023 20:02:12) ****** 
+		****** LABELLING PDB file (05-05-2025 13:11:07) ****** 
 		 PDB file:  confout_unwrp.pdb
 
-			 Start Guessing bonds using MDAnalysis library. (26-11-2023 20:02:12)
-			 End Guessing bonds using MDAnalysis library. (26-11-2023 20:02:12)
+			 Start Guessing bonds using MDAnalysis library. (05-05-2025 13:11:07)
+			 End Guessing bonds using MDAnalysis library. (05-05-2025 13:11:08)
 
-			 Start Loop over atoms. (26-11-2023 20:02:12)
-			 End Loop over atoms. (26-11-2023 20:02:12)
+			 Start Loop over atoms. (05-05-2025 13:11:08)
+			 End Loop over atoms. (05-05-2025 13:11:08)
 
-			 Start Creating topology. (26-11-2023 20:02:12)
-			 End Creating topology. (26-11-2023 20:02:12)
-
-			 Start Loop over atoms. (26-11-2023 20:02:12)
-			 End Loop over atoms. (26-11-2023 20:02:12)
-
-			 Start Creating topology. (26-11-2023 20:02:12)
-			 End Creating topology. (26-11-2023 20:02:12)
-
-		Job  Done at 26-11-2023 20:02:12 ============
-
-		Total time: 0.27 seconds
+			 Start Creating topology. (05-05-2025 13:11:08)

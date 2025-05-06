@@ -377,6 +377,7 @@ class ReadPdbFormat(ReadBaseFormat):
 
             :param inode:
             :param isvisitedlist:
+            :param backbonelist:
             :return:
                 A subgraph (dictionary) and the leaves of the subgraph
             """
