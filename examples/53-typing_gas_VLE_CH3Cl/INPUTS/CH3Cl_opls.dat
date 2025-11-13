@@ -1,0 +1,9 @@
+# https://virtualchemistry.org/ff.php
+# ; J. Chem. Theor. Comput. 8 (2012) 61-74
+# http://dx.doi.org/10.1021/ct200731v
+5
+1  CT   opls_152 -0.10900
+2  HC   opls_153  0.10300
+3  HC   opls_153  0.10300
+4  HC   opls_153  0.10300
+5  Cl   opls_151 -0.20000

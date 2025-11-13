@@ -1,0 +1,64 @@
+{
+  "MixingRule": "Jorgensen",
+  "TruncationMethod": "shifted",
+  "TailCorrections": false,
+  "CutOffVDW": 12.0,
+  "PseudoAtoms": [
+    {
+      "name": "opls_151",
+      "framework": false,
+      "print_to_output": true,
+      "element": "Cl",
+      "print_as": "Cl",
+      "mass": 35.453,
+      "charge": -0.148,
+      "source": "OPLS Gromacs Files. Not all charges from FF: True"
+    },
+    {
+      "name": "opls_152",
+      "framework": false,
+      "print_to_output": true,
+      "element": "C",
+      "print_as": "C",
+      "mass": 12.011,
+      "charge": -0.278,
+      "source": "OPLS Gromacs Files. Not all charges from FF: True"
+    },
+    {
+      "name": "opls_153",
+      "framework": false,
+      "print_to_output": true,
+      "element": "H",
+      "print_as": "H",
+      "mass": 1.008,
+      "charge": 0.142,
+      "source": "OPLS Gromacs Files. Not all charges from FF: True"
+    }
+  ],
+  "SelfInteractions": [
+    {
+      "name": "opls_151",
+      "type": "lennard-jones",
+      "parameters": [
+        150.9658695,
+        3.4
+      ]
+    },
+    {
+      "name": "opls_152",
+      "type": "lennard-jones",
+      "parameters": [
+        33.2124913,
+        3.5
+      ]
+    },
+    {
+      "name": "opls_153",
+      "type": "lennard-jones",
+      "parameters": [
+        15.0965869,
+        2.5
+      ]
+    }
+  ]
+}

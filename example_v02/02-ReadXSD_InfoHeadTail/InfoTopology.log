@@ -25,42 +25,7 @@
 			         or
 			topology_cmd.py  -i Polyethylene2.xsd
 
-		Starting: 	 22-08-2024 11:40:01
+		Starting: 	 02-07-2025 07:23:07
 
 		Input is a XSD format.
-		Reading... (22-08-2024 11:40:01)
-		End read   (22-08-2024 11:40:01)
-
-		****** WRITE PDB and PSF files (22-08-2024 11:40:01) ****** 
-		 Writing PDB file...topology.pdb (22-08-2024 11:40:01)
-		 CONECT table has been written.
-		****** END WRITE PDB and PSF files (22-08-2024 11:40:01) ****** 
-
-		****** SUMMARY (22-08-2024 11:40:01) ****** 
-		 PDB file: topology.pdb
-		****** END SUMMARY (22-08-2024 11:40:01) ****** 
-
-		Summarize of the input system (22-08-2024 11:40:01)
-		=======================================================
-		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/example_v02/02-ReadXSD_InfoHeadTail/Polyethylene2.xsd
-		CONECT table input file     : True
-		Head info file              : None
-		Residue info file           : None
-		
-		Number of molecules         : 1
-		Number of residues          : 5
-		Number of atoms             : 29
-		Number of bonds             : 28
-		Bond info available         : True
-		Simulation box dimension    : 0.0000 0.0000 0.0000 nm
-		Simulation box angles       : 0.00 0.00 0.00 degrees
-		
-		Output raw pdb file         : topology.pdb
-		CONECT table output pdb file: True
-		=======================================================
-
-		  WARNING 1: Important information about 'Head and Tails' is missing.
-		  WARNING 1: Please review the output files carefully.
-
-		Job  Done at 22-08-2024 11:40:01 ============
-		Total time: 0.03 seconds
+		Reading... (02-07-2025 07:23:07)

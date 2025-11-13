@@ -14,3 +14,5 @@ from topology.atomic_data import element_cov_radius, maximal_valences, \
                                  united_atoms_equivalence, atomic_mass, \
                                  element_vdw_vmd_volume_bondi, \
                                  united_bonds_equivalence
+
+from topology.GromacsFormat import GromacsFormat

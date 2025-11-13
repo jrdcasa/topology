@@ -233,6 +233,65 @@ def parse_arguments_typing_carb():
 
 
 # =============================================================================
+def parse_arguments_type_gas():
+
+    import time
+
+    desc = """ Type a PDB containing a gas to perfomr MD in GROMACS and MC in RASPA.\n"""
+
+    parser = argparse.ArgumentParser(description=desc, formatter_class=argparse.RawTextHelpFormatter)
+
+    parser.add_argument("-p", "--pdb", dest="pdbfile",
+                        help="A PDB file contaning a molecule for typing. "
+                             "The PDB file must be edited manually: atom names should correspond to "
+                             "the atom types defined in the force field, and the residue name field "
+                             "must be completed as well.",
+                        action="store", metavar="PDB_FILE", required=True)
+
+    parser.add_argument("-f", "--ffname", dest="ffname", choices=["OPLSAA"],
+                        help="Name of the force field",
+                        action="store", metavar="FFNAME", required=True)
+
+    parser.add_argument("-c", "--charges", dest="chargefile",
+                        help="List of atomic charges, provided in the same order as the atoms appear in the PDB file.",
+                        action="store", metavar="CHARGE_FILE", required=True)
+
+    parser.add_argument("-b", "--box", dest="boxdimensions", nargs="+",
+                        help="Box dimensions in the GRO format, "
+                             "lx, ly, lz",
+                        action="store", metavar="BOX_FILE", required=False, default=None)
+
+    parser.add_argument("--impropers", dest="impropers",
+                        help="A file with improper angles and parameters in GROMACS TOP format.",
+                        action="store", metavar="BOX_FILE", required=False, default=None)
+
+    parser.add_argument("--log", dest="log",
+                        help="Name of the file to write logs from this command",
+                        action="store", required=False, default="InfoTypeGas.log")
+
+    args = parser.parse_args()
+
+    # Check for existing files:
+    if not os.path.isfile(args.pdbfile):
+        print(desc)
+        time.sleep(.25)
+        parser.error("PDB file must exist!!!! ({})".format(os.path.abspath(args.pdbfile)))
+
+    if not os.path.isfile(args.chargefile):
+        print(desc)
+        time.sleep(.25)
+        parser.error("CHARGE file must exist!!!! ({})".format(os.path.abspath(args.chargefile)))
+
+    # Check dimensions
+    if args.boxdimensions is not None:
+        if len(args.boxdimensions) not in [1, 3]:
+            print("ERROR in box dimensions")
+            exit()
+
+    return args
+
+
+# =============================================================================
 def parse_arguments_multiplepdb():
 
     import time
@@ -333,6 +392,42 @@ def print_header_multiplepdb(version, logger_log=None):
         the license (LICENSE.txt) is included with this distribution.
 
     ***********************************************************************
+        """.format(version)
+
+    print(msg) if logger_log is None else logger_log.info(msg)
+
+
+# =============================================================================
+def print_header_type_gas(version, logger_log=None):
+    msg = """
+    ***********************************************************************
+                  Typing small molecules to run MD and MC
+              ----------------------------------------------
+
+                                Version {}
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        This program processes a set of PDB files, typically generated 
+        by Materials Studio, representing a molecular trajectory and 
+        converts them into GRO and XTC formats compatible with GROMACS.
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+    
+    The PDB file must contain the atom type in the atom name field and 
+    the residue name in the residue name field. Once the PDB has been generated, 
+    it must be properly formatted to ensure compatibility. 
+    In particular, each atom type must match a valid atom type 
+    defined in the force field being used.
+    It is essential to verify that the file is correctly formatted prior to use.
+    
         """.format(version)
 
     print(msg) if logger_log is None else logger_log.info(msg)

@@ -1,0 +1,21 @@
+# critical constants: Temperature [T], Pressure [Pa], and Acentric factor [omega]
+#TC#
+#PC#
+#OMEGA#
+# Number of atoms
+5
+# Number of Groups
+1
+# CHBrClF group
+flexible
+# Number of atoms
+5
+# Atomic positions
+0   opls_139
+1   opls_140
+2   opls_164
+3   opls_151
+4   opls_722
+# Chiral centers Bond  BondDipoles Bend  UrayBradley InvBend  Torsion Imp. Torsion Bond/Bond Stretch/Bend
+ 1   4   0 
+Bond stretch: atom i-j, type, parameters         1          0   HARMONIC_BOND 0.9    2845120.000

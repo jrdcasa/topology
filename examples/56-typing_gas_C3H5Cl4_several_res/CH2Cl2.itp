@@ -1,0 +1,39 @@
+; itp created with typing_gases_to_VLE_cmd.py program from Topology library
+;                      Javier Ramos (IEM-CSIC)                        
+;             Created:    18-09-2025 17:00:16                                   
+
+[ moleculetype ]
+; Name            nrexcl
+CH2Cl2             3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge        mass
+; residue        1
+     1      opls_152       1     DCM        CT           1   -0.0060000    12.0110 ; qtot        -0.006
+     2      opls_153       1     DCM        HC           1    0.1030000     1.0080 ; qtot         0.097
+     3      opls_153       1     DCM        HC           1    0.1030000     1.0080 ; qtot         0.200
+     4      opls_151       1     DCM        Cl           1   -0.1000000    35.4530 ; qtot         0.100
+     5      opls_151       1     DCM        Cl           1   -0.1000000    35.4530 ; qtot        -0.000
+
+[ bonds ]
+; ai    aj funct bo(nm) kb(kJ/molnm2)
+         2          1          1 0.1090     284512.000
+         3          1          1 0.1090     284512.000
+         4          1          1 0.1781     205016.000
+         5          1          1 0.1781     205016.000
+
+[ angles ]
+;  ai    aj    ak funct
+         2          1          3          1      107.800      276.144
+         2          1          4          1      107.600      426.768
+         2          1          5          1      107.600      426.768
+         3          1          4          1      107.600      426.768
+         3          1          5          1      107.600      426.768
+         4          1          5          1      111.700      652.704
+
+[ dihedrals ]
+; ai    aj  ak  al  funct
+
+[ pairs ]
+; ai    aj funct
+

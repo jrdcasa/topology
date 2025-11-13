@@ -1,12 +1,10 @@
 
-		 Starting installation!!!! at 06/05/2025 09:41:03
+		 Starting installation!!!! at 08/11/2025 13:41:54
 
 		Python version 3.10
 
 		 ============== SYS PATH ==============
 /home/jramos/Programacion/GITHUB_REPO_DIR/topology
-/home/jramos/Programacion/GITHUB_REPO_DIR/topology
-/opt/JetBrains/pycharm-2022.2/plugins/python/helpers/pycharm_display
 /home/jramos/Programacion/MAMBA/lib/python310.zip
 /home/jramos/Programacion/MAMBA/lib/python3.10
 /home/jramos/Programacion/MAMBA/lib/python3.10/lib-dynload
@@ -14,41 +12,41 @@
 /home/jramos/Programacion/MAMBA/lib/python3.10/site-packages/topology-1.0.0-py3.10-linux-x86_64.egg
 /home/jramos/Programacion/MAMBA/lib/python3.10/site-packages/replicate_polymer-0.0.0-py3.10-linux-x86_64.egg
 /home/jramos/Programacion/MAMBA/lib/python3.10/site-packages/polyanagro-1.1-py3.10-linux-x86_64.egg
-/opt/JetBrains/pycharm-2022.2/plugins/python/helpers/pycharm_matplotlib_backend
+/home/jramos/Programacion/MAMBA/lib/python3.10/site-packages/RASPA_out_parser-0.1.0-py3.10.egg
 
 		 ============== INSTALLING PIP PACKAGES ==============
 
-06/05/2025 09:41:04: ** TOPOLOGY: Installing GitPython==3.1.1
-06/05/2025 09:41:05: ** TOPOLOGY: Installing cython==0.29.24
-06/05/2025 09:41:07: ** TOPOLOGY: Installing numpy
-06/05/2025 09:41:08: ** TOPOLOGY: Installing periodictable==1.6.0
-06/05/2025 09:41:10: ** TOPOLOGY: Installing pygraphviz==1.7
-06/05/2025 09:41:12: ** TOPOLOGY: Installing networkx==2.6.3
-06/05/2025 09:41:13: ** TOPOLOGY: Installing matplotlib==3.4.3
-06/05/2025 09:41:15: ** TOPOLOGY: Installing MDAnalysis
-06/05/2025 09:41:17: ** TOPOLOGY: Installing psutil==5.8.0
-06/05/2025 09:41:19: ** TOPOLOGY: Installing rdkit-pypi
-06/05/2025 09:41:21: ** TOPOLOGY: Installing Sphinx==4.3.0
-06/05/2025 09:41:22: ** TOPOLOGY: Installing scipy
-06/05/2025 09:41:24: ** TOPOLOGY: Installing mock
+08/11/2025 13:41:55: ** TOPOLOGY: Installing GitPython==3.1.1
+08/11/2025 13:41:56: ** TOPOLOGY: Installing cython==0.29.24
+08/11/2025 13:41:57: ** TOPOLOGY: Installing numpy
+08/11/2025 13:41:58: ** TOPOLOGY: Installing periodictable==1.6.0
+08/11/2025 13:41:59: ** TOPOLOGY: Installing pygraphviz==1.7
+08/11/2025 13:42:00: ** TOPOLOGY: Installing networkx==2.6.3
+08/11/2025 13:42:00: ** TOPOLOGY: Installing matplotlib==3.4.3
+08/11/2025 13:42:02: ** TOPOLOGY: Installing MDAnalysis
+08/11/2025 13:42:03: ** TOPOLOGY: Installing psutil==5.8.0
+08/11/2025 13:42:04: ** TOPOLOGY: Installing rdkit-pypi
+08/11/2025 13:42:05: ** TOPOLOGY: Installing Sphinx==4.3.0
+08/11/2025 13:42:06: ** TOPOLOGY: Installing scipy
+08/11/2025 13:42:07: ** TOPOLOGY: Installing mock
 
 		 ============== COMPILING & INSTALLING INDIGO-BONDORDER PACKAGE ==============
 
-06/05/2025 09:41:25: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
+08/11/2025 13:42:07: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
 
-06/05/2025 09:41:25: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
+08/11/2025 13:42:07: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
 
 		 ============== COMPILING & INSTALLING EIGEN PACKAGE ==============
 
 
-06/05/2025 09:41:25: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
+08/11/2025 13:42:07: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
 
 		 ============== COMPILING & INSTALLING OPENBABEL PACKAGE ==============
 
 
-06/05/2025 09:41:25: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
+08/11/2025 13:42:07: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
 
-		 ============== RUNNING SETUP FROM SETUPTOOLS 06/05/2025 09:41:26 ==============
+		 ============== RUNNING SETUP FROM SETUPTOOLS 08/11/2025 13:42:08 ==============
 
 
 
@@ -60,6 +58,6 @@
 		 Topology has been succesfully imported.
 		 ******************* SUMMARY *******************
 
-		 Installation Done!!!! at 06/05/2025 09:41:27
+		 Installation Done!!!! at 08/11/2025 13:42:09
 
 

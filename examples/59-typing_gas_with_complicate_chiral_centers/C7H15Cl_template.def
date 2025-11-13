@@ -1,0 +1,37 @@
+# critical constants: Temperature [T], Pressure [Pa], and Acentric factor [omega]
+#TC#
+#PC#
+#OMEGA#
+# Number of atoms
+23
+# Number of Groups
+1
+# C7H15Cl group
+flexible
+# Number of atoms
+23
+# Atomic positions
+0   opls_135
+1   opls_135
+2   opls_135
+3   opls_135
+4   opls_135
+5   opls_135
+6   opls_135
+7   opls_135
+8   opls_135
+9   opls_135
+10  opls_135
+11  opls_135
+12  opls_135
+13  opls_135
+14  opls_135
+15  opls_135
+16  opls_135
+17  opls_135
+18  opls_135
+19  opls_135
+20  opls_135
+21  opls_135
+22  opls_135
+# Chiral centers Bond  BondDipoles Bend  UrayBradley InvBend  Torsion Imp. Torsion Bond/Bond Stretch/Bend

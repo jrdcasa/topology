@@ -7,6 +7,7 @@ from collections import defaultdict
 
 import MDAnalysis as Mda
 import networkx as nx
+from networkx.algorithms.graph_hashing import weisfeiler_lehman_graph_hash
 
 from utils.Logger import init_logger
 from utils.parse_arguments import parse_arguments_typing_carb, print_header_type_cb, command_info
@@ -67,6 +68,11 @@ name_to_type_bglc_charmm_patch = {"C1": ["CC3162", 0.2900, 12.0110],
                                   "Cm1": ["CC321", 0.000, 1.0080],
                                   }
 
+name_to_type_urea_charmm = {"O" :["OG2D1", -0.580, 15.99940],
+                            "C" :["CG2O6",  0.600, 12.01100],
+                            "N" :["NG2S2", -0.690, 14.00700],
+                            "H" :["HGP1" ,  0.340,  1.00800]}
+
 atoms_backbone = ["C1", "C2", "C3", "C4", "C5", "O5"]
 atoms_sidechain = ["O1", "O2", "O3", "O4", "C6", "O6"]
 
@@ -104,6 +110,7 @@ def find_paths_of_length_n(graph, length):
 
 # =============================================================================
 def number_polymer_chains(u):
+
     graph_mol = nx.Graph()
     graph_component_nodes = defaultdict()
 
@@ -143,13 +150,20 @@ def number_polymer_chains(u):
     for idx, imol in enumerate(nx.connected_components(graph_mol)):
         graph_component_nodes[idx] = sorted(imol)
 
+    # Isomorphic components
+    graph_unique_mol = defaultdict(list)
+    components = [graph_mol.subgraph(c).copy() for c in nx.connected_components(graph_mol)]
 
-    return graph_mol, graph_component_nodes, nmols
+    for subgraph in components:
+        h = weisfeiler_lehman_graph_hash(subgraph)
+        graph_unique_mol[h].append(subgraph)
+    nmols_unique = len(graph_unique_mol)
+
+    return graph_mol, graph_unique_mol, graph_component_nodes, nmols, nmols_unique
 
 
 # =============================================================================
 def write_itp(imol, graph_mol, graph_component_nodes, u, logger=None):
-
 
 
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -183,6 +197,7 @@ def write_itp(imol, graph_mol, graph_component_nodes, u, logger=None):
     iatom_idx_local = 0
     resid_local = 0
     for iatom_idx in graph_component_nodes[imol]:
+
         iatom = u.atoms[iatom_idx]
 
         atomtype = iatom.name
@@ -225,6 +240,7 @@ def write_itp(imol, graph_mol, graph_component_nodes, u, logger=None):
             improper_list.append(improper_sublist)
 
         if resname == "BGL" or resname == "BGLC":
+            pattern_itp = "CARB"
             try:
                 if ispatch:
                     atomtype = name_to_type_bglc_charmm_patch[atomname][0]
@@ -240,6 +256,11 @@ def write_itp(imol, graph_mol, graph_component_nodes, u, logger=None):
                 mass = 0.0
                 print(m) if logger is None else logger.error(m)
                 exit()
+        elif resname =="URE":
+            pattern_itp = "UREA"
+            atomtype = name_to_type_urea_charmm[atomname][0]
+            charge = name_to_type_urea_charmm[atomname][1]
+            mass = name_to_type_urea_charmm[atomname][2]
         else:
             charge = -99.9
             mass = 0.0
@@ -397,7 +418,7 @@ def write_itp(imol, graph_mol, graph_component_nodes, u, logger=None):
     print(m) if logger is None else logger.error(m)
 
     # Write file
-    fname = "CARB{0:02d}.itp".format(imol)
+    fname = "{0:4s}{1:02d}.itp".format(pattern_itp, imol)
     lines_itp += "\n"
     with open(fname, "w") as fout:
         fout.writelines(lines_itp)
@@ -405,7 +426,7 @@ def write_itp(imol, graph_mol, graph_component_nodes, u, logger=None):
         fout.writelines(lines_rest_atoms)
         fout.writelines("#endif\n")
 
-    molname_itp = "CARB{0:02d}".format(imol)
+    molname_itp = "{0:4s}{1:02d}".format(pattern_itp, imol)
     return fname,  molname_itp
 
 
@@ -549,13 +570,22 @@ def create_gro_top_charmm36(u, boxdim, logger=None):
     print(m) if logger is None else logger.info(m)
 
     # Number of different polymer chains
-    mol_graph, graph_component_nodes, nmols = number_polymer_chains(u)
+    mol_graph, groups_graphs, graph_component_nodes, nmols, nmols_unique = number_polymer_chains(u)
 
     # Setup dictionaries to build itps
     filename_itp = defaultdict()
     molname_itp = defaultdict()
-    for imol in range(0, nmols):
-        filename_itp[imol], molname_itp[imol] = write_itp(imol, mol_graph, graph_component_nodes, u)
+    pattern_itp = list()
+    # for imol in range(0, nmols):
+    #     filename_itp[imol], molname_itp[imol] = write_itp(imol, mol_graph, graph_component_nodes, u)
+    imol_unique = 0
+    nmols_unique_list = []
+    for key, items in groups_graphs.items():
+        nmols_unique_list.append(len(items))
+
+    for imol in range(0, nmols_unique):
+        filename_itp[imol], molname_itp[imol]= write_itp(imol_unique, mol_graph, graph_component_nodes, u)
+        imol_unique += nmols_unique_list[imol]
 
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     lines_top = ""
@@ -573,13 +603,13 @@ def create_gro_top_charmm36(u, boxdim, logger=None):
     lines_top += "\n"
     lines_top += "[ system ]\n"
     lines_top += "; Name\n"
-    lines_top += "CARB\n"
+    lines_top += "{}\n".format("CARB in water")
 
     lines_top += "\n"
     lines_top += "[ molecules ]\n"
     lines_top += "; Compound        mols\n"
     for i in filename_itp:
-        lines_top += '{}             1\n'.format(molname_itp[i])
+        lines_top += '{}             {}\n'.format(molname_itp[i], nmols_unique_list[i])
 
     with open("topology.top", "w") as ftop:
         ftop.writelines(lines_top)

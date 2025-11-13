@@ -2,6 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/thirdparty/openbabel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/examples/56-typing_gas_C3H5Cl4_several_res/TT/DES" vcs="Git" />
   </component>
 </project>

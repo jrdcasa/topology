@@ -21,11 +21,15 @@
         
 
 		Command line: 
-			python topology_cmd.py -i PE_iPP_500_Packed.xsd
+			python topology_cmd.py -i /home/jramos/TestDPD_branch.xsd
 			         or
-			topology_cmd.py  -i PE_iPP_500_Packed.xsd
+			topology_cmd.py  -i /home/jramos/TestDPD_branch.xsd
 
-		Starting: 	 18-10-2024 16:02:10
+		Starting: 	 02-07-2025 09:30:52
 
 		Input is a XSD format.
-		Reading... (18-10-2024 16:02:10)
+		Reading... (02-07-2025 09:30:52)
+		End read   (02-07-2025 09:30:52)
+
+		****** WRITE PDB and PSF files (02-07-2025 09:30:52) ****** 
+		 Writing PDB file...topology.pdb (02-07-2025 09:30:52)

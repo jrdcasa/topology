@@ -1,0 +1,25 @@
+# https://virtualchemistry.org/ff.php
+# ; J. Chem. Theor. Comput. 8 (2012) 61-74
+# http://dx.doi.org/10.1021/ct200731v
+21
+1 CT  opls_135  -0.1800
+2 HC  opls_140   0.0060
+3 HC  opls_140   0.0060
+4 HC  opls_140   0.0060
+5 C2  opls_136  -0.1200
+6 H2  opls_140   0.0060
+7 H2  opls_140   0.0060
+8 CT  opls_122   0.1860
+9 CL  opsl_123  -0.0620
+10 CL opls_123  -0.0620
+11 CL opls_123  -0.0620
+12 CT opls_152 -0.00600 
+13 HC opls_153  0.10300
+14 HC opls_153  0.10300 
+15 CL opls_151 -0.10000
+16 CL opls_151 -0.10000
+17 CT opls_122  0.24800
+18 CL opls_123 -0.06200
+19 CL opls_123 -0.06200
+20 CL opls_123 -0.06200
+21 CL opls_123 -0.06200

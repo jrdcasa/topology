@@ -8,6 +8,7 @@ import os
 import shutil
 from zipfile import ZipFile
 
+
 # ########################################################################################
 def total_size(o, handlers={}, verbose=False):
     """ Returns the approximate memory footprint an object and all of its contents.
@@ -110,10 +111,12 @@ def compress_files(dirbase="./", zipname="gaussian_inputs.zip"):
         for file in file_paths:
             zip.write(file)
 
+
 # ########################################################################################
 def delete_folder(folder):
 
     shutil.rmtree(folder, ignore_errors=False)
+
 
 # ########################################################################################
 def get_name_file_ext(fullpath):
@@ -149,6 +152,7 @@ def get_name_file_ext(fullpath):
 
         isfile = False
         return None, None, None, isfile
+
 
 # ########################################################################################
 def padding_list(l, fillval=np.nan):

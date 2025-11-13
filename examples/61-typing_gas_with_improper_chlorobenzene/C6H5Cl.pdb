@@ -1,0 +1,27 @@
+REMARK   1 File created by GaussView 6.0.16
+CRYST1   66.090   66.090   75.661  90.00  90.00  90.00 P 1           1
+HETATM    1 CA   LIG     0       0.208  -0.060   0.000                       C
+HETATM    2 CA   LIG     0       1.603  -0.060   0.000                       C
+HETATM    3 CA   LIG     0       2.301   1.148   0.000                       C
+HETATM    4 CA   LIG     0       1.603   2.357  -0.001                       C
+HETATM    5 CA   LIG     0       0.209   2.357  -0.002                       C
+HETATM    6 CA   LIG     0      -0.489   1.148  -0.001                       C
+HETATM    7 Cl   LIG     0      -0.672  -1.584   0.001                      Cl
+HETATM    8 HA   LIG     0       2.153  -1.012   0.001                       H
+HETATM    9 HA   LIG     0       3.401   1.148   0.001                       H
+HETATM   10 HA   LIG     0       2.154   3.309  -0.001                       H
+HETATM   11 HA   LIG     0      -0.342   3.309  -0.003                       H
+HETATM   12 HA   LIG     0      -1.589   1.149  -0.001                       H
+END
+CONECT    1    2    6    7
+CONECT    2    1    3    8
+CONECT    3    2    4    9
+CONECT    4    3    5   10
+CONECT    5    4    6   11
+CONECT    6    1    5   12
+CONECT    7    1
+CONECT    8    2
+CONECT    9    3
+CONECT   10    4
+CONECT   11    5
+CONECT   12    6
