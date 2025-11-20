@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e2bf383-3776-4d6c-a9f3-bee8797e69b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/topology/BasicFormat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topology/GromacsFormat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topology/chirality_from_coordinates.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topology/force_fields/ForceField.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topology/force_fields/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topology_cmd/typing_gases_to_VLE_cmd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/topology.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/topology.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_v02/02-ReadXSD_InfoHeadTail/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/example_v02/02-ReadXSD_InfoHeadTail/InfoTopology.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/51-fromXSD_DPD_toPDB/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/51-fromXSD_DPD_toPDB/InfoTopology.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/51-fromXSD_DPD_toPDB/topology.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/51-fromXSD_DPD_toPDB/topology.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install.log" beforeDir="false" afterPath="$PROJECT_DIR$/install.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/readmol/readxsdformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/readmol/readxsdformat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology_cmd/typing_carb_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology_cmd/typing_carb_cmd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/parse_arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/parse_arguments.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/MolecularGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/MolecularGraph.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,35 +61,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.53-Typing-gas_VLE_CH3Cl.executor": "Run",
-    "Python.54-Typing-gas_VLE_CH3Cl _CH2Cl2_CCl4.executor": "Run",
-    "Python.55-Typing-gas_VLE_2CH3Cl _CH2Cl2_2CCl4 (1).executor": "Run",
-    "Python.55-Typing-gas_VLE_2CH3Cl _CH2Cl2_2CCl4.executor": "Run",
-    "Python.56-Typing-gas_VLE_MIX.executor": "Run",
-    "Python.57-Isomers.executor": "Run",
-    "Python.58-typing_gas_with_chiral_centers S.executor": "Run",
-    "Python.58-typing_gas_with_chiral_centers.executor": "Run",
-    "Python.59-typing_gas_with_ccomplimacated_chiral_centers.executor": "Run",
-    "Python.60-typing_gas_with_impropers.executor": "Debug",
-    "Python.61-typing_gas_with_improper_chlorobenzene.executor": "Run",
-    "Python.INSTALL.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/61-typing_gas_with_improper_chlorobenzene",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.53-Typing-gas_VLE_CH3Cl.executor&quot;: &quot;Run&quot;,
+    &quot;Python.54-Typing-gas_VLE_CH3Cl _CH2Cl2_CCl4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.55-Typing-gas_VLE_2CH3Cl _CH2Cl2_2CCl4 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.55-Typing-gas_VLE_2CH3Cl _CH2Cl2_2CCl4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.56-Typing-gas_VLE_MIX.executor&quot;: &quot;Run&quot;,
+    &quot;Python.57-Isomers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.58-typing_gas_with_chiral_centers S.executor&quot;: &quot;Run&quot;,
+    &quot;Python.58-typing_gas_with_chiral_centers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.59-typing_gas_with_ccomplimacated_chiral_centers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.60-typing_gas_with_impropers.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.61-typing_gas_with_improper_chlorobenzene.executor&quot;: &quot;Run&quot;,
+    &quot;Python.INSTALL.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/61-typing_gas_with_improper_chlorobenzene&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySupportGeventDebugging" value="true" />
   </component>
@@ -2155,14 +2135,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.22855.92" />
-        <option value="bundled-python-sdk-b068d85d1acf-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.22855.92" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
@@ -2322,6 +2294,7 @@
       <workItem from="1758384481156" duration="46717000" />
       <workItem from="1758814702361" duration="222000" />
       <workItem from="1758814940263" duration="2515000" />
+      <workItem from="1763640054349" duration="390000" />
     </task>
     <servers />
   </component>
@@ -2416,16 +2389,6 @@
           <url>file://$PROJECT_DIR$/topology/internal_coordinates.py</url>
           <line>800</line>
           <option name="timeStamp" value="357" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
-          <line>418</line>
-          <option name="timeStamp" value="464" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/topology/MolecularGraph.py</url>
-          <line>571</line>
-          <option name="timeStamp" value="498" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/MDAnalysis/coordinates/PDB.py</url>

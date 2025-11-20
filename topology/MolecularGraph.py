@@ -236,9 +236,18 @@ class MolecularGraph(object):
 
         """
 
-        if vertex not in self._graphdict.keys():
+        # Very ineffiecient
+        #if vertex not in self._graphdict.keys():
+            # self._graphdict[vertex] = []
+            # self.natoms += 1
+
+
+        try:
+            self._graphdict[vertex]
+        except KeyError:
             self._graphdict[vertex] = []
             self.natoms += 1
+
 
     # ##################################################################################################################
     def add_edge(self, edge, setforest=True):
@@ -280,21 +289,36 @@ class MolecularGraph(object):
 
         """
 
+        # Very ineffiecient
+        # edge = set(edge)
+
+        # # Not add repeat edges
+        # if edge in self._bonds:
+        #     return None
+
+        # (vertex1, vertex2) = tuple(edge)
+        # if (vertex1 and vertex2) in self._graphdict:
+        #
+        #     if vertex2 not in self._graphdict[vertex1]:
+        #         self._graphdict[vertex1].append(vertex2)
+        #     self._bonds.append({vertex1, vertex2})
+        #     if self._undirected:
+        #         if vertex1 not in self._graphdict[vertex2]:
+        #             self._graphdict[vertex2].append(vertex1)
+
+        # More efficient but it can contain repeat bonds
         edge = set(edge)
-
-        # Not add repeat edges
-        if edge in self._bonds:
-            return None
-
         (vertex1, vertex2) = tuple(edge)
-        if (vertex1 and vertex2) in self._graphdict:
 
+        try:
             if vertex2 not in self._graphdict[vertex1]:
                 self._graphdict[vertex1].append(vertex2)
             self._bonds.append({vertex1, vertex2})
             if self._undirected:
                 if vertex1 not in self._graphdict[vertex2]:
                     self._graphdict[vertex2].append(vertex1)
+        except KeyError:
+            pass
 
         if setforest:
             self._set_forest()
@@ -767,6 +791,10 @@ class MolecularGraph(object):
         -------
 
         """
+
+        # Delete repeat bonds
+        bonds_unique = [set(b) for b in {frozenset(b) for b in self._bonds}]
+        self._bonds = sorted(bonds_unique, key=lambda x: sorted(x))
 
         # Get get_vertices
         gdict = self._graphdict
