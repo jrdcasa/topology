@@ -1,5 +1,5 @@
 
-		 Starting installation!!!! at 08/11/2025 13:41:54
+		 Starting installation!!!! at 20/11/2025 13:44:36
 
 		Python version 3.10
 
@@ -8,45 +8,45 @@
 /home/jramos/Programacion/MAMBA/lib/python310.zip
 /home/jramos/Programacion/MAMBA/lib/python3.10
 /home/jramos/Programacion/MAMBA/lib/python3.10/lib-dynload
-/home/jramos/Programacion/MAMBA/lib/python3.10/site-packages
-/home/jramos/Programacion/MAMBA/lib/python3.10/site-packages/topology-1.0.0-py3.10-linux-x86_64.egg
-/home/jramos/Programacion/MAMBA/lib/python3.10/site-packages/replicate_polymer-0.0.0-py3.10-linux-x86_64.egg
-/home/jramos/Programacion/MAMBA/lib/python3.10/site-packages/polyanagro-1.1-py3.10-linux-x86_64.egg
-/home/jramos/Programacion/MAMBA/lib/python3.10/site-packages/RASPA_out_parser-0.1.0-py3.10.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.10/site-packages
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.10/site-packages/polyanagro-1.1-py3.10-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.10/site-packages/gen_random_comonomer_positions-0.0.0-py3.10.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.10/site-packages/replicate_polymer-0.0.0-py3.10-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.10/site-packages/topology-1.0.0-py3.10-linux-x86_64.egg
 
 		 ============== INSTALLING PIP PACKAGES ==============
 
-08/11/2025 13:41:55: ** TOPOLOGY: Installing GitPython==3.1.1
-08/11/2025 13:41:56: ** TOPOLOGY: Installing cython==0.29.24
-08/11/2025 13:41:57: ** TOPOLOGY: Installing numpy
-08/11/2025 13:41:58: ** TOPOLOGY: Installing periodictable==1.6.0
-08/11/2025 13:41:59: ** TOPOLOGY: Installing pygraphviz==1.7
-08/11/2025 13:42:00: ** TOPOLOGY: Installing networkx==2.6.3
-08/11/2025 13:42:00: ** TOPOLOGY: Installing matplotlib==3.4.3
-08/11/2025 13:42:02: ** TOPOLOGY: Installing MDAnalysis
-08/11/2025 13:42:03: ** TOPOLOGY: Installing psutil==5.8.0
-08/11/2025 13:42:04: ** TOPOLOGY: Installing rdkit-pypi
-08/11/2025 13:42:05: ** TOPOLOGY: Installing Sphinx==4.3.0
-08/11/2025 13:42:06: ** TOPOLOGY: Installing scipy
-08/11/2025 13:42:07: ** TOPOLOGY: Installing mock
+20/11/2025 13:44:37: ** TOPOLOGY: Installing GitPython==3.1.1
+20/11/2025 13:44:38: ** TOPOLOGY: Installing cython==0.29.24
+20/11/2025 13:44:39: ** TOPOLOGY: Installing numpy
+20/11/2025 13:44:40: ** TOPOLOGY: Installing periodictable==1.6.0
+20/11/2025 13:44:42: ** TOPOLOGY: Installing pygraphviz==1.7
+20/11/2025 13:44:43: ** TOPOLOGY: Installing networkx==2.6.3
+20/11/2025 13:44:44: ** TOPOLOGY: Installing matplotlib==3.4.3
+20/11/2025 13:44:45: ** TOPOLOGY: Installing MDAnalysis
+20/11/2025 13:44:47: ** TOPOLOGY: Installing psutil==5.8.0
+20/11/2025 13:44:48: ** TOPOLOGY: Installing rdkit-pypi
+20/11/2025 13:44:49: ** TOPOLOGY: Installing Sphinx==4.3.0
+20/11/2025 13:44:50: ** TOPOLOGY: Installing scipy
+20/11/2025 13:44:52: ** TOPOLOGY: Installing mock
 
 		 ============== COMPILING & INSTALLING INDIGO-BONDORDER PACKAGE ==============
 
-08/11/2025 13:42:07: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
+20/11/2025 13:44:52: ** TOPOLOGY: indigo-bondorder is already installed in your system. https://github.com/allison-group/indigo-bondorder.git
 
-08/11/2025 13:42:07: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
+20/11/2025 13:44:52: ** TOPOLOGY: indigo-bondorder is correctly imported. https://github.com/allison-group/indigo-bondorder.git
 
 		 ============== COMPILING & INSTALLING EIGEN PACKAGE ==============
 
 
-08/11/2025 13:42:07: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
+20/11/2025 13:44:52: ** TOPOLOGY: eigen_library seems to be already compiled in your system. thirdparty/eigen-3.3.9/eigen_library/include
 
 		 ============== COMPILING & INSTALLING OPENBABEL PACKAGE ==============
 
 
-08/11/2025 13:42:07: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
+20/11/2025 13:44:52: ** TOPOLOGY: openbabel is already installed in your system. /home/jramos/Programacion/GITHUB_REPO_DIR/topology/thirdparty/openbabel
 
-		 ============== RUNNING SETUP FROM SETUPTOOLS 08/11/2025 13:42:08 ==============
+		 ============== RUNNING SETUP FROM SETUPTOOLS 20/11/2025 13:44:53 ==============
 
 
 
@@ -58,6 +58,6 @@
 		 Topology has been succesfully imported.
 		 ******************* SUMMARY *******************
 
-		 Installation Done!!!! at 08/11/2025 13:42:09
+		 Installation Done!!!! at 20/11/2025 13:44:56
 
 

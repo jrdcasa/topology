@@ -101,7 +101,7 @@ class ExtTrajectory(object):
         elapsed_time = end_time - start_time
         msg = "\tTIME(Read_Trajectories): {0:s} seconds\n".format(str(elapsed_time.total_seconds()))
         msg += "\t*** End Creating a trajectory \n"
-        print(msg) if self.logger is None else self.logger.info(msg)
+        # print(msg) if self.logger is None else self.logger.info(msg)
 
     # ***********************************************************************************
     def __copy__(self):
@@ -271,7 +271,7 @@ class ExtTrajectory(object):
 
                 end_time = datetime.datetime.now()
                 elapsed_time = end_time - start_time
-                msg = "\tTIME(Adding topology): {0:s} seconds".format(str(elapsed_time.total_seconds()))
+                msg = "\tTIME(Adding topology): {0:.2f} seconds".format(elapsed_time.total_seconds())
                 print(msg) if self.logger is None else self.logger.info(msg)
             else:
                 msg = "\tEmpty topology in trajectory"
@@ -330,7 +330,7 @@ class ExtTrajectory(object):
                 msg = "\tFrame {0:9d} of {1:9d}".format(indx_iframe, self.get_numframes())
                 mid_time = datetime.datetime.now()
                 elapsed_time = mid_time - start_time
-                msg += "\ttime: {0:s} seconds".format(str(elapsed_time.total_seconds()))
+                msg += "\ttime: {0:.2f} seconds".format(elapsed_time.total_seconds())
                 print(msg) if self.logger is None else self.logger.info(msg)
 
             # Write coordinates without jump in the molecules (chains)

@@ -322,7 +322,7 @@ class Topology(MolecularGraph):
 
         end_time = datetime.datetime.now()
         elapsed_time = end_time - start_time
-        msg = "\tTIME(Building_bonds_from_PDB_topology): {0:s} seconds".format(str(elapsed_time.total_seconds()))
+        msg = "\tTIME(Building_bonds_from_PDB_topology): {0:.2f} seconds".format(elapsed_time.total_seconds())
         print(msg) if self.logger is None else self.logger.info(msg)
 
     # #########################################################################
@@ -510,7 +510,7 @@ class Topology(MolecularGraph):
 
         end_time = datetime.datetime.now()
         elapsed_time = end_time - start_time
-        msg = "\tTIME(Building_bonds_from_PSF_topology): {0:s} seconds".format(str(elapsed_time.total_seconds()))
+        msg = "\tTIME(Building_bonds_from_PSF_topology): {0:.2f} seconds".format(elapsed_time.total_seconds())
         print(msg) if self.logger is None else self.logger.info(msg)
 
     # #########################################################################
@@ -618,7 +618,7 @@ class Topology(MolecularGraph):
 
         end_time = datetime.datetime.now()
         elapsed_time = end_time - start_time
-        msg = "\tTIME(Building_bonds_from_topology): {0:s} seconds\n".format(str(elapsed_time.total_seconds()))
+        msg = "\tTIME(Building_bonds_from_topology): {0:.2f} seconds\n".format(elapsed_time.total_seconds())
         msg += "\t*** End Building bonds from topology... \n"
         print(msg) if self.logger is None else self.logger.info(msg)
 
