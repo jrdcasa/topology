@@ -1,11 +1,20 @@
+# cython: language_level=3
+# cython: boundscheck=False
+# cython: wraparound=False
+# cython: cdivision=True
 
-# import both numpy and the Cython declarations for numpy
+# Required for compatibility with NumPy >= 2.0
+cdef extern from "numpy/arrayobject.h":
+    pass
+
 import cython
 import numpy as np
 cimport numpy as np
 from libc.stdlib cimport malloc, free
 from copy import copy
 
+# Force use of the new API (no deprecated API allowed)
+np.import_array()
 
 # declare the interface to the C code
 cdef extern from "calc_unwrap.c":

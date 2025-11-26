@@ -3,7 +3,7 @@
                      Manipulate topology for polymers
               ----------------------------------------------
 
-                                Version 1.1
+                                Version None
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -21,42 +21,42 @@
         
 
 		Command line: 
-			python topology_cmd.py -i PolyP3HSmallb.xsd -p P3HB_Small -r PolyP3HSmallb_headtail.dat -a PolyP3HSmallb_residues.dat
+			python topology_cmd -i PolyP3HSmallb.xsd -p P3HB_Small -r PolyP3HSmallb_headtail.dat -a PolyP3HSmallb_residues.dat
 			         or
-			topology_cmd.py  -i PolyP3HSmallb.xsd -p P3HB_Small -r PolyP3HSmallb_headtail.dat -a PolyP3HSmallb_residues.dat
+			topology_cmd  -i PolyP3HSmallb.xsd -p P3HB_Small -r PolyP3HSmallb_headtail.dat -a PolyP3HSmallb_residues.dat
 
-		Starting: 	 22-08-2024 11:40:20
+		Starting: 	 26-11-2025 18:40:28
 
 		Input is a XSD format.
-		Reading... (22-08-2024 11:40:20)
-		End read   (22-08-2024 11:40:20)
+		Reading... (26-11-2025 18:40:28)
+		End read   (26-11-2025 18:40:28)
 
-		****** WRITE PDB and PSF files (22-08-2024 11:40:20) ****** 
-		 Writing PDB file...P3HB_Small.pdb (22-08-2024 11:40:20)
+		****** WRITE PDB and PSF files (26-11-2025 18:40:28) ****** 
+		 Writing PDB file...P3HB_Small.pdb (26-11-2025 18:40:28)
 		 CONECT table has been written.
-		****** END WRITE PDB and PSF files (22-08-2024 11:40:20) ****** 
+		****** END WRITE PDB and PSF files (26-11-2025 18:40:28) ****** 
 
-		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (22-08-2024 11:40:20) ****** 
-		 Renumbering PDB file... P3HB_Small.pdb (22-08-2024 11:40:20)
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (26-11-2025 18:40:28) ****** 
+		 Renumbering PDB file... P3HB_Small.pdb (26-11-2025 18:40:28)
 
-			 Start Loop over atoms. (22-08-2024 11:40:21)
-			 End Loop over atoms. (22-08-2024 11:40:21)
+			 Start Loop over atoms. (26-11-2025 18:40:28)
+			 End Loop over atoms. (26-11-2025 18:40:28)
 
-			 Start Creating topology. (22-08-2024 11:40:21)
-			 End Creating topology. (22-08-2024 11:40:21)
-		 Head-Tail info from ... PolyP3HSmallb_headtail.dat (22-08-2024 11:40:21)
-		 Write renumbered file ... P3HB_Small_residues.pdb (22-08-2024 11:40:21)
-		 Writing PSF file...P3HB_Small_residues.psf (22-08-2024 11:40:21)
+			 Start Creating topology. (26-11-2025 18:40:28)
+			 End Creating topology. (26-11-2025 18:40:28)
+		 Head-Tail info from ... PolyP3HSmallb_headtail.dat (26-11-2025 18:40:28)
+		 Write renumbered file ... P3HB_Small_residues.pdb (26-11-2025 18:40:28)
+		 Writing PSF file...P3HB_Small_residues.psf (26-11-2025 18:40:28)
 
-		****** END RENUMBERING PDB and PSF files (22-08-2024 11:40:21) ****** 
+		****** END RENUMBERING PDB and PSF files (26-11-2025 18:40:28) ****** 
 
-		****** SUMMARY (22-08-2024 11:40:21) ****** 
+		****** SUMMARY (26-11-2025 18:40:28) ****** 
 		 PDB file: P3HB_Small_residues.pdb
 		 GRO file: P3HB_Small_residues.gro
 		 PSF file: P3HB_Small_residues.psf
-		****** END SUMMARY (22-08-2024 11:40:21) ****** 
+		****** END SUMMARY (26-11-2025 18:40:28) ****** 
 
-		Summarize of the input system (22-08-2024 11:40:21)
+		Summarize of the input system (26-11-2025 18:40:28)
 		=======================================================
 		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/20-P3HB_alternate/PolyP3HSmallb.xsd
 		CONECT table input file     : True
@@ -77,5 +77,5 @@
 
 
 
-		Job  Done at 22-08-2024 11:40:21 ============
-		Total time: 0.23 seconds
+		Job  Done at 26-11-2025 18:40:28 ============
+		Total time: 0.15 seconds

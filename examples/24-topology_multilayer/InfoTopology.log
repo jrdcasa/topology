@@ -3,7 +3,7 @@
                      Manipulate topology for polymers
               ----------------------------------------------
 
-                                Version 1.1
+                                Version None
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -21,18 +21,19 @@
         
 
 		Command line: 
-			python topology_cmd.py -i 20230731170003_PE-iPP.pdb
+			python topology_cmd -i 20230731170003_PE-iPP.pdb
 			         or
-			topology_cmd -i 20230731170003_PE-iPP.pdb
+			topology_cmd  -i 20230731170003_PE-iPP.pdb
 
-		Starting: 	 26-11-2023 18:56:27
+		Starting: 	 26-11-2025 22:28:41
 
 		Input is a PDB format.
-		Reading... (26-11-2023 18:56:27)
-			 Start Guessing bonds using MDAnalysis library. (26-11-2023 18:56:29)
-			 End Guessing bonds using MDAnalysis library. (26-11-2023 18:59:31)
+		Reading... (26-11-2025 22:28:41)
+			 Start Guessing bonds using MDAnalysis library. (26-11-2025 22:28:42)
+			 End Guessing bonds using MDAnalysis library. (26-11-2025 22:30:20)
 
-			 Start Loop over atoms. (26-11-2023 18:59:32)
-			 End Loop over atoms. (26-11-2023 18:59:35)
+			 Start Loop over atoms. (26-11-2025 22:30:21)
+			 End Loop over atoms. (26-11-2025 22:30:22)
 
-			 Start Creating topology. (26-11-2023 18:59:41)
+			 Start Creating topology. (26-11-2025 22:30:25)
+			 End Creating topology. (26-11-2025 22:38:16)

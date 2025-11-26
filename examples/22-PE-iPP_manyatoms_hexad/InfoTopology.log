@@ -3,7 +3,7 @@
                      Manipulate topology for polymers
               ----------------------------------------------
 
-                                Version 1.1
+                                Version None
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -21,39 +21,60 @@
         
 
 		Command line: 
-			python topology_cmd.py -i PE-iPP_more_99999_atoms_nooverlap.pdb
+			python topology_cmd -i PE-iPP_more_99999_atoms_nooverlap.pdb
 			         or
-			topology_cmd -i PE-iPP_more_99999_atoms_nooverlap.pdb
+			topology_cmd  -i PE-iPP_more_99999_atoms_nooverlap.pdb
 
-		Starting: 	 29-07-2023 12:52:48
+		Starting: 	 26-11-2025 18:42:15
 
 		Input is a PDB format.
-		Reading... (29-07-2023 12:52:48)
-		End read   (29-07-2023 13:01:25)
+		Reading... (26-11-2025 18:42:15)
+			 Start Guessing bonds using MDAnalysis library. (26-11-2025 18:42:16)
+			 End Guessing bonds using MDAnalysis library. (26-11-2025 18:43:37)
 
-		Summarize of the input system (29-07-2023 13:01:25)
-		=======================================================
-		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/22-PE-iPP_manyatoms_hexad/PE-iPP_more_99999_atoms_nooverlap.pdb
-		Number of molecules       : 480
-		Number of residues        : 480
-		Number of atoms           : 122640
-		Number of bonds           : 122160
-		Bond info available       : True
-		Simulation box dimension  : 0.0000 0.0000 0.0000 nm
-		Simulation box angles     : 0.00 0.00 0.00 degrees
-		=======================================================
+			 Start Loop over atoms. (26-11-2025 18:43:37)
+			 End Loop over atoms. (26-11-2025 18:43:38)
 
-		****** WRITE PDB and PSF files (29-07-2023 13:01:25) ****** 
-		 Writing PDB file...topology.pdb (29-07-2023 13:01:25)
+			 Start Creating topology. (26-11-2025 18:43:41)
+			 End Creating topology. (26-11-2025 18:47:41)
+		End read   (26-11-2025 18:48:34)
+
+		****** WRITE PDB and PSF files (26-11-2025 18:48:34) ****** 
+		 Writing PDB file...topology.pdb (26-11-2025 18:48:34)
 		 CONECT table has NOT been written (natoms > 99999).
-		 Writing PSF file...topology.psf (29-07-2023 13:01:26)
+		 Writing PSF file...topology.psf (26-11-2025 18:48:35)
 
-		****** END WRITE PDB and PSF files (29-07-2023 13:06:45) ****** 
+		****** END WRITE PDB and PSF files (26-11-2025 18:55:17) ****** 
 
-		****** SUMMARY (29-07-2023 13:06:45) ****** 
+		****** SUMMARY (26-11-2025 18:55:17) ****** 
 		 PDB file: topology.pdb
-		****** END SUMMARY (29-07-2023 13:06:45) ****** 
+		****** END SUMMARY (26-11-2025 18:55:17) ****** 
 
-		Job  Done at 29-07-2023 13:06:45 ============
+		Summarize of the input system (26-11-2025 18:55:17)
+		=======================================================
+		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/22-PE-iPP_manyatoms_hexad/PE-iPP_more_99999_atoms_nooverlap.pdb
+		CONECT table input file     : False
+		Head info file              : None
+		Residue info file           : None
+		
+		Number of molecules         : 480
+		Number of residues          : 480
+		Number of atoms             : 122640
+		Number of bonds             : 122160
+		Bond info available         : True
+		Simulation box dimension    : 0.0000 0.0000 0.0000 nm
+		Simulation box angles       : 0.00 0.00 0.00 degrees
+		
+		Output raw pdb file         : topology.pdb
+		CONECT table output pdb file: False
+		=======================================================
 
-		Total time: 836.96 seconds
+		  WARNING 1: Important information about 'Head and Tails' is missing.
+		  WARNING 1: Please review the output files carefully.
+
+		  WARNING 2: Topology is absent in the input file.
+		  WARNING 2: The topology has been estimated from atom distances,
+		  WARNING 2: which may introduce errors if overlapping exists in the system.
+
+		Job  Done at 26-11-2025 18:55:17 ============
+		Total time: 781.22 seconds

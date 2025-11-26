@@ -1,7 +1,7 @@
 Installation guide
 ==============
 
-**``Topology``** library is implemented in Python. This library have some dependencies from other python packages . The full list of dependencies can be followed from both **[requirements.txt](../requirements.txt)** and **[setup.py](../setup.py)** files.
+**``Topology``** library is implemented in Python. This library have some dependencies from other python packages . The full list of dependencies can be followed from both **[requirements.txt](../requirements.txt_backup)** and **[setup.py](../setup.py)** files.
 
 These dependencies are handled by the **setup.py** script and they should be installed automatically following these steps. Anyway, few software need to be installed manually (see Pre-installation section)
 

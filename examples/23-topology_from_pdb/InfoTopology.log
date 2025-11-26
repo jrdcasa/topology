@@ -3,7 +3,7 @@
                      Manipulate topology for polymers
               ----------------------------------------------
 
-                                Version 1.1
+                                Version None
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -21,11 +21,52 @@
         
 
 		Command line: 
-			python topology_cmd.py -i frame_201.pdb
+			python topology_cmd -i frame_201.pdb
 			         or
-			topology_cmd -i frame_201.pdb
+			topology_cmd  -i frame_201.pdb
 
-		Starting: 	 29-07-2023 11:54:16
+		Starting: 	 26-11-2025 19:31:03
 
 		Input is a PDB format.
-		Reading... (29-07-2023 11:54:16)
+		Reading... (26-11-2025 19:31:03)
+
+			 Start Loop over atoms. (26-11-2025 19:31:03)
+			 End Loop over atoms. (26-11-2025 19:31:03)
+
+			 Start Creating topology. (26-11-2025 19:31:03)
+			 End Creating topology. (26-11-2025 19:31:04)
+		End read   (26-11-2025 19:31:04)
+
+		****** WRITE PDB and PSF files (26-11-2025 19:31:04) ****** 
+		 Writing PDB file...topology.pdb (26-11-2025 19:31:04)
+		 CONECT table has been written.
+		****** END WRITE PDB and PSF files (26-11-2025 19:31:04) ****** 
+
+		****** SUMMARY (26-11-2025 19:31:04) ****** 
+		 PDB file: topology.pdb
+		****** END SUMMARY (26-11-2025 19:31:04) ****** 
+
+		Summarize of the input system (26-11-2025 19:31:04)
+		=======================================================
+		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/23-topology_from_pdb/frame_201.pdb
+		CONECT table input file     : True
+		Head info file              : None
+		Residue info file           : None
+		
+		Number of molecules         : 100
+		Number of residues          : 100
+		Number of atoms             : 1700
+		Number of bonds             : 1600
+		Bond info available         : True
+		Simulation box dimension    : 0.0000 0.0000 0.0000 nm
+		Simulation box angles       : 0.00 0.00 0.00 degrees
+		
+		Output raw pdb file         : topology.pdb
+		CONECT table output pdb file: True
+		=======================================================
+
+		  WARNING 1: Important information about 'Head and Tails' is missing.
+		  WARNING 1: Please review the output files carefully.
+
+		Job  Done at 26-11-2025 19:31:04 ============
+		Total time: 0.23 seconds

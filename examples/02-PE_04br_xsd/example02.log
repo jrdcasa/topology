@@ -1,11 +1,11 @@
 
 	***************** EXAMPLE 02 PE-SCB with 4 branches *****************
-		Starting: 	 22-10-2022 12:30:25
+		Starting: 	 26-11-2025 13:46:19
 
-		 Reading ./01-Min_Frame_001.xsd...(22-10-2022 12:30:25)
-		 Writing xyz file...(22-10-2022 12:30:30)
-		 Writing gro file...(22-10-2022 12:30:30)
-		 Writing pdb file...(22-10-2022 12:30:30)
-		Finishing: 	 22-10-2022 12:30:30
+		 Reading ./01-Min_Frame_001.xsd...(26-11-2025 13:46:19)
+		 Writing xyz file...(26-11-2025 13:46:23)
+		 Writing gro file...(26-11-2025 13:46:23)
+		 Writing pdb file...(26-11-2025 13:46:23)
+		Finishing: 	 26-11-2025 13:46:23
 
 	============== END   EXAMPLE02 ================================

@@ -649,7 +649,7 @@ class Topology(MolecularGraph):
 
         """
         try:
-            import indigox as ix
+            import topology.indigox_lib.pyindigox as ix
         except ModuleNotFoundError:
             msg = "Bond orders cannot be calculated. The indigox module is not installed."
             print(msg) if self.logger is None else self.logger.info(msg)

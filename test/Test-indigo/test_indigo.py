@@ -15,7 +15,7 @@ class TestIndigoLibrary(unittest.TestCase):
         Example from https://github.com/allison-group/indigo-bondorder/blob/master/examples/python_example.py
         """
 
-        import indigox as ix
+        import topology.indigox_lib.pyindigox as ix
 
         PT = ix.PeriodicTable()
         _H = PT["H"]

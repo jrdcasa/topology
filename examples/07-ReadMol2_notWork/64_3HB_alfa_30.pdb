@@ -5,3 +5,4 @@ REMARK     Head     atoms --> Occupanccy field == 1.00
 REMARK     Tail     atoms --> Occupanccy field == 2.00
 REMARK     Middle   atoms --> Occupanccy field == 0.00
 CRYST1    0.000    0.000    0.000   0.00   0.00   0.00 P -1          1
+MODEL 1

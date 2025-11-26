@@ -3,7 +3,7 @@
                      Manipulate topology for polymers
               ----------------------------------------------
 
-                                Version 1.1
+                                Version None
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -21,43 +21,61 @@
         
 
 		Command line: 
-			python topology_cmd.py -i data.run.data -p PE_C1000_008Ch -r PE_C1000_008Ch_headtail.dat -a PE_C1000_008Ch_residues.dat --filemap filemap.dat
+			python topology_cmd -i data.run.data -p PE_C1000_008Ch -r PE_C1000_008Ch_headtail.dat -a PE_C1000_008Ch_residues.dat --filemap filemap.dat
 			         or
-			topology_cmd -i data.run.data -p PE_C1000_008Ch -r PE_C1000_008Ch_headtail.dat -a PE_C1000_008Ch_residues.dat --filemap filemap.dat
+			topology_cmd  -i data.run.data -p PE_C1000_008Ch -r PE_C1000_008Ch_headtail.dat -a PE_C1000_008Ch_residues.dat --filemap filemap.dat
 
-		Starting: 	 22-11-2022 12:10:07
+		Starting: 	 26-11-2025 18:39:21
 
 		Input is a LAMMPS DATA format.
-		Reading... (22-11-2022 12:10:07)
-		End read   (22-11-2022 12:10:09)
+		Reading... (26-11-2025 18:39:21)
+		End read   (26-11-2025 18:39:22)
 
-		Summarize of the input system (22-11-2022 12:10:09)
-		=======================================================
-		Input file                : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/19-PE_Crystal_LAMMPScmd/data.run.data
-		Number of molecules       : 8
-		Number of residues        : 8
-		Number of atoms           : 8000
-		Number of bonds           : 7992
-		Bond info available       : True
-		Simulation box dimension  : 0.0000 0.0000 0.0000 nm
-		Simulation box angles     : 0.00 0.00 0.00 degrees
-		=======================================================
+		****** WRITE PDB and PSF files (26-11-2025 18:39:22) ****** 
+		 Writing PDB file...PE_C1000_008Ch.pdb (26-11-2025 18:39:22)
+		 CONECT table has been written.
+		****** END WRITE PDB and PSF files (26-11-2025 18:39:22) ****** 
 
-		****** WRITE PDB and PSF files (22-11-2022 12:10:09) ****** 
-		 Writing PDB file...PE_C1000_008Ch.pdb (22-11-2022 12:10:09)
-		****** END WRITE PDB and PSF files (22-11-2022 12:10:09) ****** 
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (26-11-2025 18:39:22) ****** 
+		 Renumbering PDB file... PE_C1000_008Ch.pdb (26-11-2025 18:39:22)
 
-		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (22-11-2022 12:10:09) ****** 
-		 Renumbering PDB file... PE_C1000_008Ch.pdb (22-11-2022 12:10:09)
-		 Head-Tail info from ... PE_C1000_008Ch_headtail.dat (22-11-2022 12:10:11)
-		 Write renumbered file ... PE_C1000_008Ch_residues.pdb (22-11-2022 12:10:11)
-		****** END RENUMBERING PDB and PSF files (22-11-2022 12:10:12) ****** 
+			 Start Loop over atoms. (26-11-2025 18:39:22)
+			 End Loop over atoms. (26-11-2025 18:39:22)
 
-		****** SUMMARY (22-11-2022 12:10:12) ****** 
+			 Start Creating topology. (26-11-2025 18:39:23)
+			 End Creating topology. (26-11-2025 18:39:23)
+		 Head-Tail info from ... PE_C1000_008Ch_headtail.dat (26-11-2025 18:39:27)
+		 Write renumbered file ... PE_C1000_008Ch_residues.pdb (26-11-2025 18:39:27)
+		 Writing PSF file...PE_C1000_008Ch_residues.psf (26-11-2025 18:39:28)
+
+		****** END RENUMBERING PDB and PSF files (26-11-2025 18:39:29) ****** 
+
+		****** SUMMARY (26-11-2025 18:39:29) ****** 
 		 PDB file: PE_C1000_008Ch_residues.pdb
 		 GRO file: PE_C1000_008Ch_residues.gro
-		****** END SUMMARY (22-11-2022 12:10:12) ****** 
+		 PSF file: PE_C1000_008Ch_residues.psf
+		****** END SUMMARY (26-11-2025 18:39:29) ****** 
 
-		Job  Done at 22-11-2022 12:10:12 ============
+		Summarize of the input system (26-11-2025 18:39:29)
+		=======================================================
+		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/19-PE_Crystal_LAMMPScmd/data.run.data
+		CONECT table input file     : True
+		Head info file              : PE_C1000_008Ch_headtail.dat
+		Residue info file           : PE_C1000_008Ch_residues.dat
+		
+		Number of molecules         : 8
+		Number of residues          : 8
+		Number of atoms             : 8000
+		Number of bonds             : 7992
+		Bond info available         : True
+		Simulation box dimension    : 6.1964 6.1964 6.1964 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		
+		Output raw pdb file         : PE_C1000_008Ch.pdb
+		CONECT table output pdb file: True
+		=======================================================
 
-		Total time: 5.17 seconds
+
+
+		Job  Done at 26-11-2025 18:39:29 ============
+		Total time: 7.72 seconds

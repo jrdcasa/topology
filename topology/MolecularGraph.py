@@ -3,7 +3,7 @@ This module implements a class to handle molecule as graphs. This class should n
 use Topology class
 """
 
-import pygraphviz as pgv
+#import pygraphviz as pgv
 import numpy as np
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -848,52 +848,52 @@ class MolecularGraph(object):
         return self._graphdict
 
     ##################################################################################################################
-    def draw_graph_pygraphviz(self, title='simple'):
-        """
-        Create an image of the graph using pygraphviz library
-
-        Parameters
-        ----------
-        title : string
-            The name of the file containing the image
-
-        Return
-        ------
-        None
-
-        Example
-        -------
-        Draw the graph `g4` in a file named `graphs/graph04.png`
-
-        >>> g4.draw_graph_pygraphviz(title="graphs/graph04")
-
-        """
-        A = pgv.AGraph()
-
-        # Isolated nodes
-        for i in self.get_vertices():
-            if len(self._graphdict[i]) == 0:
-                A.add_node(i, color='blue')
-
-        for ibond_old in self._bonds:
-            ibond_copy = copy.deepcopy(ibond_old)
-            i = ibond_copy.pop()
-            A.add_node(i, color='blue')
-
-        for ibond_old in self._bonds:
-            ibond_copy = copy.deepcopy(ibond_old)
-            i = ibond_copy.pop()
-
-            try:
-                j = ibond_copy.pop()
-                A.add_edge(i, j, color='blue')
-            except IndexError:
-                pass
-
-        filenamedot = title+'.dot'
-        filenamepng = title+'.png'
-        A.write(filenamedot)  # write to simple.dot
-        A.draw(filenamepng, prog="dot")
+    # def draw_graph_pygraphviz(self, title='simple'):
+    #     """
+    #     Create an image of the graph using pygraphviz library
+    #
+    #     Parameters
+    #     ----------
+    #     title : string
+    #         The name of the file containing the image
+    #
+    #     Return
+    #     ------
+    #     None
+    #
+    #     Example
+    #     -------
+    #     Draw the graph `g4` in a file named `graphs/graph04.png`
+    #
+    #     >>> g4.draw_graph_pygraphviz(title="graphs/graph04")
+    #
+    #     """
+    #     A = pgv.AGraph()
+    #
+    #     # Isolated nodes
+    #     for i in self.get_vertices():
+    #         if len(self._graphdict[i]) == 0:
+    #             A.add_node(i, color='blue')
+    #
+    #     for ibond_old in self._bonds:
+    #         ibond_copy = copy.deepcopy(ibond_old)
+    #         i = ibond_copy.pop()
+    #         A.add_node(i, color='blue')
+    #
+    #     for ibond_old in self._bonds:
+    #         ibond_copy = copy.deepcopy(ibond_old)
+    #         i = ibond_copy.pop()
+    #
+    #         try:
+    #             j = ibond_copy.pop()
+    #             A.add_edge(i, j, color='blue')
+    #         except IndexError:
+    #             pass
+    #
+    #     filenamedot = title+'.dot'
+    #     filenamepng = title+'.png'
+    #     A.write(filenamedot)  # write to simple.dot
+    #     A.draw(filenamepng, prog="dot")
 
     ##################################################################################################################
     def convert_graph_to_networkx(self):
@@ -965,42 +965,42 @@ class MolecularGraph(object):
         plt.close()
         # plt.show()
 
-    # ##################################################################################################################
-    def draw_graph_forest_pygraphviz(self, title='simple'):
-
-        """
-        Create an image for each tree of the graph using pygraphviz library.
-        It can be useful to create a file for each molecule
-        in the system.
-
-        Parameters
-        ----------
-        title : string
-            The patter to be used in the name of the file containing the image
-
-        Return
-        ------
-        None
-
-        Example
-        -------
-        Draw the each subgraph of the graph `g4` in a file with the pattern `graphs/graph04_f???.png`
-
-        >>> g4.draw_graph_forest_pygraphviz(title="graphs/graph04_f")
-
-        """
-
-        for imol in range(len(self._nmols)):
-            A = pgv.AGraph()
-            for iatom in self._nmols[imol]:
-                A.add_node(iatom, color='blue')
-                for jatom in self._graphdict[iatom]:
-                    A.add_edge(iatom, jatom, color='blue')
-
-            string = "%s%03d" % (title, imol)
-            filenamepng = string+".png"
-            A.write(string+'.dot')  # write to simple.dot
-            A.draw(filenamepng, prog="neato")
+    # # ##################################################################################################################
+    # def draw_graph_forest_pygraphviz(self, title='simple'):
+    #
+    #     """
+    #     Create an image for each tree of the graph using pygraphviz library.
+    #     It can be useful to create a file for each molecule
+    #     in the system.
+    #
+    #     Parameters
+    #     ----------
+    #     title : string
+    #         The patter to be used in the name of the file containing the image
+    #
+    #     Return
+    #     ------
+    #     None
+    #
+    #     Example
+    #     -------
+    #     Draw the each subgraph of the graph `g4` in a file with the pattern `graphs/graph04_f???.png`
+    #
+    #     >>> g4.draw_graph_forest_pygraphviz(title="graphs/graph04_f")
+    #
+    #     """
+    #
+    #     for imol in range(len(self._nmols)):
+    #         A = pgv.AGraph()
+    #         for iatom in self._nmols[imol]:
+    #             A.add_node(iatom, color='blue')
+    #             for jatom in self._graphdict[iatom]:
+    #                 A.add_edge(iatom, jatom, color='blue')
+    #
+    #         string = "%s%03d" % (title, imol)
+    #         filenamepng = string+".png"
+    #         A.write(string+'.dot')  # write to simple.dot
+    #         A.draw(filenamepng, prog="neato")
 
     # ##################################################################################################################
     def convert_graph_to_networkx_forest(self):

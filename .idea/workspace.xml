@@ -5,7 +5,212 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e2bf383-3776-4d6c-a9f3-bee8797e69b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoCheckPDBPSF.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoLabelPDB.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InfoTopology.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/02-installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/02-installation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/01-Benzene_at_hand/benzene_at_hand.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-Benzene_at_hand/benzene_at_hand.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/01-Benzene_at_hand/simple000000.png" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-Benzene_at_hand/simple000000.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04.gro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04.xyz" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04.xyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0000.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0000.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0001.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0001.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0002.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0002.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0003.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0003.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0004.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0004.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0005.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0005.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0006.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0006.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0007.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0007.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0008.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0008.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0009.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/PE300_04br04_0009.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-PE_04br_xsd/example02.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-PE_04br_xsd/example02.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend.xyz" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend.xyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0000.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0000.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0001.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0001.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0002.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0002.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0003.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0003.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0004.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/blend_0004.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/example03.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-PE-EVA_blend_xsd/example03.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2.xyz" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2.xyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0000.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0000.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0001.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0001.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0002.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0002.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0003.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0003.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0004.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0004.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0005.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0005.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0006.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0006.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0007.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0007.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0008.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0008.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0009.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/blend2_0009.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/example04    .log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-PE-EVA_blend2_xsd/example04    .log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-PHA_20Ch_100/P4HB_20Ch_100.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-PHA_20Ch_100/poly4hb_100.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30.gro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30.xyz" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30.xyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0000.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0000.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0001.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0001.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0002.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0002.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0003.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0003.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0004.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0004.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0005.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0005.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0006.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0006.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0007.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0007.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0008.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0008.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0009.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0009.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0010.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0010.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0011.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0011.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0012.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0012.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0013.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0013.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0014.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0014.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0015.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0015.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0016.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0016.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0017.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0017.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0018.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0018.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0019.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0019.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0020.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0020.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0021.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0021.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0022.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0022.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0023.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0023.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0024.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0024.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0025.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0025.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0026.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0026.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0027.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0027.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0028.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0028.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0029.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0029.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0030.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0030.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0031.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0031.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0032.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0032.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0033.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0033.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0034.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0034.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0035.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0035.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0036.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0036.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0037.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0037.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0038.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0038.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0039.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0039.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0040.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0040.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0041.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0041.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0042.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0042.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0043.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0043.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0044.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0044.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0045.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0045.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0046.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0046.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0047.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0047.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0048.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0048.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0049.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0049.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0050.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0050.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0051.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0051.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0052.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0052.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0053.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0053.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0054.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0054.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0055.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0055.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0056.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0056.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0057.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0057.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0058.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0058.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0059.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0059.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0060.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0060.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0061.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0061.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0062.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0062.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0063.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-Other/64_3HB_alfa_30_0063.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-ReadMol2/64_3HB_30.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-ReadMol2/64_3HB_alfa_30.gro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-ReadMol2/64_3HB_alfa_30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-ReadMol2/64_3HB_alfa_30.mol2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-ReadMol2/64_3HB_alfa_30.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-ReadMol2/64_3HB_alfa_30.xyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/08-P4HB_2x2x2_supercell_slab/P4HB_crystal_2x2x2_xsd.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/08-P4HB_2x2x2_supercell_slab/P4HB_crystal_2x2x2_xsd.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/08-P4HB_2x2x2_supercell_slab/P4HB_crystal_2x2x2_xsd.xyz" beforeDir="false" afterPath="$PROJECT_DIR$/examples/08-P4HB_2x2x2_supercell_slab/P4HB_crystal_2x2x2_xsd.xyz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-RenumberPDB_and_addresidues/P3HB_3mon01c.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-RenumberPDB_and_addresidues/P3HB_3mon_01c.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-RenumberPDB_and_addresidues/P3HB_3mon_01c_xsd.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-RenumberPDB_and_addresidues/P3HB_3mon_01c_xsd.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-RenumberPDB_and_addresidues/P3HB_3mon_01c_xsd_renumber.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-RenumberPDB_and_addresidues_big/P3HB_100mon_01c.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-RenumberPDB_and_addresidues_big/P3HB_100mon_01c.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-RenumberPDB_and_addresidues_big/P3HB_100mon_01c_xsd.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-RenumberPDB_and_addresidues_big/P3HB_100mon_01c_xsd.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-RenumberPDB_and_addresidues_big/P3HB_100mon_01c_xsd_renumber.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/01-prepare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/butane_box_noiter.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/butane_headtail.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/butane_nobox_xsd.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/butane_nobox_xsd.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/butane_nobox_xsd_renumber.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/butane_residues.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/butane_residues.gro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-BUTANE_BOX_NOINTERAC/butane_residues.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata/lammps_read.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata/lammps_read.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata/test.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata/test.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata/test.psf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata/test.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/lammps_read.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/lammps_read.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/test.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/test.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/test.psf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-Topology_from_Lammspdata_triclinic/test.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/14-XSD_SuperCell/PE_layer01.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/14-XSD_SuperCell/PE_layer01.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/14-XSD_SuperCell/PE_layer01.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/14-XSD_SuperCell/PE_layer01.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/00-head_tail.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/01-script_setup_molecule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/PE24iPP24_40Ch.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/PE24iPP24_40Ch.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/PE24iPP24_40Ch_headtail.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/PE24iPP24_40Ch_renumber.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/PE24iPP24_40Ch_residues.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/PE24iPP24_40Ch_residues.gro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/PE24iPP24_40Ch_residues.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/PE24iPP24_40Ch_residues_noH_replicate.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/backbone_idx.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/15-Topology_from_UA_model/listend2end.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/01-get_pdb_from_xsd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/02-renumber_assign_residues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/P3HB_10mon_01c.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/P3HB_10mon_01c_headtail.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/P3HB_10mon_01c_residues.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/P3HB_10mon_01c_residues.gro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/P3HB_10mon_01c_residues.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/P3HB_10mon_01c_xsd.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/16-P3HB_1Ch_10Mon/P3HB_10mon_01c_xsd_renumber.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/InfoTopology.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch.psf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch_residues.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch_residues.gro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch_residues.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch_residues.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch_residues.psf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch/PEiPP_film_252mon_40-27Ch_residues.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd/InfoTopology.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd/PE_C1000_008Ch.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd/PE_C1000_008Ch.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd/PE_C1000_008Ch_residues.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd/PE_C1000_008Ch_residues.gro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd/PE_C1000_008Ch_residues.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-PE_Crystal_LAMMPScmd/PE_C1000_008Ch_residues.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/20-P3HB_alternate/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/20-P3HB_alternate/InfoTopology.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small_residues.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small_residues.gro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small_residues.psf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/20-P3HB_alternate/P3HB_Small_residues.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/22-PE-iPP_manyatoms_hexad/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/22-PE-iPP_manyatoms_hexad/InfoTopology.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/22-PE-iPP_manyatoms_hexad/topology.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/22-PE-iPP_manyatoms_hexad/topology.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/22-PE-iPP_manyatoms_hexad/topology.psf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/22-PE-iPP_manyatoms_hexad/topology.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/23-topology_from_pdb/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/23-topology_from_pdb/InfoTopology.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/23-topology_from_pdb/topology.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/23-topology_from_pdb/topology.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/24-topology_multilayer/InfoTopology.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/24-topology_multilayer/InfoTopology.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/24-topology_multilayer/topology.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/24-topology_multilayer/topology.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/24-topology_multilayer/topology.psf" beforeDir="false" afterPath="$PROJECT_DIR$/examples/24-topology_multilayer/topology.psf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/os" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sys" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test-indigo/test_indigo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test-indigo/test_indigo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/topology/MolecularGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/MolecularGraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/Topology.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/Topology.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_distances.c" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_distances.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_distances.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_distances.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_distances_openmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_distances_openmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_distances_openmp.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_distances_openmp.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_unwrap_openmp.c" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_unwrap_openmp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topology/ext_libc/c_unwrap_openmp.pyx" beforeDir="false" afterPath="$PROJECT_DIR$/topology/ext_libc/c_unwrap_openmp.pyx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/version.py" beforeDir="false" afterPath="$PROJECT_DIR$/version.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,44 +257,51 @@
     <option name="selectedTabId" value="CurrentFile" />
     <option name="showPreview" value="true" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2CcCdZeSB9SaeY4l9Km4ysPrROO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.53-Typing-gas_VLE_CH3Cl.executor&quot;: &quot;Run&quot;,
-    &quot;Python.54-Typing-gas_VLE_CH3Cl _CH2Cl2_CCl4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.55-Typing-gas_VLE_2CH3Cl _CH2Cl2_2CCl4 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.55-Typing-gas_VLE_2CH3Cl _CH2Cl2_2CCl4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.56-Typing-gas_VLE_MIX.executor&quot;: &quot;Run&quot;,
-    &quot;Python.57-Isomers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.58-typing_gas_with_chiral_centers S.executor&quot;: &quot;Run&quot;,
-    &quot;Python.58-typing_gas_with_chiral_centers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.59-typing_gas_with_ccomplimacated_chiral_centers.executor&quot;: &quot;Run&quot;,
-    &quot;Python.60-typing_gas_with_impropers.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.61-typing_gas_with_improper_chlorobenzene.executor&quot;: &quot;Run&quot;,
-    &quot;Python.INSTALL.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/61-typing_gas_with_improper_chlorobenzene&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Test_indigo.py.executor": "Run",
+    "Python.53-Typing-gas_VLE_CH3Cl.executor": "Run",
+    "Python.54-Typing-gas_VLE_CH3Cl _CH2Cl2_CCl4.executor": "Run",
+    "Python.55-Typing-gas_VLE_2CH3Cl _CH2Cl2_2CCl4 (1).executor": "Run",
+    "Python.55-Typing-gas_VLE_2CH3Cl _CH2Cl2_2CCl4.executor": "Run",
+    "Python.56-Typing-gas_VLE_MIX.executor": "Run",
+    "Python.57-Isomers.executor": "Run",
+    "Python.58-typing_gas_with_chiral_centers S.executor": "Run",
+    "Python.58-typing_gas_with_chiral_centers.executor": "Run",
+    "Python.59-typing_gas_with_ccomplimacated_chiral_centers.executor": "Run",
+    "Python.60-typing_gas_with_impropers.executor": "Debug",
+    "Python.61-typing_gas_with_improper_chlorobenzene.executor": "Run",
+    "Python.INSTALL pip local 01.executor": "Run",
+    "Python.INSTALL pip local 02.executor": "Run",
+    "Python.INSTALL pip local 2.executor": "Run",
+    "Python.INSTALL pip local 3.executor": "Run",
+    "Python.INSTALL pip local 4.executor": "Run",
+    "Python.INSTALL pip local.executor": "Run",
+    "Python.INSTALL.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/jramos/Programacion/GITHUB_REPO_DIR/topology",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySupportGeventDebugging" value="true" />
   </component>
@@ -106,7 +318,7 @@
       <recent name="$PROJECT_DIR$/topology_cmd" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.53-Typing-gas_VLE_CH3Cl">
+  <component name="RunManager" selected="Python tests.Test_indigo.py">
     <configuration name="004-PE_10mon_40Ch_nocon_bad headinfo" type="PythonConfigurationType" factoryName="Python">
       <module name="topology" />
       <option name="ENV_FILES" value="" />
@@ -1543,6 +1755,150 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="INSTALL pip local 01" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../MAMBA/bin/python" />
+      <option name="SDK_NAME" value="TOREPO_cJ" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="pip" />
+      <option name="PARAMETERS" value="install --upgrade pip setuptools wheel" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="INSTALL pip local 02" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../MAMBA/bin/python" />
+      <option name="SDK_NAME" value="TOREPO_cJ" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="pip" />
+      <option name="PARAMETERS" value="install -e ." />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="INSTALL pip local 2" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../MAMBA/bin/python" />
+      <option name="SDK_NAME" value="TOREPO_cJ" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="build" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="INSTALL pip local 3" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../MAMBA/bin/python" />
+      <option name="SDK_NAME" value="TOREPO_cJ" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="pip" />
+      <option name="PARAMETERS" value="install -e ." />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="INSTALL pip local 4" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../MAMBA/bin/python" />
+      <option name="SDK_NAME" value="TOREPO_cJ" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="pip" />
+      <option name="PARAMETERS" value="install ." />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="INSTALL pip local" type="PythonConfigurationType" factoryName="Python">
+      <module name="topology" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../MAMBA/bin/python" />
+      <option name="SDK_NAME" value="TOREPO_cJ" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="pip" />
+      <option name="PARAMETERS" value="install --upgrade build" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="INSTALL" type="PythonConfigurationType" factoryName="Python">
       <module name="topology" />
       <option name="ENV_FILES" value="" />
@@ -1552,6 +1908,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$PROJECT_DIR$/../../MAMBA/bin/python" />
+      <option name="SDK_NAME" value="Python 3.10 (base) (2)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -2117,6 +2474,12 @@
       <item itemvalue="Python.readpdbformat" />
       <item itemvalue="Python.create_index_dih_carb_cmd help" />
       <item itemvalue="Python.INSTALL" />
+      <item itemvalue="Python.INSTALL pip local" />
+      <item itemvalue="Python.INSTALL pip local 2" />
+      <item itemvalue="Python.INSTALL pip local 3" />
+      <item itemvalue="Python.INSTALL pip local 4" />
+      <item itemvalue="Python.INSTALL pip local 01" />
+      <item itemvalue="Python.INSTALL pip local 02" />
       <item itemvalue="Python.create_index_dih_carb_cmd" />
       <item itemvalue="Python tests.Test_indigo.py" />
       <item itemvalue="Python tests.Test_topology" />
@@ -2295,6 +2658,7 @@
       <workItem from="1758814702361" duration="222000" />
       <workItem from="1758814940263" duration="2515000" />
       <workItem from="1763640054349" duration="390000" />
+      <workItem from="1763657780248" duration="26643000" />
     </task>
     <servers />
   </component>
@@ -2571,25 +2935,26 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/topology$28_topology_P3HB_150mon.coverage" NAME="28-topology_P3HB_150mon Coverage Results" MODIFIED="1676759989240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../CLionProjects/Single_Chain_MC_v02/examples_v02/19-P3HB_150mon_TrappeUA/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_test_topology_TopologyTests_test_23_assignresidues_fromlist.coverage" NAME="Unittests for test_topology.TopologyTests.test_23_assignresidues_fromlist Coverage Results" MODIFIED="1659165141789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-Topology" />
+    <SUITE FILE_PATH="coverage/topology$28_topology_P3HB_150mon.coverage" NAME="28-topology_P3HB_150mon Coverage Results" MODIFIED="1676759989240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../CLionProjects/Single_Chain_MC_v02/examples_v02/19-P3HB_150mon_TrappeUA/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$label_pdb_withoutrenumber_cmd.coverage" NAME="label_pdb_withoutrenumber_cmd Coverage Results" MODIFIED="1744569235198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/jramos/Elements/2024-AM_POLYESTERS/11-PVL4_C5_LOPLS/04-PDB_LABELED" />
-    <SUITE FILE_PATH="coverage/topology$26_topology_unwrap.coverage" NAME="26-topology_unwrap Coverage Results" MODIFIED="1670328986701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/04-PE_AA/08-PE_Cryst_Stephanos/01-PREPARE" />
-    <SUITE FILE_PATH="coverage/topology$004_PE_10mon_40Ch_nocon_bad.coverage" NAME="004-PE_10mon_40Ch_nocon_bad Coverage Results" MODIFIED="1698650984247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
     <SUITE FILE_PATH="coverage/topology$59_typing_gas_with_ccomplimacated_chiral_centers.coverage" NAME="59-typing_gas_with_ccomplimacated_chiral_centers Coverage Results" MODIFIED="1758128639093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/59-typing_gas_with_complicate_chiral_centers" />
+    <SUITE FILE_PATH="coverage/topology$004_PE_10mon_40Ch_nocon_bad.coverage" NAME="004-PE_10mon_40Ch_nocon_bad Coverage Results" MODIFIED="1698650984247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
+    <SUITE FILE_PATH="coverage/topology$26_topology_unwrap.coverage" NAME="26-topology_unwrap Coverage Results" MODIFIED="1670328986701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/04-PE_AA/08-PE_Cryst_Stephanos/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$TESTThio.coverage" NAME="TESTThio Coverage Results" MODIFIED="1685814448939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2023-AMullerTiofenoles/03-Calculations/01-MOLECULES_MODEL/02-CSCCOC_2/02-REPLICATE_POLYMER_OPLSAA" />
-    <SUITE FILE_PATH="coverage/topology$INSTALL.coverage" NAME="INSTALL Coverage Results" MODIFIED="1758742367863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/topology$INSTALL.coverage" NAME="INSTALL Coverage Results" MODIFIED="1764079791273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$multiplePDBs_to_XTC_parallel.coverage" NAME="multiplePDBs_to_XTC_parallel Coverage Results" MODIFIED="1727809316847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/topology_cmd" />
     <SUITE FILE_PATH="coverage/topology$50_Test_Carbbuilder.coverage" NAME="50-Test_Carbbuilder Coverage Results" MODIFIED="1725274953670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/2024-CB_Granada/04-CARB_DERIVATES/09-12MLG_Single/01-TOPOLOGY" />
     <SUITE FILE_PATH="coverage/topology$Test_internalcoordinates.coverage" NAME="Test_internalcoordinates Coverage Results" MODIFIED="1662367746318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$INSTALL_pip_local_4.coverage" NAME="INSTALL pip local 4 Coverage Results" MODIFIED="1764096786358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$16_command_test_help.coverage" NAME="16-command_test help Coverage Results" MODIFIED="1669114815876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/17-PE_04br_xsd_command" />
     <SUITE FILE_PATH="coverage/topology$setup_install.coverage" NAME="setup install Coverage Results" MODIFIED="1727806598760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$49_FromPDB_to_XTC_parallel.coverage" NAME="49-FromPDB_to_XTC_parallel Coverage Results" MODIFIED="1727937486688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/2024-DPD/DPD_Files/Documents/01-Atomistic_models/01-PE/03-Equilibration/04-Prod_Temp/Annealing01/Trajectory_450K" />
     <SUITE FILE_PATH="coverage/topology$54_Typing_gas_VLE_CH3Cl__CH2Cl2_CCl4.coverage" NAME="54-Typing-gas_VLE_CH3Cl _CH2Cl2_CCl4 Coverage Results" MODIFIED="1758187763530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/54-typing_gas_VLE_CH3Cl_CH2Cl2_CCl4" />
     <SUITE FILE_PATH="coverage/topology$16_command_test_.coverage" NAME="16-command_test  Coverage Results" MODIFIED="1668773303083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/17-PE_04br_xsd_command" />
     <SUITE FILE_PATH="coverage/topology$01_Label_PDB_manychains_noorder_resiudes.coverage" NAME="01-Label_PDB_manychains_noorder resiudes Coverage Results" MODIFIED="1701025331342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/44-Label_PDB_with_residues" />
-    <SUITE FILE_PATH="coverage/topology$Test_moleculargraph.coverage" NAME="Test_moleculargraph Coverage Results" MODIFIED="1661866927066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$54_Typing_gas_VLE_MIX.coverage" NAME="56-Typing-gas_VLE_MIX Coverage Results" MODIFIED="1757760919647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/56-typing_gas_C3H5Cl4_several_res" />
+    <SUITE FILE_PATH="coverage/topology$Test_moleculargraph.coverage" NAME="Test_moleculargraph Coverage Results" MODIFIED="1661866927066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$12_example.coverage" NAME="12-example Coverage Results" MODIFIED="1661415125080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/12-Topology_from_Lammpsdata" />
     <SUITE FILE_PATH="coverage/topology$Test_indigo_py.coverage" NAME="Test_indigo.py Coverage Results" MODIFIED="1659092646440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$X_01_PE_04br_xsd_convert.coverage" NAME="X-01-PE_04br_xsd_convert Coverage Results" MODIFIED="1723041610595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../TOREPO_examples/01-PE_04br_xsd_convert" />
@@ -2611,14 +2976,15 @@
     <SUITE FILE_PATH="coverage/topology$25_bondlist_readpdb.coverage" NAME="25_bondlist_readpdb Coverage Results" MODIFIED="1694112509271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/25-topology_bondlist_readpdb_class" />
     <SUITE FILE_PATH="coverage/topology$create_index_dih_carb_cmd_help.coverage" NAME="create_index_dih_carb_cmd help Coverage Results" MODIFIED="1746464829277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/52-create_index_for_carbohydrates_link_dihedrals" />
     <SUITE FILE_PATH="coverage/topology$41_sugar.coverage" NAME="41-sugar Coverage Results" MODIFIED="1709671663093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/TMP3/CURDLAN_HELIX/03-RENUMBER" />
-    <SUITE FILE_PATH="coverage/topology$01_topology_script.coverage" NAME="01-topology_script Coverage Results" MODIFIED="1661413369816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/08-blend_toxwaerd1mol_OPLS/01-PREPARE" />
-    <SUITE FILE_PATH="coverage/topology$004_PE_10mon_40Ch_nocon_bad_headinfo.coverage" NAME="004-PE_10mon_40Ch_nocon_bad headinfo Coverage Results" MODIFIED="1698655923447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
     <SUITE FILE_PATH="coverage/topology$50_Test_Carbbuilder__1_.coverage" NAME="50-Test_Carbbuilder (1) Coverage Results" MODIFIED="1726166596285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/jramos/PortableSSD/2024-CB_Granada/04-CARB_DERIVATES/16-35MLG_21Ch/01-TOPOLOGY" />
+    <SUITE FILE_PATH="coverage/topology$004_PE_10mon_40Ch_nocon_bad_headinfo.coverage" NAME="004-PE_10mon_40Ch_nocon_bad headinfo Coverage Results" MODIFIED="1698655923447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/04-PE_10Mon_40Ch_UA_BAD_PDB_NOCON" />
+    <SUITE FILE_PATH="coverage/topology$01_topology_script.coverage" NAME="01-topology_script Coverage Results" MODIFIED="1661413369816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/08-blend_toxwaerd1mol_OPLS/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$benzene_at_hand.coverage" NAME="benzene_at_hand Coverage Results" MODIFIED="1666432258317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-Benzene_at_hand" />
     <SUITE FILE_PATH="coverage/topology$07_topology_script__1_.coverage" NAME="23-topology_script Coverage Results" MODIFIED="1660204968829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/23-iPP_singleChain/00-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$997_bilayer_PE_iPP.coverage" NAME="997-bilayer_PE-iPP Coverage Results" MODIFIED="1698786286173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/03-BILAYER_PE-iPP" />
     <SUITE FILE_PATH="coverage/topology$25_topology_script.coverage" NAME="25-topology_script Coverage Results" MODIFIED="1660294559171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/25-iPP_AC_OPLS/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$005_PE_Layer_bad.coverage" NAME="005-PE_Layer_bad Coverage Results" MODIFIED="1698605337428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../topology_examples/05-PE_Layer_bad" />
+    <SUITE FILE_PATH="coverage/topology$INSTALL_pip_local_01.coverage" NAME="INSTALL pip local 01 Coverage Results" MODIFIED="1764097237962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$27_topology_UA_noH_assignnames.coverage" NAME="27-topology_UA_noH_assignnames Coverage Results" MODIFIED="1675074783617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/04-PE_AA/08-PE_Cryst_Stefanos/02-C10000_10Ch/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$999_Layer_real.coverage" NAME="999-Layer_real Coverage Results" MODIFIED="1698655965982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/04-GROMACS_PREPARE" />
     <SUITE FILE_PATH="coverage/topology$07_topology_script.coverage" NAME="07-topology_script Coverage Results" MODIFIED="1661412731895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../replicate_polymer_topology/examples/07-blend_xsd" />
@@ -2630,6 +2996,8 @@
     <SUITE FILE_PATH="coverage/topology$20_P3HB_alternate_big.coverage" NAME="20-P3HB_alternate big Coverage Results" MODIFIED="1724319631630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2022-Emma_Franco_Mateos/01-SINGLE_CHAIN_SIMULATIONS/02-P3HB600bb/01-TOPOLOGY" />
     <SUITE FILE_PATH="coverage/topology$test_big.coverage" NAME="test_big Coverage Results" MODIFIED="1666453271024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/04-PE_AA/02-iPP/2022-iPP_501mon_008Ch_TRAPPE/01-PREPARE" />
     <SUITE FILE_PATH="coverage/topology$16_command_test_more_100000__1_.coverage" NAME="16-command_test more 100000 (1) Coverage Results" MODIFIED="1668643707732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/18-PE-iPP_252m_40-27Ch" />
+    <SUITE FILE_PATH="coverage/topology$INSTALL_pip_local_02.coverage" NAME="INSTALL pip local 02 Coverage Results" MODIFIED="1764106386117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/topology$INSTALL_pip_local_2.coverage" NAME="INSTALL pip local 2 Coverage Results" MODIFIED="1764096665769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$Test_mol2.coverage" NAME="Test_mol2 Coverage Results" MODIFIED="1661866566860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/topology$61_typing_gas_with_improper_chlorobenzene.coverage" NAME="61-typing_gas_with_improper_chlorobenzene Coverage Results" MODIFIED="1758211414763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/61-typing_gas_with_improper_chlorobenzene" />
     <SUITE FILE_PATH="coverage/topology$30_improper_guess.coverage" NAME="40-improper_guess Coverage Results" MODIFIED="1694422796708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/40-Improper_guess" />
@@ -2644,10 +3012,12 @@
     <SUITE FILE_PATH="coverage/topology$46_typing_carb_triplehelix.coverage" NAME="46-typing_carb_triplehelix big Coverage Results" MODIFIED="1724342798444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/2024-CB_Granada/04-CARB_DERIVATES/03-35CURDLAN_3H_1CMG/02-ASSIGN_FF" />
     <SUITE FILE_PATH="coverage/topology$49_FromPDB_to_XTC.coverage" NAME="49-FromPDB_to_XTC Coverage Results" MODIFIED="1729004733317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/50-FromPDB_to_XTC_diffkinds" />
     <SUITE FILE_PATH="coverage/topology$TEst.coverage" NAME="TEst Coverage Results" MODIFIED="1702563727792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/topology$INSTALL_pip_local.coverage" NAME="INSTALL pip local Coverage Results" MODIFIED="1764096661089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$Unittests_for_Test_readxsd_TestReadXsd_test_01_readfile_polymer_periodic.coverage" NAME="Unittests for Test_readxsd.TestReadXsd.test_01_readfile_polymer_periodic Coverage Results" MODIFIED="1659165529823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/Test-ReadXSD" />
     <SUITE FILE_PATH="coverage/topology$51_XSD_DPD_to_PSF.coverage" NAME="51-XSD_DPD_to_PSF Coverage Results" MODIFIED="1751441451486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/51-fromXSD_DPD_toPDB" />
     <SUITE FILE_PATH="coverage/topology$99_Test__1_.coverage" NAME="99-Test (1) Coverage Results" MODIFIED="1704314876669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2023-AMullerPolyTioEthers/03-Calculations/01-MOLECULES_MODEL/14-CCOCCOCCOCCOCCOCCOCC-OHend/04-FROM_MD/01-TOPOLOGY" />
     <SUITE FILE_PATH="coverage/topology$Test_segment.coverage" NAME="Test_segment Coverage Results" MODIFIED="1659167512867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/topology$INSTALL_pip_local_3.coverage" NAME="INSTALL pip local 3 Coverage Results" MODIFIED="1764096760299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/topology$998_Layer_PE_extract_from_MD.coverage" NAME="998-Layer_PE_extract_from_MD Coverage Results" MODIFIED="1698657579860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/02-TOPOLOGY_Layer_PE" />
     <SUITE FILE_PATH="coverage/topology$57_Isomers.coverage" NAME="57-Isomers Coverage Results" MODIFIED="1758127691659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/57-typing_gas_isomers_C3H6" />
     <SUITE FILE_PATH="coverage/topology$48_typing_carb_urea__1_.coverage" NAME="48-typing_carb_urea (1) Coverage Results" MODIFIED="1748937457659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/opt/2024-CB_Granada/04-MIX_SUGARS/02-ASSIGN_FF" />
