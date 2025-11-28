@@ -41,10 +41,10 @@ def distance_array(ref, conf, openmp=False):
     """
 
     if openmp:
-        from ext_libc.c_distances_openmp import calc_distance_array_openmp
+        from topology.ext_libc.c_distances_openmp import calc_distance_array_openmp
         # from c_distances_openmp import calc_distance_array_openmp
     else:
-        from ext_libc.c_distances import calc_distance_array
+        from topology.ext_libc.c_distances import calc_distance_array
         # from c_distances import calc_distance_array
 
     rows = ref.shape[0]
@@ -109,10 +109,10 @@ def distance_diagonal_array(ref, conf, openmp=False):
     """
 
     if openmp:
-        from ext_libc.c_distances_openmp import calc_distance_diagonal_openmp
+        from topology.ext_libc.c_distances_openmp import calc_distance_diagonal_openmp
         # from c_distances_openmp import calc_distance_array_openmp
     else:
-        from ext_libc.c_distances import calc_distance_diagonal
+        from topology.ext_libc.c_distances import calc_distance_diagonal
         # from c_distances import calc_distance_array
 
     rows = ref.shape[0]
@@ -571,7 +571,7 @@ def center_of_geom(coords):
 
     """
 
-    from ext_libc.c_unwrap_openmp import calc_center_of_geom
+    from topology.ext_libc.c_unwrap_openmp import calc_center_of_geom
 
     if isinstance(coords, list):
         _coords = np.asarray(coords, dtype=np.float32)
@@ -648,7 +648,7 @@ def center_of_mass(coords, mass):
 
     """
 
-    from ext_libc.c_unwrap_openmp import calc_center_of_mass
+    from topology.ext_libc.c_unwrap_openmp import calc_center_of_mass
 
     if isinstance(coords, list):
         _coords = np.asarray(coords)
@@ -767,7 +767,7 @@ def unwrap(coords, nmols_array, l_neigh_array, box_dimensions, iframe=0, write_x
         Unwrapped coordinates
     """
 
-    from ext_libc.c_unwrap_openmp import calc_unwrap_openmp
+    from topology.ext_libc.c_unwrap_openmp import calc_unwrap_openmp
 
     natoms = coords.shape[0]
     coords_unwrapped = np.zeros((natoms, 3), dtype=np.float32)
@@ -829,7 +829,7 @@ def unwrap_nojump(coords, coords_0, n_image, nmols_array, l_neigh_array, box_dim
         Unwrapped coordinates
     """
 
-    from ext_libc.c_unwrap_openmp import calc_unwrap_nojump_openmp
+    from topology.ext_libc.c_unwrap_openmp import calc_unwrap_nojump_openmp
 
     natoms = coords.shape[0]
     coords_unwrapped_nojump = np.zeros((natoms, 3), dtype=np.float32)

@@ -13,7 +13,7 @@ try:
     with open("version.py") as f:
         exec(f.read(), version)
 except FileNotFoundError:
-    version["__version__"] = "1.0.0"
+    version["__version__"] = "N/A"
 
 
 class BuildIndigox(build_ext):
@@ -166,6 +166,8 @@ try:
     from Cython.Build import cythonize
     use_cython = True
 except ImportError:
+    def cythonize(*args, **kwargs):
+        pass
     use_cython = False
 
 # Find .pyx files inside topology/ext_libc

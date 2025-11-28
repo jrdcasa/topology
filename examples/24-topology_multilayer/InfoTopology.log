@@ -37,3 +37,40 @@
 
 			 Start Creating topology. (26-11-2025 22:30:25)
 			 End Creating topology. (26-11-2025 22:38:16)
+		End read   (26-11-2025 22:39:20)
+
+		****** WRITE PDB and PSF files (26-11-2025 22:39:20) ****** 
+		 Writing PDB file...topology.pdb (26-11-2025 22:39:20)
+		 CONECT table has NOT been written (natoms > 99999).
+		 Writing PSF file...topology.psf (26-11-2025 22:39:21)
+
+		****** END WRITE PDB and PSF files (26-11-2025 22:54:14) ****** 
+
+		****** SUMMARY (26-11-2025 22:54:14) ****** 
+		 PDB file: topology.pdb
+		****** END SUMMARY (26-11-2025 22:54:14) ****** 
+
+		Summarize of the input system (26-11-2025 22:54:14)
+		=======================================================
+		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/24-topology_multilayer/20230731170003_PE-iPP.pdb
+		CONECT table input file     : True
+		Head info file              : None
+		Residue info file           : None
+		
+		Number of molecules         : 720
+		Number of residues          : 720
+		Number of atoms             : 183960
+		Number of bonds             : 183240
+		Bond info available         : True
+		Simulation box dimension    : 0.0000 0.0000 0.0000 nm
+		Simulation box angles       : 0.00 0.00 0.00 degrees
+		
+		Output raw pdb file         : topology.pdb
+		CONECT table output pdb file: False
+		=======================================================
+
+		  WARNING 1: Important information about 'Head and Tails' is missing.
+		  WARNING 1: Please review the output files carefully.
+
+		Job  Done at 26-11-2025 22:54:14 ============
+		Total time: 1533.73 seconds
