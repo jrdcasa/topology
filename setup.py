@@ -261,6 +261,13 @@ setup(
     url="https://github.com/jrdcasa/topology",
     license="GPL-3.0-or-later",
     packages=find_packages(),
+    package_data={
+        'topology.indigox_lib': [
+            '*.txt',
+            '*.mol2',
+            '*.smiles'
+        ],
+    },
     include_package_data=True,
     install_requires=[
         "numpy>=1.21.2",
