@@ -1,0 +1,83 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version None
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd -i 04-NPT_500K250ps.xsd -p PEiPP_film_252mon_40-27Ch -r PEiPP_film_252mon_40-27Ch_headtail.dat -a PEiPP_film_252mon_40-27Ch_residues.dat
+			         or
+			topology_cmd  -i 04-NPT_500K250ps.xsd -p PEiPP_film_252mon_40-27Ch -r PEiPP_film_252mon_40-27Ch_headtail.dat -a PEiPP_film_252mon_40-27Ch_residues.dat
+
+		Starting: 	 26-11-2025 18:06:51
+
+		Input is a XSD format.
+		Reading... (26-11-2025 18:06:51)
+		End read   (26-11-2025 18:07:51)
+
+		****** WRITE PDB and PSF files (26-11-2025 18:07:51) ****** 
+		 Writing PDB file...PEiPP_film_252mon_40-27Ch.pdb (26-11-2025 18:07:51)
+		 CONECT table has NOT been written (natoms > 99999).
+		 Writing PSF file...PEiPP_film_252mon_40-27Ch.psf (26-11-2025 18:07:52)
+
+		****** END WRITE PDB and PSF files (26-11-2025 18:18:37) ****** 
+
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (26-11-2025 18:18:37) ****** 
+		 Renumbering PDB file... PEiPP_film_252mon_40-27Ch.pdb (26-11-2025 18:18:37)
+
+			 Start Loop over atoms. (26-11-2025 18:18:41)
+			 End Loop over atoms. (26-11-2025 18:18:42)
+
+			 Start Creating topology. (26-11-2025 18:18:45)
+			 End Creating topology. (26-11-2025 18:22:53)
+		 Head-Tail info from ... PEiPP_film_252mon_40-27Ch_headtail.dat (26-11-2025 18:22:59)
+		 Write renumbered file ... PEiPP_film_252mon_40-27Ch_residues.pdb (26-11-2025 18:22:59)
+		 Writing PSF file...PEiPP_film_252mon_40-27Ch_residues.psf (26-11-2025 18:25:39)
+
+		****** END RENUMBERING PDB and PSF files (26-11-2025 18:36:29) ****** 
+
+		****** SUMMARY (26-11-2025 18:36:29) ****** 
+		 PDB file: PEiPP_film_252mon_40-27Ch_residues.pdb
+		 GRO file: PEiPP_film_252mon_40-27Ch_residues.gro
+		 PSF file: PEiPP_film_252mon_40-27Ch_residues.psf
+		****** END SUMMARY (26-11-2025 18:36:29) ****** 
+
+		Summarize of the input system (26-11-2025 18:36:29)
+		=======================================================
+		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/18-PE-iPP_252m_40-27Ch/04-NPT_500K250ps.xsd
+		CONECT table input file     : True
+		Head info file              : PEiPP_film_252mon_40-27Ch_headtail.dat
+		Residue info file           : PEiPP_film_252mon_40-27Ch_residues.dat
+		
+		Number of molecules         : 67
+		Number of residues          : 16911
+		Number of atoms             : 121931
+		Number of bonds             : 121864
+		Bond info available         : True
+		Simulation box dimension    : 5.5398 5.5398 41.3110 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		
+		Output raw pdb file         : PEiPP_film_252mon_40-27Ch.pdb
+		CONECT table output pdb file: False
+		=======================================================
+
+
+
+		Job  Done at 26-11-2025 18:36:29 ============
+		Total time: 1777.75 seconds

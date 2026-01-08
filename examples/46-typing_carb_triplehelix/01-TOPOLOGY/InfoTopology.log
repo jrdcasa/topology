@@ -1,0 +1,87 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version None
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd -i 03-Triple_Helix_3M.pdb -r headtail.dat -a residues.dat -p 03-Triple_Helix_3M
+			         or
+			topology_cmd  -i 03-Triple_Helix_3M.pdb -r headtail.dat -a residues.dat -p 03-Triple_Helix_3M
+
+		Starting: 	 20-08-2024 19:27:50
+
+		Input is a PDB format.
+		Reading... (20-08-2024 19:27:50)
+
+			 Start Loop over atoms. (20-08-2024 19:27:50)
+			 End Loop over atoms. (20-08-2024 19:27:50)
+
+			 Start Creating topology. (20-08-2024 19:27:50)
+			 End Creating topology. (20-08-2024 19:27:50)
+		End read   (20-08-2024 19:27:50)
+
+		****** WRITE PDB and PSF files (20-08-2024 19:27:50) ****** 
+		 Writing PDB file...03-Triple_Helix_3M.pdb (20-08-2024 19:27:50)
+		 CONECT table has been written.
+		****** END WRITE PDB and PSF files (20-08-2024 19:27:50) ****** 
+
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (20-08-2024 19:27:50) ****** 
+		 Renumbering PDB file... 03-Triple_Helix_3M.pdb (20-08-2024 19:27:50)
+
+			 Start Loop over atoms. (20-08-2024 19:27:50)
+			 End Loop over atoms. (20-08-2024 19:27:50)
+
+			 Start Creating topology. (20-08-2024 19:27:50)
+			 End Creating topology. (20-08-2024 19:27:50)
+		 Head-Tail info from ... headtail.dat (20-08-2024 19:27:50)
+		 Write renumbered file ... 03-Triple_Helix_3M_residues.pdb (20-08-2024 19:27:50)
+		 Writing PSF file...03-Triple_Helix_3M_residues.psf (20-08-2024 19:27:50)
+
+		****** END RENUMBERING PDB and PSF files (20-08-2024 19:27:50) ****** 
+
+		****** SUMMARY (20-08-2024 19:27:50) ****** 
+		 PDB file: 03-Triple_Helix_3M_residues.pdb
+		 GRO file: 03-Triple_Helix_3M_residues.gro
+		 PSF file: 03-Triple_Helix_3M_residues.psf
+		****** END SUMMARY (20-08-2024 19:27:50) ****** 
+
+		Summarize of the input system (20-08-2024 19:27:50)
+		=======================================================
+		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/46-typing_carb_triplehelix/01-TOPOLOGY/03-Triple_Helix_3M.pdb
+		CONECT table input file     : True
+		Head info file              : headtail.dat
+		Residue info file           : residues.dat
+		
+		Number of molecules         : 3
+		Number of residues          : 1
+		Number of atoms             : 198
+		Number of bonds             : 204
+		Bond info available         : True
+		Simulation box dimension    : 0.0000 0.0000 0.0000 nm
+		Simulation box angles       : 0.00 0.00 0.00 degrees
+		
+		Output raw pdb file         : 03-Triple_Helix_3M.pdb
+		CONECT table output pdb file: True
+		=======================================================
+
+
+
+		Job  Done at 20-08-2024 19:27:50 ============
+		Total time: 0.28 seconds

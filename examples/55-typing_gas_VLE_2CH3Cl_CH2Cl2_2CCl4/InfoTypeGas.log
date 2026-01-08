@@ -1,0 +1,52 @@
+
+    ***********************************************************************
+                  Typing small molecules to run MD and MC
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        This program processes a set of PDB files, typically generated 
+        by Materials Studio, representing a molecular trajectory and 
+        converts them into GRO and XTC formats compatible with GROMACS.
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+    
+    The PDB file must contain the atom type in the atom name field and 
+    the residue name in the residue name field. Once the PDB has been generated, 
+    it must be properly formatted to ensure compatibility. 
+    In particular, each atom type must match a valid atom type 
+    defined in the force field being used.
+    It is essential to verify that the file is correctly formatted prior to use.
+    
+        
+		Starting: 	 16-09-2025 16:03:13
+
+
+		Command line: 
+			python typing_gases_to_VLE_cmd.py -p 2CH3Cl_CH2Cl2_2CCl4.pdb -f OPLSAA -c 2CH3Cl_CH2Cl2_2CCl4_opls.dat
+			         or
+			typing_gases_to_VLE_cmd.py  -p 2CH3Cl_CH2Cl2_2CCl4.pdb -f OPLSAA -c 2CH3Cl_CH2Cl2_2CCl4_opls.dat
+
+		 Writting 2CH3Cl_CH2Cl2_2CCl4.gro
+
+		 Writting 2CH3Cl_CH2Cl2_2CCl4_min.mdp
+		 Writting ff_oplsaa.itp
+
+		 Name of the molecule   1: C1Cl1H3
+		 Writting C1Cl1H3.itp
+		 Name of the molecule   2: C1Cl2H2
+		 Writting C1Cl2H2.itp
+		 Name of the molecule   3: C1Cl4
+		 Writting C1Cl4.itp
+
+		Job  Done at 16-09-2025 16:03:13 ============
+		Total time: 0.12 seconds

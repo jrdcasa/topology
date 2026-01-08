@@ -1,0 +1,20 @@
+# https://virtualchemistry.org/ff.php
+# J. Chem. Theor. Comput. 8 (2012) 61-74
+# http://dx.doi.org/10.1021/ct200731v
+# CCl4 --> Gromacs OPLS files
+15
+1  CT   opls_152 -0.10900
+2  HC   opls_153  0.10300
+3  HC   opls_153  0.10300
+4  HC   opls_153  0.10300
+5  Cl   opls_151 -0.20000
+6  CT   opls_152 -0.00600
+7  HC   opls_153  0.10300
+8  HC   opls_153  0.10300
+9  Cl   opls_151 -0.10000
+10 Cl   opls_151 -0.10000
+11 CT   opls_122  0.24800
+12 Cl   opls_123 -0.06200
+13 Cl   opls_123 -0.06200
+14 Cl   opls_123 -0.06200
+15 Cl   opls_123 -0.06200

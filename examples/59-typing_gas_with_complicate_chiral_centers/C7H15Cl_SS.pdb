@@ -1,0 +1,50 @@
+TITLE       Required
+REMARK   1 File created by GaussView 6.0.16
+CRYST1   66.090   66.090   75.661  90.00  90.00  90.00 P 1           1
+HETATM    1 CT   LIG     0       0.044   0.635   0.434                       C
+HETATM    2 HC   LIG     0       0.015   0.419   1.497                       H
+HETATM    3 CT   LIG     0       0.661   2.036   0.230                       C
+HETATM    4 HC   LIG     0       0.761   2.256  -0.827                       H
+HETATM    5 HC   LIG     0       0.012   2.781   0.675                       H
+HETATM    6 HC   LIG     0       1.635   2.112   0.687                       H
+HETATM    7 CT   LIG     0       0.835  -0.489  -0.261                       C
+HETATM    8 HC   LIG     0       0.627  -0.515  -1.317                       H
+HETATM    9 CT   LIG     0       0.718  -1.863   0.394                       C
+HETATM   10 HC   LIG     0       1.076  -1.812   1.413                       H
+HETATM   11 HC   LIG     0      -0.310  -2.193   0.403                       H
+HETATM   12 HC   LIG     0       1.311  -2.590  -0.144                       H
+HETATM   13 CT   LIG     0      -1.411   0.695  -0.114                       C
+HETATM   14 HC   LIG     0      -1.366   0.926  -1.175                       H
+HETATM   15 HC   LIG     0      -1.887   1.543   0.369                       H
+HETATM   16 CT   LIG     0      -2.323  -0.530   0.096                       C
+HETATM   17 HC   LIG     0      -1.997  -1.357  -0.522                       H
+HETATM   18 HC   LIG     0      -2.274  -0.851   1.132                       H
+HETATM   19 CT   LIG     0      -3.784  -0.191  -0.266                       C
+HETATM   20 HC   LIG     0      -3.855   0.133  -1.299                       H
+HETATM   21 HC   LIG     0      -4.426  -1.055  -0.138                       H
+HETATM   22 HC   LIG     0      -4.158   0.607   0.366                       H
+HETATM   23 Cl   LIG     0       2.729  -0.127  -0.247                      Cl
+END
+CONECT    1    2    3    7   13
+CONECT    2    1
+CONECT    3    1    4    5    6
+CONECT    4    3
+CONECT    5    3
+CONECT    6    3
+CONECT    7    1    8    9   23
+CONECT    8    7
+CONECT    9    7   10   11   12
+CONECT   10    9
+CONECT   11    9
+CONECT   12    9
+CONECT   13    1   14   15   16
+CONECT   14   13
+CONECT   15   13
+CONECT   16   13   17   18   19
+CONECT   17   16
+CONECT   18   16
+CONECT   19   16   20   21   22
+CONECT   20   19
+CONECT   21   19
+CONECT   22   19
+CONECT   23    7

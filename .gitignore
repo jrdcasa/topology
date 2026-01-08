@@ -1,0 +1,17 @@
+build/**
+dist/**
+topology.egg-info/**
+thirdparty/**
+__pycache__/
+*.pyc
+nohup.out
+docs/_build/**
+docs/_static/**
+docs/_templates/**
+*.lock
+*.swp
+test/TEst.py
+TMP_PABORRAR/
+topology/indigox_lib/**
+topology/ext_libc/c_*.c
+install.log

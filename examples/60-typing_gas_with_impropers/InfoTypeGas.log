@@ -1,0 +1,54 @@
+
+    ***********************************************************************
+                  Typing small molecules to run MD and MC
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        This program processes a set of PDB files, typically generated 
+        by Materials Studio, representing a molecular trajectory and 
+        converts them into GRO and XTC formats compatible with GROMACS.
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+    
+    The PDB file must contain the atom type in the atom name field and 
+    the residue name in the residue name field. Once the PDB has been generated, 
+    it must be properly formatted to ensure compatibility. 
+    In particular, each atom type must match a valid atom type 
+    defined in the force field being used.
+    It is essential to verify that the file is correctly formatted prior to use.
+    
+        
+		Starting: 	 25-09-2025 18:15:02
+
+
+		Command line: 
+			python typing_gases_to_VLE_cmd.py -p C3H6O.pdb -f OPLSAA -c C3H6O_opls.dat --improper improper.ndx
+			         or
+			typing_gases_to_VLE_cmd.py  -p C3H6O.pdb -f OPLSAA -c C3H6O_opls.dat --improper improper.ndx
+
+		 =========== WRITE TOPOLOGY FILES FOR GROMACS ===========
+
+		 Writting C3H6O.gro
+
+		 Writting C3H6O_min.mdp
+		 Writting ff_oplsaa.itp
+
+		 Name of the molecule   1: C3H8O
+		 Writting C3H8O.itp
+		 =========== WRITE TOPOLOGY FILES FOR RASPA ===========
+
+		 Writting ff_oplsaa.itp
+
+		 Writting C3H8O_template.def
+	WARNING: 
+		 Critical values are not provided for system C3H8O_template.def

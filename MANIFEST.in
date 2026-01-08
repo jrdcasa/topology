@@ -1,0 +1,3 @@
+include version.py
+recursive-include topology/indigox_lib *
+

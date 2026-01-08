@@ -1,0 +1,31 @@
+{
+  "CriticalTemperature": 0.0,
+  "CriticalPressure": 0.0,
+  "AcentricFactor": 0.0,
+  "Type": "flexible",
+  "pseudoAtoms": [
+    [ "opls_152", [ -1.88, 0.854, 0.0 ] ],
+    [ "opls_153", [ -1.523, -0.155, -0.0 ] ],
+    [ "opls_153", [ -1.523, 1.358, 0.874 ] ],
+    [ "opls_153", [ -1.523, 1.358, -0.874 ] ],
+    [ "opls_151", [ -3.64, 0.854, -0.0 ] ]
+  ],
+  "Connectivity": [
+    [ 1, 0 ],
+    [ 2, 0 ],
+    [ 3, 0 ],
+    [ 4, 0 ]
+  ],
+  "Bonds": [
+    [ [ "opls_153", "opls_152" ], "HARMONIC", [ 342189.3, 1.09 ] ],
+    [ [ "opls_151", "opls_152" ], "HARMONIC", [ 246577.6, 1.781 ] ]
+  ],
+  "Bends": [
+    [ [ "opls_153", "opls_152", "opls_153" ], "HARMONIC", [ 33212.5, 107.8 ] ],
+    [ [ "opls_153", "opls_152", "opls_151" ], "HARMONIC", [ 51328.4, 107.6 ] ]
+  ],
+  "Torsions": [
+
+  ],
+  "VanDerWaals": "auto"
+}

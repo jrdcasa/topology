@@ -1,0 +1,210 @@
+REMARK   Materials Studio PDB file
+REMARK   Created:  Sun Sep 29 16:41:36 +0100 2024
+CRYST1   10.895   10.895   10.895  90.00  90.00  90.00 P1
+ORIGX1      1.000000  0.000000  0.000000        0.00000
+ORIGX2      0.000000  1.000000  0.000000        0.00000
+ORIGX3      0.000000  0.000000  1.000000        0.00000
+SCALE1      0.091789  0.000000  0.000000        0.00000   
+SCALE2      0.000000  0.091789  0.000000        0.00000   
+SCALE3      0.000000  0.000000  0.091789        0.00000   
+ATOM      1  HT  ETH P   1       6.023   1.948   4.780  1.00  0.00           H    
+ATOM      2  C1  ETH P   1       5.297   2.251   3.943  1.00  0.00           C    
+ATOM      3  C2  ETH P   1       5.486   3.652   3.323  1.00  0.00           C    
+ATOM      4 1H1C ETH P   1       4.480   2.616   4.620  1.00  0.00           H    
+ATOM      5 1H2C ETH P   1       5.117   1.388   3.220  1.00  0.00           H    
+ATOM      6 2H1C ETH P   1       6.507   3.716   2.856  1.00  0.00           H    
+ATOM      7 2H2C ETH P   1       5.357   4.164   4.278  1.00  0.00           H    
+ATOM      8  C1  ETH P   1       4.294   4.427   2.579  1.00  0.00           C    
+ATOM      9  C2  ETH P   1       4.677   6.001   2.532  1.00  0.00           C    
+ATOM     10 1H1C ETH P   1       3.330   4.637   3.183  1.00  0.00           H    
+ATOM     11 1H2C ETH P   1       4.022   4.025   1.529  1.00  0.00           H    
+ATOM     12 2H1C ETH P   1       5.760   6.236   2.639  1.00  0.00           H    
+ATOM     13 2H2C ETH P   1       4.339   6.431   3.521  1.00  0.00           H    
+ATOM     14  C1  ETH P   1       4.197   6.866   1.394  1.00  0.00           C    
+ATOM     15  C2  ETH P   1       5.168   6.835   0.085  1.00  0.00           C    
+ATOM     16 1H1C ETH P   1       4.108   7.890   1.620  1.00  0.00           H    
+ATOM     17 1H2C ETH P   1       3.301   6.635   0.869  1.00  0.00           H    
+ATOM     18 2H1C ETH P   1       5.058   5.869  -0.337  1.00  0.00           H    
+ATOM     19 2H2C ETH P   1       6.294   7.025   0.081  1.00  0.00           H    
+ATOM     20  HH  ETH P   1       4.801   7.519  -0.736  1.00  0.00           H    
+ATOM     21  HT  ETH P   2      14.684   5.063   6.591  1.00  0.00           H    
+ATOM     22  C1  ETH P   2      14.064   5.884   6.372  1.00  0.00           C    
+ATOM     23  C2  ETH P   2      13.000   5.275   5.392  1.00  0.00           C    
+ATOM     24 1H1C ETH P   2      14.489   6.778   5.921  1.00  0.00           H    
+ATOM     25 1H2C ETH P   2      13.437   6.279   7.201  1.00  0.00           H    
+ATOM     26 2H1C ETH P   2      12.486   4.424   5.630  1.00  0.00           H    
+ATOM     27 2H2C ETH P   2      13.761   5.093   4.638  1.00  0.00           H    
+ATOM     28  C1  ETH P   2      12.007   6.367   4.734  1.00  0.00           C    
+ATOM     29  C2  ETH P   2      10.517   5.984   4.480  1.00  0.00           C    
+ATOM     30 1H1C ETH P   2      12.325   6.473   3.654  1.00  0.00           H    
+ATOM     31 1H2C ETH P   2      12.264   7.342   5.204  1.00  0.00           H    
+ATOM     32 2H1C ETH P   2      10.187   6.571   3.632  1.00  0.00           H    
+ATOM     33 2H2C ETH P   2       9.921   6.417   5.324  1.00  0.00           H    
+ATOM     34  C1  ETH P   2      10.221   4.587   4.035  1.00  0.00           C    
+ATOM     35  C2  ETH P   2       8.716   4.215   4.352  1.00  0.00           C    
+ATOM     36 1H1C ETH P   2      10.997   3.983   4.614  1.00  0.00           H    
+ATOM     37 1H2C ETH P   2      10.510   4.582   2.943  1.00  0.00           H    
+ATOM     38 2H1C ETH P   2       8.120   5.024   3.900  1.00  0.00           H    
+ATOM     39 2H2C ETH P   2       8.430   4.395   5.389  1.00  0.00           H    
+ATOM     40  HH  ETH P   2       8.386   3.167   4.065  1.00  0.00           H    
+ATOM     41  HT  ETH P   3       3.095  -0.687   6.486  1.00  0.00           H    
+ATOM     42  C1  ETH P   3       2.947  -0.203   7.499  1.00  0.00           C    
+ATOM     43  C2  ETH P   3       3.684   1.055   7.852  1.00  0.00           C    
+ATOM     44 1H1C ETH P   3       3.203  -1.075   8.149  1.00  0.00           H    
+ATOM     45 1H2C ETH P   3       1.766  -0.140   7.671  1.00  0.00           H    
+ATOM     46 2H1C ETH P   3       3.565   1.721   7.034  1.00  0.00           H    
+ATOM     47 2H2C ETH P   3       4.779   0.869   7.730  1.00  0.00           H    
+ATOM     48  C1  ETH P   3       3.307   1.725   9.151  1.00  0.00           C    
+ATOM     49  C2  ETH P   3       4.214   2.852   9.457  1.00  0.00           C    
+ATOM     50 1H1C ETH P   3       3.442   0.867   9.780  1.00  0.00           H    
+ATOM     51 1H2C ETH P   3       2.294   2.179   9.208  1.00  0.00           H    
+ATOM     52 2H1C ETH P   3       3.721   3.349  10.310  1.00  0.00           H    
+ATOM     53 2H2C ETH P   3       4.139   3.497   8.554  1.00  0.00           H    
+ATOM     54  C1  ETH P   3       5.657   2.531   9.911  1.00  0.00           C    
+ATOM     55  C2  ETH P   3       5.558   1.283  10.724  1.00  0.00           C    
+ATOM     56 1H1C ETH P   3       6.008   3.448  10.446  1.00  0.00           H    
+ATOM     57 1H2C ETH P   3       6.270   2.338   8.983  1.00  0.00           H    
+ATOM     58 2H1C ETH P   3       5.111   0.305  10.223  1.00  0.00           H    
+ATOM     59 2H2C ETH P   3       4.930   1.224  11.647  1.00  0.00           H    
+ATOM     60  HH  ETH P   3       6.624   1.074  10.865  1.00  0.00           H    
+ATOM     61  HT  ETH P   4       7.936   9.176   2.226  1.00  0.00           H    
+ATOM     62  C1  ETH P   4       6.946   9.659   2.491  1.00  0.00           C    
+ATOM     63  C2  ETH P   4       6.392   9.552   3.915  1.00  0.00           C    
+ATOM     64 1H1C ETH P   4       6.233   9.136   1.740  1.00  0.00           H    
+ATOM     65 1H2C ETH P   4       6.852  10.688   2.118  1.00  0.00           H    
+ATOM     66 2H1C ETH P   4       5.902   8.581   3.939  1.00  0.00           H    
+ATOM     67 2H2C ETH P   4       5.625  10.322   3.750  1.00  0.00           H    
+ATOM     68  C1  ETH P   4       7.373   9.682   5.117  1.00  0.00           C    
+ATOM     69  C2  ETH P   4       7.843  11.177   5.524  1.00  0.00           C    
+ATOM     70 1H1C ETH P   4       8.306   9.073   5.041  1.00  0.00           H    
+ATOM     71 1H2C ETH P   4       6.778   9.232   5.873  1.00  0.00           H    
+ATOM     72 2H1C ETH P   4       7.011  11.774   6.001  1.00  0.00           H    
+ATOM     73 2H2C ETH P   4       8.122  11.783   4.610  1.00  0.00           H    
+ATOM     74  C1  ETH P   4       8.820  10.916   6.651  1.00  0.00           C    
+ATOM     75  C2  ETH P   4      10.080  11.777   6.692  1.00  0.00           C    
+ATOM     76 1H1C ETH P   4       9.171   9.873   6.723  1.00  0.00           H    
+ATOM     77 1H2C ETH P   4       8.119  10.914   7.567  1.00  0.00           H    
+ATOM     78 2H1C ETH P   4       9.829  12.727   6.487  1.00  0.00           H    
+ATOM     79 2H2C ETH P   4      10.692  11.161   6.020  1.00  0.00           H    
+ATOM     80  HH  ETH P   4      10.467  12.074   7.713  1.00  0.00           H    
+ATOM     81  HT  ETH P   5      -1.865   6.642  -2.062  1.00  0.00           H    
+ATOM     82  C1  ETH P   5      -2.042   6.900  -1.024  1.00  0.00           C    
+ATOM     83  C2  ETH P   5      -0.777   7.250  -0.500  1.00  0.00           C    
+ATOM     84 1H1C ETH P   5      -2.644   5.895  -0.686  1.00  0.00           H    
+ATOM     85 1H2C ETH P   5      -2.821   7.738  -1.018  1.00  0.00           H    
+ATOM     86 2H1C ETH P   5      -0.048   6.575  -0.905  1.00  0.00           H    
+ATOM     87 2H2C ETH P   5      -0.883   7.211   0.579  1.00  0.00           H    
+ATOM     88  C1  ETH P   5      -0.470   8.562  -1.279  1.00  0.00           C    
+ATOM     89  C2  ETH P   5       0.094   9.877  -0.522  1.00  0.00           C    
+ATOM     90 1H1C ETH P   5      -1.272   8.944  -1.821  1.00  0.00           H    
+ATOM     91 1H2C ETH P   5       0.218   8.152  -2.107  1.00  0.00           H    
+ATOM     92 2H1C ETH P   5       0.576  10.573  -1.270  1.00  0.00           H    
+ATOM     93 2H2C ETH P   5       0.716   9.666   0.375  1.00  0.00           H    
+ATOM     94  C1  ETH P   5      -1.251  10.439  -0.055  1.00  0.00           C    
+ATOM     95  C2  ETH P   5      -1.047  11.487   1.118  1.00  0.00           C    
+ATOM     96 1H1C ETH P   5      -1.762   9.634   0.448  1.00  0.00           H    
+ATOM     97 1H2C ETH P   5      -1.740  10.861  -0.979  1.00  0.00           H    
+ATOM     98 2H1C ETH P   5      -0.640  12.489   0.795  1.00  0.00           H    
+ATOM     99 2H2C ETH P   5      -0.162  11.103   1.713  1.00  0.00           H    
+ATOM    100  HH  ETH P   5      -1.981  11.529   1.743  1.00  0.00           H    
+CONECT    1    2
+CONECT    2    1    3    4    5
+CONECT    3    2    6    7    8
+CONECT    4    2
+CONECT    5    2
+CONECT    6    3
+CONECT    7    3
+CONECT    8    3    9   10   11
+CONECT    9    8   12   13   14
+CONECT   10    8
+CONECT   11    8
+CONECT   12    9
+CONECT   13    9
+CONECT   14    9   15   16   17
+CONECT   15   14   18   19   20
+CONECT   16   14
+CONECT   17   14
+CONECT   18   15
+CONECT   19   15
+CONECT   20   15
+CONECT   21   22
+CONECT   22   21   23   24   25
+CONECT   23   22   26   27   28
+CONECT   24   22
+CONECT   25   22
+CONECT   26   23
+CONECT   27   23
+CONECT   28   23   29   30   31
+CONECT   29   28   32   33   34
+CONECT   30   28
+CONECT   31   28
+CONECT   32   29
+CONECT   33   29
+CONECT   34   29   35   36   37
+CONECT   35   34   38   39   40
+CONECT   36   34
+CONECT   37   34
+CONECT   38   35
+CONECT   39   35
+CONECT   40   35
+CONECT   41   42
+CONECT   42   41   43   44   45
+CONECT   43   42   46   47   48
+CONECT   44   42
+CONECT   45   42
+CONECT   46   43
+CONECT   47   43
+CONECT   48   43   49   50   51
+CONECT   49   48   52   53   54
+CONECT   50   48
+CONECT   51   48
+CONECT   52   49
+CONECT   53   49
+CONECT   54   49   55   56   57
+CONECT   55   54   58   59   60
+CONECT   56   54
+CONECT   57   54
+CONECT   58   55
+CONECT   59   55
+CONECT   60   55
+CONECT   61   62
+CONECT   62   61   63   64   65
+CONECT   63   62   66   67   68
+CONECT   64   62
+CONECT   65   62
+CONECT   66   63
+CONECT   67   63
+CONECT   68   63   69   70   71
+CONECT   69   68   72   73   74
+CONECT   70   68
+CONECT   71   68
+CONECT   72   69
+CONECT   73   69
+CONECT   74   69   75   76   77
+CONECT   75   74   78   79   80
+CONECT   76   74
+CONECT   77   74
+CONECT   78   75
+CONECT   79   75
+CONECT   80   75
+CONECT   81   82
+CONECT   82   81   83   84   85
+CONECT   83   82   86   87   88
+CONECT   84   82
+CONECT   85   82
+CONECT   86   83
+CONECT   87   83
+CONECT   88   83   89   90   91
+CONECT   89   88   92   93   94
+CONECT   90   88
+CONECT   91   88
+CONECT   92   89
+CONECT   93   89
+CONECT   94   89   95   96   97
+CONECT   95   94   98   99  100
+CONECT   96   94
+CONECT   97   94
+CONECT   98   95
+CONECT   99   95
+CONECT  100   95
+END

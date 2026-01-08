@@ -1,0 +1,19 @@
+; Force field from typing_gases_to_VLE_cmd.py
+; # 1 (Lennard-Jones) or 2 (Buckingham)
+; # 1 and 3 (Geometric rule) and 2 (Arithmetic rule)
+; # Generate pairs (yes/no). If yes generates pairs not present in [pairtypes]
+; # Factor to multiply LJ 1-4 interctions, default 1. Not used if genpairs=no
+; # Factor to multiply electrostatic 1-4 interctions, default 1. Always used.
+[defaults]
+; nbfunc    comb-rule   gen-pairs   fudgeLJ     fudgeQQ
+ 1      3     yes     0.5   0.5
+
+#include "ff_oplsaa.itp"
+#include "C3H8O.itp"
+
+[ system ]
+C3H6O
+
+[ molecules ]
+;system molecules
+C3H8O        #NMOLS# 

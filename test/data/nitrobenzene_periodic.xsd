@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XSD []>
+<XSD Version="21.1" WrittenBy="Materials Studio 21.1">
+	<AtomisticTreeRoot ID="1" NumProperties="63" HasProperties="1" NumChildren="1">
+		<Property Name="AngleAxisType" DefinedOn="AngleBetweenPlanesBender" Type="Enumerated"/>
+		<Property Name="AngleEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BeadDocumentID" DefinedOn="MesoMoleculeSet" Type="String"/>
+		<Property Name="BendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BendTorsionBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="EFGAsymmetry" DefinedOn="Atom" Type="Double"/>
+		<Property Name="EFGQuadrupolarCoupling" DefinedOn="Atom" Type="Double"/>
+		<Property Name="ElectrostaticEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="FaceMillerIndex" DefinedOn="GrowthFace" Type="MillerIndex"/>
+		<Property Name="FacetTransparency" DefinedOn="GrowthFace" Type="Float"/>
+		<Property Name="FermiLevel" DefinedOn="ScalarFieldBase" Type="Double"/>
+		<Property Name="Force" DefinedOn="Matter" Type="CoDirection"/>
+		<Property Name="FrameFilter" DefinedOn="Trajectory" Type="String"/>
+		<Property Name="HarmonicForceConstant" DefinedOn="HarmonicRestraint" Type="Double"/>
+		<Property Name="HarmonicMinimum" DefinedOn="HarmonicRestraint" Type="Double"/>
+		<Property Name="HydrogenBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ImportOrder" DefinedOn="Bondable" Type="UnsignedInteger"/>
+		<Property Name="InversionEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="IsBackboneAtom" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsChiralCenter" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsOutOfPlane" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsRepeatArrowVisible" DefinedOn="ElectrodeWire" Type="Boolean"/>
+		<Property Name="KineticEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="LineExtentPadding" DefinedOn="BestFitLineMonitor" Type="Double"/>
+		<Property Name="LinkageGroupName" DefinedOn="Linkage" Type="String"/>
+		<Property Name="ListIdentifier" DefinedOn="PropertyList" Type="String"/>
+		<Property Name="NMRShielding" DefinedOn="Atom" Type="Double"/>
+		<Property Name="NonBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="NormalMode" DefinedOn="Bondable" Type="Direction"/>
+		<Property Name="NormalModeFrequency" DefinedOn="Bondable" Type="Double"/>
+		<Property Name="NumScanSteps" DefinedOn="LinearScan" Type="UnsignedInteger"/>
+		<Property Name="OrbitalCutoffRadius" DefinedOn="Bondable" Type="Double"/>
+		<Property Name="PlaneExtentPadding" DefinedOn="BestFitPlaneMonitor" Type="Double"/>
+		<Property Name="PotentialEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="QuantizationValue" DefinedOn="ScalarFieldBase" Type="Double"/>
+		<Property Name="RelativeVelocity" DefinedOn="Matter" Type="Direction"/>
+		<Property Name="RepeatArrowScale" DefinedOn="ElectrodeWire" Type="Float"/>
+		<Property Name="RestraintEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ScanEnd" DefinedOn="LinearScan" Type="Double"/>
+		<Property Name="ScanStart" DefinedOn="LinearScan" Type="Double"/>
+		<Property Name="SeparatedStretchStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ServerDipoleMoment" DefinedOn="MatterGroupProperties" Type="Direction"/>
+		<Property Name="SimulationStep" DefinedOn="Trajectory" Type="Integer"/>
+		<Property Name="SpinQuantizationDirection" DefinedOn="Atom" Type="Direction"/>
+		<Property Name="Stiffness" DefinedOn="SymmetryMatterHessian" Type="Matrix6x6"/>
+		<Property Name="StretchBendStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="StretchStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="StretchTorsionStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="Temperature" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ThreeBodyNonBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionBendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TotalEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="Units" DefinedOn="ScalarFieldBase" Type="String"/>
+		<Property Name="UreyBradleyEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ValenceCrossTermEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ValenceDiagonalEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="VanDerWaalsEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="_ServerAtomNames" DefinedOn="IndexProvider" Type="String"/>
+		<Property Name="_Stress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
+		<Property Name="_TrajectoryStress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
+		<Properties TotalEnergy="47.5514174506897" KineticEnergy="0" PotentialEnergy="47.5514174506897" ValenceDiagonalEnergy="6.41910942086549" BondEnergy="2.58468888880127" AngleEnergy="3.79652453746998" TorsionEnergy="0.0330308949974242" InversionEnergy="0.00486509959680986" UreyBradleyEnergy="0" ValenceCrossTermEnergy="-4.75115943235414" StretchStretchEnergy="0.315054632554709" StretchBendStretchEnergy="-0.441588401304635" StretchTorsionStretchEnergy="-0.414392075110821" SeparatedStretchStretchEnergy="0.190446628740138" TorsionStretchEnergy="-5.9141944092772" BendBendEnergy="0" TorsionBendBendEnergy="0.100944836944275" BendTorsionBendEnergy="1.41256935509939" NonBondEnergy="45.8834674621783" HydrogenBondEnergy="0" VanDerWaalsEnergy="2.78903099158724" ElectrostaticEnergy="43.0944364705911" RestraintEnergy="0" ThreeBodyNonBondEnergy="0" Temperature="298"/>
+		<SymmetrySystem ID="2" HasProperties="1" Mapping="3" Children="4,5,6" Normalized="1" OverspecificationTolerance="0.01" PeriodicDisplayType="Original" HasSymmetryHistory="1">
+			<Properties _TrajectoryStress="0.0011389237480593,-8.00660295133922e-005,0.000452056397386118,-8.00660295133922e-005,0.00062828392502471,4.69406698375723e-005,0.000452056397386118,4.69406698375723e-005,0.00305650295978429"/>
+			<MappingSet ID="7" SymmetryDefinition="4" ActiveSystem="2" NumFamilies="1" OwnsTotalConstraintMapping="1" TotalConstraintMapping="3">
+				<MappingFamily ID="8" NumImageMappings="0">
+					<IdentityMapping ID="9" Element="1,0,0,0,0,1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" MappedObjects="ci(58):28+10,5,28+38,6" DefectObjects="4,66" NumImages="58" NumDefects="2">
+						<Atom3d ID="10" HasProperties="1" Mapping="9" Parent="5" UserID="1" DisplayStyle="Line" XYZ="0.580184124403977,-0.0275026783562718,1.2085811656151" Connections="20,21,23" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="-0.0804168937608769,-0.384669781323149,0.441156189224081"/>
+						</Atom3d>
+						<Atom3d ID="11" HasProperties="1" Mapping="9" Parent="5" UserID="2" DisplayStyle="Line" XYZ="0.628991801771651,-0.12560985767582,1.0941787895513" Connections="16,20,25" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="0.248471899274802,1.40466838922843,-1.10598523875767"/>
+						</Atom3d>
+						<Atom3d ID="12" HasProperties="1" Mapping="9" Parent="5" UserID="3" DisplayStyle="Line" XYZ="0.616980425280972,-0.0846474110981303,0.941753042268274" Connections="16,17,27" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="-0.299714109420746,-1.45552033470243,1.50088928771259"/>
+						</Atom3d>
+						<Atom3d ID="13" HasProperties="1" Mapping="9" Parent="5" UserID="4" DisplayStyle="Line" XYZ="0.555035970487343,0.0580629832419339,0.903221685495619" Connections="17,18,37" ForcefieldType="c3a" Charge="0.239" Components="C">
+							<Properties Force="0.248533678693549,-0.226699706473575,0.00723468505123181"/>
+						</Atom3d>
+						<Atom3d ID="14" HasProperties="1" Mapping="9" Parent="5" UserID="5" DisplayStyle="Line" XYZ="0.505425207067285,0.157576744176791,1.01868203272603" Connections="18,19,29" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="0.355439570450784,-1.20935884860042,0.786067130984317"/>
+						</Atom3d>
+						<Atom3d ID="15" HasProperties="1" Mapping="9" Parent="5" UserID="6" DisplayStyle="Line" XYZ="0.518792209411454,0.113347094800024,1.17009780174192" Connections="19,21,31" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="-0.075621013566081,1.3566212150548,-1.50682028530944"/>
+						</Atom3d>
+						<Bond ID="16" Mapping="9" Parent="5" Connects="12,11" Type="Double"/>
+						<Bond ID="17" Mapping="9" Parent="5" Connects="13,12"/>
+						<Bond ID="18" Mapping="9" Parent="5" Connects="14,13" Type="Double"/>
+						<Bond ID="19" Mapping="9" Parent="5" Connects="15,14"/>
+						<Bond ID="20" Mapping="9" Parent="5" Connects="10,11"/>
+						<Bond ID="21" Mapping="9" Parent="5" Connects="10,15" Type="Double"/>
+						<Atom3d ID="22" HasProperties="1" Mapping="9" Parent="5" UserID="7" DisplayStyle="Line" XYZ="0.589819678215452,-0.0608748680299439,1.32882641290524" Connections="23" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="-0.22337680731274,0.985831953889856,-0.659898432747458"/>
+						</Atom3d>
+						<Bond ID="23" Mapping="9" Parent="5" Connects="10,22"/>
+						<Atom3d ID="24" HasProperties="1" Mapping="9" Parent="5" UserID="8" DisplayStyle="Line" XYZ="0.677721805299254,-0.236654084048557,1.12511777305949" Connections="25" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="-0.108434223298074,0.124765054013854,0.068189089886373"/>
+						</Atom3d>
+						<Bond ID="25" Mapping="9" Parent="5" Connects="11,24"/>
+						<Atom3d ID="26" HasProperties="1" Mapping="9" Parent="5" UserID="9" DisplayStyle="Line" XYZ="0.65839816816247,-0.168272177807536,0.85881802085114" Connections="27" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="0.298678505230447,-0.0748564972748735,-0.191290449711324"/>
+						</Atom3d>
+						<Bond ID="27" Mapping="9" Parent="5" Connects="12,26"/>
+						<Atom3d ID="28" HasProperties="1" Mapping="9" Parent="5" UserID="10" DisplayStyle="Line" XYZ="0.455445063005926,0.270156939321214,0.99822918352066" Connections="29" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="-0.00364667958906422,-0.175429618552488,0.165662226827859"/>
+						</Atom3d>
+						<Bond ID="29" Mapping="9" Parent="5" Connects="14,28"/>
+						<Atom3d ID="30" HasProperties="1" Mapping="9" Parent="5" UserID="11" DisplayStyle="Line" XYZ="0.480504339588302,0.189961635659062,1.26128164460777" Connections="31" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="-0.0944414189436538,0.170500350290986,0.247180996657113"/>
+						</Atom3d>
+						<Bond ID="31" Mapping="9" Parent="5" Connects="15,30"/>
+						<Atom3d ID="32" HasProperties="1" Mapping="9" Parent="5" Name="N1" UserID="12" DisplayStyle="Line" XYZ="0.541516908391355,0.101702217795222,0.745050738427661" Connections="35,36,37" ForcefieldType="n3o" Charge="0.617" Components="N" ColorMode="0">
+							<Properties Force="1.41628824402374,-1.61099774717411,-0.618742465831113"/>
+						</Atom3d>
+						<Atom3d ID="33" HasProperties="1" Mapping="9" Parent="5" Name="O2" UserID="13" DisplayStyle="Line" XYZ="0.492206984448477,0.227441177667191,0.71635269816385" Connections="35" ForcefieldType="o12" Charge="-0.428" Components="O" ColorMode="0">
+							<Properties Force="-1.15560296410877,1.38186479684527,0.2819954046065"/>
+						</Atom3d>
+						<Atom3d ID="34" HasProperties="1" Mapping="9" Parent="5" Name="O3" UserID="14" DisplayStyle="Line" XYZ="0.578762671482336,0.00982891115242085,0.648806598307814" Connections="36" ForcefieldType="o12" Charge="-0.428" Components="O" ColorMode="0">
+							<Properties Force="-0.28293018278832,-0.39809482209214,0.713593711083344"/>
+						</Atom3d>
+						<Bond ID="35" Mapping="9" Parent="5" Connects="32,33" ColorMode="0"/>
+						<Bond ID="36" Mapping="9" Parent="5" Connects="32,34" Type="Double" ColorMode="0"/>
+						<Bond ID="37" Mapping="9" Parent="5" Connects="13,32"/>
+						<Molecule ID="5" Mapping="9" Parent="2" Children="ci(28):28+10" Name="Sketch 3"/>
+						<Atom3d ID="38" HasProperties="1" Mapping="9" Parent="6" UserID="15" DisplayStyle="Line" XYZ="0.0854850957953,0.27068302643004,0.306431302486889" Connections="48,49,51" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="0.39707766619168,0.79794837283887,-1.49432714381723"/>
+						</Atom3d>
+						<Atom3d ID="39" HasProperties="1" Mapping="9" Parent="6" UserID="16" DisplayStyle="Line" XYZ="0.188963011745377,0.31562316065947,0.417622870468231" Connections="44,48,53" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="0.225188505746136,0.527501130067844,-0.788746763873043"/>
+						</Atom3d>
+						<Atom3d ID="40" HasProperties="1" Mapping="9" Parent="6" UserID="17" DisplayStyle="Line" XYZ="0.15504011328607,0.299257345713254,0.571272496547781" Connections="44,45,55" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="1.22245241816508,1.04548853320416,0.87231288679247"/>
+						</Atom3d>
+						<Atom3d ID="41" HasProperties="1" Mapping="9" Parent="6" UserID="18" DisplayStyle="Line" XYZ="0.0140404372871249,0.23674921181044,0.614571574536365" Connections="45,46,65" ForcefieldType="c3a" Charge="0.239" Components="C">
+							<Properties Force="-0.08725038482099,0.120261201823117,0.643171108840241"/>
+						</Atom3d>
+						<Atom3d ID="42" HasProperties="1" Mapping="9" Parent="6" UserID="19" DisplayStyle="Line" XYZ="-0.0912781535199826,0.191800431222457,0.5023987555251" Connections="46,47,57" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="-0.431617290196215,-0.752878487779651,0.389652131414783"/>
+						</Atom3d>
+						<Atom3d ID="43" HasProperties="1" Mapping="9" Parent="6" UserID="20" DisplayStyle="Line" XYZ="-0.0539667301213934,0.209228706597101,0.349566812096194" Connections="47,49,59" ForcefieldType="c3a" Charge="-0.1268" Components="C">
+							<Properties Force="-1.20609119495402,-1.26332284000302,0.178396014722916"/>
+						</Atom3d>
+						<Bond ID="44" Mapping="9" Parent="6" Connects="40,39" Type="Double"/>
+						<Bond ID="45" Mapping="9" Parent="6" Connects="41,40"/>
+						<Bond ID="46" Mapping="9" Parent="6" Connects="42,41" Type="Double"/>
+						<Bond ID="47" Mapping="9" Parent="6" Connects="43,42"/>
+						<Bond ID="48" Mapping="9" Parent="6" Connects="38,39"/>
+						<Bond ID="49" Mapping="9" Parent="6" Connects="38,43" Type="Double"/>
+						<Atom3d ID="50" HasProperties="1" Mapping="9" Parent="6" UserID="21" DisplayStyle="Line" XYZ="0.113221006867103,0.283521076011074,0.185085564455548" Connections="51" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="0.0373303285010593,0.17245533789774,-0.777475804841047"/>
+						</Atom3d>
+						<Bond ID="51" Mapping="9" Parent="6" Connects="38,50"/>
+						<Atom3d ID="52" HasProperties="1" Mapping="9" Parent="6" UserID="22" DisplayStyle="Line" XYZ="0.298911502213249,0.364658663836951,0.383641332038321" Connections="53" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="0.779413333781707,0.852094805378939,-0.727700939533446"/>
+						</Atom3d>
+						<Bond ID="53" Mapping="9" Parent="6" Connects="39,52"/>
+						<Atom3d ID="54" HasProperties="1" Mapping="9" Parent="6" UserID="23" DisplayStyle="Line" XYZ="0.243305626209587,0.337289237600885,0.651045974040959" Connections="55" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="0.233151241577284,0.060326738043411,0.302410217588747"/>
+						</Atom3d>
+						<Bond ID="55" Mapping="9" Parent="6" Connects="40,54"/>
+						<Atom3d ID="56" HasProperties="1" Mapping="9" Parent="6" UserID="24" DisplayStyle="Line" XYZ="-0.203523482736698,0.142461295626344,0.52584708790977" Connections="57" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="-0.837107313601743,-0.872356720735326,0.510786463033073"/>
+						</Atom3d>
+						<Bond ID="57" Mapping="9" Parent="6" Connects="42,56"/>
+						<Atom3d ID="58" HasProperties="1" Mapping="9" Parent="6" UserID="25" DisplayStyle="Line" XYZ="-0.135181209756907,0.174025896888121,0.261007349120649" Connections="59" ForcefieldType="h1" Charge="0.1268" Components="H">
+							<Properties Force="-0.562760905644264,-0.595810451944621,-0.386471312789685"/>
+						</Atom3d>
+						<Bond ID="59" Mapping="9" Parent="6" Connects="43,58"/>
+						<Atom3d ID="60" HasProperties="1" Mapping="9" Parent="6" Name="N1" UserID="26" DisplayStyle="Line" XYZ="-0.0219764837965677,0.21943567742226,0.774276205701012" Connections="63,64,65" ForcefieldType="n3o" Charge="0.617" Components="N" ColorMode="0">
+							<Properties Force="0.554947422138726,0.762744551264833,-0.527810368750177"/>
+						</Atom3d>
+						<Atom3d ID="61" HasProperties="1" Mapping="9" Parent="6" Name="O2" UserID="27" DisplayStyle="Line" XYZ="-0.14558566160399,0.167862662724018,0.80757145125508" Connections="63" ForcefieldType="o12" Charge="-0.428" Components="O" ColorMode="0">
+							<Properties Force="-1.0058430767951,-1.10714755366492,1.43128001077735"/>
+						</Atom3d>
+						<Atom3d ID="62" HasProperties="1" Mapping="9" Parent="6" Name="O3" UserID="28" DisplayStyle="Line" XYZ="0.073338947129063,0.257546141565199,0.866625623916713" Connections="64" ForcefieldType="o12" Charge="-0.428" Components="O" ColorMode="0">
+							<Properties Force="0.43788164502575,0.36407098047874,0.24529165075865"/>
+						</Atom3d>
+						<Bond ID="63" Mapping="9" Parent="6" Connects="60,61" ColorMode="0"/>
+						<Bond ID="64" Mapping="9" Parent="6" Connects="60,62" Type="Double" ColorMode="0"/>
+						<Bond ID="65" Mapping="9" Parent="6" Connects="41,60"/>
+						<Molecule ID="6" Mapping="9" Parent="2" Children="ci(28):28+38" Name="Sketch 3"/>
+						<SpaceGroup ID="4" Parent="2" Children="66" AVector="8.79984281765944,0,0" BVector="0,8.79984281765944,0" CVector="0,0,8.79984281765944" OrientationBase="C along Z, B in YZ plane" Centering="3D Primitive-Centered" Lattice="3D Triclinic" GroupName="P1" Operators="1,0,0,0,0,1,0,0,0,0,1,0" DisplayRange="0,1,0,1,0,1" LineThickness="2" CylinderRadius="0.2" LabelAxes="1" ActiveSystem="2" ITNumber="1" LongName="P 1" Qualifier="Origin-1" SchoenfliesName="C1-1" System="Triclinic" Class="1"/>
+						<ReciprocalLattice3D ID="66" Parent="4" Visible="0"/>
+					</IdentityMapping>
+					<MappingRepairs NumRepairs="0"/>
+				</MappingFamily>
+				<InfiniteMapping ID="3" Element="1,0,0,0,0,1,0,0,0,0,1,0" MappedObjects="2"/>
+			</MappingSet>
+			<OriginalObjects ID="67">
+				<SetCollection/>
+			</OriginalObjects>
+		</SymmetrySystem>
+	</AtomisticTreeRoot>
+</XSD>

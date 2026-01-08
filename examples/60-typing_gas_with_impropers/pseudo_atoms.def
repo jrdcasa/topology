@@ -1,0 +1,7 @@
+#number of pseudo_atoms
+18  
+#type      print as chem  oxidation   mass         charge polarization B-factor radii  connectivity anisotropic anisotropic-type   tinker-type
+opls_135     yes C   C    0         12.01100      -0.2921     0.0        1.0     0.680      0           0           relative            0
+opls_140     yes H   H    0          1.00800       0.1125     0.0        1.0     0.230      0           0           relative            0
+opls_280     yes C   C    0         12.01100       0.3050     0.0        1.0     0.680      0           0           relative            0
+opls_281     yes O   O    0         15.99940      -0.3934     0.0        1.0     0.680      0           0           relative            0

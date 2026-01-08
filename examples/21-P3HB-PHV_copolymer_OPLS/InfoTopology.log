@@ -1,0 +1,48 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd.py -i PHBHVrandom600.xsd -r PHBHV600_headtail.dat -a PHBHV600_residues.dat
+			         or
+			topology_cmd.py  -i PHBHVrandom600.xsd -r PHBHV600_headtail.dat -a PHBHV600_residues.dat
+
+		Starting: 	 22-08-2024 11:40:08
+
+		Input is a XSD format.
+		Reading... (22-08-2024 11:40:08)
+		End read   (22-08-2024 11:40:08)
+
+		****** WRITE PDB and PSF files (22-08-2024 11:40:08) ****** 
+		 Writing PDB file...topology.pdb (22-08-2024 11:40:08)
+		 CONECT table has been written.
+		****** END WRITE PDB and PSF files (22-08-2024 11:40:08) ****** 
+
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (22-08-2024 11:40:08) ****** 
+		 Renumbering PDB file... topology.pdb (22-08-2024 11:40:08)
+
+			 Start Loop over atoms. (22-08-2024 11:40:09)
+			 End Loop over atoms. (22-08-2024 11:40:09)
+
+			 Start Creating topology. (22-08-2024 11:40:09)
+			 End Creating topology. (22-08-2024 11:40:09)
+		 Head-Tail info from ... PHBHV600_headtail.dat (22-08-2024 11:40:09)
+		 Write renumbered file ... topology_residues.pdb (22-08-2024 11:40:09)

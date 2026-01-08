@@ -1,0 +1,19 @@
+; top created with typing_carb_cmd.py program from Topology library
+;                   Javier Ramos (IEM-CSIC)                        
+;           Created:    21-08-2024 19:51:05                                   
+#include "./charmm36_ljpme-jul2022.ff/forcefield.itp"
+#include "./charmm36_ljpme-jul2022.ff/tip3p.itp"
+#include "CARB00.itp"
+#include "CARB01.itp"
+#include "CARB02.itp"
+
+[ system ]
+; Name
+CARB in water
+
+[ molecules ]
+; Compound        mols
+CARB00             1
+CARB01             1
+CARB02             1
+SOL               461

@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XSD []>
+<XSD Version="22.1" WrittenBy="Materials Studio 22.1">
+	<AtomisticTreeRoot ID="1" NumProperties="63" NumChildren="1">
+		<Property Name="AngleAxisType" DefinedOn="AngleBetweenPlanesBender" Type="Enumerated"/>
+		<Property Name="AngleEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BeadDocumentID" DefinedOn="MesoMoleculeSet" Type="String"/>
+		<Property Name="BendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BendTorsionBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="EFGAsymmetry" DefinedOn="Atom" Type="Double"/>
+		<Property Name="EFGQuadrupolarCoupling" DefinedOn="Atom" Type="Double"/>
+		<Property Name="ElectrostaticEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="FaceMillerIndex" DefinedOn="GrowthFace" Type="MillerIndex"/>
+		<Property Name="FacetTransparency" DefinedOn="GrowthFace" Type="Float"/>
+		<Property Name="FermiLevel" DefinedOn="ScalarFieldBase" Type="Double"/>
+		<Property Name="Force" DefinedOn="Matter" Type="CoDirection"/>
+		<Property Name="FrameFilter" DefinedOn="Trajectory" Type="String"/>
+		<Property Name="HarmonicForceConstant" DefinedOn="HarmonicRestraint" Type="Double"/>
+		<Property Name="HarmonicMinimum" DefinedOn="HarmonicRestraint" Type="Double"/>
+		<Property Name="HydrogenBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ImportOrder" DefinedOn="Bondable" Type="UnsignedInteger"/>
+		<Property Name="InversionEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="IsBackboneAtom" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsChiralCenter" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsOutOfPlane" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsRepeatArrowVisible" DefinedOn="ElectrodeWire" Type="Boolean"/>
+		<Property Name="KineticEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="LineExtentPadding" DefinedOn="BestFitLineMonitor" Type="Double"/>
+		<Property Name="LinkageGroupName" DefinedOn="Linkage" Type="String"/>
+		<Property Name="ListIdentifier" DefinedOn="PropertyList" Type="String"/>
+		<Property Name="NMRShielding" DefinedOn="Atom" Type="Double"/>
+		<Property Name="NonBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="NormalMode" DefinedOn="Bondable" Type="Direction"/>
+		<Property Name="NormalModeFrequency" DefinedOn="Bondable" Type="Double"/>
+		<Property Name="NumScanSteps" DefinedOn="LinearScan" Type="UnsignedInteger"/>
+		<Property Name="OrbitalCutoffRadius" DefinedOn="Bondable" Type="Double"/>
+		<Property Name="PlaneExtentPadding" DefinedOn="BestFitPlaneMonitor" Type="Double"/>
+		<Property Name="PotentialEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="QuantizationValue" DefinedOn="ScalarFieldBase" Type="Double"/>
+		<Property Name="RelativeVelocity" DefinedOn="Matter" Type="Direction"/>
+		<Property Name="RepeatArrowScale" DefinedOn="ElectrodeWire" Type="Float"/>
+		<Property Name="RestraintEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ScanEnd" DefinedOn="LinearScan" Type="Double"/>
+		<Property Name="ScanStart" DefinedOn="LinearScan" Type="Double"/>
+		<Property Name="SeparatedStretchStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ServerDipoleMoment" DefinedOn="MatterGroupProperties" Type="Direction"/>
+		<Property Name="SimulationStep" DefinedOn="Trajectory" Type="Integer"/>
+		<Property Name="SpinQuantizationDirection" DefinedOn="Atom" Type="Direction"/>
+		<Property Name="Stiffness" DefinedOn="SymmetryMatterHessian" Type="Matrix6x6"/>
+		<Property Name="StretchBendStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="StretchStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="StretchTorsionStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="Temperature" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ThreeBodyNonBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionBendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TotalEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="Units" DefinedOn="ScalarFieldBase" Type="String"/>
+		<Property Name="UreyBradleyEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ValenceCrossTermEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ValenceDiagonalEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="VanDerWaalsEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="_ServerAtomNames" DefinedOn="IndexProvider" Type="String"/>
+		<Property Name="_Stress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
+		<Property Name="_TrajectoryStress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
+		<Molecule ID="2" NumChildren="1" Name="P3HB/PolyP3HB">
+			<LinearChain ID="3" NumChildren="1" Name="P3HB/PolyP3HB" Type="Homo Polymer">
+				<RepeatUnit ID="4" NumChildren="393" FlipProbability="0" ChiralInversionProbability="0">
+					<Atom3d ID="5" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="1.43639794810608,2.64111770202417,1.65067519658678" Connections="6,7" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="8" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="0.23323967027257,2.14013345873013,1.26222520395881" Connections="9,6,10" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="11" HasProperties="1" DisplayStyle="Line" XYZ="1.32240711219957,4.13457037040269,1.84226117687092" Connections="12,13,14,7" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="15" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="-0.729898586823037,2.892253575609,1.12219976079452" Connections="9" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="16" HasProperties="1" DisplayStyle="Line" XYZ="0.0766172961191041,0.631133536227958,0.997671715396814" Connections="17,18,10,19" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="20" HasProperties="1" DisplayStyle="Line" XYZ="2.56126548486304,4.64985255775183,2.24215317800166" Connections="12,21,22,23" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="24" HasProperties="1" DisplayStyle="Line" XYZ="0.364544261050965,4.40686404809267,2.82661952054138" Connections="13,25,26,27" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="28" HasProperties="1" DisplayStyle="Line" XYZ="1.00742404274996,4.62085321543896,0.860469642431972" Connections="14" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="29" HasProperties="1" DisplayStyle="Line" XYZ="-1.2407131889781,0.359609319436088,0.608937351833235" Connections="17,30,31,32" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<TorsionTwister ID="33" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="34" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="35" Objects="8,15,5" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="36" Objects="29,16,8,15" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="37" Objects="34" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="38" HasProperties="1" DisplayStyle="Line" XYZ="0.790708959667979,0.314825784028987,0.167236613500653" Connections="18" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="39" HasProperties="1" DisplayStyle="Line" XYZ="0.404641381078945,-0.151792633403166,2.28259455164042" Connections="40,41,42,19" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0"/>
+					</Atom3d>
+					<Atom3d ID="43" HasProperties="1" DisplayStyle="Line" XYZ="2.45393199812081,5.14953522026725,3.26117070283512" Connections="21" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="44" HasProperties="1" DisplayStyle="Line" XYZ="2.91808280440014,5.41723865177049,1.47834695931947" Connections="22" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="45" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="3.58698728383994,3.50510518334742,2.33727479702252" Connections="46,47,23" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="48" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="49" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="50" Objects="45,51,52,43,44,20" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="53" Objects="24,11,20,45" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="54" Objects="49" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="55" HasProperties="1" DisplayStyle="Line" XYZ="-0.0155102426683393,3.42705881433404,3.2683663197537" Connections="25" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="56" HasProperties="1" DisplayStyle="Line" XYZ="-0.506275174928183,4.97729152083457,2.36198421756205" Connections="26" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="57" HasProperties="1" DisplayStyle="Line" XYZ="0.835565276206033,5.03793241703869,3.65093249114815" Connections="27" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="58" HasProperties="1" DisplayStyle="Line" XYZ="-1.47067323512451,-0.742297796188656,0.789267721500546" Connections="30" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="59" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="60" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="61" Objects="5,8,15,16,38" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="62" Objects="58,29,16,8" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="63" Objects="60" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="64" HasProperties="1" DisplayStyle="Line" XYZ="-1.36680126488986,0.597783095461988,-0.498751686678426" Connections="31" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="65" HasProperties="1" DisplayStyle="Line" XYZ="-1.9572932947688,1.00225591813382,1.2197714190558" Connections="32" Components="H" Color="255,255,255,255">
+						<Properties IsBackboneAtom="0"/>
+					</Atom3d>
+					<Atom3d ID="66" HasProperties="1" DisplayStyle="Line" XYZ="1.48007188261252,0.0626453193145369,2.59414800984292" Connections="40" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0"/>
+					</Atom3d>
+					<Atom3d ID="67" HasProperties="1" DisplayStyle="Line" XYZ="0.280457800755588,-1.26841145496862,2.08935686842027" Connections="41" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0"/>
+					</Atom3d>
+					<Atom3d ID="68" HasProperties="1" DisplayStyle="Line" XYZ="-0.303782820498505,0.170819766588759,3.11545489197561" Connections="42" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0"/>
+					</Atom3d>
+					<Atom3d ID="51" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="3.24859344564917,2.3525870859641,2.07247535837724" Connections="46" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="69" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="70" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="71" Objects="45,51,52" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="72" Objects="11,20,45,51" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="73" Objects="70" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="52" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="4.86689947723864,3.76846271706953,2.71401879092554" Connections="47,74" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="75" HasProperties="1" DisplayStyle="Line" XYZ="5.66254601635539,2.48516039465333,2.72749860070772" Connections="76,77,78,74" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="79" HasProperties="1" DisplayStyle="Line" XYZ="6.9800980000072,2.75679583154108,3.1154037082895" Connections="76,80,81,82" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="83" HasProperties="1" DisplayStyle="Line" XYZ="5.66071197569442,1.92163558743971,1.44568626451188" Connections="77,84,85,86" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="87" HasProperties="1" DisplayStyle="Line" XYZ="5.19221512063927,1.75398018025041,3.46490235653829" Connections="78" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="88" HasProperties="1" DisplayStyle="Line" XYZ="7.69321003373804,2.44699343278202,2.28168093806917" Connections="80" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="89" HasProperties="1" DisplayStyle="Line" XYZ="7.22569836702095,2.17168901681702,4.06246781995176" Connections="81" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="90" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="7.13435199080146,4.26442584895883,3.38900436510948" Connections="91,92,82" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="93" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="94" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="95" Objects="90,96,97,88,89,79" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="98" Objects="83,75,79,90" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="99" Objects="94" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="100" HasProperties="1" DisplayStyle="Line" XYZ="6.19714026819499,0.916072168977137,1.47189418253751" Connections="84" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="101" HasProperties="1" DisplayStyle="Line" XYZ="6.19808948890297,2.62026488590177,0.722676950505029" Connections="85" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="102" HasProperties="1" DisplayStyle="Line" XYZ="4.58541287757647,1.7697708916507,1.09888816723899" Connections="86" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="96" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="6.16951713846324,5.01555174351313,3.25547273787489" Connections="91" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="103" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="104" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="105" Objects="90,96,97" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="106" Objects="75,79,90,96" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="107" Objects="104" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="97" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="8.33729465793135,4.76529947547177,3.77826391885617" Connections="92,108" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="109" HasProperties="1" DisplayStyle="Line" XYZ="8.22082649510729,6.2573158876085,3.97931655913248" Connections="110,111,112,108" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="113" HasProperties="1" DisplayStyle="Line" XYZ="9.45946377800451,6.77248470785684,4.38003863332726" Connections="110,114,115,116" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="117" HasProperties="1" DisplayStyle="Line" XYZ="7.26433098417793,6.52167247982116,4.96716187445255" Connections="111,118,119,120" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="121" HasProperties="1" DisplayStyle="Line" XYZ="7.90304100375779,6.74906495439037,3.00115747528192" Connections="112" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="122" HasProperties="1" DisplayStyle="Line" XYZ="9.3531277759852,7.26564065481598,5.40233498134277" Connections="114" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="123" HasProperties="1" DisplayStyle="Line" XYZ="9.81335775586723,7.54526848978062,3.62032537469573" Connections="115" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="124" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="10.4875437898308,5.62913780735116,4.46611555761367" Connections="125,126,116" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="127" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="128" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="129" Objects="124,130,131,122,123,113" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="132" Objects="117,109,113,124" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="133" Objects="128" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="134" HasProperties="1" DisplayStyle="Line" XYZ="6.88924499716127,5.53852108275694,5.4057092371249" Connections="118" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="135" HasProperties="1" DisplayStyle="Line" XYZ="6.39011803139576,7.09059234027221,4.50707290253007" Connections="119" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="136" HasProperties="1" DisplayStyle="Line" XYZ="7.7348902314037,7.15113257263838,5.79296690163107" Connections="120" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="130" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="10.1508396476868,4.47763533855717,4.19482331251111" Connections="125" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="137" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="138" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="139" Objects="124,130,131" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="140" Objects="109,113,124,130" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="141" Objects="138" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="131" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="11.7676702404611,5.89260928492111,4.84205105902949" Connections="126,142" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="143" HasProperties="1" DisplayStyle="Line" XYZ="12.5657835679827,4.61077506667416,4.84606659916487" Connections="144,145,146,142" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="147" HasProperties="1" DisplayStyle="Line" XYZ="13.8835552510792,4.88252728062743,5.23314273912531" Connections="144,148,149,150" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="151" HasProperties="1" DisplayStyle="Line" XYZ="12.5625714733963,4.05519655719033,3.56079283862892" Connections="145,152,153,154" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="155" HasProperties="1" DisplayStyle="Line" XYZ="12.0982569875206,3.87414239378907,5.57981802731479" Connections="146" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="156" HasProperties="1" DisplayStyle="Line" XYZ="14.595660330079,4.57926091127327,4.39616255883796" Connections="148" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="157" HasProperties="1" DisplayStyle="Line" XYZ="14.132080082065,4.29203842684968,6.17609463527917" Connections="149" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="158" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="14.0354607758207,6.38872685560842,5.51578639178255" Connections="159,160,150" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="161" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="162" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="163" Objects="158,164,165,156,157,147" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="166" Objects="151,143,147,158" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="167" Objects="162" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="168" HasProperties="1" DisplayStyle="Line" XYZ="13.0982528434867,3.0490842968832,3.58037716680867" Connections="152" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="169" HasProperties="1" DisplayStyle="Line" XYZ="13.0999457279221,4.7578805434757,2.84172115756825" Connections="153" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="170" HasProperties="1" DisplayStyle="Line" XYZ="11.4869006010203,3.90629556805048,3.21386254841549" Connections="154" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="164" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="13.0689436458214,7.1388150828928,5.38874550885267" Connections="159" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="171" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="172" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="173" Objects="158,164,165" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="174" Objects="143,147,158,164" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="175" Objects="172" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="165" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="15.2381895910042,6.88948444049499,5.90585521728224" Connections="160,176" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="177" HasProperties="1" DisplayStyle="Line" XYZ="15.1192649476367,8.38000125394184,6.11637013179231" Connections="178,179,180,176" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="181" HasProperties="1" DisplayStyle="Line" XYZ="16.357682944029,8.89505114465141,6.51792198271279" Connections="178,182,183,184" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="185" HasProperties="1" DisplayStyle="Line" XYZ="14.1641585539414,8.63640194989557,7.10765056492466" Connections="179,186,187,188" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="189" HasProperties="1" DisplayStyle="Line" XYZ="14.7986735823087,8.87718856564036,5.14188262028917" Connections="180" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="190" HasProperties="1" DisplayStyle="Line" XYZ="16.2523631209991,9.38166211622243,7.54345474851606" Connections="182" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="191" HasProperties="1" DisplayStyle="Line" XYZ="16.7086511392952,9.67320155517612,5.76234060322793" Connections="183" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="192" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="17.3881011971656,7.75316521939707,6.59495859619211" Connections="193,194,184" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="195" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="196" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="197" Objects="192,198,199,190,191,181" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="200" Objects="185,177,181,192" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="201" Objects="196" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="202" HasProperties="1" DisplayStyle="Line" XYZ="13.7940572423581,7.64993416452732,7.54297375992745" Connections="186" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="203" HasProperties="1" DisplayStyle="Line" XYZ="13.286565904742,9.20376350664256,6.65209380390664" Connections="187" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="204" HasProperties="1" DisplayStyle="Line" XYZ="14.6342437840787,9.26425936801698,7.93494428267497" Connections="188" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="198" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="17.0530723953802,6.60272180485972,6.31717675886239" Connections="193" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="205" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="206" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="207" Objects="192,198,199" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="208" Objects="177,181,192,198" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="209" Objects="206" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="199" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="18.6684401405114,8.01675605518119,6.9700859235938" Connections="194,210" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="211" HasProperties="1" DisplayStyle="Line" XYZ="19.4689993535286,6.73645324757771,6.96464179877527" Connections="212,213,214,210" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="215" HasProperties="1" DisplayStyle="Line" XYZ="20.7869889269639,7.00832779011124,7.35088929730976" Connections="212,216,217,218" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="219" HasProperties="1" DisplayStyle="Line" XYZ="19.4643874599057,6.18883966817977,5.67595854235797" Connections="213,220,221,222" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="223" HasProperties="1" DisplayStyle="Line" XYZ="19.0042804766284,5.9943962198772,7.69470185767818" Connections="214" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="224" HasProperties="1" DisplayStyle="Line" XYZ="21.4980683798658,6.7116155587293,6.51069418906317" Connections="216" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="225" HasProperties="1" DisplayStyle="Line" XYZ="21.0384405958733,6.41248807733826,8.28969015553142" Connections="217" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="226" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="20.9365660102931,8.51303645050263,7.6425713605108" Connections="227,228,218" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="229" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="230" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="231" Objects="226,232,233,224,225,215" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="234" Objects="219,211,215,226" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="235" Objects="230" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="236" HasProperties="1" DisplayStyle="Line" XYZ="19.9992963377913,5.18220934171978,5.68891364647576" Connections="220" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="237" HasProperties="1" DisplayStyle="Line" XYZ="20.0017709264967,6.89554091278822,4.96084154688383" Connections="221" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="238" HasProperties="1" DisplayStyle="Line" XYZ="18.3883402083373,6.04292420919918,5.32892691882051" Connections="222" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="232" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="19.9683809970646,9.26204361297703,7.52201785392536" Connections="227" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="239" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="240" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="241" Objects="226,232,233" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="242" Objects="211,215,226,232" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="243" Objects="240" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="233" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="22.1390827421013,9.01367257408683,8.03344913143776" Connections="228,244" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="245" HasProperties="1" DisplayStyle="Line" XYZ="22.0177225768256,10.5026265147754,8.25342150241026" Connections="246,247,248,244" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="249" HasProperties="1" DisplayStyle="Line" XYZ="23.2559231000386,11.0175519188064,8.65580279581815" Connections="246,250,251,252" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="253" HasProperties="1" DisplayStyle="Line" XYZ="21.0640270139938,10.7510528669739,9.24808504262997" Connections="247,254,255,256" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="257" HasProperties="1" DisplayStyle="Line" XYZ="21.6943220135559,11.0052238462765,7.28264451743521" Connections="248" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="258" HasProperties="1" DisplayStyle="Line" XYZ="23.1516381039276,11.497599953945,9.68452942620067" Connections="250" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="259" HasProperties="1" DisplayStyle="Line" XYZ="23.6039632054048,11.801037653539,7.90439202597274" Connections="251" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="260" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="24.2886595161187,9.87718740344395,8.72380389515907" Connections="261,262,252" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="263" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="264" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="265" Objects="260,266,267,258,259,249" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="268" Objects="253,245,249,260" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="269" Objects="264" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="270" HasProperties="1" DisplayStyle="Line" XYZ="20.6989266869806,9.7612987572142,9.68015970046246" Connections="254" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="271" HasProperties="1" DisplayStyle="Line" XYZ="20.1830685401335,11.3168052564107,8.79704584511744" Connections="255" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="272" HasProperties="1" DisplayStyle="Line" XYZ="21.5336257245011,11.3773133908865,10.0768641228384" Connections="256" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="266" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="23.9552916224252,8.7278464205782,8.43953597613195" Connections="261" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="273" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="274" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="275" Objects="260,266,267" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="276" Objects="245,249,260,266" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="277" Objects="274" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="267" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="25.5692091779969,10.1409030062401,9.09812340390299" Connections="262,278" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="279" HasProperties="1" DisplayStyle="Line" XYZ="26.372193261845,8.8621948458536,9.08322465071406" Connections="280,281,282,278" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="283" HasProperties="1" DisplayStyle="Line" XYZ="27.6903989066006,9.13419726277454,9.46864387183518" Connections="280,284,285,286" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="287" HasProperties="1" DisplayStyle="Line" XYZ="26.3661598879151,8.32256446529511,7.79118398260355" Connections="281,288,289,290" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="291" HasProperties="1" DisplayStyle="Line" XYZ="25.9102853485883,8.11474181473566,9.80955446729593" Connections="282" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="292" HasProperties="1" DisplayStyle="Line" XYZ="28.400434108827,8.84405697866592,8.62527646456292" Connections="284" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="293" HasProperties="1" DisplayStyle="Line" XYZ="27.944779653739,8.53303811537395,10.4032550591716" Connections="285" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="294" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="27.8376676795788,10.6373546043851,9.76935934761751" Connections="295,296,286" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="297" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="298" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="299" Objects="294,300,301,292,293,283" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="302" Objects="287,279,283,294" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="303" Objects="298" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="304" HasProperties="1" DisplayStyle="Line" XYZ="26.9002702967945,7.31544675679057,7.79750449332249" Connections="288" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="305" HasProperties="1" DisplayStyle="Line" XYZ="26.9035654006613,9.03324525385037,7.08003836589699" Connections="289" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="306" HasProperties="1" DisplayStyle="Line" XYZ="25.2897317478612,8.17965644041294,7.44408210672719" Connections="290" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="300" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="26.8678292537464,11.3852373538963,9.65528955323344" Connections="295" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="307" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="308" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="309" Objects="294,300,301" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="310" Objects="279,283,294,300" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="311" Objects="308" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="301" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="29.0399741063165,11.1378638524086,10.1610457006975" Connections="296,312" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="313" HasProperties="1" DisplayStyle="Line" XYZ="28.9161994890735,12.6251917175401,10.3904702785629" Connections="314,315,316,312" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="317" HasProperties="1" DisplayStyle="Line" XYZ="30.1541843624147,13.1399870833058,10.7936806423317" Connections="314,318,319,320" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="321" HasProperties="1" DisplayStyle="Line" XYZ="27.9639364063568,12.865625642618,11.3884647606321" Connections="315,322,323,324" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="325" HasProperties="1" DisplayStyle="Line" XYZ="28.5899865321667,13.1331705967305,9.42344260493873" Connections="316" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="326" HasProperties="1" DisplayStyle="Line" XYZ="30.0509527939633,13.6134545205785,11.8255584382116" Connections="318" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="327" HasProperties="1" DisplayStyle="Line" XYZ="30.4992942043021,13.9287765941915,10.0464790222441" Connections="319" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="328" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="31.1892187571602,12.001204343004,10.852651436728" Connections="329,330,320" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="331" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="332" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="333" Objects="328,334,335,326,327,317" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="336" Objects="321,313,317,328" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="337" Objects="332" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="338" HasProperties="1" DisplayStyle="Line" XYZ="27.6038535278232,11.8726155615081,11.8172668780634" Connections="322" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="339" HasProperties="1" DisplayStyle="Line" XYZ="27.0796260324185,13.4297178276312,10.9419279470718" Connections="323" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="340" HasProperties="1" DisplayStyle="Line" XYZ="28.4330358346792,13.490295233648,12.2187259152711" Connections="324" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="334" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="30.8574972633717,10.8530091189909,10.5619012426772" Connections="329" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="341" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="342" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="343" Objects="328,334,335" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="344" Objects="313,317,328,334" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="345" Objects="342" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="335" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="32.4699773538019,12.2650501157956,11.2261635190349" Connections="330,346" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="347" HasProperties="1" DisplayStyle="Line" XYZ="33.2753651830203,10.987999766411,11.2018156057233" Connections="348,349,350,346" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="351" HasProperties="1" DisplayStyle="Line" XYZ="34.5937850702488,11.2601355975666,11.5864069512417" Connections="348,352,353,354" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="355" HasProperties="1" DisplayStyle="Line" XYZ="33.2678887123435,10.4563704890048,9.90646976346151" Connections="349,356,357,358" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="359" HasProperties="1" DisplayStyle="Line" XYZ="32.8162713651127,10.2351793297125,11.9243764771801" Connections="350" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="360" HasProperties="1" DisplayStyle="Line" XYZ="35.3027574448624,10.9765847699502,10.7399100187574" Connections="352" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="361" HasProperties="1" DisplayStyle="Line" XYZ="34.8510970021722,10.653688682783,12.5167900259758" Connections="353" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="362" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="34.7387657694397,12.761681286926,11.8961504291964" Connections="363,364,354" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="365" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="366" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="367" Objects="362,368,369,360,361,351" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="370" Objects="355,347,351,362" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="371" Objects="366" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="372" HasProperties="1" DisplayStyle="Line" XYZ="33.8011742633823,9.44879598769707,9.90615057664139" Connections="356" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="373" HasProperties="1" DisplayStyle="Line" XYZ="33.8053294714848,11.1709928206872,9.19931185324136" Connections="357" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="374" HasProperties="1" DisplayStyle="Line" XYZ="32.1910752731766,10.3164918867577,9.55932894135128" Connections="358" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="368" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="33.7672884771616,13.5083963266869,11.7885603868536" Connections="363" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="375" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="376" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="377" Objects="362,368,369" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="378" Objects="347,351,362,368" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="379" Objects="376" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="369" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="35.9408636790651,13.2620582507961,12.2886449642199" Connections="364,380" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="381" HasProperties="1" DisplayStyle="Line" XYZ="35.8146957901396,14.7476969117282,12.5275160678451" Connections="382,383,384,380" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="385" HasProperties="1" DisplayStyle="Line" XYZ="37.052466846816,15.2623566934497,12.9315550919737" Connections="382,386,387,388" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="389" HasProperties="1" DisplayStyle="Line" XYZ="34.8638867714226,14.98012069128,13.5287891743946" Connections="383,390,391,392" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="393" HasProperties="1" DisplayStyle="Line" XYZ="35.4856673723145,15.2610286207926,11.5642763192649" Connections="384" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="394" HasProperties="1" DisplayStyle="Line" XYZ="36.9503072587267,15.7292261718438,13.9665412103434" Connections="386" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="395" HasProperties="1" DisplayStyle="Line" XYZ="37.3946443854711,16.0564181902102,12.1886009696251" Connections="387" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="396" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="38.0897789309592,14.1252160211491,12.9815012029093" Connections="397,398,388" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="399" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="400" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="401" Objects="396,402,403,394,395,385" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="404" Objects="389,381,385,396" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="405" Objects="400" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="406" HasProperties="1" DisplayStyle="Line" XYZ="34.508837964508,13.9838852812734,13.9542951192062" Connections="390" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="407" HasProperties="1" DisplayStyle="Line" XYZ="33.9762384763288,15.5425014598538,13.0867390280673" Connections="391" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="408" HasProperties="1" DisplayStyle="Line" XYZ="35.3324738882167,15.603205493379,14.3605291577309" Connections="392" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="402" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="37.75968925363,12.9782098309562,12.6842728364833" Connections="397" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="409" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="410" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="411" Objects="396,402,403" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="412" Objects="381,385,396,402" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="413" Objects="410" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="403" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="39.3707446690918,14.3891973608594,13.3542062878439" Connections="398,414" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="415" HasProperties="1" DisplayStyle="Line" XYZ="40.1785150083877,13.1138679105886,13.3204151140755" Connections="416,417,418,414" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="419" HasProperties="1" DisplayStyle="Line" XYZ="41.4971472994967,13.3861426896144,13.7041790235787" Connections="416,420,421,422" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="423" HasProperties="1" DisplayStyle="Line" XYZ="40.1695738903425,12.5902572753851,12.0218164861754" Connections="417,424,425,426" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="427" HasProperties="1" DisplayStyle="Line" XYZ="39.7222382890147,12.3557089112816,14.0391685096434" Connections="418" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="428" HasProperties="1" DisplayStyle="Line" XYZ="42.205038318049,13.1091985268249,12.8545954826234" Connections="420" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="429" HasProperties="1" DisplayStyle="Line" XYZ="41.7573923889151,12.7744399161261,14.6302957369863" Connections="421" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="430" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="41.6398602660434,14.8860164667293,14.0229446810921" Connections="431,432,422" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="433" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="434" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="435" Objects="430,436,437,428,429,419" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="438" Objects="423,415,419,430" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="439" Objects="434" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="440" HasProperties="1" DisplayStyle="Line" XYZ="40.7020077774959,11.5822564723667,12.0148527632154" Connections="424" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="441" HasProperties="1" DisplayStyle="Line" XYZ="40.7070634651325,13.308782861291,11.318662238586" Connections="425" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="442" HasProperties="1" DisplayStyle="Line" XYZ="39.0923708432184,12.4534301731608,11.674668252886" Connections="426" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="436" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="40.6667587283465,15.6315205532956,13.9218301347927" Connections="431" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="443" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="444" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="445" Objects="430,436,437" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="446" Objects="415,419,430,436" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="447" Objects="444" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="437" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="42.8417514560868,15.3862557437675,14.4162469609293" Connections="432,448" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="449" HasProperties="1" DisplayStyle="Line" XYZ="42.7132115851415,16.8701421488977,14.6645584778717" Connections="450,451,452,448" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="453" HasProperties="1" DisplayStyle="Line" XYZ="43.9507706681761,17.3846608068583,15.0694257144999" Connections="450,454,455,456" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="457" HasProperties="1" DisplayStyle="Line" XYZ="41.7638781479555,17.09453843029,15.6690577417898" Connections="451,458,459,460" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="461" HasProperties="1" DisplayStyle="Line" XYZ="42.381364767672,17.3887977256274,13.7051450951346" Connections="452" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="462" HasProperties="1" DisplayStyle="Line" XYZ="43.8497015642654,17.8449152665775,16.1074771703805" Connections="454" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="463" HasProperties="1" DisplayStyle="Line" XYZ="44.2900139977645,18.1839622584416,14.3307572439808" Connections="455" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="464" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="44.9903400483858,16.2492224205184,15.1103531754948" Connections="465,466,456" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="467" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="468" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="469" Objects="464,470,471,462,463,453" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="472" Objects="457,449,453,464" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="473" Objects="468" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="474" HasProperties="1" DisplayStyle="Line" XYZ="41.4138801995782,16.0951086236039,16.0912442576231" Connections="458" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="475" HasProperties="1" DisplayStyle="Line" XYZ="40.8729059665418,17.6551563940285,15.2314780036928" Connections="459" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="476" HasProperties="1" DisplayStyle="Line" XYZ="42.2319396501639,17.716044771823,16.5022733525996" Connections="460" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="470" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="44.6618675294771,15.1034484849227,14.8066510351339" Connections="465" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="477" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="478" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="479" Objects="464,470,471" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="480" Objects="449,453,464,470" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="481" Objects="478" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="471" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="46.2715111253152,16.5133447177654,15.4822517289437" Connections="466,482" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="483" HasProperties="1" DisplayStyle="Line" XYZ="47.0816426305338,15.2397991761662,15.4390236255366" Connections="484,485,486,482" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="1"/>
+					</Atom3d>
+					<Atom3d ID="487" HasProperties="1" DisplayStyle="Line" XYZ="48.4004854772701,15.5122184302348,15.8219605763667" Connections="484,488,489,490" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="491" HasProperties="1" DisplayStyle="Line" XYZ="47.0712153813009,14.7242243561486,14.1372247490924" Connections="485,492,493,494" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="495" HasProperties="1" DisplayStyle="Line" XYZ="46.628185884223,14.4763307010428,16.153931188254" Connections="486" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="496" HasProperties="1" DisplayStyle="Line" XYZ="49.1072766606488,15.2418978389338,14.96933348465" Connections="488" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="497" HasProperties="1" DisplayStyle="Line" XYZ="48.6636655629564,14.8952919466999,16.7437728744642" Connections="489" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="498" HasProperties="1" Name="C1" UserID="1" DisplayStyle="Line" XYZ="48.5409511559666,17.0103601113415,16.1497421788803" Connections="499,500,490" Components="C" Color="130,130,130,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="501" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="502" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="503" Objects="498,504,505,496,497,487" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="506" Objects="491,483,487,498" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="507" Objects="502" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="508" HasProperties="1" DisplayStyle="Line" XYZ="47.6027703759799,13.7158276410831,14.1236119172996" Connections="492" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="509" HasProperties="1" DisplayStyle="Line" XYZ="47.6087677129265,15.446614617574,13.4380897424777" Connections="493" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="510" HasProperties="1" DisplayStyle="Line" XYZ="45.9936185223742,14.5904709245271,13.7901008725394" Connections="494" Components="H" Color="255,255,255,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Atom3d ID="504" HasProperties="1" Name="O2" UserID="2" DisplayStyle="Line" XYZ="47.566240068079,17.7546100565864,16.0550985769817" Connections="499" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<TorsionTwister ID="511" NumChildren="1" DisplayStyle="None" NumTriggerSets="2">
+						<SymmetryTransformer ID="512" Name="MeasurementFragment" NumTriggerSets="1" ShouldMaintainAtCommonRoot="0">
+							<MonitorTriggerSet ID="513" Objects="498,504,505" EventMask="13"/>
+						</SymmetryTransformer>
+						<RestrictableMonitorTriggerSet ID="514" Objects="483,487,498,504" ShouldAllowDeletions="0" EventMask="13" IsIndexed="1" Properties="XYZ,XYZ,XYZ,XYZ"/>
+						<MonitorTriggerSet ID="515" Objects="512" ShouldDefineCommonRoot="0" IsIndexed="1"/>
+					</TorsionTwister>
+					<Atom3d ID="505" HasProperties="1" Name="O3" UserID="3" DisplayStyle="Line" XYZ="49.7426374334491,17.5104563050314,16.5438517294979" Connections="500,516" Components="O" Color="255,0,0,255" ColorMode="4096">
+						<Properties IsBackboneAtom="0" IsChiralCenter="0"/>
+					</Atom3d>
+					<Bond ID="6" Connects="8,5" ColorMode="0"/>
+					<Bond ID="7" Connects="5,11"/>
+					<Bond ID="9" Connects="8,15" Type="Double" ColorMode="0"/>
+					<Bond ID="10" Connects="8,16"/>
+					<Bond ID="12" Connects="20,11" ColorMode="0"/>
+					<Bond ID="13" Connects="11,24" ColorMode="0"/>
+					<Bond ID="14" Connects="11,28" ColorMode="0"/>
+					<Bond ID="17" Connects="16,29" ColorMode="0"/>
+					<Bond ID="18" Connects="16,38" ColorMode="0"/>
+					<Bond ID="19" Connects="16,39"/>
+					<Bond ID="21" Connects="20,43" ColorMode="0"/>
+					<Bond ID="22" Connects="20,44" ColorMode="0"/>
+					<Bond ID="23" Connects="45,20"/>
+					<Bond ID="25" Connects="24,55" ColorMode="0"/>
+					<Bond ID="26" Connects="24,56" ColorMode="0"/>
+					<Bond ID="27" Connects="24,57" ColorMode="0"/>
+					<Bond ID="30" Connects="29,58" ColorMode="0"/>
+					<Bond ID="31" Connects="29,64" ColorMode="0"/>
+					<Bond ID="32" Connects="29,65"/>
+					<Bond ID="40" Connects="39,66" ColorMode="0"/>
+					<Bond ID="41" Connects="39,67" ColorMode="0"/>
+					<Bond ID="42" Connects="39,68" ColorMode="0"/>
+					<Bond ID="46" Connects="45,51" Type="Double" ColorMode="0"/>
+					<Bond ID="47" Connects="45,52" ColorMode="0"/>
+					<Bond ID="74" Connects="52,75"/>
+					<Bond ID="76" Connects="79,75" ColorMode="0"/>
+					<Bond ID="77" Connects="75,83" ColorMode="0"/>
+					<Bond ID="78" Connects="75,87" ColorMode="0"/>
+					<Bond ID="80" Connects="79,88" ColorMode="0"/>
+					<Bond ID="81" Connects="79,89" ColorMode="0"/>
+					<Bond ID="82" Connects="90,79"/>
+					<Bond ID="84" Connects="83,100" ColorMode="0"/>
+					<Bond ID="85" Connects="83,101" ColorMode="0"/>
+					<Bond ID="86" Connects="83,102" ColorMode="0"/>
+					<Bond ID="91" Connects="90,96" Type="Double" ColorMode="0"/>
+					<Bond ID="92" Connects="90,97" ColorMode="0"/>
+					<Bond ID="108" Connects="97,109"/>
+					<Bond ID="110" Connects="113,109" ColorMode="0"/>
+					<Bond ID="111" Connects="109,117" ColorMode="0"/>
+					<Bond ID="112" Connects="109,121" ColorMode="0"/>
+					<Bond ID="114" Connects="113,122" ColorMode="0"/>
+					<Bond ID="115" Connects="113,123" ColorMode="0"/>
+					<Bond ID="116" Connects="124,113"/>
+					<Bond ID="118" Connects="117,134" ColorMode="0"/>
+					<Bond ID="119" Connects="117,135" ColorMode="0"/>
+					<Bond ID="120" Connects="117,136" ColorMode="0"/>
+					<Bond ID="125" Connects="124,130" Type="Double" ColorMode="0"/>
+					<Bond ID="126" Connects="124,131" ColorMode="0"/>
+					<Bond ID="142" Connects="131,143"/>
+					<Bond ID="144" Connects="147,143" ColorMode="0"/>
+					<Bond ID="145" Connects="143,151" ColorMode="0"/>
+					<Bond ID="146" Connects="143,155" ColorMode="0"/>
+					<Bond ID="148" Connects="147,156" ColorMode="0"/>
+					<Bond ID="149" Connects="147,157" ColorMode="0"/>
+					<Bond ID="150" Connects="158,147"/>
+					<Bond ID="152" Connects="151,168" ColorMode="0"/>
+					<Bond ID="153" Connects="151,169" ColorMode="0"/>
+					<Bond ID="154" Connects="151,170" ColorMode="0"/>
+					<Bond ID="159" Connects="158,164" Type="Double" ColorMode="0"/>
+					<Bond ID="160" Connects="158,165" ColorMode="0"/>
+					<Bond ID="176" Connects="165,177"/>
+					<Bond ID="178" Connects="181,177" ColorMode="0"/>
+					<Bond ID="179" Connects="177,185" ColorMode="0"/>
+					<Bond ID="180" Connects="177,189" ColorMode="0"/>
+					<Bond ID="182" Connects="181,190" ColorMode="0"/>
+					<Bond ID="183" Connects="181,191" ColorMode="0"/>
+					<Bond ID="184" Connects="192,181"/>
+					<Bond ID="186" Connects="185,202" ColorMode="0"/>
+					<Bond ID="187" Connects="185,203" ColorMode="0"/>
+					<Bond ID="188" Connects="185,204" ColorMode="0"/>
+					<Bond ID="193" Connects="192,198" Type="Double" ColorMode="0"/>
+					<Bond ID="194" Connects="192,199" ColorMode="0"/>
+					<Bond ID="210" Connects="199,211"/>
+					<Bond ID="212" Connects="215,211" ColorMode="0"/>
+					<Bond ID="213" Connects="211,219" ColorMode="0"/>
+					<Bond ID="214" Connects="211,223" ColorMode="0"/>
+					<Bond ID="216" Connects="215,224" ColorMode="0"/>
+					<Bond ID="217" Connects="215,225" ColorMode="0"/>
+					<Bond ID="218" Connects="226,215"/>
+					<Bond ID="220" Connects="219,236" ColorMode="0"/>
+					<Bond ID="221" Connects="219,237" ColorMode="0"/>
+					<Bond ID="222" Connects="219,238" ColorMode="0"/>
+					<Bond ID="227" Connects="226,232" Type="Double" ColorMode="0"/>
+					<Bond ID="228" Connects="226,233" ColorMode="0"/>
+					<Bond ID="244" Connects="233,245"/>
+					<Bond ID="246" Connects="249,245" ColorMode="0"/>
+					<Bond ID="247" Connects="245,253" ColorMode="0"/>
+					<Bond ID="248" Connects="245,257" ColorMode="0"/>
+					<Bond ID="250" Connects="249,258" ColorMode="0"/>
+					<Bond ID="251" Connects="249,259" ColorMode="0"/>
+					<Bond ID="252" Connects="260,249"/>
+					<Bond ID="254" Connects="253,270" ColorMode="0"/>
+					<Bond ID="255" Connects="253,271" ColorMode="0"/>
+					<Bond ID="256" Connects="253,272" ColorMode="0"/>
+					<Bond ID="261" Connects="260,266" Type="Double" ColorMode="0"/>
+					<Bond ID="262" Connects="260,267" ColorMode="0"/>
+					<Bond ID="278" Connects="267,279"/>
+					<Bond ID="280" Connects="283,279" ColorMode="0"/>
+					<Bond ID="281" Connects="279,287" ColorMode="0"/>
+					<Bond ID="282" Connects="279,291" ColorMode="0"/>
+					<Bond ID="284" Connects="283,292" ColorMode="0"/>
+					<Bond ID="285" Connects="283,293" ColorMode="0"/>
+					<Bond ID="286" Connects="294,283"/>
+					<Bond ID="288" Connects="287,304" ColorMode="0"/>
+					<Bond ID="289" Connects="287,305" ColorMode="0"/>
+					<Bond ID="290" Connects="287,306" ColorMode="0"/>
+					<Bond ID="295" Connects="294,300" Type="Double" ColorMode="0"/>
+					<Bond ID="296" Connects="294,301" ColorMode="0"/>
+					<Bond ID="312" Connects="301,313"/>
+					<Bond ID="314" Connects="317,313" ColorMode="0"/>
+					<Bond ID="315" Connects="313,321" ColorMode="0"/>
+					<Bond ID="316" Connects="313,325" ColorMode="0"/>
+					<Bond ID="318" Connects="317,326" ColorMode="0"/>
+					<Bond ID="319" Connects="317,327" ColorMode="0"/>
+					<Bond ID="320" Connects="328,317"/>
+					<Bond ID="322" Connects="321,338" ColorMode="0"/>
+					<Bond ID="323" Connects="321,339" ColorMode="0"/>
+					<Bond ID="324" Connects="321,340" ColorMode="0"/>
+					<Bond ID="329" Connects="328,334" Type="Double" ColorMode="0"/>
+					<Bond ID="330" Connects="328,335" ColorMode="0"/>
+					<Bond ID="346" Connects="335,347"/>
+					<Bond ID="348" Connects="351,347" ColorMode="0"/>
+					<Bond ID="349" Connects="347,355" ColorMode="0"/>
+					<Bond ID="350" Connects="347,359" ColorMode="0"/>
+					<Bond ID="352" Connects="351,360" ColorMode="0"/>
+					<Bond ID="353" Connects="351,361" ColorMode="0"/>
+					<Bond ID="354" Connects="362,351"/>
+					<Bond ID="356" Connects="355,372" ColorMode="0"/>
+					<Bond ID="357" Connects="355,373" ColorMode="0"/>
+					<Bond ID="358" Connects="355,374" ColorMode="0"/>
+					<Bond ID="363" Connects="362,368" Type="Double" ColorMode="0"/>
+					<Bond ID="364" Connects="362,369" ColorMode="0"/>
+					<Bond ID="380" Connects="369,381"/>
+					<Bond ID="382" Connects="385,381" ColorMode="0"/>
+					<Bond ID="383" Connects="381,389" ColorMode="0"/>
+					<Bond ID="384" Connects="381,393" ColorMode="0"/>
+					<Bond ID="386" Connects="385,394" ColorMode="0"/>
+					<Bond ID="387" Connects="385,395" ColorMode="0"/>
+					<Bond ID="388" Connects="396,385"/>
+					<Bond ID="390" Connects="389,406" ColorMode="0"/>
+					<Bond ID="391" Connects="389,407" ColorMode="0"/>
+					<Bond ID="392" Connects="389,408" ColorMode="0"/>
+					<Bond ID="397" Connects="396,402" Type="Double" ColorMode="0"/>
+					<Bond ID="398" Connects="396,403" ColorMode="0"/>
+					<Bond ID="414" Connects="403,415"/>
+					<Bond ID="416" Connects="419,415" ColorMode="0"/>
+					<Bond ID="417" Connects="415,423" ColorMode="0"/>
+					<Bond ID="418" Connects="415,427" ColorMode="0"/>
+					<Bond ID="420" Connects="419,428" ColorMode="0"/>
+					<Bond ID="421" Connects="419,429" ColorMode="0"/>
+					<Bond ID="422" Connects="430,419"/>
+					<Bond ID="424" Connects="423,440" ColorMode="0"/>
+					<Bond ID="425" Connects="423,441" ColorMode="0"/>
+					<Bond ID="426" Connects="423,442" ColorMode="0"/>
+					<Bond ID="431" Connects="430,436" Type="Double" ColorMode="0"/>
+					<Bond ID="432" Connects="430,437" ColorMode="0"/>
+					<Bond ID="448" Connects="437,449"/>
+					<Bond ID="450" Connects="453,449" ColorMode="0"/>
+					<Bond ID="451" Connects="449,457" ColorMode="0"/>
+					<Bond ID="452" Connects="449,461" ColorMode="0"/>
+					<Bond ID="454" Connects="453,462" ColorMode="0"/>
+					<Bond ID="455" Connects="453,463" ColorMode="0"/>
+					<Bond ID="456" Connects="464,453"/>
+					<Bond ID="458" Connects="457,474" ColorMode="0"/>
+					<Bond ID="459" Connects="457,475" ColorMode="0"/>
+					<Bond ID="460" Connects="457,476" ColorMode="0"/>
+					<Bond ID="465" Connects="464,470" Type="Double" ColorMode="0"/>
+					<Bond ID="466" Connects="464,471" ColorMode="0"/>
+					<Bond ID="482" Connects="471,483"/>
+					<Bond ID="484" Connects="487,483" ColorMode="0"/>
+					<Bond ID="485" Connects="483,491" ColorMode="0"/>
+					<Bond ID="486" Connects="483,495" ColorMode="0"/>
+					<Bond ID="488" Connects="487,496" ColorMode="0"/>
+					<Bond ID="489" Connects="487,497" ColorMode="0"/>
+					<Bond ID="490" Connects="498,487"/>
+					<Bond ID="492" Connects="491,508" ColorMode="0"/>
+					<Bond ID="493" Connects="491,509" ColorMode="0"/>
+					<Bond ID="494" Connects="491,510" ColorMode="0"/>
+					<Bond ID="499" Connects="498,504" Type="Double" ColorMode="0"/>
+					<Bond ID="500" Connects="498,505" ColorMode="0"/>
+					<Atom3d ID="517" DisplayStyle="Line" XYZ="49.5822670783526,18.3013937831625,17.3059536098691" Connections="516" Components="H"/>
+					<Bond ID="516" Connects="505,517"/>
+				</RepeatUnit>
+			</LinearChain>
+		</Molecule>
+	</AtomisticTreeRoot>
+</XSD>

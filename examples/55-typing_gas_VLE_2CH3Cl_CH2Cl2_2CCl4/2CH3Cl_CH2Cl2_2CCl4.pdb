@@ -1,0 +1,53 @@
+REMARK   1 File created by GaussView 6.0.16
+CRYST1   66.090   66.090   75.661  90.00  90.00  90.00 P 1           1
+HETATM    1 CT   CLM     0      -1.880   0.854   0.000                       C
+HETATM    2 HC   CLM     0      -1.523  -0.155  -0.000                       H
+HETATM    3 HC   CLM     0      -1.523   1.358   0.874                       H
+HETATM    4 HC   CLM     0      -1.523   1.358  -0.874                       H
+HETATM    5 Cl   CLM     0      -3.640   0.854  -0.000                      Cl
+HETATM    6 CT   DCM     1      -8.497  -4.683   0.000                       C
+HETATM    7 HC   DCM     1      -8.140  -5.692   0.000                       H
+HETATM    8 HC   DCM     1      -8.140  -4.179   0.874                       H
+HETATM    9 Cl   DCM     1      -7.910  -3.853  -1.437                      Cl
+HETATM   10 Cl   DCM     1     -10.257  -4.683   0.000                      Cl
+HETATM   11 CT   CLO     2     -10.023   6.715  -0.099                       C
+HETATM   12 Cl   CLO     2      -9.436   5.056  -0.099                      Cl
+HETATM   13 Cl   CLO     2      -9.436   7.545   1.338                      Cl
+HETATM   14 Cl   CLO     2      -9.436   7.545  -1.536                      Cl
+HETATM   15 Cl   CLO     2     -11.783   6.715  -0.099                      Cl
+HETATM   16 CT   CLM     3      -1.536   8.113  -0.217                       C
+HETATM   17 HC   CLM     3      -1.179   7.104  -0.217                       H
+HETATM   18 HC   CLM     3      -1.179   8.617   0.656                       H
+HETATM   19 HC   CLM     3      -1.179   8.617  -1.091                       H
+HETATM   20 Cl   CLM     3      -3.296   8.113  -0.217                      Cl
+HETATM   21 CT   CLO     4     -13.819   0.415  -0.378                       C
+HETATM   22 Cl   CLO     4     -15.579   0.415  -0.378                      Cl
+HETATM   23 Cl   CLO     4     -13.233   1.245   1.059                      Cl
+HETATM   24 Cl   CLO     4     -13.233   1.245  -1.815                      Cl
+HETATM   25 Cl   CLO     4     -13.233  -1.244  -0.378                      Cl
+END
+CONECT    1    2    3    4    5
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1
+CONECT    6    7    8    9   10
+CONECT    7    6
+CONECT    8    6
+CONECT    9    6
+CONECT   10    6
+CONECT   11   12   13   14   15
+CONECT   12   11
+CONECT   13   11
+CONECT   14   11
+CONECT   15   11
+CONECT   16   17   18   19   20
+CONECT   17   16
+CONECT   18   16
+CONECT   19   16
+CONECT   20   16
+CONECT   21   22   23   24   25
+CONECT   22   21
+CONECT   23   21
+CONECT   24   21
+CONECT   25   21

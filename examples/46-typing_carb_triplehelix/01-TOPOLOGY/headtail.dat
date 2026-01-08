@@ -1,0 +1,5 @@
+nmols: 3
+#ich idx-head idx-tail (indexes start at 0)
+0 1 42
+1 68 127
+2 153 195

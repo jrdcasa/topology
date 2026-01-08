@@ -1,0 +1,13 @@
+# general rule for shifted vs truncated
+shifted
+# general rule tailcorrections
+no
+# number of defined interactions
+18  
+# type interaction, parameters.
+opls_135      lennard-jones    33.2124913  3.500000  
+opls_140      lennard-jones    15.0965869  2.500000  
+opls_280      lennard-jones    52.8380543  3.750000  
+opls_281      lennard-jones   105.6761086  2.960000  
+#  general mixing rule for Lennard-Jones
+Jorgensen

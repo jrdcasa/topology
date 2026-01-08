@@ -1,0 +1,39 @@
+; itp created with typing_gases_to_VLE_cmd.py program from Topology library
+;                      Javier Ramos (IEM-CSIC)                        
+;             Created:    18-09-2025 08:22:57                                   
+
+[ moleculetype ]
+; Name            nrexcl
+CHBrClF             3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge        mass
+; residue        1
+     1      opls_139       1     CLM        CT           1    0.1227000    12.0110 ; qtot         0.123
+     2      opls_140       1     CLM        HC           1    0.1637000     1.0080 ; qtot         0.286
+     3      opls_164       1     CLM         F           1   -0.0971000    18.9984 ; qtot         0.189
+     4      opls_151       1     CLM        Cl           1   -0.1149000    35.4530 ; qtot         0.074
+     5      opls_722       1     CLM        Br           1   -0.0744000    79.9040 ; qtot        -0.000
+
+[ bonds ]
+; ai    aj funct bo(nm) kb(kJ/molnm2)
+         2          1          1 0.1090     284512.000
+         3          1          1 0.1332     307105.600
+         4          1          1 0.1781     205016.000
+         5          1          1 0.1945     205016.000
+
+[ angles ]
+;  ai    aj    ak funct
+         2          1          3          1      107.000      334.720
+         2          1          4          1      107.600      426.768
+         2          1          5          1      107.600      426.768
+         3          1          4          1      110.580      432.207
+         3          1          5          1      110.580      432.207
+         4          1          5          1      110.580      432.207
+
+[ dihedrals ]
+; ai    aj  ak  al  funct
+
+[ pairs ]
+; ai    aj funct
+

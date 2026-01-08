@@ -1,0 +1,80 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version None
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd -i PE-iPP_more_99999_atoms_nooverlap.pdb
+			         or
+			topology_cmd  -i PE-iPP_more_99999_atoms_nooverlap.pdb
+
+		Starting: 	 26-11-2025 18:42:15
+
+		Input is a PDB format.
+		Reading... (26-11-2025 18:42:15)
+			 Start Guessing bonds using MDAnalysis library. (26-11-2025 18:42:16)
+			 End Guessing bonds using MDAnalysis library. (26-11-2025 18:43:37)
+
+			 Start Loop over atoms. (26-11-2025 18:43:37)
+			 End Loop over atoms. (26-11-2025 18:43:38)
+
+			 Start Creating topology. (26-11-2025 18:43:41)
+			 End Creating topology. (26-11-2025 18:47:41)
+		End read   (26-11-2025 18:48:34)
+
+		****** WRITE PDB and PSF files (26-11-2025 18:48:34) ****** 
+		 Writing PDB file...topology.pdb (26-11-2025 18:48:34)
+		 CONECT table has NOT been written (natoms > 99999).
+		 Writing PSF file...topology.psf (26-11-2025 18:48:35)
+
+		****** END WRITE PDB and PSF files (26-11-2025 18:55:17) ****** 
+
+		****** SUMMARY (26-11-2025 18:55:17) ****** 
+		 PDB file: topology.pdb
+		****** END SUMMARY (26-11-2025 18:55:17) ****** 
+
+		Summarize of the input system (26-11-2025 18:55:17)
+		=======================================================
+		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/22-PE-iPP_manyatoms_hexad/PE-iPP_more_99999_atoms_nooverlap.pdb
+		CONECT table input file     : False
+		Head info file              : None
+		Residue info file           : None
+		
+		Number of molecules         : 480
+		Number of residues          : 480
+		Number of atoms             : 122640
+		Number of bonds             : 122160
+		Bond info available         : True
+		Simulation box dimension    : 0.0000 0.0000 0.0000 nm
+		Simulation box angles       : 0.00 0.00 0.00 degrees
+		
+		Output raw pdb file         : topology.pdb
+		CONECT table output pdb file: False
+		=======================================================
+
+		  WARNING 1: Important information about 'Head and Tails' is missing.
+		  WARNING 1: Please review the output files carefully.
+
+		  WARNING 2: Topology is absent in the input file.
+		  WARNING 2: The topology has been estimated from atom distances,
+		  WARNING 2: which may introduce errors if overlapping exists in the system.
+
+		Job  Done at 26-11-2025 18:55:17 ============
+		Total time: 781.22 seconds

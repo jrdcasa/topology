@@ -1,0 +1,81 @@
+
+    ***********************************************************************
+                     Manipulate topology for polymers
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        Topology is an open-source python library to quickly modify topology 
+        of polymer molecules
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python topology_cmd.py -i PolyP3HSmallb.xsd -p P3HB_Small -r PolyP3HSmallb_headtail.dat -a PolyP3HSmallb_residues.dat
+			         or
+			topology_cmd.py  -i PolyP3HSmallb.xsd -p P3HB_Small -r PolyP3HSmallb_headtail.dat -a PolyP3HSmallb_residues.dat
+
+		Starting: 	 08-01-2026 11:21:54
+
+		Input is a XSD format.
+		Reading... (08-01-2026 11:21:54)
+		End read   (08-01-2026 11:21:54)
+
+		****** WRITE PDB and PSF files (08-01-2026 11:21:54) ****** 
+		 Writing PDB file...P3HB_Small.pdb (08-01-2026 11:21:54)
+		 CONECT table has been written.
+		****** END WRITE PDB and PSF files (08-01-2026 11:21:54) ****** 
+
+		****** RENUMBERING AND ASSIGN RESIDUES PDB and PSF files (08-01-2026 11:21:54) ****** 
+		 Renumbering PDB file... P3HB_Small.pdb (08-01-2026 11:21:54)
+
+			 Start Loop over atoms. (08-01-2026 11:21:54)
+			 End Loop over atoms. (08-01-2026 11:21:54)
+
+			 Start Creating topology. (08-01-2026 11:21:54)
+			 End Creating topology. (08-01-2026 11:21:54)
+		 Head-Tail info from ... PolyP3HSmallb_headtail.dat (08-01-2026 11:21:54)
+		 Write renumbered file ... P3HB_Small_residues.pdb (08-01-2026 11:21:54)
+		 Writing PSF file...P3HB_Small_residues.psf (08-01-2026 11:21:54)
+
+		****** END RENUMBERING PDB and PSF files (08-01-2026 11:21:54) ****** 
+
+		****** SUMMARY (08-01-2026 11:21:54) ****** 
+		 PDB file: P3HB_Small_residues.pdb
+		 GRO file: P3HB_Small_residues.gro
+		 PSF file: P3HB_Small_residues.psf
+		****** END SUMMARY (08-01-2026 11:21:54) ****** 
+
+		Summarize of the input system (08-01-2026 11:21:54)
+		=======================================================
+		Input file                  : /home/jramos/Programacion/GITHUB_REPO_DIR/topology/examples/20-P3HB_alternate/PolyP3HSmallb.xsd
+		CONECT table input file     : True
+		Head info file              : PolyP3HSmallb_headtail.dat
+		Residue info file           : PolyP3HSmallb_residues.dat
+		
+		Number of molecules         : 1
+		Number of residues          : 1
+		Number of atoms             : 182
+		Number of bonds             : 181
+		Bond info available         : True
+		Simulation box dimension    : 0.0000 0.0000 0.0000 nm
+		Simulation box angles       : 0.00 0.00 0.00 degrees
+		
+		Output raw pdb file         : P3HB_Small.pdb
+		CONECT table output pdb file: True
+		=======================================================
+
+
+
+		Job  Done at 08-01-2026 11:21:54 ============
+		Total time: 0.37 seconds

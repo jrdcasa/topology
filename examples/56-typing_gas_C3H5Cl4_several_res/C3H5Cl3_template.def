@@ -1,0 +1,75 @@
+# critical constants: Temperature [T], Pressure [Pa], and Acentric factor [omega]
+#TC#
+#PC#
+#OMEGA#
+# Number of atoms
+11
+# Number of Groups
+1
+# C3H5Cl3 group
+flexible
+# Number of atoms
+11
+# Atomic positions
+0   opls_135
+1   opls_140
+2   opls_140
+3   opls_140
+4   opls_136
+5   opls_140
+6   opls_140
+7   opls_122
+8   opls_123
+9   opls_123
+10  opls_123
+# Chiral centers Bond  BondDipoles Bend  UrayBradley InvBend  Torsion Imp. Torsion Bond/Bond Stretch/Bend
+ 0  10   0  18   0   0  18   0   0   0 
+# Bond stretch: atom i-j, type, parameters
+         1          0   HARMONIC_BOND 342189.3          1.090
+         2          0   HARMONIC_BOND 342189.3          1.090
+         3          0   HARMONIC_BOND 342189.3          1.090
+         4          0   HARMONIC_BOND 269725.7          1.529
+         5          4   HARMONIC_BOND 342189.3          1.090
+         6          4   HARMONIC_BOND 342189.3          1.090
+         7          4   HARMONIC_BOND 269725.7          1.529
+         8          7   HARMONIC_BOND 246577.6          1.781
+         9          7   HARMONIC_BOND 246577.6          1.781
+        10          7   HARMONIC_BOND 246577.6          1.781
+# Bond Bending: atom i-j-k, type, parameters
+         0          4          5   HARMONIC_BEND 37741.5        110.700
+         0          4          6   HARMONIC_BEND 37741.5        110.700
+         0          4          7   HARMONIC_BEND 58725.7        112.700
+         1          0          2   HARMONIC_BEND 33212.5        107.800
+         1          0          3   HARMONIC_BEND 33212.5        107.800
+         1          0          4   HARMONIC_BEND 37741.5        110.700
+         2          0          3   HARMONIC_BEND 33212.5        107.800
+         2          0          4   HARMONIC_BEND 37741.5        110.700
+         3          0          4   HARMONIC_BEND 37741.5        110.700
+         4          7          8   HARMONIC_BEND 69444.3        109.800
+         4          7          9   HARMONIC_BEND 69444.3        109.800
+         4          7         10   HARMONIC_BEND 69444.3        109.800
+         5          4          6   HARMONIC_BEND 33212.5        107.800
+         5          4          7   HARMONIC_BEND 37741.5        110.700
+         6          4          7   HARMONIC_BEND 37741.5        110.700
+         8          7          9   HARMONIC_BEND 78502.3        111.700
+         8          7         10   HARMONIC_BEND 78502.3        111.700
+         9          7         10   HARMONIC_BEND 78502.3        111.700
+# Dihedrals: atom i-j-k-l, type, parameters
+         0          4          7          8 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 
+         0          4          7          9 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 
+         0          4          7         10 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 
+         1          0          4          5 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         1          0          4          6 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         1          0          4          7 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         2          0          4          5 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         2          0          4          6 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         2          0          4          7 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         3          0          4          5 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         3          0          4          6 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         3          0          4          7 SIX_COSINE_DIHEDRAL   75.48293  226.44880    0.00000 -301.93174    0.00000    0.00000 
+         5          4          7          8 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 
+         5          4          7          9 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 
+         5          4          7         10 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 
+         6          4          7          8 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 
+         6          4          7          9 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 
+         6          4          7         10 SIX_COSINE_DIHEDRAL  100.64391  301.93174    0.00000 -402.57565    0.00000    0.00000 

@@ -1,0 +1,45 @@
+
+    ***********************************************************************
+                     Create the index file for phi-psi 
+                           angles in carbohydrates
+              ----------------------------------------------
+
+                                Version 1.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        This program generates an index file listing the atomic indices that 
+        define dihedral angles in carbohydrates, using the same format 
+        as GROMACS
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
+
+    ***********************************************************************
+        
+
+		Command line: 
+			python create_index_dih_carb_cmd.py -i confout.part0001.gro -t new_topo.tpr --links 1-3 1-4
+			         or
+			create_index_dih_carb_cmd.py  -i confout.part0001.gro -t new_topo.tpr --links 1-3 1-4
+
+		MDAnalysis version: 2.7.0
+
+		============= SUMMARY =============
+		 Number of links             = 35
+		 Number of 1-3 phi dihedrals = 17
+		 Number of 1-4 phi dihedrals = 18
+		 Number of 1-3 psi dihedrals = 17
+		 Number of 1-4 psi dihedrals = 18
+
+
+		 Indices have been written in index.ndx file
+		 Indices to check have been written in index_check.ndx file
+
+
+		Job  Done at 06-05-2025 08:40:05 ============
+		Total time: 2.03 seconds
